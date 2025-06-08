@@ -5,42 +5,55 @@ const userSchema = new mongoose.Schema({
     userName: {
         type: String,
         required: true,
-        unique: true, //đảm bảo là duy nhất
+        unique: true,
         trim: true,
         minlength: 3,
         maxlength: 20
     },
-    password: {     // Mật khẩu của người dùng
+    password: {
         type: String,
         required: true,
         minlength: 6
     },
-    email: { // Email của người dùng
+    email: {
         type: String,
         required: true,
         unique: true,
         lowercase: true
     },
-    refreshToken: { // Token dùng để refresh access token
+    refreshToken: {
         type: String,
         default: null
     },
-    isActive: { // Trạng thái người dùng
+    isActive: {
         type: Boolean,
         default: true
+    },
+    // ✅ Thêm các field OTP
+    otp: {
+        type: String,
+        default: null
+    },
+    otpExpires: {
+        type: Date,
+        default: null
+    },
+    isEmailVerified: {
+        type: Boolean,
+        default: false
     }
 }, {
     timestamps: true,
-    collection: 'auth' // Tên collection trong MongoDB
+    collection: 'auth'
 });
 
-// Hash password trước khi save (mã hóa mật khẩu trước khi lưu vào db)
+// Hash password trước khi save
 userSchema.pre('save', async function (next) {
-    if (!this.isModified('password')) return next(); // Nếu mật khẩu không thay đổi thì không cần hash lại
+    if (!this.isModified('password')) return next();
 
     try {
-        const salt = await bcrypt.genSalt(10); // Tạo salt với độ dài 10, tăng độ bảo mật
-        this.password = await bcrypt.hash(this.password, salt); // Hash mật khẩu với salt
+        const salt = await bcrypt.genSalt(10);
+        this.password = await bcrypt.hash(this.password, salt);
         next();
     } catch (error) {
         next(error);
@@ -48,8 +61,8 @@ userSchema.pre('save', async function (next) {
 });
 
 // Method so sánh password
-userSchema.methods.comparePassword = async function (candidatePassword) { //candidatePassword là mật khẩu người dùng nhập vào
-    return await bcrypt.compare(candidatePassword, this.password);  // So sánh mật khẩu đã hash với mật khẩu người dùng nhập vào
+userSchema.methods.comparePassword = async function (candidatePassword) {
+    return await bcrypt.compare(candidatePassword, this.password);
 };
 
 // Method tạo tokens
@@ -74,6 +87,39 @@ userSchema.methods.generateTokens = function () {
     );
 
     return { accessToken, refreshToken };
+};
+
+// ✅ Method tạo OTP
+userSchema.methods.generateOTP = function () {
+    const otp = Math.floor(100000 + Math.random() * 900000).toString(); // 6 số
+    this.otp = otp;
+    this.otpExpires = new Date(Date.now() + 10 * 60 * 1000); // 10 phút
+    console.log('🔑 Generated OTP:', otp, 'Expires at:', this.otpExpires);
+    return otp;
+};
+
+// ✅ Method verify OTP
+userSchema.methods.verifyOTP = function (inputOTP) {
+    console.log('🔍 Debugging OTP verification:');
+    console.log('- Input OTP:', inputOTP);
+    console.log('- Stored OTP:', this.otp);
+    console.log('- OTP Expires:', this.otpExpires);
+    console.log('- Current Time:', new Date());
+
+    if (!this.otp || !this.otpExpires) {
+        console.log('❌ No OTP or expiry found');
+        return false;
+    }
+
+    if (new Date() > this.otpExpires) {
+        console.log('❌ OTP expired');
+        return false;
+    }
+
+    const isValid = this.otp === inputOTP;
+    console.log('- OTP Match?', isValid);
+
+    return isValid;
 };
 
 module.exports = mongoose.model('User', userSchema);

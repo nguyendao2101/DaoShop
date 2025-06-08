@@ -29,7 +29,31 @@ const loginValidation = [
         .withMessage('Password is required')
 ];
 
+// Thêm validation cho verify OTP
+const verifyOTPValidation = [
+    body('email')
+        .isEmail()
+        .withMessage('Please provide a valid email')
+        .normalizeEmail(),
+
+    body('otp')
+        .isLength({ min: 6, max: 6 })
+        .withMessage('OTP must be exactly 6 digits')
+        .isNumeric()
+        .withMessage('OTP must contain only numbers')
+];
+
+// Thêm validation cho resend OTP
+const resendOTPValidation = [
+    body('email')
+        .isEmail()
+        .withMessage('Please provide a valid email')
+        .normalizeEmail()
+];
+
 module.exports = {
     registerValidation,
-    loginValidation
+    loginValidation,
+    verifyOTPValidation,
+    resendOTPValidation
 };
