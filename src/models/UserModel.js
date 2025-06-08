@@ -1,3 +1,4 @@
+// src/models/User.js
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 
@@ -8,7 +9,7 @@ const userSchema = new mongoose.Schema({
         unique: true,
         trim: true,
         minlength: 3,
-        maxlength: 20
+        maxlength: 30
     },
     password: {
         type: String,
@@ -21,6 +22,20 @@ const userSchema = new mongoose.Schema({
         unique: true,
         lowercase: true
     },
+    fullName: {
+        type: String,
+        trim: true
+    },
+    avatar: {
+        type: String,
+        default: null
+    },
+    // ✅ THÊM FIELD NÀY
+    googleId: {
+        type: String,
+        unique: true,
+        sparse: true
+    },
     refreshToken: {
         type: String,
         default: null
@@ -29,7 +44,6 @@ const userSchema = new mongoose.Schema({
         type: Boolean,
         default: true
     },
-    // ✅ Thêm các field OTP
     otp: {
         type: String,
         default: null
@@ -89,16 +103,16 @@ userSchema.methods.generateTokens = function () {
     return { accessToken, refreshToken };
 };
 
-// ✅ Method tạo OTP
+// Method tạo OTP
 userSchema.methods.generateOTP = function () {
-    const otp = Math.floor(100000 + Math.random() * 900000).toString(); // 6 số
+    const otp = Math.floor(100000 + Math.random() * 900000).toString();
     this.otp = otp;
     this.otpExpires = new Date(Date.now() + 10 * 60 * 1000); // 10 phút
     console.log('🔑 Generated OTP:', otp, 'Expires at:', this.otpExpires);
     return otp;
 };
 
-// ✅ Method verify OTP
+// Method verify OTP
 userSchema.methods.verifyOTP = function (inputOTP) {
     console.log('🔍 Debugging OTP verification:');
     console.log('- Input OTP:', inputOTP);
@@ -120,6 +134,32 @@ userSchema.methods.verifyOTP = function (inputOTP) {
     console.log('- OTP Match?', isValid);
 
     return isValid;
+};
+userSchema.statics.findByEmailOrUsername = function (identifier) {
+    console.log('🔍 findByEmailOrUsername called with:', identifier);
+
+    // ✅ Kiểm tra identifier có tồn tại không
+    if (!identifier) {
+        console.log('❌ Identifier is undefined or null');
+        return null;
+    }
+
+    // ✅ Đảm bảo identifier là string
+    const searchIdentifier = String(identifier).trim();
+
+    if (!searchIdentifier) {
+        console.log('❌ Identifier is empty after trim');
+        return null;
+    }
+
+    console.log('🔍 Searching with identifier:', searchIdentifier);
+
+    return this.findOne({
+        $or: [
+            { email: searchIdentifier.toLowerCase() },
+            { userName: searchIdentifier }
+        ]
+    });
 };
 
 module.exports = mongoose.model('User', userSchema);
