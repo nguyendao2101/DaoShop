@@ -1,59 +1,67 @@
+// src/validations/AuthValidation.js
 const { body } = require('express-validator');
 
 const registerValidation = [
     body('userName')
+        .trim()
         .isLength({ min: 3, max: 20 })
         .withMessage('Username must be between 3 and 20 characters')
         .matches(/^[a-zA-Z0-9_]+$/)
         .withMessage('Username can only contain letters, numbers and underscores'),
 
     body('password')
-        .isLength({ min: 6 })
-        .withMessage('Password must be at least 6 characters')
-        .matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)/)
-        .withMessage('Password must contain at least one uppercase letter, one lowercase letter and one number'),
+        .isLength({ min: 8, max: 128 })
+        .withMessage('Password must be between 8 and 128 characters'),
 
     body('email')
+        .trim()
         .isEmail()
         .withMessage('Please provide a valid email')
         .normalizeEmail()
 ];
 
 const loginValidation = [
-    body('userName')
+    body('identifier')
+        .trim()
         .notEmpty()
-        .withMessage('Username is required'),
+        .withMessage('Username or email is required'),
 
     body('password')
         .notEmpty()
         .withMessage('Password is required')
 ];
 
-// Thêm validation cho verify OTP
 const verifyOTPValidation = [
     body('email')
+        .trim()
         .isEmail()
-        .withMessage('Please provide a valid email')
-        .normalizeEmail(),
+        .withMessage('Please provide a valid email'),
 
     body('otp')
+        .trim()
         .isLength({ min: 6, max: 6 })
         .withMessage('OTP must be exactly 6 digits')
         .isNumeric()
         .withMessage('OTP must contain only numbers')
 ];
 
-// Thêm validation cho resend OTP
 const resendOTPValidation = [
     body('email')
+        .trim()
         .isEmail()
         .withMessage('Please provide a valid email')
-        .normalizeEmail()
 ];
 
+// ✅ Export both individual validations and grouped object
 module.exports = {
     registerValidation,
     loginValidation,
     verifyOTPValidation,
-    resendOTPValidation
+    resendOTPValidation,
+    authValidation: {
+        register: registerValidation,
+        login: loginValidation,
+        verifyOTP: verifyOTPValidation,
+        resendOTP: resendOTPValidation
+    }
 };
