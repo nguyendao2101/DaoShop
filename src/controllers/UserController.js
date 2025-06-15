@@ -1,10 +1,68 @@
-const User = require('../models/UserModel');
-const jwt = require('jsonwebtoken');
+// src/controllers/UserController.js
 const { validationResult } = require('express-validator');
+const AuthService = require('../services/AuthService');
+const GoogleOAuthService = require('../services/GoogleOAuthService');
+const UserService = require('../services/UserService');
 const EmailService = require('../services/EmailService');
+const User = require('../models/UserModel');
 
 class UserController {
-    // Đăng ký - Gửi OTP
+    // Verify OTP
+    async verifyOTP(req, res) {
+        try {
+            const errors = validationResult(req);
+            if (!errors.isEmpty()) {
+                return res.status(400).json({
+                    success: false,
+                    message: 'Validation failed',
+                    errors: errors.array()
+                });
+            }
+
+            const { email, otp } = req.body;
+
+            // Verify OTP
+            const user = await AuthService.verifyUserOTP(email, otp);
+
+            // Send welcome email
+            await EmailService.sendWelcomeEmail(email, user.userName);
+
+            // Generate tokens
+            const { accessToken, refreshToken } = await AuthService.generateUserTokens(user);
+
+            // ✅ FIX: Set cookie directly instead of using this.setRefreshTokenCookie
+            res.cookie('refreshToken', refreshToken, {
+                httpOnly: true,
+                secure: process.env.NODE_ENV === 'production',
+                sameSite: 'strict',
+                maxAge: 7 * 24 * 60 * 60 * 1000 // 7 days
+            });
+
+            res.json({
+                success: true,
+                message: 'Email verified successfully! Welcome to DaoShop!',
+                data: {
+                    user: {
+                        id: user._id,
+                        userName: user.userName,
+                        email: user.email,
+                        isEmailVerified: user.isEmailVerified
+                    },
+                    accessToken
+                }
+            });
+
+        } catch (error) {
+            console.error('Verify OTP error:', error);
+            const statusCode = error.message.includes('not found') ? 404 : 400;
+            res.status(statusCode).json({
+                success: false,
+                message: error.message
+            });
+        }
+    }
+
+    // Register
     async register(req, res) {
         try {
             const errors = validationResult(req);
@@ -18,11 +76,8 @@ class UserController {
 
             const { userName, password, email } = req.body;
 
-            // Kiểm tra user đã tồn tại
-            const existingUser = await User.findOne({
-                $or: [{ userName }, { email }]
-            });
-
+            // Check if user exists
+            const existingUser = await AuthService.checkUserExists(userName, email);
             if (existingUser) {
                 return res.status(409).json({
                     success: false,
@@ -30,23 +85,12 @@ class UserController {
                 });
             }
 
-            // Tạo user mới (chưa verify email)
-            const user = new User({
-                userName,
-                password,
-                email,
-                isEmailVerified: false
-            });
+            // Create user
+            const { user, otp } = await AuthService.createUser({ userName, password, email });
 
-            // Tạo OTP
-            const otp = user.generateOTP();
-            await user.save();
-
-            // Gửi OTP qua email
+            // Send OTP email
             const emailResult = await EmailService.sendOTPEmail(email, otp, userName);
-
             if (!emailResult.success) {
-                // Nếu gửi email thất bại, xóa user vừa tạo
                 await User.findByIdAndDelete(user._id);
                 return res.status(500).json({
                     success: false,
@@ -72,91 +116,7 @@ class UserController {
         }
     }
 
-    // Verify OTP
-    async verifyOTP(req, res) {
-        try {
-            const errors = validationResult(req);
-            if (!errors.isEmpty()) {
-                return res.status(400).json({
-                    success: false,
-                    message: 'Validation failed',
-                    errors: errors.array()
-                });
-            }
-
-            const { email, otp } = req.body;
-
-            // Tìm user
-            const user = await User.findOne({ email });
-            if (!user) {
-                return res.status(404).json({
-                    success: false,
-                    message: 'User not found'
-                });
-            }
-
-            // Kiểm tra đã verify chưa
-            if (user.isEmailVerified) {
-                return res.status(400).json({
-                    success: false,
-                    message: 'Email already verified'
-                });
-            }
-
-            // Verify OTP
-            if (!user.verifyOTP(otp)) {
-                return res.status(400).json({
-                    success: false,
-                    message: 'Invalid or expired OTP'
-                });
-            }
-
-            // Cập nhật trạng thái verified
-            user.isEmailVerified = true;
-            user.otp = undefined;
-            user.otpExpires = undefined;
-            await user.save();
-
-            // Gửi email chào mừng
-            await EmailService.sendWelcomeEmail(email, user.userName);
-
-            // Tạo tokens
-            const { accessToken, refreshToken } = user.generateTokens();
-            user.refreshToken = refreshToken;
-            await user.save();
-
-            // Set cookie
-            res.cookie('refreshToken', refreshToken, {
-                httpOnly: true,
-                secure: process.env.NODE_ENV === 'production',
-                sameSite: 'strict',
-                maxAge: 7 * 24 * 60 * 60 * 1000
-            });
-
-            res.json({
-                success: true,
-                message: 'Email verified successfully! Welcome to DaoShop!',
-                data: {
-                    user: {
-                        id: user._id,
-                        userName: user.userName,
-                        email: user.email,
-                        isEmailVerified: user.isEmailVerified
-                    },
-                    accessToken
-                }
-            });
-
-        } catch (error) {
-            console.error('Verify OTP error:', error);
-            res.status(500).json({
-                success: false,
-                message: 'Internal server error'
-            });
-        }
-    }
-
-    // Gửi lại OTP
+    // Resend OTP
     async resendOTP(req, res) {
         try {
             const errors = validationResult(req);
@@ -170,30 +130,11 @@ class UserController {
 
             const { email } = req.body;
 
-            // Tìm user
-            const user = await User.findOne({ email });
-            if (!user) {
-                return res.status(404).json({
-                    success: false,
-                    message: 'User not found'
-                });
-            }
+            // Resend OTP
+            const { user, otp } = await AuthService.resendOTP(email);
 
-            // Kiểm tra đã verify chưa
-            if (user.isEmailVerified) {
-                return res.status(400).json({
-                    success: false,
-                    message: 'Email already verified'
-                });
-            }
-
-            // Tạo OTP mới
-            const otp = user.generateOTP();
-            await user.save();
-
-            // Gửi OTP qua email
+            // Send OTP email
             const emailResult = await EmailService.sendOTPEmail(email, otp, user.userName);
-
             if (!emailResult.success) {
                 return res.status(500).json({
                     success: false,
@@ -212,57 +153,19 @@ class UserController {
 
         } catch (error) {
             console.error('Resend OTP error:', error);
-            res.status(500).json({
+            const statusCode = error.message.includes('not found') ? 404 : 400;
+            res.status(statusCode).json({
                 success: false,
-                message: 'Internal server error'
+                message: error.message
             });
         }
     }
 
-    // Google OAuth callback
-    async googleCallback(req, res) {
-        try {
-            const user = req.user;
-
-            if (!user) {
-                console.log('❌ No user in Google callback');
-                return res.redirect(`${process.env.FRONTEND_URL}/login?error=oauth_failed`);
-            }
-
-            console.log('✅ Google OAuth success for user:', user.email);
-
-            // Tạo tokens
-            const { accessToken, refreshToken } = user.generateTokens();
-            user.refreshToken = refreshToken;
-            await user.save();
-
-            // Set cookie
-            res.cookie('refreshToken', refreshToken, {
-                httpOnly: true,
-                secure: process.env.NODE_ENV === 'production',
-                sameSite: 'strict',
-                maxAge: 7 * 24 * 60 * 60 * 1000
-            });
-
-            // Redirect về frontend với token
-            const redirectUrl = `${process.env.FRONTEND_URL}/auth/success?token=${accessToken}`;
-            console.log('🔄 Redirecting to:', redirectUrl);
-            res.redirect(redirectUrl);
-
-        } catch (error) {
-            console.error('❌ Google callback error:', error);
-            res.redirect(`${process.env.FRONTEND_URL}/login?error=server_error`);
-        }
-    }
-
-    // Login truyền thống (email/username + password)
+    // Login
     async login(req, res) {
         try {
-            console.log('🔍 Login attempt with body:', req.body);
-
             const errors = validationResult(req);
             if (!errors.isEmpty()) {
-                console.log('❌ Validation errors:', errors.array());
                 return res.status(400).json({
                     success: false,
                     message: 'Validation failed',
@@ -270,92 +173,21 @@ class UserController {
                 });
             }
 
-            // ✅ FIX: Accept cả identifier và userName
             const { identifier, userName, password } = req.body;
-            const loginIdentifier = identifier || userName; // Ưu tiên identifier, fallback userName
+            const loginIdentifier = identifier || userName;
 
-            // ✅ Kiểm tra dữ liệu đầu vào
             if (!loginIdentifier || !password) {
-                console.log('❌ Missing identifier/userName or password:', {
-                    identifier,
-                    userName,
-                    loginIdentifier,
-                    password: password ? '***' : 'missing'
-                });
                 return res.status(400).json({
                     success: false,
                     message: 'Email/Username and password are required'
                 });
             }
 
-            console.log('🔍 Login data:', {
-                loginIdentifier: loginIdentifier,
-                passwordLength: password?.length,
-                identifierType: typeof loginIdentifier
-            });
+            // Login user
+            const user = await AuthService.loginUser(loginIdentifier, password);
 
-            // Tìm user bằng email hoặc username
-            const user = await User.findByEmailOrUsername(loginIdentifier);
-
-            console.log('🔍 User search result:', user ? {
-                id: user._id,
-                email: user.email,
-                userName: user.userName,
-                isActive: user.isActive,
-                isEmailVerified: user.isEmailVerified
-            } : 'Not found');
-
-            if (!user || !user.isActive) {
-                console.log('❌ User not found or inactive');
-                return res.status(401).json({
-                    success: false,
-                    message: 'Invalid credentials'
-                });
-            }
-
-            // Kiểm tra nếu user đăng ký qua Google
-            if (user.googleId && user.password && user.password.startsWith('google_oauth_')) {
-                console.log('❌ User registered with Google');
-                return res.status(401).json({
-                    success: false,
-                    message: 'This account was created with Google. Please use Google Sign-In.',
-                    loginMethod: 'google'
-                });
-            }
-
-            // Kiểm tra email đã được verify chưa
-            if (!user.isEmailVerified) {
-                console.log('❌ Email not verified');
-                return res.status(401).json({
-                    success: false,
-                    message: 'Please verify your email before logging in',
-                    data: {
-                        email: user.email,
-                        needVerification: true
-                    }
-                });
-            }
-
-            // Kiểm tra password
-            console.log('🔍 Checking password...');
-            const isValidPassword = await user.comparePassword(password);
-            console.log('🔍 Password valid:', isValidPassword);
-
-            if (!isValidPassword) {
-                console.log('❌ Invalid password');
-                return res.status(401).json({
-                    success: false,
-                    message: 'Invalid credentials'
-                });
-            }
-
-            // Tạo tokens
-            console.log('🔍 Generating tokens...');
-            const { accessToken, refreshToken } = user.generateTokens();
-
-            user.refreshToken = refreshToken;
-            await user.save();
-            console.log('✅ User updated with refresh token');
+            // Generate tokens
+            const { accessToken, refreshToken } = await AuthService.generateUserTokens(user);
 
             // Set cookie
             res.cookie('refreshToken', refreshToken, {
@@ -364,8 +196,6 @@ class UserController {
                 sameSite: 'strict',
                 maxAge: 7 * 24 * 60 * 60 * 1000
             });
-
-            console.log('✅ Login successful for user:', user.email);
 
             res.json({
                 success: true,
@@ -384,93 +214,58 @@ class UserController {
             });
 
         } catch (error) {
-            console.error('❌ Login error details:', {
-                message: error.message,
-                stack: error.stack,
-                name: error.name
-            });
-            res.status(500).json({
+            console.error('Login error:', error);
+
+            let statusCode = 500;
+            let message = 'Internal server error';
+
+            if (error.message === 'GOOGLE_USER') {
+                statusCode = 401;
+                message = 'This account was created with Google. Please use Google Sign-In.';
+            } else if (error.message === 'EMAIL_NOT_VERIFIED') {
+                statusCode = 401;
+                message = 'Please verify your email before logging in';
+            } else if (error.message.includes('Invalid credentials')) {
+                statusCode = 401;
+                message = 'Invalid credentials';
+            }
+
+            res.status(statusCode).json({
                 success: false,
-                message: 'Internal server error',
-                ...(process.env.NODE_ENV === 'development' && { error: error.message })
+                message: message
             });
         }
     }
 
-    // Email login cho Google users muốn set password
-    async emailLogin(req, res) {
+    // Google OAuth Callback
+    async googleCallback(req, res) {
         try {
-            const { email, password } = req.body;
+            const user = req.user;
 
-            const user = await User.findOne({ email });
             if (!user) {
-                return res.status(404).json({
-                    success: false,
-                    message: 'User not found'
-                });
+                return res.redirect(`${process.env.FRONTEND_URL}/login?error=oauth_failed`);
             }
 
-            // Nếu user chưa có password (Google user), cho phép set password
-            if (user.loginMethod === 'google' && !password) {
-                return res.status(400).json({
-                    success: false,
-                    message: 'Please set a password for email login',
-                    needSetPassword: true
-                });
-            }
+            // Generate OAuth response
+            const { accessToken, refreshToken, redirectUrl } = await GoogleOAuthService.generateOAuthResponse(user);
 
-            // Verify password
-            const isValidPassword = await user.comparePassword(password);
-            if (!isValidPassword) {
-                return res.status(401).json({
-                    success: false,
-                    message: 'Invalid password'
-                });
-            }
+            // Set cookie
+            res.cookie('refreshToken', refreshToken, {
+                httpOnly: true,
+                secure: process.env.NODE_ENV === 'production',
+                sameSite: 'strict',
+                maxAge: 7 * 24 * 60 * 60 * 1000
+            });
 
-            // Success login logic...
-            // (same as login method)
+            res.redirect(redirectUrl);
 
         } catch (error) {
-            console.error('Email login error:', error);
-            res.status(500).json({
-                success: false,
-                message: 'Internal server error'
-            });
+            console.error('Google callback error:', error);
+            res.redirect(`${process.env.FRONTEND_URL}/login?error=server_error`);
         }
     }
 
-    // Set password cho Google users
-    async setPassword(req, res) {
-        try {
-            const { email, password } = req.body;
-            const user = await User.findOne({ email });
-
-            if (!user || user.loginMethod !== 'google') {
-                return res.status(400).json({
-                    success: false,
-                    message: 'Invalid request'
-                });
-            }
-
-            user.password = password; // Will be hashed by pre-save hook
-            await user.save();
-
-            res.json({
-                success: true,
-                message: 'Password set successfully'
-            });
-
-        } catch (error) {
-            console.error('Set password error:', error);
-            res.status(500).json({
-                success: false,
-                message: 'Internal server error'
-            });
-        }
-    }
-
-    // Refresh token
+    // Refresh Token
     async refreshToken(req, res) {
         try {
             const refreshToken = req.cookies.refreshToken;
@@ -482,28 +277,10 @@ class UserController {
                 });
             }
 
-            // Verify refresh token
-            const decoded = jwt.verify(refreshToken, process.env.REFRESH_TOKEN_SECRET);
-            const user = await User.findOne({
-                _id: decoded.userId,
-                refreshToken: refreshToken
-            });
+            // Refresh token
+            const { accessToken, refreshToken: newRefreshToken } = await AuthService.refreshUserToken(refreshToken);
 
-            if (!user || !user.isActive) {
-                return res.status(403).json({
-                    success: false,
-                    message: 'Invalid refresh token'
-                });
-            }
-
-            // Tạo tokens mới
-            const { accessToken, refreshToken: newRefreshToken } = user.generateTokens();
-
-            // Cập nhật refresh token
-            user.refreshToken = newRefreshToken;
-            await user.save();
-
-            // Set cookie mới
+            // Set new cookie
             res.cookie('refreshToken', newRefreshToken, {
                 httpOnly: true,
                 secure: process.env.NODE_ENV === 'production',
@@ -514,9 +291,7 @@ class UserController {
             res.json({
                 success: true,
                 message: 'Token refreshed successfully',
-                data: {
-                    accessToken
-                }
+                data: { accessToken }
             });
 
         } catch (error) {
@@ -528,20 +303,12 @@ class UserController {
         }
     }
 
-    // Đăng xuất
+    // Logout
     async logout(req, res) {
         try {
             const refreshToken = req.cookies.refreshToken;
 
-            if (refreshToken) {
-                // Xóa refresh token khỏi database
-                await User.updateOne(
-                    { refreshToken },
-                    { $unset: { refreshToken: 1 } }
-                );
-            }
-
-            // Xóa cookie
+            await AuthService.logoutUser(refreshToken);
             res.clearCookie('refreshToken');
 
             res.json({
@@ -558,21 +325,16 @@ class UserController {
         }
     }
 
-    // Lấy thông tin user hiện tại
+    // Get Profile
     async getProfile(req, res) {
         try {
-            const user = req.user;
+            const userProfile = await UserService.getUserProfile(req.user._id);
+
             res.json({
                 success: true,
-                data: {
-                    user: {
-                        id: user._id,
-                        userName: user.userName,
-                        email: user.email,
-                        createdAt: user.createdAt
-                    }
-                }
+                data: { user: userProfile }
             });
+
         } catch (error) {
             console.error('Get profile error:', error);
             res.status(500).json({
@@ -580,6 +342,16 @@ class UserController {
                 message: 'Internal server error'
             });
         }
+    }
+
+    // ✅ Utility method (optional - cho clean code)
+    setRefreshTokenCookie(res, refreshToken) {
+        res.cookie('refreshToken', refreshToken, {
+            httpOnly: true,
+            secure: process.env.NODE_ENV === 'production',
+            sameSite: 'strict',
+            maxAge: 7 * 24 * 60 * 60 * 1000
+        });
     }
 }
 
