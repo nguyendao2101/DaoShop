@@ -1,25 +1,20 @@
 // src/index.js
+require('dotenv').config();
+
 const express = require('express');
-const dotenv = require('dotenv');
-const cookieParser = require('cookie-parser');
 const cors = require('cors');
+const cookieParser = require('cookie-parser');
 const session = require('express-session');
-
-// ✅ Load environment variables TRƯỚC khi import passport
-dotenv.config();
-
-const passport = require('./config/passport'); // Import sau khi dotenv.config()
 
 const app = express();
 const PORT = process.env.PORT || 8797;
 
 // Database
 const db = require('./config/db');
-db.connect();
 
-// Middleware
+// CORS
 app.use(cors({
-    origin: process.env.FRONTEND_URL || 'http://localhost:3002',
+    origin: ['http://localhost:3000', 'http://localhost:3001', 'http://localhost:3002'],
     credentials: true
 }));
 
@@ -29,25 +24,70 @@ app.use(cookieParser());
 
 // Session
 app.use(session({
-    secret: process.env.ACCESS_TOKEN_SECRET,
+    secret: process.env.SESSION_SECRET || 'daoshop-secret',
     resave: false,
-    saveUninitialized: false,
-    cookie: {
-        secure: process.env.NODE_ENV === 'production',
-        maxAge: 24 * 60 * 60 * 1000
-    }
+    saveUninitialized: false
 }));
 
-// Passport middleware
+// Passport
+const passport = require('./config/passport');
 app.use(passport.initialize());
 app.use(passport.session());
+
+// ✅ Swagger setup
+try {
+    const { specs, swaggerUi } = require('./config/swagger');
+    app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
+    console.log('✅ Swagger configured successfully');
+} catch (error) {
+    console.log('⚠️ Swagger configuration failed:', error.message);
+}
 
 // Routes
 const route = require('./routes');
 route(app);
 
-app.listen(PORT, () => {
-    console.log('🚀 Server started on http://localhost:' + PORT);
+// Test route
+app.get('/test-google', (req, res) => {
+    res.send(`
+        <h1>DaoShop API Test</h1>
+        <p><a href="/api-docs">📚 API Documentation</a></p>
+        <p><a href="/api/auth/google">🔐 Google Login</a></p>
+    `);
 });
 
-module.exports = app;
+// 404 handler
+app.use('*', (req, res) => {
+    res.status(404).json({
+        success: false,
+        message: 'Route not found',
+        availableRoutes: {
+            docs: '/api-docs',
+            auth: '/api/auth/*',
+            test: '/test-google'
+        }
+    });
+});
+
+// Error handler
+app.use((err, req, res, next) => {
+    console.error('❌ Error:', err);
+    res.status(500).json({
+        success: false,
+        message: 'Internal server error'
+    });
+});
+
+// Start server
+db.connect()
+    .then(() => {
+        app.listen(PORT, () => {
+            console.log(`🚀 Server: http://localhost:${PORT}`);
+            console.log(`📚 Docs: http://localhost:${PORT}/api-docs`);
+            console.log(`🔍 Test: http://localhost:${PORT}/test-google`);
+        });
+    })
+    .catch(err => {
+        console.error('❌ Failed to start:', err);
+        process.exit(1);
+    });
