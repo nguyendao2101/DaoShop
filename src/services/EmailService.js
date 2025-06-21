@@ -1,14 +1,15 @@
 const nodemailer = require('nodemailer');
+const env = require('../config/env');
 
 class EmailService {
     constructor() {
         this.transporter = nodemailer.createTransport({
-            host: process.env.EMAIL_HOST,
-            port: process.env.EMAIL_PORT,
+            host: env.email.host,
+            port: env.email.port,
             secure: false, // true for 465, false for other ports
             auth: {
-                user: process.env.EMAIL_USER,
-                pass: process.env.EMAIL_PASS
+                user: env.email.user,
+                pass: env.email.pass
             }
         });
     }
@@ -16,7 +17,7 @@ class EmailService {
     async sendOTPEmail(email, otp, userName) {
         try {
             const mailOptions = {
-                from: process.env.EMAIL_FROM,
+                from: env.email.from,
                 to: email,
                 subject: 'DaoShop - Xác thực tài khoản',
                 html: `
@@ -57,7 +58,7 @@ class EmailService {
     async sendWelcomeEmail(email, userName) {
         try {
             const mailOptions = {
-                from: process.env.EMAIL_FROM,
+                from: env.email.from,
                 to: email,
                 subject: 'DaoShop - Chào mừng bạn!',
                 html: `

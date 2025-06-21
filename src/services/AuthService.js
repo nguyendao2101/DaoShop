@@ -2,6 +2,7 @@
 const User = require('../models/UserModel');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
+const env = require('../config/env'); // Import config for environment variables
 
 class AuthService {
     // Kiểm tra user tồn tại
@@ -105,7 +106,7 @@ class AuthService {
 
     // Refresh token
     async refreshUserToken(refreshToken) {
-        const decoded = jwt.verify(refreshToken, process.env.REFRESH_TOKEN_SECRET);
+        const decoded = jwt.verify(refreshToken, env.jwt.refreshTokenSecret);
         const user = await User.findOne({
             _id: decoded.userId,
             refreshToken: refreshToken

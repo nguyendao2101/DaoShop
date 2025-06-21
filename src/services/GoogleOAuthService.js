@@ -1,5 +1,6 @@
 // src/services/GoogleOAuthService.js
 const User = require('../models/UserModel');
+const env = require('../config/env');
 
 class GoogleOAuthService {
     // Generate username từ email
@@ -101,7 +102,7 @@ class GoogleOAuthService {
         user.refreshToken = refreshToken;
         await user.save();
 
-        const redirectUrl = `${process.env.FRONTEND_URL}/auth/success?token=${accessToken}`;
+        const redirectUrl = `${env.frontend.url}/auth/success?token=${accessToken}`;
 
         return { accessToken, refreshToken, redirectUrl };
     }

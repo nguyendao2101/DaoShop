@@ -1,6 +1,8 @@
 // src/models/User.js
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
+const env = require('../config/env');
+const jwt = require('jsonwebtoken');
 
 const userSchema = new mongoose.Schema({
     userName: {
@@ -81,24 +83,15 @@ userSchema.methods.comparePassword = async function (candidatePassword) {
 
 // Method tạo tokens
 userSchema.methods.generateTokens = function () {
-    const jwt = require('jsonwebtoken');
+    // ✅ Định nghĩa payload
+    const payload = {
+        userId: this._id,
+        userName: this.userName,
+        email: this.email
+    };
 
-    const accessToken = jwt.sign(
-        {
-            userId: this._id,
-            userName: this.userName
-        },
-        process.env.ACCESS_TOKEN_SECRET,
-        { expiresIn: '15m' }
-    );
-
-    const refreshToken = jwt.sign(
-        {
-            userId: this._id
-        },
-        process.env.REFRESH_TOKEN_SECRET,
-        { expiresIn: '7d' }
-    );
+    const accessToken = jwt.sign(payload, env.jwt.secret, { expiresIn: env.jwt.expiresIn });
+    const refreshToken = jwt.sign(payload, env.jwt.refreshSecret, { expiresIn: env.jwt.refreshExpiresIn });
 
     return { accessToken, refreshToken };
 };

@@ -1,6 +1,6 @@
 // src/middlewares/rateLimiter.js
 const rateLimit = require('express-rate-limit');
-
+const env = require('./env');
 /**
  * Tạo rate limiter với các cấu hình tùy chỉnh
  * @param {number} windowMs - Thời gian window (milliseconds)
@@ -20,7 +20,7 @@ const createRateLimiter = (windowMs, max, message) => {
         standardHeaders: true, // Return rate limit info in the `RateLimit-*` headers
         legacyHeaders: false, // Disable the `X-RateLimit-*` headers
         // Trả về true để bỏ qua rate limiting trong môi trường development
-        skip: (req) => process.env.NODE_ENV === 'development' && process.env.DISABLE_RATE_LIMIT === 'true'
+        skip: (req) => env.env === 'development' && env.rateLimiting.disabled
     });
 };
 
@@ -41,14 +41,14 @@ const authLimiter = createRateLimiter(
 // Registration limiter - ngăn đăng ký hàng loạt
 const registerLimiter = createRateLimiter(
     60 * 60 * 1000, // 1 hour
-    3, // 3 registrations per hour
+    6, // 3 registrations per hour
     'Too many registration attempts, please try again after 1 hour'
 );
 
 // OTP limiter - giới hạn gửi OTP
 const otpLimiter = createRateLimiter(
     10 * 60 * 1000, // 10 minutes
-    3, // 3 OTP requests per 10 minutes
+    6, // 3 OTP requests per 10 minutes
     'Too many OTP requests, please try again after 10 minutes'
 );
 

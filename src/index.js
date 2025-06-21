@@ -1,5 +1,5 @@
 // src/index.js
-require('dotenv').config();
+const env = require('./config/env');
 const prettify = require('express-prettify');
 const express = require('express');
 const cors = require('cors');
@@ -8,7 +8,7 @@ const session = require('express-session');
 const { globalLimiter } = require('./config/rateLimiter');
 
 const app = express();
-const PORT = process.env.PORT || 8797;
+const PORT = env.PORT || 8797;;
 
 // Database
 const db = require('./config/db');
@@ -31,7 +31,7 @@ app.use(prettify({ query: 'pretty' }));
 
 // Session
 app.use(session({
-    secret: process.env.SESSION_SECRET || 'daoshop-secret',
+    secret: env.session.secret || 'daoshop-secret',
     resave: false,
     saveUninitialized: false
 }));

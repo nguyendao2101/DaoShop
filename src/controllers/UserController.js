@@ -5,6 +5,7 @@ const GoogleOAuthService = require('../services/GoogleOAuthService');
 const UserService = require('../services/UserService');
 const EmailService = require('../services/EmailService');
 const User = require('../models/UserModel');
+const env = require('../config/env');
 
 class UserController {
     // Verify OTP
@@ -33,7 +34,7 @@ class UserController {
             // ✅ FIX: Set cookie directly instead of using this.setRefreshTokenCookie
             res.cookie('refreshToken', refreshToken, {
                 httpOnly: true,
-                secure: process.env.NODE_ENV === 'production',
+                secure: env.env === 'production',
                 sameSite: 'strict',
                 maxAge: 7 * 24 * 60 * 60 * 1000 // 7 days
             });
@@ -192,7 +193,7 @@ class UserController {
             // Set cookie
             res.cookie('refreshToken', refreshToken, {
                 httpOnly: true,
-                secure: process.env.NODE_ENV === 'production',
+                secure: env.env === 'production',
                 sameSite: 'strict',
                 maxAge: 7 * 24 * 60 * 60 * 1000
             });
@@ -243,7 +244,7 @@ class UserController {
             const user = req.user;
 
             if (!user) {
-                return res.redirect(`${process.env.FRONTEND_URL}/login?error=oauth_failed`);
+                return res.redirect(`${env.frontend.url}/login?error=oauth_failed`);
             }
 
             // Generate OAuth response
@@ -252,7 +253,7 @@ class UserController {
             // Set cookie
             res.cookie('refreshToken', refreshToken, {
                 httpOnly: true,
-                secure: process.env.NODE_ENV === 'production',
+                secure: env.env === 'production',
                 sameSite: 'strict',
                 maxAge: 7 * 24 * 60 * 60 * 1000
             });
@@ -261,7 +262,7 @@ class UserController {
 
         } catch (error) {
             console.error('Google callback error:', error);
-            res.redirect(`${process.env.FRONTEND_URL}/login?error=server_error`);
+            res.redirect(`${env.frontend.url}/login?error=server_error`);
         }
     }
 
@@ -283,7 +284,7 @@ class UserController {
             // Set new cookie
             res.cookie('refreshToken', newRefreshToken, {
                 httpOnly: true,
-                secure: process.env.NODE_ENV === 'production',
+                secure: env.env === 'production',
                 sameSite: 'strict',
                 maxAge: 7 * 24 * 60 * 60 * 1000
             });
@@ -348,7 +349,7 @@ class UserController {
     setRefreshTokenCookie(res, refreshToken) {
         res.cookie('refreshToken', refreshToken, {
             httpOnly: true,
-            secure: process.env.NODE_ENV === 'production',
+            secure: env.env === 'production',
             sameSite: 'strict',
             maxAge: 7 * 24 * 60 * 60 * 1000
         });
