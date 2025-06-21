@@ -2,8 +2,8 @@
 const express = require('express');
 const router = express.Router();
 const passport = require('passport');
-const UserController = require('../controllers/UserController');
-const { authenticateToken } = require('../middlewares/AuthMiddleware');
+const UserController = require('../controllers/user.controller');
+const { authenticateToken } = require('../middlewares/authMiddleware');
 const {
     authLimiter,
     registerLimiter,

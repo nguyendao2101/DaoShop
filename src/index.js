@@ -47,7 +47,7 @@ app.use(passport.session());
 
 // ✅ Swagger setup
 try {
-    const { specs, swaggerUi } = require('./config/swagger');
+    const { specs, swaggerUi } = require('./docs/swagger');
     app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
     logger.info('✅ Swagger configured successfully');
 } catch (error) {

@@ -3,8 +3,8 @@ const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const JwtStrategy = require('passport-jwt').Strategy;
 const ExtractJwt = require('passport-jwt').ExtractJwt;
-const User = require('../models/UserModel');
-const GoogleOAuthService = require('../services/GoogleOAuthService');
+const User = require('../models/user.model');
+const GoogleOAuthService = require('../services/googleOAuth.service');
 const env = require('./env');
 const logger = require('./logger');
 

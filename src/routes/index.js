@@ -1,4 +1,4 @@
-const authRouter = require('./auth');
+const authRouter = require('./auth.route');
 
 function route(app) {
     app.use('/api/auth', authRouter);

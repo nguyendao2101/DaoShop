@@ -1,10 +1,10 @@
 // src/controllers/UserController.js
 const { validationResult } = require('express-validator');
-const AuthService = require('../services/AuthService');
-const GoogleOAuthService = require('../services/GoogleOAuthService');
-const UserService = require('../services/UserService');
-const EmailService = require('../services/EmailService');
-const User = require('../models/UserModel');
+const AuthService = require('../services/auth.service');
+const GoogleOAuthService = require('../services/googleOAuth.service');
+const UserService = require('../services/user.service');
+const EmailService = require('../services/email.service');
+const User = require('../models/user.model');
 const env = require('../config/env');
 const logger = require('../config/logger');
 

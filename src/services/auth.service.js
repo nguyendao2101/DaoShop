@@ -1,5 +1,5 @@
 // src/services/AuthService.js
-const User = require('../models/UserModel');
+const User = require('../models/user.model');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
 const env = require('../config/env'); // Import config for environment variables

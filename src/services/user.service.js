@@ -1,5 +1,5 @@
 // src/services/UserService.js
-const User = require('../models/UserModel');
+const User = require('../models/user.model');
 
 class UserService {
     // Get user profile
