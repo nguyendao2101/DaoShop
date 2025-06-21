@@ -1,6 +1,6 @@
 // src/index.js
 require('dotenv').config();
-
+const prettify = require('express-prettify');
 const express = require('express');
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
@@ -22,6 +22,12 @@ app.use(cors({
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
+
+// Thêm vào sau các middleware cơ bản
+app.use(express.json());
+app.use(cookieParser());
+// Thêm prettify middleware
+app.use(prettify({ query: 'pretty' }));
 
 // Session
 app.use(session({
