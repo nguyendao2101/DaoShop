@@ -6,6 +6,7 @@ const UserService = require('../services/UserService');
 const EmailService = require('../services/EmailService');
 const User = require('../models/UserModel');
 const env = require('../config/env');
+const logger = require('../config/logger');
 
 class UserController {
     // Verify OTP
@@ -54,7 +55,7 @@ class UserController {
             });
 
         } catch (error) {
-            console.error('Verify OTP error:', error);
+            logger.error('Verify OTP error:', error);
             const statusCode = error.message.includes('not found') ? 404 : 400;
             res.status(statusCode).json({
                 success: false,
@@ -109,7 +110,7 @@ class UserController {
             });
 
         } catch (error) {
-            console.error('Register error:', error);
+            logger.error('Register error:', error);
             res.status(500).json({
                 success: false,
                 message: 'Internal server error'
@@ -153,7 +154,7 @@ class UserController {
             });
 
         } catch (error) {
-            console.error('Resend OTP error:', error);
+            logger.error('Resend OTP error:', error);
             const statusCode = error.message.includes('not found') ? 404 : 400;
             res.status(statusCode).json({
                 success: false,
@@ -215,7 +216,7 @@ class UserController {
             });
 
         } catch (error) {
-            console.error('Login error:', error);
+            logger.error('Login error:', error);
 
             let statusCode = 500;
             let message = 'Internal server error';
@@ -261,7 +262,7 @@ class UserController {
             res.redirect(redirectUrl);
 
         } catch (error) {
-            console.error('Google callback error:', error);
+            logger.error('Google callback error:', error);
             res.redirect(`${env.frontend.url}/login?error=server_error`);
         }
     }
@@ -296,7 +297,7 @@ class UserController {
             });
 
         } catch (error) {
-            console.error('Refresh token error:', error);
+            logger.error('Refresh token error:', error);
             res.status(403).json({
                 success: false,
                 message: 'Invalid refresh token'
@@ -318,7 +319,7 @@ class UserController {
             });
 
         } catch (error) {
-            console.error('Logout error:', error);
+            logger.error('Logout error:', error);
             res.status(500).json({
                 success: false,
                 message: 'Internal server error'
@@ -337,7 +338,7 @@ class UserController {
             });
 
         } catch (error) {
-            console.error('Get profile error:', error);
+            logger.error('Get profile error:', error);
             res.status(500).json({
                 success: false,
                 message: 'Internal server error'

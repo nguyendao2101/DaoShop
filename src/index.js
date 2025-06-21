@@ -5,6 +5,9 @@ const express = require('express');
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
+const logger = require('./config/logger');
+const requestLogger = require('./middlewares/requestLogger');
+const { errorLogger, errorHandler } = require('./middlewares/errorLogger');
 const { globalLimiter } = require('./config/rateLimiter');
 
 const app = express();
@@ -15,7 +18,7 @@ const db = require('./config/db');
 
 // CORS
 app.use(cors({
-    origin: ['http://localhost:3000', 'http://localhost:3001', 'http://localhost:3002'],
+    origin: [env.frontend.url],
     credentials: true
 }));
 
@@ -25,9 +28,10 @@ app.use(cookieParser());
 
 // Thêm vào sau các middleware cơ bản
 app.use(express.json());
-app.use(cookieParser());
-// Thêm prettify middleware
 app.use(prettify({ query: 'pretty' }));
+
+app.use(requestLogger);
+
 
 // Session
 app.use(session({
@@ -45,14 +49,17 @@ app.use(passport.session());
 try {
     const { specs, swaggerUi } = require('./config/swagger');
     app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
-    console.log('✅ Swagger configured successfully');
+    logger.info('✅ Swagger configured successfully');
 } catch (error) {
-    console.log('⚠️ Swagger configuration failed:', error.message);
+    logger.info('⚠️ Swagger configuration failed:', error.message);
 }
 
 // Routes
 const route = require('./routes');
 route(app);
+// Error logger - đặt sau tất cả các routes
+app.use(errorLogger);
+app.use(errorHandler);
 
 // Test route
 app.get('/test-google', (req, res) => {
@@ -79,7 +86,7 @@ app.use('*', (req, res) => {
 
 // Error handler
 app.use((err, req, res, next) => {
-    console.error('❌ Error:', err);
+    logger.error('❌ Error:', err);
     res.status(500).json({
         success: false,
         message: 'Internal server error'
@@ -90,12 +97,24 @@ app.use((err, req, res, next) => {
 db.connect()
     .then(() => {
         app.listen(PORT, () => {
-            console.log(`🚀 Server: http://localhost:${PORT}`);
-            console.log(`📚 Docs: http://localhost:${PORT}/api-docs`);
-            console.log(`🔍 Test: http://localhost:${PORT}/test-google`);
+            logger.info(`🚀 Server: http://localhost:${PORT}`);
+            logger.info(`📚 Docs: http://localhost:${PORT}/api-docs`);
+            logger.info(`🔍 Test: http://localhost:${PORT}/test-google`);
         });
     })
     .catch(err => {
-        console.error('❌ Failed to start:', err);
+        logger.error('❌ Failed to start:', err);
         process.exit(1);
     });
+
+// Handle uncaught exceptions
+process.on('uncaughtException', (err) => {
+    logger.error('UNCAUGHT EXCEPTION', { error: err.stack });
+    process.exit(1);
+});
+
+// Handle unhandled promise rejections
+process.on('unhandledRejection', (reason, promise) => {
+    logger.error('UNHANDLED REJECTION', { reason, promise });
+    process.exit(1);
+});

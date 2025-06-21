@@ -1,5 +1,6 @@
 const nodemailer = require('nodemailer');
 const env = require('../config/env');
+const logger = require('../config/logger');
 
 class EmailService {
     constructor() {
@@ -47,10 +48,10 @@ class EmailService {
             };
 
             const result = await this.transporter.sendMail(mailOptions);
-            console.log('OTP Email sent successfully:', result.messageId);
+            logger.info('OTP Email sent successfully:', result.messageId);
             return { success: true, messageId: result.messageId };
         } catch (error) {
-            console.error('Send OTP email error:', error);
+            logger.error('Send OTP email error:', error);
             return { success: false, error: error.message };
         }
     }
@@ -82,10 +83,10 @@ class EmailService {
             };
 
             const result = await this.transporter.sendMail(mailOptions);
-            console.log('Welcome Email sent successfully:', result.messageId);
+            logger.info('Welcome Email sent successfully:', result.messageId);
             return { success: true, messageId: result.messageId };
         } catch (error) {
-            console.error('Send welcome email error:', error);
+            logger.error('Send welcome email error:', error);
             return { success: false, error: error.message };
         }
     }
