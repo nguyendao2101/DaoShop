@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const env = require('../config/env');
 const jwt = require('jsonwebtoken');
+const logger = require('../config/logger');
 
 const userSchema = new mongoose.Schema({
     userName: {
@@ -101,39 +102,39 @@ userSchema.methods.generateOTP = function () {
     const otp = Math.floor(100000 + Math.random() * 900000).toString();
     this.otp = otp;
     this.otpExpires = new Date(Date.now() + 10 * 60 * 1000); // 10 phút
-    console.log('🔑 Generated OTP:', otp, 'Expires at:', this.otpExpires);
+    logger.info('🔑 Generated OTP:', otp, 'Expires at:', this.otpExpires);
     return otp;
 };
 
 // Method verify OTP
 userSchema.methods.verifyOTP = function (inputOTP) {
-    console.log('🔍 Debugging OTP verification:');
-    console.log('- Input OTP:', inputOTP);
-    console.log('- Stored OTP:', this.otp);
-    console.log('- OTP Expires:', this.otpExpires);
-    console.log('- Current Time:', new Date());
+    logger.info('🔍 Debugging OTP verification:');
+    logger.info('- Input OTP:', inputOTP);
+    logger.info('- Stored OTP:', this.otp);
+    logger.info('- OTP Expires:', this.otpExpires);
+    logger.info('- Current Time:', new Date());
 
     if (!this.otp || !this.otpExpires) {
-        console.log('❌ No OTP or expiry found');
+        logger.info('❌ No OTP or expiry found');
         return false;
     }
 
     if (new Date() > this.otpExpires) {
-        console.log('❌ OTP expired');
+        logger.info('❌ OTP expired');
         return false;
     }
 
     const isValid = this.otp === inputOTP;
-    console.log('- OTP Match?', isValid);
+    logger.info('- OTP Match?', isValid);
 
     return isValid;
 };
 userSchema.statics.findByEmailOrUsername = function (identifier) {
-    console.log('🔍 findByEmailOrUsername called with:', identifier);
+    logger.info('findByEmailOrUsername called with:', identifier);
 
     // ✅ Kiểm tra identifier có tồn tại không
     if (!identifier) {
-        console.log('❌ Identifier is undefined or null');
+        logger.info('Identifier is undefined or null');
         return null;
     }
 
@@ -141,11 +142,11 @@ userSchema.statics.findByEmailOrUsername = function (identifier) {
     const searchIdentifier = String(identifier).trim();
 
     if (!searchIdentifier) {
-        console.log('❌ Identifier is empty after trim');
+        logger.info('❌ Identifier is empty after trim');
         return null;
     }
 
-    console.log('🔍 Searching with identifier:', searchIdentifier);
+    logger.info('🔍 Searching with identifier:', searchIdentifier);
 
     return this.findOne({
         $or: [

@@ -1,0 +1,24 @@
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-06-21T10:37:39.746Z"}
+{"level":"info","message":"🚀 Server: http://localhost:8797","timestamp":"2025-06-21T10:37:39.841Z"}
+{"level":"info","message":"📚 Docs: http://localhost:8797/api-docs","timestamp":"2025-06-21T10:37:39.842Z"}
+{"level":"info","message":"🔍 Test: http://localhost:8797/test-google","timestamp":"2025-06-21T10:37:39.842Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-06-21T10:37:48.818Z"}
+{"level":"info","message":"🚀 Server: http://localhost:8797","timestamp":"2025-06-21T10:37:48.909Z"}
+{"level":"info","message":"📚 Docs: http://localhost:8797/api-docs","timestamp":"2025-06-21T10:37:48.909Z"}
+{"level":"info","message":"🔍 Test: http://localhost:8797/test-google","timestamp":"2025-06-21T10:37:48.910Z"}
+{"level":"info","message":"🔑 Google OAuth Config:","timestamp":"2025-06-21T15:47:12.603Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-06-21T15:47:12.608Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-06-21T15:47:12.609Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-06-21T15:47:12.610Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-06-21T15:47:12.978Z"}
+{"level":"info","message":"🚀 Server: http://localhost:8797","timestamp":"2025-06-21T15:47:13.163Z"}
+{"level":"info","message":"📚 Docs: http://localhost:8797/api-docs","timestamp":"2025-06-21T15:47:13.164Z"}
+{"level":"info","message":"🔍 Test: http://localhost:8797/test-google","timestamp":"2025-06-21T15:47:13.165Z"}
+{"level":"info","message":"🔑 Google OAuth Config:","timestamp":"2025-06-21T15:47:27.180Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-06-21T15:47:27.184Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-06-21T15:47:27.185Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-06-21T15:47:27.186Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-06-21T15:47:27.385Z"}
+{"level":"info","message":"🚀 Server: http://localhost:8797","timestamp":"2025-06-21T15:47:27.515Z"}
+{"level":"info","message":"📚 Docs: http://localhost:8797/api-docs","timestamp":"2025-06-21T15:47:27.516Z"}
+{"level":"info","message":"🔍 Test: http://localhost:8797/test-google","timestamp":"2025-06-21T15:47:27.517Z"}
