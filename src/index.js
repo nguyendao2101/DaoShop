@@ -5,6 +5,7 @@ const express = require('express');
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
+const { globalLimiter } = require('./config/rateLimiter');
 
 const app = express();
 const PORT = process.env.PORT || 8797;
@@ -55,6 +56,7 @@ app.get('/test-google', (req, res) => {
         <p><a href="/api/auth/google">🔐 Google Login</a></p>
     `);
 });
+app.use('/api', globalLimiter);
 
 // 404 handler
 app.use('*', (req, res) => {

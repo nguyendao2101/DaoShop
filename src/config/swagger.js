@@ -8,7 +8,22 @@ const options = {
         info: {
             title: 'DaoShop API',
             version: '1.0.0',
-            description: 'API documentation for DaoShop e-commerce platform'
+            description: `
+# DaoShop API Documentation
+
+Complete API documentation for the DaoShop e-commerce platform.
+
+## Rate Limiting
+
+This API implements rate limiting to protect against abuse:
+
+- **Global**: 100 requests per 15 minutes per IP
+- **Authentication**: 5 login attempts per 15 minutes
+- **Registration**: 3 registrations per hour
+- **OTP**: 3 OTP requests per 10 minutes
+
+When rate limit is exceeded, the API returns HTTP 429 (Too Many Requests) with retry information.
+            `
         },
         servers: [
             {
@@ -39,6 +54,36 @@ const options = {
                     properties: {
                         success: { type: 'boolean', example: false },
                         message: { type: 'string', example: 'Error message' }
+                    }
+                },
+                RateLimitError: {
+                    type: 'object',
+                    properties: {
+                        success: {
+                            type: 'boolean',
+                            example: false
+                        },
+                        message: {
+                            type: 'string',
+                            example: 'Too many requests, please try again later'
+                        },
+                        retryAfter: {
+                            type: 'number',
+                            description: 'Số giây cần đợi trước khi thử lại',
+                            example: 900
+                        }
+                    }
+                }
+            },
+            responses: {
+                RateLimitExceeded: {
+                    description: 'Too Many Requests - Rate limit exceeded',
+                    content: {
+                        'application/json': {
+                            schema: {
+                                $ref: '#/components/schemas/RateLimitError'
+                            }
+                        }
                     }
                 }
             }

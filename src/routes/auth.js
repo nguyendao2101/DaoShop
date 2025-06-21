@@ -4,14 +4,19 @@ const router = express.Router();
 const passport = require('passport');
 const UserController = require('../controllers/UserController');
 const { authenticateToken } = require('../middlewares/AuthMiddleware');
+const {
+    authLimiter,
+    registerLimiter,
+    otpLimiter
+} = require('../config/rateLimiter');
 
-// ✅ Basic routes without complex patterns first
 /**
  * @swagger
  * /api/auth/register:
  *   post:
  *     summary: Register a new user
  *     tags: [Authentication]
+ *     description: Register with rate limiting (3 registrations per hour)
  *     requestBody:
  *       required: true
  *       content:
@@ -37,8 +42,10 @@ const { authenticateToken } = require('../middlewares/AuthMiddleware');
  *         description: Registration successful
  *       400:
  *         description: Validation error
+ *       429:
+ *         description: Too many registration attempts
  */
-router.post('/register', UserController.register);
+router.post('/register', registerLimiter, UserController.register);
 
 /**
  * @swagger
@@ -46,6 +53,7 @@ router.post('/register', UserController.register);
  *   post:
  *     summary: Verify OTP
  *     tags: [Authentication]
+ *     description: Verify OTP sent to user's email with rate limiting (5 attempts per hour)
  *     requestBody:
  *       required: true
  *       content:
@@ -61,7 +69,7 @@ router.post('/register', UserController.register);
  *       200:
  *         description: OTP verified successfully
  */
-router.post('/verify-otp', UserController.verifyOTP);
+router.post('/verify-otp', otpLimiter, UserController.verifyOTP);
 
 /**
  * @swagger
@@ -69,6 +77,7 @@ router.post('/verify-otp', UserController.verifyOTP);
  *   post:
  *     summary: Resend OTP
  *     tags: [Authentication]
+ *    description: Resend OTP to user's email with rate limiting (3 requests per hour)
  *     requestBody:
  *       required: true
  *       content:
@@ -82,7 +91,7 @@ router.post('/verify-otp', UserController.verifyOTP);
  *       200:
  *         description: OTP resent successfully
  */
-router.post('/resend-otp', UserController.resendOTP);
+router.post('/resend-otp', otpLimiter, UserController.resendOTP);
 
 /**
  * @swagger
@@ -90,6 +99,7 @@ router.post('/resend-otp', UserController.resendOTP);
  *   post:
  *     summary: User login
  *     tags: [Authentication]
+ *    description: Login with rate limiting (5 login attempts per hour)
  *     requestBody:
  *       required: true
  *       content:
@@ -105,7 +115,7 @@ router.post('/resend-otp', UserController.resendOTP);
  *       200:
  *         description: Login successful
  */
-router.post('/login', UserController.login);
+router.post('/login', authLimiter, UserController.login);
 
 /**
  * @swagger
