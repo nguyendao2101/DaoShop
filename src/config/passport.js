@@ -5,12 +5,12 @@ const JwtStrategy = require('passport-jwt').Strategy;
 const ExtractJwt = require('passport-jwt').ExtractJwt;
 const User = require('../models/UserModel');
 const GoogleOAuthService = require('../services/GoogleOAuthService');
-const env = require('./env'); // Thêm dòng import env
+const env = require('./env');
 
 // Debug logs để kiểm tra env variables
 console.log('🔑 Google OAuth Config:');
-console.log('- CLIENT_ID:', env.google.clientId ? 'Set ✅' : 'Missing ❌');
-console.log('- CLIENT_SECRET:', env.google.clientSecret ? 'Set ✅' : 'Missing ❌');
+console.log('- CLIENT_ID:', env.google.clientId ? 'Set' : 'Missing');
+console.log('- CLIENT_SECRET:', env.google.clientSecret ? 'Set' : 'Missing');
 console.log('- CALLBACK_URL:', env.google.callbackUrl);
 
 // Google OAuth Strategy
@@ -30,11 +30,11 @@ passport.use(new GoogleStrategy({
         // Sử dụng GoogleOAuthService
         const user = await GoogleOAuthService.processGoogleUser(profile);
 
-        console.log('✅ Google OAuth success for user:', user.email);
+        console.log('Google OAuth success for user:', user.email);
         return done(null, user);
 
     } catch (error) {
-        console.error('❌ Google OAuth error:', {
+        console.error('Google OAuth error:', {
             message: error.message,
             stack: error.stack
         });
@@ -52,14 +52,14 @@ passport.use(new JwtStrategy({
 
         const user = await User.findById(payload.userId);
         if (user && user.isActive) {
-            console.log('✅ JWT user found:', user.email);
+            console.log('JWT user found:', user.email);
             return done(null, user);
         } else {
-            console.log('❌ JWT user not found or inactive');
+            console.log('JWT user not found or inactive');
             return done(null, false);
         }
     } catch (error) {
-        console.error('❌ JWT Strategy error:', error);
+        console.error('JWT Strategy error:', error);
         return done(error, false);
     }
 }));
@@ -76,14 +76,14 @@ passport.deserializeUser(async (id, done) => {
         console.log('🔍 Deserializing user:', id);
         const user = await User.findById(id);
         if (user && user.isActive) {
-            console.log('✅ User deserialized:', user.email);
+            console.log('User deserialized:', user.email);
             done(null, user);
         } else {
-            console.log('❌ User not found during deserialization');
+            console.log('User not found during deserialization');
             done(null, null);
         }
     } catch (error) {
-        console.error('❌ Deserialize error:', error);
+        console.error('Deserialize error:', error);
         done(error, null);
     }
 });
