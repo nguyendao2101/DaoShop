@@ -115,7 +115,7 @@ userSchema.methods.verifyOTP = function (inputOTP) {
     logger.info('- Current Time:', new Date());
 
     if (!this.otp || !this.otpExpires) {
-        logger.info('❌ No OTP or expiry found');
+        logger.info(' No OTP or expiry found');
         return false;
     }
 
@@ -132,17 +132,17 @@ userSchema.methods.verifyOTP = function (inputOTP) {
 userSchema.statics.findByEmailOrUsername = function (identifier) {
     logger.info('findByEmailOrUsername called with:', identifier);
 
-    // ✅ Kiểm tra identifier có tồn tại không
+    // Kiểm tra identifier có tồn tại không
     if (!identifier) {
         logger.info('Identifier is undefined or null');
         return null;
     }
 
-    // ✅ Đảm bảo identifier là string
+    // Đảm bảo identifier là string
     const searchIdentifier = String(identifier).trim();
 
     if (!searchIdentifier) {
-        logger.info('❌ Identifier is empty after trim');
+        logger.info('Identifier is empty after trim');
         return null;
     }
 
