@@ -3,8 +3,6 @@ const express = require('express');
 const router = express.Router();
 const CollectionController = require('../controllers/collection.controller');
 
-console.log('🚀 Collection routes loaded'); // Debug log
-
 /**
  * @swagger
  * tags:
@@ -447,7 +445,5 @@ router.put('/:id', CollectionController.updateCollection);
 router.delete('/:id', CollectionController.deleteCollection);
 router.post('/:id/products', CollectionController.addProductToCollection);
 router.delete('/:id/products/:productId', CollectionController.removeProductFromCollection);
-
-console.log('✅ Collection routes configured with full Swagger documentation');
 
 module.exports = router;

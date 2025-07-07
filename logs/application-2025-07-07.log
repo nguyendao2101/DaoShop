@@ -606,3 +606,78 @@
 {"level":"http","message":"GET /api/collections/Ch%C3%B3t%20M%C3%AA 200 3.651 ms - {} - User: guest","timestamp":"2025-07-07T16:39:24.829Z"}
 {"level":"http","message":"DELETE /api/collections/ABCD 200 6.316 ms - {} - User: guest","timestamp":"2025-07-07T16:39:56.248Z"}
 {"level":"http","message":"GET /api/collections/Ch%C3%B3t%20M%C3%AA/products?page=1&limit=10 200 7.389 ms - {} - User: guest","timestamp":"2025-07-07T16:40:14.535Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-07T16:47:19.170Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-07T16:47:19.173Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-07T16:47:19.173Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-07T16:47:19.174Z"}
+{"level":"info","message":"Swagger configured successfully","timestamp":"2025-07-07T16:47:19.352Z"}
+{"level":"info","message":"Server: http://localhost:8797","timestamp":"2025-07-07T16:47:19.480Z"}
+{"level":"info","message":"Docs: http://localhost:8797/api-docs","timestamp":"2025-07-07T16:47:19.481Z"}
+{"level":"info","message":"Test: http://localhost:8797/test-google","timestamp":"2025-07-07T16:47:19.481Z"}
+{"level":"error","message":"UNHANDLED REJECTION","promise":{},"reason":{},"timestamp":"2025-07-07T16:47:21.909Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-07T16:47:59.701Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-07T16:47:59.705Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-07T16:47:59.706Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-07T16:47:59.707Z"}
+{"level":"info","message":"Swagger configured successfully","timestamp":"2025-07-07T16:47:59.899Z"}
+{"level":"info","message":"Server: http://localhost:8797","timestamp":"2025-07-07T16:48:00.034Z"}
+{"level":"info","message":"Docs: http://localhost:8797/api-docs","timestamp":"2025-07-07T16:48:00.035Z"}
+{"level":"info","message":"Test: http://localhost:8797/test-google","timestamp":"2025-07-07T16:48:00.035Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-07T16:48:03.437Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-07T16:48:03.440Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-07T16:48:03.440Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-07T16:48:03.441Z"}
+{"level":"info","message":"Swagger configured successfully","timestamp":"2025-07-07T16:48:03.635Z"}
+{"level":"info","message":"Server: http://localhost:8797","timestamp":"2025-07-07T16:48:03.773Z"}
+{"level":"info","message":"Docs: http://localhost:8797/api-docs","timestamp":"2025-07-07T16:48:03.774Z"}
+{"level":"info","message":"Test: http://localhost:8797/test-google","timestamp":"2025-07-07T16:48:03.774Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-07T16:48:06.383Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-07T16:48:06.386Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-07T16:48:06.387Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-07T16:48:06.388Z"}
+{"level":"info","message":"Swagger configured successfully","timestamp":"2025-07-07T16:48:06.561Z"}
+{"level":"info","message":"Server: http://localhost:8797","timestamp":"2025-07-07T16:48:06.684Z"}
+{"level":"info","message":"Docs: http://localhost:8797/api-docs","timestamp":"2025-07-07T16:48:06.685Z"}
+{"level":"info","message":"Test: http://localhost:8797/test-google","timestamp":"2025-07-07T16:48:06.686Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-07T16:48:09.321Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-07T16:48:09.323Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-07T16:48:09.324Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-07T16:48:09.325Z"}
+{"level":"info","message":"Swagger configured successfully","timestamp":"2025-07-07T16:48:09.513Z"}
+{"level":"info","message":"Server: http://localhost:8797","timestamp":"2025-07-07T16:48:09.655Z"}
+{"level":"info","message":"Docs: http://localhost:8797/api-docs","timestamp":"2025-07-07T16:48:09.655Z"}
+{"level":"info","message":"Test: http://localhost:8797/test-google","timestamp":"2025-07-07T16:48:09.656Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-07T16:48:27.365Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-07T16:48:27.368Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-07T16:48:27.368Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-07T16:48:27.369Z"}
+{"level":"info","message":"Swagger configured successfully","timestamp":"2025-07-07T16:48:27.521Z"}
+{"level":"info","message":"Server: http://localhost:8797","timestamp":"2025-07-07T16:48:27.632Z"}
+{"level":"info","message":"Docs: http://localhost:8797/api-docs","timestamp":"2025-07-07T16:48:27.634Z"}
+{"level":"info","message":"Test: http://localhost:8797/test-google","timestamp":"2025-07-07T16:48:27.634Z"}
+{"level":"http","message":"GET /api/collections 200 18.751 ms - {} - User: guest","timestamp":"2025-07-07T16:48:35.345Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-07T16:49:52.482Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-07T16:49:52.485Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-07T16:49:52.486Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-07T16:49:52.486Z"}
+{"level":"info","message":"Swagger configured successfully","timestamp":"2025-07-07T16:49:52.701Z"}
+{"level":"info","message":"Server: http://localhost:8797","timestamp":"2025-07-07T16:49:52.819Z"}
+{"level":"info","message":"Docs: http://localhost:8797/api-docs","timestamp":"2025-07-07T16:49:52.820Z"}
+{"level":"info","message":"Test: http://localhost:8797/test-google","timestamp":"2025-07-07T16:49:52.820Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-07T16:50:24.739Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-07T16:50:24.742Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-07T16:50:24.743Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-07T16:50:24.743Z"}
+{"level":"info","message":"Swagger configured successfully","timestamp":"2025-07-07T16:50:24.905Z"}
+{"level":"info","message":"Server: http://localhost:8797","timestamp":"2025-07-07T16:50:25.047Z"}
+{"level":"info","message":"Docs: http://localhost:8797/api-docs","timestamp":"2025-07-07T16:50:25.049Z"}
+{"level":"info","message":"Test: http://localhost:8797/test-google","timestamp":"2025-07-07T16:50:25.049Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-07T16:50:40.228Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-07T16:50:40.231Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-07T16:50:40.231Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-07T16:50:40.232Z"}
+{"level":"info","message":"Swagger configured successfully","timestamp":"2025-07-07T16:50:40.426Z"}
+{"level":"info","message":"Server: http://localhost:8797","timestamp":"2025-07-07T16:50:40.537Z"}
+{"level":"info","message":"Docs: http://localhost:8797/api-docs","timestamp":"2025-07-07T16:50:40.537Z"}
+{"level":"info","message":"Test: http://localhost:8797/test-google","timestamp":"2025-07-07T16:50:40.538Z"}
+{"level":"http","message":"GET /api/collections 200 19.204 ms - {} - User: guest","timestamp":"2025-07-07T16:50:43.135Z"}

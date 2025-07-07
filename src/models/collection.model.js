@@ -110,8 +110,6 @@ collectionSchema.methods.hasProduct = function (productId) {
 };
 
 collectionSchema.methods.addProduct = function (productId) {
-    console.log('➕ Adding product to collection:', productId);
-
     if (!this.listProduct || typeof this.listProduct !== 'object') {
         this.listProduct = {};
     }
@@ -133,9 +131,6 @@ collectionSchema.methods.addProduct = function (productId) {
 
     // Cập nhật totalProducts
     this.totalProducts = Object.keys(productList).length;
-
-    console.log('✅ Product added. New listProduct:', this.listProduct);
-    console.log('📊 New totalProducts:', this.totalProducts);
 };
 
 collectionSchema.methods.removeProduct = function (productId) {
@@ -167,9 +162,6 @@ collectionSchema.statics.searchCollections = async function (filters = {}) {
         page = 1,
         limit = 10
     } = filters;
-
-    console.log('🔍 Search filters:', filters); // Dùng console.log thay vì logger
-
     const matchConditions = {};
 
     // Chỉ thêm isActive filter nếu được truyền vào cụ thể
@@ -182,8 +174,6 @@ collectionSchema.statics.searchCollections = async function (filters = {}) {
         matchConditions.name = { $regex: keyword, $options: 'i' };
     }
 
-    console.log('📋 Match conditions:', matchConditions);
-
     const sortCondition = {};
     sortCondition[sortBy] = sortOrder === 'asc' ? 1 : -1;
 
@@ -193,8 +183,6 @@ collectionSchema.statics.searchCollections = async function (filters = {}) {
         .sort(sortCondition)
         .skip(skip)
         .limit(parseInt(limit));
-
-    console.log('📊 Found collections:', result.length);
     return result;
 };
 

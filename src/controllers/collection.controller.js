@@ -15,13 +15,10 @@ class CollectionController {
                 limit: parseInt(req.query.limit) || 10
             };
 
-            console.log('🎯 Controller filters:', filters);
-
             const result = await CollectionService.getAllCollections(filters);
 
             return res.status(200).json(result);
         } catch (error) {
-            console.error('❌ Error in getAllCollections:', error);
             return res.status(500).json({
                 success: false,
                 message: error.message
@@ -37,7 +34,6 @@ class CollectionController {
 
             return res.status(200).json(result);
         } catch (error) {
-            console.error('❌ Error in getCollectionById:', error);
             return res.status(404).json({
                 success: false,
                 message: error.message
@@ -58,7 +54,6 @@ class CollectionController {
 
             return res.status(200).json(result);
         } catch (error) {
-            console.error('❌ Error in getProductsInCollection:', error);
             return res.status(404).json({
                 success: false,
                 message: error.message
@@ -83,7 +78,6 @@ class CollectionController {
 
             return res.status(201).json(result);
         } catch (error) {
-            console.error('❌ Error in createCollection:', error);
             return res.status(400).json({
                 success: false,
                 message: error.message
@@ -101,7 +95,6 @@ class CollectionController {
 
             return res.status(200).json(result);
         } catch (error) {
-            console.error('❌ Error in updateCollection:', error);
             return res.status(400).json({
                 success: false,
                 message: error.message
@@ -117,7 +110,6 @@ class CollectionController {
 
             return res.status(200).json(result);
         } catch (error) {
-            console.error('❌ Error in deleteCollection:', error);
             return res.status(400).json({
                 success: false,
                 message: error.message
@@ -142,7 +134,6 @@ class CollectionController {
 
             return res.status(200).json(result);
         } catch (error) {
-            console.error('❌ Error in addProductToCollection:', error);
             return res.status(400).json({
                 success: false,
                 message: error.message
@@ -158,7 +149,6 @@ class CollectionController {
 
             return res.status(200).json(result);
         } catch (error) {
-            console.error('❌ Error in removeProductFromCollection:', error);
             return res.status(400).json({
                 success: false,
                 message: error.message
@@ -177,7 +167,6 @@ class CollectionController {
                 data: result
             });
         } catch (error) {
-            console.error('❌ Error in getPopularCollections:', error);
             return res.status(500).json({
                 success: false,
                 message: error.message
@@ -195,7 +184,6 @@ class CollectionController {
                 debug: debugInfo
             });
         } catch (error) {
-            console.error('❌ Debug error:', error);
             return res.status(500).json({
                 success: false,
                 message: error.message
