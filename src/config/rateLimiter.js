@@ -34,7 +34,7 @@ const globalLimiter = createRateLimiter(
 // Authentication limiter - giới hạn chặt chẽ hơn cho các endpoints auth
 const authLimiter = createRateLimiter(
     15 * 60 * 1000, // 15 minutes
-    5, // 5 attempts per 15 minutes
+    20, // 5 attempts per 15 minutes
     'Too many login attempts, please try again after 15 minutes'
 );
 

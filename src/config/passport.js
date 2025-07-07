@@ -9,7 +9,7 @@ const env = require('./env');
 const logger = require('./logger');
 
 // Debug logs để kiểm tra env variables
-logger.info('🔑 Google OAuth Config:');
+logger.info('Google OAuth Config:');
 logger.info('- CLIENT_ID:', env.google.clientId ? 'Set' : 'Missing');
 logger.info('- CLIENT_SECRET:', env.google.clientSecret ? 'Set' : 'Missing');
 logger.info('- CALLBACK_URL:', env.google.callbackUrl);
@@ -21,7 +21,7 @@ passport.use(new GoogleStrategy({
     callbackURL: env.google.callbackUrl,  // Sửa callbackURL -> callbackUrl
 }, async (accessToken, refreshToken, profile, done) => {
     try {
-        logger.info('🔍 Google Profile received:', {
+        logger.info('oogle Profile received:', {
             id: profile.id,
             email: profile.emails[0].value,
             name: profile.displayName,
@@ -49,7 +49,7 @@ passport.use(new JwtStrategy({
     secretOrKey: env.jwt.secret  // Sửa từ process.env.ACCESS_TOKEN_SECRET
 }, async (payload, done) => {
     try {
-        logger.info('🔍 JWT Strategy - payload:', { userId: payload.userId, userName: payload.userName });
+        logger.info('JWT Strategy - payload:', { userId: payload.userId, userName: payload.userName });
 
         const user = await User.findById(payload.userId);
         if (user && user.isActive) {
@@ -67,14 +67,14 @@ passport.use(new JwtStrategy({
 
 // Serialize user cho session
 passport.serializeUser((user, done) => {
-    logger.info('🔍 Serializing user:', user._id);
+    logger.info('Serializing user:', user._id);
     done(null, user._id);
 });
 
 // Deserialize user từ session
 passport.deserializeUser(async (id, done) => {
     try {
-        logger.info('🔍 Deserializing user:', id);
+        logger.info('Deserializing user:', id);
         const user = await User.findById(id);
         if (user && user.isActive) {
             logger.info('User deserialized:', user.email);

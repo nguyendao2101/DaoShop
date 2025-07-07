@@ -1,0 +1,164 @@
+{"level":"info","message":"🔑 Google OAuth Config:","timestamp":"2025-07-07T03:36:07.100Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-07T03:36:07.103Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-07T03:36:07.104Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-07T03:36:07.105Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-07T03:36:07.282Z"}
+{"level":"info","message":"🚀 Server: http://localhost:8797","timestamp":"2025-07-07T03:36:07.456Z"}
+{"level":"info","message":"📚 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-07T03:36:07.457Z"}
+{"level":"info","message":"🔍 Test: http://localhost:8797/test-google","timestamp":"2025-07-07T03:36:07.457Z"}
+{"level":"info","message":"🔑 Google OAuth Config:","timestamp":"2025-07-07T03:36:13.199Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-07T03:36:13.202Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-07T03:36:13.203Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-07T03:36:13.203Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-07T03:36:13.343Z"}
+{"level":"info","message":"🚀 Server: http://localhost:8797","timestamp":"2025-07-07T03:36:13.448Z"}
+{"level":"info","message":"📚 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-07T03:36:13.448Z"}
+{"level":"info","message":"🔍 Test: http://localhost:8797/test-google","timestamp":"2025-07-07T03:36:13.449Z"}
+{"level":"http","message":"GET /api/products 200 34.007 ms - {} - User: guest","timestamp":"2025-07-07T03:38:33.220Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=5 200 3.968 ms - {} - User: guest","timestamp":"2025-07-07T03:39:56.884Z"}
+{"level":"http","message":"GET /api/products?id=BT1 200 4.361 ms - {} - User: guest","timestamp":"2025-07-07T03:41:12.522Z"}
+{"level":"http","message":"GET /api/products/BT1 200 21.222 ms - {} - User: guest","timestamp":"2025-07-07T03:41:50.962Z"}
+{"level":"http","message":"GET /api/products/BT1 200 1.056 ms - {} - User: guest","timestamp":"2025-07-07T03:45:35.663Z"}
+{"level":"http","message":"GET /api/products/test 404 2.102 ms - {} - User: guest","timestamp":"2025-07-07T03:45:48.720Z"}
+{"level":"http","message":"GET /api/products/categories 200 15.363 ms - {} - User: guest","timestamp":"2025-07-07T03:47:10.830Z"}
+{"level":"http","message":"GET /api/products/categories/TRANG%20S%E1%BB%A8C/types 200 4.880 ms - {} - User: guest","timestamp":"2025-07-07T03:48:14.686Z"}
+{"level":"http","message":"GET /api/products/categories/abc/types 200 17.356 ms - {} - User: guest","timestamp":"2025-07-07T03:48:31.128Z"}
+{"level":"http","message":"GET /api/products 200 4.505 ms - {\"category\":\"TRANG SỨC CƯỚI\",\"description\":\"-Trọng lượng tham khảo: 10.8939 phân -Độ tinh khiết: SI1 -Loại đá chính: Đá quý(1) -Loại đá phụ: Đá quý(0) -Màu đá: trắng -Giấy kiểm định: có\",\"gender\":\"Nam\",\"id\":\"NC10VNNA1\",\"karat\":\"10K\",\"listComments\":{\"0\":\"LsGHf9jdKzO6gCZ8C8Qb\",\"1\":\"54A3LnfLFNNOPl7c0vsi\"},\"listEvaluation\":{\"0\":\"none\"},\"material\":\"Vàng\",\"nameProduct\":\"Nhẫn cưới nam Vàng 10K PNJ Trầu cau 0000Y003425\",\"productImg\":{\"0\":\"https://firebasestorage.googleapis.com/v0/b/duan-4904c.appspot.com/o/flutter_pnj%2FTrang%20s%E1%BB%A9c%20c%C6%B0%E1%BB%9Bi%2FNh%E1%BA%ABn%20c%C6%B0%E1%BB%9Bi%2FNC-10VNNA1.png?alt=media&token=0e8937e4-1801-4c13-a164-ef8014975698\",\"1\":\"https://firebasestorage.googleapis.com/v0/b/duan-4904c.appspot.com/o/flutter_pnj%2FTrang%20s%E1%BB%A9c%20c%C6%B0%E1%BB%9Bi%2FNh%E1%BA%ABn%20c%C6%B0%E1%BB%9Bi%2FNC-10VNNA1.1.png?alt=media&token=c1101830-28c6-46ee-ac2d-5516069d53c3\",\"2\":\"https://firebasestorage.googleapis.com/v0/b/duan-4904c.appspot.com/o/flutter_pnj%2FTrang%20s%E1%BB%A9c%20c%C6%B0%E1%BB%9Bi%2FNh%E1%BA%ABn%20c%C6%B0%E1%BB%9Bi%2FNC-10VNNA1.2.png?alt=media&token=0a0cb54b-69a6-44bc-a938-7cbfaef839bd\"},\"show\":\"true\",\"sizePrice\":{\"0\":{\"price\":7999000,\"size\":18,\"stock\":30}},\"type\":\"Nhẫn cưới\"} - User: guest","timestamp":"2025-07-07T04:02:02.573Z"}
+{"level":"http","message":"GET /api/products/categories 200 0.690 ms - {} - User: guest","timestamp":"2025-07-07T04:02:08.847Z"}
+{"level":"http","message":"GET /api/products/categories 200 0.457 ms - {} - User: guest","timestamp":"2025-07-07T04:02:10.272Z"}
+{"level":"http","message":"GET /api/products 200 0.537 ms - {} - User: guest","timestamp":"2025-07-07T04:02:54.194Z"}
+{"level":"http","message":"POST /api/products 400 15.444 ms - {\"category\":\"TRANG SỨC CƯỚI\",\"description\":\"-Trọng lượng tham khảo: 10.8939 phân -Độ tinh khiết: SI1 -Loại đá chính: Đá quý(1) -Loại đá phụ: Đá quý(0) -Màu đá: trắng -Giấy kiểm định: có\",\"gender\":\"Nam\",\"id\":\"NC10VNNA1\",\"karat\":\"10K\",\"listComments\":{\"0\":\"LsGHf9jdKzO6gCZ8C8Qb\",\"1\":\"54A3LnfLFNNOPl7c0vsi\"},\"listEvaluation\":{\"0\":\"none\"},\"material\":\"Vàng\",\"nameProduct\":\"Nhẫn cưới nam Vàng 10K PNJ Trầu cau 0000Y003425\",\"productImg\":{\"0\":\"https://firebasestorage.googleapis.com/v0/b/duan-4904c.appspot.com/o/flutter_pnj%2FTrang%20s%E1%BB%A9c%20c%C6%B0%E1%BB%9Bi%2FNh%E1%BA%ABn%20c%C6%B0%E1%BB%9Bi%2FNC-10VNNA1.png?alt=media&token=0e8937e4-1801-4c13-a164-ef8014975698\",\"1\":\"https://firebasestorage.googleapis.com/v0/b/duan-4904c.appspot.com/o/flutter_pnj%2FTrang%20s%E1%BB%A9c%20c%C6%B0%E1%BB%9Bi%2FNh%E1%BA%ABn%20c%C6%B0%E1%BB%9Bi%2FNC-10VNNA1.1.png?alt=media&token=c1101830-28c6-46ee-ac2d-5516069d53c3\",\"2\":\"https://firebasestorage.googleapis.com/v0/b/duan-4904c.appspot.com/o/flutter_pnj%2FTrang%20s%E1%BB%A9c%20c%C6%B0%E1%BB%9Bi%2FNh%E1%BA%ABn%20c%C6%B0%E1%BB%9Bi%2FNC-10VNNA1.2.png?alt=media&token=0a0cb54b-69a6-44bc-a938-7cbfaef839bd\"},\"show\":\"true\",\"sizePrice\":{\"0\":{\"price\":7999000,\"size\":18,\"stock\":30}},\"type\":\"Nhẫn cưới\"} - User: guest","timestamp":"2025-07-07T04:03:19.591Z"}
+{"level":"info","message":"🔑 Google OAuth Config:","timestamp":"2025-07-07T04:07:40.040Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-07T04:07:40.043Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-07T04:07:40.044Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-07T04:07:40.044Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-07T04:07:40.237Z"}
+{"level":"info","message":"🚀 Server: http://localhost:8797","timestamp":"2025-07-07T04:07:40.362Z"}
+{"level":"info","message":"📚 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-07T04:07:40.363Z"}
+{"level":"info","message":"🔍 Test: http://localhost:8797/test-google","timestamp":"2025-07-07T04:07:40.364Z"}
+{"level":"info","message":"🔑 Google OAuth Config:","timestamp":"2025-07-07T04:08:38.980Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-07T04:08:38.983Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-07T04:08:38.983Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-07T04:08:38.984Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-07T04:08:39.122Z"}
+{"level":"info","message":"🚀 Server: http://localhost:8797","timestamp":"2025-07-07T04:08:39.223Z"}
+{"level":"info","message":"📚 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-07T04:08:39.225Z"}
+{"level":"info","message":"🔍 Test: http://localhost:8797/test-google","timestamp":"2025-07-07T04:08:39.226Z"}
+{"level":"http","message":"POST /api/products 201 36.047 ms - {\"category\":\"TRANG SỨC CƯỚI\",\"description\":\"-Trọng lượng tham khảo: 10.8939 phân -Độ tinh khiết: SI1 -Loại đá chính: Đá quý(1) -Loại đá phụ: Đá quý(0) -Màu đá: trắng -Giấy kiểm định: có\",\"gender\":\"Nam\",\"id\":\"NC10VNNA1\",\"karat\":\"10K\",\"listComments\":{\"0\":\"LsGHf9jdKzO6gCZ8C8Qb\",\"1\":\"54A3LnfLFNNOPl7c0vsi\"},\"listEvaluation\":{\"0\":\"none\"},\"material\":\"Vàng\",\"nameProduct\":\"Nhẫn cưới nam Vàng 10K PNJ Trầu cau 0000Y003425\",\"productImg\":{\"0\":\"https://firebasestorage.googleapis.com/v0/b/duan-4904c.appspot.com/o/flutter_pnj%2FTrang%20s%E1%BB%A9c%20c%C6%B0%E1%BB%9Bi%2FNh%E1%BA%ABn%20c%C6%B0%E1%BB%9Bi%2FNC-10VNNA1.png?alt=media&token=0e8937e4-1801-4c13-a164-ef8014975698\",\"1\":\"https://firebasestorage.googleapis.com/v0/b/duan-4904c.appspot.com/o/flutter_pnj%2FTrang%20s%E1%BB%A9c%20c%C6%B0%E1%BB%9Bi%2FNh%E1%BA%ABn%20c%C6%B0%E1%BB%9Bi%2FNC-10VNNA1.1.png?alt=media&token=c1101830-28c6-46ee-ac2d-5516069d53c3\",\"2\":\"https://firebasestorage.googleapis.com/v0/b/duan-4904c.appspot.com/o/flutter_pnj%2FTrang%20s%E1%BB%A9c%20c%C6%B0%E1%BB%9Bi%2FNh%E1%BA%ABn%20c%C6%B0%E1%BB%9Bi%2FNC-10VNNA1.2.png?alt=media&token=0a0cb54b-69a6-44bc-a938-7cbfaef839bd\"},\"show\":\"true\",\"sizePrice\":{\"0\":{\"price\":7999000,\"size\":18,\"stock\":30}},\"type\":\"Nhẫn cưới\"} - User: guest","timestamp":"2025-07-07T04:08:51.057Z"}
+{"level":"http","message":"POST /api/products 400 4.546 ms - {\"category\":\"TRANG SỨC CƯỚI\",\"description\":\"-Trọng lượng tham khảo: 10.8939 phân -Độ tinh khiết: SI1 -Loại đá chính: Đá quý(1) -Loại đá phụ: Đá quý(0) -Màu đá: trắng -Giấy kiểm định: có\",\"gender\":\"Nam\",\"id\":\"NC10VNNA1\",\"karat\":\"10K\",\"listComments\":{\"0\":\"LsGHf9jdKzO6gCZ8C8Qb\",\"1\":\"54A3LnfLFNNOPl7c0vsi\"},\"listEvaluation\":{\"0\":\"none\"},\"material\":\"Vàng\",\"nameProduct\":\"Nhẫn cưới nam Vàng 10K PNJ Trầu cau 0000Y003425\",\"productImg\":{\"0\":\"https://firebasestorage.googleapis.com/v0/b/duan-4904c.appspot.com/o/flutter_pnj%2FTrang%20s%E1%BB%A9c%20c%C6%B0%E1%BB%9Bi%2FNh%E1%BA%ABn%20c%C6%B0%E1%BB%9Bi%2FNC-10VNNA1.png?alt=media&token=0e8937e4-1801-4c13-a164-ef8014975698\",\"1\":\"https://firebasestorage.googleapis.com/v0/b/duan-4904c.appspot.com/o/flutter_pnj%2FTrang%20s%E1%BB%A9c%20c%C6%B0%E1%BB%9Bi%2FNh%E1%BA%ABn%20c%C6%B0%E1%BB%9Bi%2FNC-10VNNA1.1.png?alt=media&token=c1101830-28c6-46ee-ac2d-5516069d53c3\",\"2\":\"https://firebasestorage.googleapis.com/v0/b/duan-4904c.appspot.com/o/flutter_pnj%2FTrang%20s%E1%BB%A9c%20c%C6%B0%E1%BB%9Bi%2FNh%E1%BA%ABn%20c%C6%B0%E1%BB%9Bi%2FNC-10VNNA1.2.png?alt=media&token=0a0cb54b-69a6-44bc-a938-7cbfaef839bd\"},\"show\":\"true\",\"sizePrice\":{\"0\":{\"price\":7999000,\"size\":18,\"stock\":30}},\"type\":\"Nhẫn cưới\"} - User: guest","timestamp":"2025-07-07T04:10:23.744Z"}
+{"level":"http","message":"POST /api/products 400 4.128 ms - {\"id\":\"BT3\",\"nameProduct\":\"Test Product\",\"category\":\"TRANG SỨC\"} - User: guest","timestamp":"2025-07-07T04:10:39.750Z"}
+{"level":"http","message":"GET /api/products 200 7.135 ms - {} - User: guest","timestamp":"2025-07-07T04:11:09.357Z"}
+{"level":"http","message":"PUT /api/products/BT1 200 13.179 ms - {\"nameProduct\":\"Bông tai Vàng 10K đính đá ECZ PNJ Updated\",\"description\":\"Mô tả đã được cập nhật\",\"discountPercent\":10} - User: guest","timestamp":"2025-07-07T04:22:50.883Z"}
+{"level":"http","message":"PUT /api/products/BT12 400 2.814 ms - {\"nameProduct\":\"Bông tai Vàng 10K đính đá ECZ PNJ Updated\",\"description\":\"Mô tả đã được cập nhật\",\"discountPercent\":10} - User: guest","timestamp":"2025-07-07T04:23:04.608Z"}
+{"level":"http","message":"GET /api/products/BT1/stock 404 1.444 ms - {\"sizeIndex\":\"0\",\"stock\":50} - User: guest","timestamp":"2025-07-07T04:34:44.886Z"}
+{"level":"http","message":"PATCH /api/products/BT1/stock 400 2.742 ms - {\"sizeIndex\":\"0\",\"stock\":50} - User: guest","timestamp":"2025-07-07T04:35:36.975Z"}
+{"level":"info","message":"🔑 Google OAuth Config:","timestamp":"2025-07-07T04:52:33.224Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-07T04:52:33.226Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-07T04:52:33.227Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-07T04:52:33.227Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-07T04:52:33.373Z"}
+{"level":"info","message":"🚀 Server: http://localhost:8797","timestamp":"2025-07-07T04:52:33.475Z"}
+{"level":"info","message":"📚 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-07T04:52:33.476Z"}
+{"level":"info","message":"🔍 Test: http://localhost:8797/test-google","timestamp":"2025-07-07T04:52:33.476Z"}
+{"level":"info","message":"🔑 Google OAuth Config:","timestamp":"2025-07-07T04:52:36.519Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-07T04:52:36.522Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-07T04:52:36.523Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-07T04:52:36.523Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-07T04:52:36.660Z"}
+{"level":"info","message":"🚀 Server: http://localhost:8797","timestamp":"2025-07-07T04:52:36.760Z"}
+{"level":"info","message":"📚 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-07T04:52:36.761Z"}
+{"level":"info","message":"🔍 Test: http://localhost:8797/test-google","timestamp":"2025-07-07T04:52:36.761Z"}
+{"level":"http","message":"PATCH /api/products/BT1/stock 200 31.614 ms - {\"sizeIndex\":\"0\",\"stock\":50} - User: guest","timestamp":"2025-07-07T04:52:39.702Z"}
+{"level":"info","message":"🔑 Google OAuth Config:","timestamp":"2025-07-07T04:54:52.225Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-07T04:54:52.228Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-07T04:54:52.229Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-07T04:54:52.229Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-07T04:54:52.370Z"}
+{"level":"info","message":"🚀 Server: http://localhost:8797","timestamp":"2025-07-07T04:54:52.463Z"}
+{"level":"info","message":"📚 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-07T04:54:52.464Z"}
+{"level":"info","message":"🔍 Test: http://localhost:8797/test-google","timestamp":"2025-07-07T04:54:52.464Z"}
+{"level":"http","message":"PATCH /api/products/BT1/stock 200 41.525 ms - {\"sizeIndex\":\"0\",\"stock\":50} - User: guest","timestamp":"2025-07-07T04:54:54.907Z"}
+{"level":"info","message":"🔑 Google OAuth Config:","timestamp":"2025-07-07T04:56:00.995Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-07T04:56:00.998Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-07T04:56:00.998Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-07T04:56:00.999Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-07T04:56:01.135Z"}
+{"level":"info","message":"🚀 Server: http://localhost:8797","timestamp":"2025-07-07T04:56:01.234Z"}
+{"level":"info","message":"📚 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-07T04:56:01.234Z"}
+{"level":"info","message":"🔍 Test: http://localhost:8797/test-google","timestamp":"2025-07-07T04:56:01.235Z"}
+{"level":"info","message":"🔑 Google OAuth Config:","timestamp":"2025-07-07T04:59:42.993Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-07T04:59:42.997Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-07T04:59:42.998Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-07T04:59:42.999Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-07T04:59:43.151Z"}
+{"level":"info","message":"🚀 Server: http://localhost:8797","timestamp":"2025-07-07T04:59:43.248Z"}
+{"level":"info","message":"📚 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-07T04:59:43.249Z"}
+{"level":"info","message":"🔍 Test: http://localhost:8797/test-google","timestamp":"2025-07-07T04:59:43.250Z"}
+{"level":"info","message":"🔑 Google OAuth Config:","timestamp":"2025-07-07T05:00:18.666Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-07T05:00:18.668Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-07T05:00:18.669Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-07T05:00:18.669Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-07T05:00:18.811Z"}
+{"level":"info","message":"🚀 Server: http://localhost:8797","timestamp":"2025-07-07T05:00:18.909Z"}
+{"level":"info","message":"📚 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-07T05:00:18.910Z"}
+{"level":"info","message":"🔍 Test: http://localhost:8797/test-google","timestamp":"2025-07-07T05:00:18.911Z"}
+{"level":"info","message":"🔑 Google OAuth Config:","timestamp":"2025-07-07T05:00:55.538Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-07T05:00:55.540Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-07T05:00:55.541Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-07T05:00:55.541Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-07T05:00:55.688Z"}
+{"level":"info","message":"🚀 Server: http://localhost:8797","timestamp":"2025-07-07T05:00:55.830Z"}
+{"level":"info","message":"📚 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-07T05:00:55.831Z"}
+{"level":"info","message":"🔍 Test: http://localhost:8797/test-google","timestamp":"2025-07-07T05:00:55.832Z"}
+{"level":"info","message":"🔑 Google OAuth Config:","timestamp":"2025-07-07T05:01:30.553Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-07T05:01:30.556Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-07T05:01:30.557Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-07T05:01:30.557Z"}
+{"level":"info","message":"Swagger configured successfully","timestamp":"2025-07-07T05:01:30.698Z"}
+{"level":"info","message":"Server: http://localhost:8797","timestamp":"2025-07-07T05:01:30.798Z"}
+{"level":"info","message":"Docs: http://localhost:8797/api-docs","timestamp":"2025-07-07T05:01:30.798Z"}
+{"level":"info","message":"Test: http://localhost:8797/test-google","timestamp":"2025-07-07T05:01:30.799Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-07T05:01:50.653Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-07T05:01:50.656Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-07T05:01:50.656Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-07T05:01:50.657Z"}
+{"level":"info","message":"Swagger configured successfully","timestamp":"2025-07-07T05:01:50.801Z"}
+{"level":"info","message":"Server: http://localhost:8797","timestamp":"2025-07-07T05:01:50.904Z"}
+{"level":"info","message":"Docs: http://localhost:8797/api-docs","timestamp":"2025-07-07T05:01:50.904Z"}
+{"level":"info","message":"Test: http://localhost:8797/test-google","timestamp":"2025-07-07T05:01:50.905Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-07T05:02:07.172Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-07T05:02:07.175Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-07T05:02:07.175Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-07T05:02:07.176Z"}
+{"level":"info","message":"Swagger configured successfully","timestamp":"2025-07-07T05:02:07.309Z"}
+{"level":"info","message":"Server: http://localhost:8797","timestamp":"2025-07-07T05:02:07.408Z"}
+{"level":"info","message":"Docs: http://localhost:8797/api-docs","timestamp":"2025-07-07T05:02:07.409Z"}
+{"level":"info","message":"Test: http://localhost:8797/test-google","timestamp":"2025-07-07T05:02:07.409Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-07T05:02:22.463Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-07T05:02:22.466Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-07T05:02:22.467Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-07T05:02:22.467Z"}
+{"level":"info","message":"Swagger configured successfully","timestamp":"2025-07-07T05:02:22.607Z"}
+{"level":"info","message":"Server: http://localhost:8797","timestamp":"2025-07-07T05:02:22.707Z"}
+{"level":"info","message":"Docs: http://localhost:8797/api-docs","timestamp":"2025-07-07T05:02:22.707Z"}
+{"level":"info","message":"Test: http://localhost:8797/test-google","timestamp":"2025-07-07T05:02:22.708Z"}
+{"level":"http","message":"PATCH /api/products/BT1/stock 400 5.307 ms - {\"sizeIndex\":\"0\"} - User: guest","timestamp":"2025-07-07T05:03:00.344Z"}
+{"level":"http","message":"DELETE /api/products/BT1 200 19.107 ms - {} - User: guest","timestamp":"2025-07-07T05:04:51.029Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-07T05:10:40.463Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-07T05:10:40.467Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-07T05:10:40.467Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-07T05:10:40.468Z"}
+{"level":"info","message":"Swagger configured successfully","timestamp":"2025-07-07T05:10:40.635Z"}
+{"level":"info","message":"Server: http://localhost:8797","timestamp":"2025-07-07T05:10:40.752Z"}
+{"level":"info","message":"Docs: http://localhost:8797/api-docs","timestamp":"2025-07-07T05:10:40.753Z"}
+{"level":"info","message":"Test: http://localhost:8797/test-google","timestamp":"2025-07-07T05:10:40.753Z"}
+{"level":"http","message":"GET /api-docs 301 6.981 ms - {} - User: guest","timestamp":"2025-07-07T05:10:44.692Z"}
+{"level":"http","message":"GET /api-docs/ 200 4.747 ms - {} - User: guest","timestamp":"2025-07-07T05:10:44.706Z"}
+{"level":"http","message":"GET /api-docs/swagger-ui-init.js 200 1.075 ms - {} - User: guest","timestamp":"2025-07-07T05:10:45.622Z"}
+{"level":"http","message":"GET /api-docs/swagger-ui.css 200 12.954 ms - {} - User: guest","timestamp":"2025-07-07T05:10:45.631Z"}
+{"level":"http","message":"GET /api-docs/swagger-ui-standalone-preset.js 200 9.230 ms - {} - User: guest","timestamp":"2025-07-07T05:10:45.637Z"}
+{"level":"http","message":"GET /api-docs/swagger-ui-bundle.js 200 11.880 ms - {} - User: guest","timestamp":"2025-07-07T05:10:45.648Z"}
+{"level":"http","message":"GET /api-docs/favicon-32x32.png 200 1.501 ms - {} - User: guest","timestamp":"2025-07-07T05:10:46.353Z"}
+{"level":"http","message":"GET /api/products?category=TRANG%20S%E1%BB%A8C&type=B%C3%B4ng%20tai&gender=N%E1%BB%AF&material=V%C3%A0ng&karat=10K&minPrice=1000000&maxPrice=10000000&keyword=b%C3%B4ng%20tai&sortBy=createdAt&sortOrder=desc&page=1&limit=10&onlyVisible=true 200 32.563 ms - {} - User: guest","timestamp":"2025-07-07T05:11:23.026Z"}
+{"level":"http","message":"GET /api/products/BT1 200 12.309 ms - {} - User: guest","timestamp":"2025-07-07T05:11:56.752Z"}
+{"level":"http","message":"GET /api/products/categories 200 4.068 ms - {} - User: guest","timestamp":"2025-07-07T05:12:25.267Z"}

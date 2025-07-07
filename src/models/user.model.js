@@ -102,13 +102,13 @@ userSchema.methods.generateOTP = function () {
     const otp = Math.floor(100000 + Math.random() * 900000).toString();
     this.otp = otp;
     this.otpExpires = new Date(Date.now() + 10 * 60 * 1000); // 10 phút
-    logger.info('🔑 Generated OTP:', otp, 'Expires at:', this.otpExpires);
+    logger.info('Generated OTP:', otp, 'Expires at:', this.otpExpires);
     return otp;
 };
 
 // Method verify OTP
 userSchema.methods.verifyOTP = function (inputOTP) {
-    logger.info('🔍 Debugging OTP verification:');
+    logger.info('Debugging OTP verification:');
     logger.info('- Input OTP:', inputOTP);
     logger.info('- Stored OTP:', this.otp);
     logger.info('- OTP Expires:', this.otpExpires);
@@ -120,7 +120,7 @@ userSchema.methods.verifyOTP = function (inputOTP) {
     }
 
     if (new Date() > this.otpExpires) {
-        logger.info('❌ OTP expired');
+        logger.info('OTP expired');
         return false;
     }
 
@@ -146,7 +146,7 @@ userSchema.statics.findByEmailOrUsername = function (identifier) {
         return null;
     }
 
-    logger.info('🔍 Searching with identifier:', searchIdentifier);
+    logger.info('Searching with identifier:', searchIdentifier);
 
     return this.findOne({
         $or: [

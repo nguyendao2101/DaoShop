@@ -45,13 +45,13 @@ const passport = require('./config/passport');
 app.use(passport.initialize());
 app.use(passport.session());
 
-// ✅ Swagger setup
+// Swagger setup
 try {
     const { specs, swaggerUi } = require('./docs/swagger');
     app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
-    logger.info('✅ Swagger configured successfully');
+    logger.info('Swagger configured successfully');
 } catch (error) {
-    logger.info('⚠️ Swagger configuration failed:', error.message);
+    logger.info('Swagger configuration failed:', error.message);
 }
 
 // Routes
@@ -65,8 +65,8 @@ app.use(errorHandler);
 app.get('/test-google', (req, res) => {
     res.send(`
         <h1>DaoShop API Test</h1>
-        <p><a href="/api-docs">📚 API Documentation</a></p>
-        <p><a href="/api/auth/google">🔐 Google Login</a></p>
+        <p><a href="/api-docs">API Documentation</a></p>
+        <p><a href="/api/auth/google">Google Login</a></p>
     `);
 });
 app.use('/api', globalLimiter);
@@ -86,7 +86,7 @@ app.use('*', (req, res) => {
 
 // Error handler
 app.use((err, req, res, next) => {
-    logger.error('❌ Error:', err);
+    logger.error('Error:', err);
     res.status(500).json({
         success: false,
         message: 'Internal server error'
@@ -97,13 +97,13 @@ app.use((err, req, res, next) => {
 db.connect()
     .then(() => {
         app.listen(PORT, () => {
-            logger.info(`🚀 Server: http://localhost:${PORT}`);
-            logger.info(`📚 Docs: http://localhost:${PORT}/api-docs`);
-            logger.info(`🔍 Test: http://localhost:${PORT}/test-google`);
+            logger.info(`Server: http://localhost:${PORT}`);
+            logger.info(`Docs: http://localhost:${PORT}/api-docs`);
+            logger.info(`Test: http://localhost:${PORT}/test-google`);
         });
     })
     .catch(err => {
-        logger.error('❌ Failed to start:', err);
+        logger.error('Failed to start:', err);
         process.exit(1);
     });
 
