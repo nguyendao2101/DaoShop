@@ -1,6 +1,7 @@
 // src/config/env.js
 const Joi = require('joi');
 const dotenv = require('dotenv');
+const { logger } = require('./logger');
 
 // Load env vars
 dotenv.config();
@@ -84,19 +85,19 @@ if (error) {
         }
     });
 
-    console.error('❌ Environment variables validation error:');
+    logger.error('❌ Environment variables validation error:');
 
     if (missingKeys.length > 0) {
-        console.error('Missing required environment variables:');
-        missingKeys.forEach(key => console.error(`  - ${key}`));
+        logger.error('Missing required environment variables:');
+        missingKeys.forEach(key => logger.error(`  - ${key}`));
     }
 
     if (invalidKeys.length > 0) {
-        console.error('Invalid environment variables:');
-        invalidKeys.forEach(({ key, message }) => console.error(`  - ${key}: ${message}`));
+        logger.error('Invalid environment variables:');
+        invalidKeys.forEach(({ key, message }) => logger.error(`  - ${key}: ${message}`));
     }
 
-    console.error('\nPlease check your .env file and restart the server.');
+    logger.error('\nPlease check your .env file and restart the server.');
     process.exit(1);
 }
 

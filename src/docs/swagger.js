@@ -349,6 +349,166 @@ When rate limit is exceeded, the API returns HTTP 429 (Too Many Requests) with r
                     },
                     required: ['sizeIndex', 'stock']
                 },
+                // src/docs/swagger.js - Thêm vào components.schemas
+                Collection: {
+                    type: 'object',
+                    properties: {
+                        _id: {
+                            type: 'string',
+                            example: '686b8913e62f1c7ef9fa2522'
+                        },
+                        idColection: {
+                            type: 'string',
+                            example: 'Chót Mê',
+                            description: 'ID bộ sưu tập duy nhất'
+                        },
+                        name: {
+                            type: 'string',
+                            example: 'Bộ sưu tập Chót mê'
+                        },
+                        urlImage: {
+                            type: 'string',
+                            format: 'uri',
+                            example: 'https://firebasestorage.googleapis.com/v0/b/duan-4904c.appspot.com/o/flutter_pnj%2FImage%20Home%2FImage%20B%E1%BB%99%20s%C6%B0u%20t%E1%BA%ADp%2FBosuutap_chotme.png?alt=media&token=26539cef-48e3-46ba-a576-be2d23957b5f'
+                        },
+                        listProduct: {
+                            type: 'object',
+                            additionalProperties: {
+                                type: 'string'
+                            },
+                            example: {
+                                "0": "BT1",
+                                "1": "BT2",
+                                "2": "BT3"
+                            }
+                        },
+                        description: {
+                            type: 'string',
+                            example: 'Mô tả bộ sưu tập'
+                        },
+                        isActive: {
+                            type: 'boolean',
+                            example: true
+                        },
+                        displayOrder: {
+                            type: 'number',
+                            example: 1
+                        },
+                        totalProducts: {
+                            type: 'number',
+                            example: 3
+                        },
+                        createdAt: {
+                            type: 'string',
+                            format: 'date-time',
+                            example: '2025-07-07T04:22:50.875Z'
+                        },
+                        updatedAt: {
+                            type: 'string',
+                            format: 'date-time',
+                            example: '2025-07-07T04:22:50.875Z'
+                        }
+                    },
+                    required: ['idColection', 'name', 'urlImage', 'listProduct']
+                },
+                CollectionsResponse: {
+                    type: 'object',
+                    properties: {
+                        success: {
+                            type: 'boolean',
+                            example: true
+                        },
+                        data: {
+                            type: 'array',
+                            items: {
+                                $ref: '#/components/schemas/Collection'
+                            }
+                        },
+                        pagination: {
+                            $ref: '#/components/schemas/Pagination'
+                        }
+                    }
+                },
+                CollectionResponse: {
+                    type: 'object',
+                    properties: {
+                        success: {
+                            type: 'boolean',
+                            example: true
+                        },
+                        data: {
+                            $ref: '#/components/schemas/Collection'
+                        }
+                    }
+                },
+                CollectionProductsResponse: {
+                    type: 'object',
+                    properties: {
+                        success: {
+                            type: 'boolean',
+                            example: true
+                        },
+                        data: {
+                            type: 'object',
+                            properties: {
+                                collection: {
+                                    type: 'object',
+                                    properties: {
+                                        idColection: { type: 'string', example: 'Chót Mê' },
+                                        name: { type: 'string', example: 'Bộ sưu tập Chót mê' },
+                                        urlImage: { type: 'string', format: 'uri' },
+                                        description: { type: 'string', example: 'Mô tả bộ sưu tập' },
+                                        totalProducts: { type: 'number', example: 3 }
+                                    }
+                                },
+                                products: {
+                                    type: 'array',
+                                    items: {
+                                        $ref: '#/components/schemas/Product'
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                CreateCollectionRequest: {
+                    type: 'object',
+                    properties: {
+                        idColection: {
+                            type: 'string',
+                            example: 'New Collection',
+                            description: 'ID bộ sưu tập duy nhất'
+                        },
+                        name: {
+                            type: 'string',
+                            example: 'Bộ sưu tập mới'
+                        },
+                        urlImage: {
+                            type: 'string',
+                            format: 'uri',
+                            example: 'https://example.com/collection-image.jpg'
+                        },
+                        listProduct: {
+                            type: 'object',
+                            additionalProperties: {
+                                type: 'string'
+                            },
+                            example: {
+                                "0": "BT1",
+                                "1": "BT2"
+                            }
+                        },
+                        description: {
+                            type: 'string',
+                            example: 'Mô tả bộ sưu tập mới'
+                        },
+                        displayOrder: {
+                            type: 'number',
+                            example: 1
+                        }
+                    },
+                    required: ['idColection', 'name', 'urlImage', 'listProduct']
+                },
                 Error: {
                     type: 'object',
                     properties: {

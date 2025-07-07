@@ -1,12 +1,13 @@
 const mongoose = require('mongoose');
 const env = require('../env');
+const { logger } = require('../logger');
 
 async function connect() {
     try {
         await mongoose.connect(env.db.uri);
-        console.log('Connect successfully!!!');
+        logger.log('Connect successfully!!!');
     } catch (error) {
-        console.log('connect failure!!!');
+        logger.log('connect failure!!!');
     }
 }
 module.exports = { connect };
