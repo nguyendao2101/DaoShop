@@ -509,6 +509,56 @@ When rate limit is exceeded, the API returns HTTP 429 (Too Many Requests) with r
                     },
                     required: ['idColection', 'name', 'urlImage', 'listProduct']
                 },
+                // Thêm vào components.schemas nếu chưa có:
+
+                UpdateCollectionRequest: {
+                    type: 'object',
+                    properties: {
+                        name: {
+                            type: 'string',
+                            example: 'Bộ sưu tập Chót mê updated'
+                        },
+                        description: {
+                            type: 'string',
+                            example: 'Mô tả đã được cập nhật'
+                        },
+                        urlImage: {
+                            type: 'string',
+                            format: 'uri',
+                            example: 'https://example.com/new-image.jpg'
+                        },
+                        displayOrder: {
+                            type: 'number',
+                            example: 1
+                        },
+                        isActive: {
+                            type: 'boolean',
+                            example: true
+                        },
+                        listProduct: {
+                            type: 'object',
+                            additionalProperties: {
+                                type: 'string'
+                            },
+                            example: {
+                                "0": "BT1",
+                                "1": "BT2",
+                                "2": "BT3"
+                            }
+                        }
+                    }
+                },
+                AddProductRequest: {
+                    type: 'object',
+                    properties: {
+                        productId: {
+                            type: 'string',
+                            example: 'BT1',
+                            description: 'ID sản phẩm cần thêm vào bộ sưu tập'
+                        }
+                    },
+                    required: ['productId']
+                },
                 Error: {
                     type: 'object',
                     properties: {

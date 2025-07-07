@@ -1,25 +1,24 @@
 // src/services/collection.service.js
 const Collection = require('../models/collection.model');
 const Products = require('../models/product.model');
-const { logger } = require('../config/logger');
+// const { logger } = require('../config/logger'); // Comment tạm thời
 
 class CollectionService {
     // Lấy tất cả collections
     static async getAllCollections(filters = {}) {
         try {
-            logger.info('GetAllCollections called with filters:', filters);
+            console.log('🚀 CollectionService.getAllCollections called with filters:', filters);
 
             const collections = await Collection.searchCollections(filters);
-            logger.info('Collections found:', collections.length);
+            console.log('📦 Collections found:', collections.length);
 
-            // Đếm tổng số collections
+            // Đếm tổng số collections cho pagination
             const countFilters = { ...filters };
             delete countFilters.page;
             delete countFilters.limit;
             delete countFilters.sortBy;
             delete countFilters.sortOrder;
 
-            // Xây dựng lại match conditions cho count
             const matchConditions = {};
 
             if (countFilters.isActive !== undefined && countFilters.isActive !== null) {
@@ -31,9 +30,9 @@ class CollectionService {
             }
 
             const total = await Collection.countDocuments(matchConditions);
-            logger.info('Total count:', total);
+            console.log('🔢 Total count for pagination:', total);
 
-            return {
+            const result = {
                 success: true,
                 data: collections,
                 pagination: {
@@ -43,8 +42,12 @@ class CollectionService {
                     totalPages: Math.ceil(total / (parseInt(filters.limit) || 10))
                 }
             };
+
+            console.log('✅ Service result prepared successfully');
+            return result;
+
         } catch (error) {
-            logger.error('Error in getAllCollections:', error);
+            console.error('❌ Error in CollectionService.getAllCollections:', error);
             throw new Error(`Lỗi khi lấy danh sách bộ sưu tập: ${error.message}`);
         }
     }
@@ -52,7 +55,7 @@ class CollectionService {
     // Lấy collection theo ID
     static async getCollectionById(collectionId) {
         try {
-            logger.info('Getting collection by ID:', collectionId);
+            console.log('🔍 Getting collection by ID:', collectionId);
 
             const collection = await Collection.findOne({
                 idColection: collectionId
@@ -83,7 +86,7 @@ class CollectionService {
             }
 
             const productIds = collection.getUniqueProductIds();
-            logger.info('Product IDs in collection:', productIds);
+            console.log('Product IDs in collection:', productIds);
 
             // Lấy thông tin chi tiết các sản phẩm
             const products = await Products.find({
@@ -112,7 +115,7 @@ class CollectionService {
     // Tạo collection mới
     static async createCollection(collectionData) {
         try {
-            logger.info('Creating collection with data:', collectionData);
+            console.log('📝 Creating collection with data:', collectionData);
 
             // Kiểm tra ID đã tồn tại chưa
             const existingCollection = await Collection.findOne({
@@ -132,7 +135,7 @@ class CollectionService {
                 data: collection
             };
         } catch (error) {
-            logger.error('Error creating collection:', error);
+            console.error('❌ Error creating collection:', error);
             throw new Error(`Lỗi khi tạo bộ sưu tập: ${error.message}`);
         }
     }

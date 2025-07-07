@@ -1,2 +1,9 @@
 {"level":"error","message":"UNHANDLED REJECTION","promise":{},"reason":{},"timestamp":"2025-07-07T09:13:41.125Z"}
 {"level":"error","message":"UNHANDLED REJECTION","promise":{},"reason":{},"timestamp":"2025-07-07T09:13:57.649Z"}
+{"level":"error","message":"Failed to start: Cannot read properties of undefined (reading 'log')","stack":"TypeError: Cannot read properties of undefined (reading 'log')\n    at Object.connect (C:\\Users\\ADMIN\\Desktop\\nodejs\\DaoShop\\src\\config\\db\\index.js:10:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-07-07T10:03:51.533Z"}
+{"level":"error","message":"UNHANDLED REJECTION","promise":{},"reason":{},"timestamp":"2025-07-07T10:09:41.368Z"}
+{"level":"error","message":"UNHANDLED REJECTION","promise":{},"reason":{},"timestamp":"2025-07-07T10:18:25.731Z"}
+{"level":"error","message":"UNHANDLED REJECTION","promise":{},"reason":{},"timestamp":"2025-07-07T10:21:27.312Z"}
+{"level":"error","message":"UNHANDLED REJECTION","promise":{},"reason":{},"timestamp":"2025-07-07T10:22:43.147Z"}
+{"level":"error","message":"UNHANDLED REJECTION","promise":{},"reason":{},"timestamp":"2025-07-07T10:25:53.697Z"}
+{"level":"error","message":"UNHANDLED REJECTION","promise":{},"reason":{},"timestamp":"2025-07-07T10:35:29.058Z"}

@@ -163,7 +163,6 @@ productsSchema.pre('save', function (next) {
 });
 
 // Indexes để tối ưu tìm kiếm
-productsSchema.index({ id: 1 }, { unique: true });
 productsSchema.index({ nameProduct: 'text', description: 'text' });
 productsSchema.index({ category: 1, type: 1 });
 productsSchema.index({ show: 1 });

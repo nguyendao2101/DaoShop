@@ -1,6 +1,6 @@
 // src/controllers/collection.controller.js
 const CollectionService = require('../services/collection.service');
-const { logger } = require('../config/logger');
+// const { logger } = require('../config/logger'); // Comment tạm thời
 
 class CollectionController {
     // GET /api/collections - Lấy danh sách bộ sưu tập
@@ -11,17 +11,17 @@ class CollectionController {
                 isActive: req.query.isActive !== undefined ? req.query.isActive === 'true' : undefined,
                 sortBy: req.query.sortBy || 'displayOrder',
                 sortOrder: req.query.sortOrder || 'asc',
-                page: req.query.page || 1,
-                limit: req.query.limit || 10
+                page: parseInt(req.query.page) || 1,
+                limit: parseInt(req.query.limit) || 10
             };
 
-            logger.info('Controller filters:', filters);
+            console.log('🎯 Controller filters:', filters);
 
             const result = await CollectionService.getAllCollections(filters);
 
             return res.status(200).json(result);
         } catch (error) {
-            logger.error('Error in getAllCollections:', error);
+            console.error('❌ Error in getAllCollections:', error);
             return res.status(500).json({
                 success: false,
                 message: error.message
@@ -37,7 +37,7 @@ class CollectionController {
 
             return res.status(200).json(result);
         } catch (error) {
-            logger.error('Error in getCollectionById:', error);
+            console.error('❌ Error in getCollectionById:', error);
             return res.status(404).json({
                 success: false,
                 message: error.message
@@ -50,15 +50,15 @@ class CollectionController {
         try {
             const { id } = req.params;
             const filters = {
-                page: req.query.page || 1,
-                limit: req.query.limit || 10
+                page: parseInt(req.query.page) || 1,
+                limit: parseInt(req.query.limit) || 10
             };
 
             const result = await CollectionService.getProductsInCollection(id, filters);
 
             return res.status(200).json(result);
         } catch (error) {
-            logger.error('Error in getProductsInCollection:', error);
+            console.error('❌ Error in getProductsInCollection:', error);
             return res.status(404).json({
                 success: false,
                 message: error.message
@@ -83,7 +83,7 @@ class CollectionController {
 
             return res.status(201).json(result);
         } catch (error) {
-            logger.error('Error in createCollection:', error);
+            console.error('❌ Error in createCollection:', error);
             return res.status(400).json({
                 success: false,
                 message: error.message
@@ -101,7 +101,7 @@ class CollectionController {
 
             return res.status(200).json(result);
         } catch (error) {
-            logger.error('Error in updateCollection:', error);
+            console.error('❌ Error in updateCollection:', error);
             return res.status(400).json({
                 success: false,
                 message: error.message
@@ -117,7 +117,7 @@ class CollectionController {
 
             return res.status(200).json(result);
         } catch (error) {
-            logger.error('Error in deleteCollection:', error);
+            console.error('❌ Error in deleteCollection:', error);
             return res.status(400).json({
                 success: false,
                 message: error.message
@@ -142,7 +142,7 @@ class CollectionController {
 
             return res.status(200).json(result);
         } catch (error) {
-            logger.error('Error in addProductToCollection:', error);
+            console.error('❌ Error in addProductToCollection:', error);
             return res.status(400).json({
                 success: false,
                 message: error.message
@@ -158,7 +158,7 @@ class CollectionController {
 
             return res.status(200).json(result);
         } catch (error) {
-            logger.error('Error in removeProductFromCollection:', error);
+            console.error('❌ Error in removeProductFromCollection:', error);
             return res.status(400).json({
                 success: false,
                 message: error.message
@@ -169,7 +169,7 @@ class CollectionController {
     // GET /api/collections/popular - Lấy bộ sưu tập phổ biến
     static async getPopularCollections(req, res) {
         try {
-            const limit = req.query.limit || 10;
+            const limit = parseInt(req.query.limit) || 10;
             const result = await CollectionService.getPopularCollections(limit);
 
             return res.status(200).json({
@@ -177,7 +177,7 @@ class CollectionController {
                 data: result
             });
         } catch (error) {
-            logger.error('Error in getPopularCollections:', error);
+            console.error('❌ Error in getPopularCollections:', error);
             return res.status(500).json({
                 success: false,
                 message: error.message
@@ -195,7 +195,7 @@ class CollectionController {
                 debug: debugInfo
             });
         } catch (error) {
-            logger.error('Debug error:', error);
+            console.error('❌ Debug error:', error);
             return res.status(500).json({
                 success: false,
                 message: error.message

@@ -110,15 +110,32 @@ collectionSchema.methods.hasProduct = function (productId) {
 };
 
 collectionSchema.methods.addProduct = function (productId) {
-    const productObj = this.listProduct instanceof Map ?
-        Object.fromEntries(this.listProduct) : this.listProduct;
+    console.log('➕ Adding product to collection:', productId);
 
-    const nextIndex = Object.keys(productObj).length.toString();
-    productObj[nextIndex] = productId;
+    if (!this.listProduct || typeof this.listProduct !== 'object') {
+        this.listProduct = {};
+    }
 
-    this.listProduct = productObj;
-    this.markModified('listProduct');
-    return this;
+    // Chuyển Map thành Object nếu cần
+    let productList = this.listProduct instanceof Map
+        ? Object.fromEntries(this.listProduct)
+        : this.listProduct;
+
+    // Tìm index tiếp theo
+    const existingKeys = Object.keys(productList).map(key => parseInt(key));
+    const nextIndex = existingKeys.length > 0 ? Math.max(...existingKeys) + 1 : 0;
+
+    // Thêm sản phẩm mới
+    productList[nextIndex.toString()] = productId;
+
+    // Cập nhật lại listProduct
+    this.listProduct = productList;
+
+    // Cập nhật totalProducts
+    this.totalProducts = Object.keys(productList).length;
+
+    console.log('✅ Product added. New listProduct:', this.listProduct);
+    console.log('📊 New totalProducts:', this.totalProducts);
 };
 
 collectionSchema.methods.removeProduct = function (productId) {
@@ -151,7 +168,7 @@ collectionSchema.statics.searchCollections = async function (filters = {}) {
         limit = 10
     } = filters;
 
-    logger.info('Search filters:', filters);
+    console.log('🔍 Search filters:', filters); // Dùng console.log thay vì logger
 
     const matchConditions = {};
 
@@ -165,7 +182,7 @@ collectionSchema.statics.searchCollections = async function (filters = {}) {
         matchConditions.name = { $regex: keyword, $options: 'i' };
     }
 
-    logger.info('Match conditions:', matchConditions);
+    console.log('📋 Match conditions:', matchConditions);
 
     const sortCondition = {};
     sortCondition[sortBy] = sortOrder === 'asc' ? 1 : -1;
@@ -177,10 +194,15 @@ collectionSchema.statics.searchCollections = async function (filters = {}) {
         .skip(skip)
         .limit(parseInt(limit));
 
-    logger.info('Found collections:', result.length);
+    console.log('📊 Found collections:', result.length);
     return result;
 };
 
+collectionSchema.statics.getPopularCollections = async function (limit = 10) {
+    return this.find({})
+        .sort({ displayOrder: 1, totalProducts: -1, createdAt: -1 })
+        .limit(parseInt(limit));
+};
 collectionSchema.statics.getPopularCollections = async function (limit = 10) {
     return this.find({})
         .sort({ displayOrder: 1, totalProducts: -1, createdAt: -1 })

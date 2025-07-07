@@ -75,9 +75,9 @@ router.post('/verify-otp', otpLimiter, UserController.verifyOTP);
  * @swagger
  * /api/auth/resend-otp:
  *   post:
- *     summary: Resend OTP
+ *     summary: Gửi lại OTP
+ *     description: Resend OTP to user's email with rate limiting (3 requests per hour)
  *     tags: [Authentication]
- *    description: Resend OTP to user's email with rate limiting (3 requests per hour)
  *     requestBody:
  *       required: true
  *       content:
@@ -87,9 +87,32 @@ router.post('/verify-otp', otpLimiter, UserController.verifyOTP);
  *             properties:
  *               email:
  *                 type: string
+ *                 format: email
+ *                 example: user@example.com
+ *             required:
+ *               - email
  *     responses:
  *       200:
- *         description: OTP resent successfully
+ *         description: OTP sent successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: OTP đã được gửi lại
+ *       429:
+ *         $ref: '#/components/responses/RateLimitExceeded'
+ *       500:
+ *         description: Server error
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Error'
  */
 router.post('/resend-otp', otpLimiter, UserController.resendOTP);
 
@@ -97,9 +120,9 @@ router.post('/resend-otp', otpLimiter, UserController.resendOTP);
  * @swagger
  * /api/auth/login:
  *   post:
- *     summary: User login
+ *     summary: Đăng nhập
+ *     description: Login with rate limiting (5 login attempts per hour)
  *     tags: [Authentication]
- *    description: Login with rate limiting (5 login attempts per hour)
  *     requestBody:
  *       required: true
  *       content:
@@ -107,13 +130,44 @@ router.post('/resend-otp', otpLimiter, UserController.resendOTP);
  *           schema:
  *             type: object
  *             properties:
- *               identifier:
+ *               email:
  *                 type: string
+ *                 format: email
+ *                 example: user@example.com
  *               password:
  *                 type: string
+ *                 format: password
+ *                 example: password123
+ *             required:
+ *               - email
+ *               - password
  *     responses:
  *       200:
  *         description: Login successful
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: Đăng nhập thành công
+ *                 token:
+ *                   type: string
+ *                   example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+ *                 user:
+ *                   $ref: '#/components/schemas/User'
+ *       429:
+ *         $ref: '#/components/responses/RateLimitExceeded'
+ *       400:
+ *         description: Invalid credentials
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Error'
  */
 router.post('/login', authLimiter, UserController.login);
 
