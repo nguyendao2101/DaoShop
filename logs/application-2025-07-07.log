@@ -144,3 +144,21 @@
 {"level":"info","message":"Test: http://localhost:8797/test-google","timestamp":"2025-07-07T05:02:22.708Z"}
 {"level":"http","message":"PATCH /api/products/BT1/stock 400 5.307 ms - {\"sizeIndex\":\"0\"} - User: guest","timestamp":"2025-07-07T05:03:00.344Z"}
 {"level":"http","message":"DELETE /api/products/BT1 200 19.107 ms - {} - User: guest","timestamp":"2025-07-07T05:04:51.029Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-07T05:10:40.463Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-07T05:10:40.467Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-07T05:10:40.467Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-07T05:10:40.468Z"}
+{"level":"info","message":"Swagger configured successfully","timestamp":"2025-07-07T05:10:40.635Z"}
+{"level":"info","message":"Server: http://localhost:8797","timestamp":"2025-07-07T05:10:40.752Z"}
+{"level":"info","message":"Docs: http://localhost:8797/api-docs","timestamp":"2025-07-07T05:10:40.753Z"}
+{"level":"info","message":"Test: http://localhost:8797/test-google","timestamp":"2025-07-07T05:10:40.753Z"}
+{"level":"http","message":"GET /api-docs 301 6.981 ms - {} - User: guest","timestamp":"2025-07-07T05:10:44.692Z"}
+{"level":"http","message":"GET /api-docs/ 200 4.747 ms - {} - User: guest","timestamp":"2025-07-07T05:10:44.706Z"}
+{"level":"http","message":"GET /api-docs/swagger-ui-init.js 200 1.075 ms - {} - User: guest","timestamp":"2025-07-07T05:10:45.622Z"}
+{"level":"http","message":"GET /api-docs/swagger-ui.css 200 12.954 ms - {} - User: guest","timestamp":"2025-07-07T05:10:45.631Z"}
+{"level":"http","message":"GET /api-docs/swagger-ui-standalone-preset.js 200 9.230 ms - {} - User: guest","timestamp":"2025-07-07T05:10:45.637Z"}
+{"level":"http","message":"GET /api-docs/swagger-ui-bundle.js 200 11.880 ms - {} - User: guest","timestamp":"2025-07-07T05:10:45.648Z"}
+{"level":"http","message":"GET /api-docs/favicon-32x32.png 200 1.501 ms - {} - User: guest","timestamp":"2025-07-07T05:10:46.353Z"}
+{"level":"http","message":"GET /api/products?category=TRANG%20S%E1%BB%A8C&type=B%C3%B4ng%20tai&gender=N%E1%BB%AF&material=V%C3%A0ng&karat=10K&minPrice=1000000&maxPrice=10000000&keyword=b%C3%B4ng%20tai&sortBy=createdAt&sortOrder=desc&page=1&limit=10&onlyVisible=true 200 32.563 ms - {} - User: guest","timestamp":"2025-07-07T05:11:23.026Z"}
+{"level":"http","message":"GET /api/products/BT1 200 12.309 ms - {} - User: guest","timestamp":"2025-07-07T05:11:56.752Z"}
+{"level":"http","message":"GET /api/products/categories 200 4.068 ms - {} - User: guest","timestamp":"2025-07-07T05:12:25.267Z"}
