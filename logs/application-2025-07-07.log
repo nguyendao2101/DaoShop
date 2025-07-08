@@ -681,3 +681,15 @@
 {"level":"info","message":"Docs: http://localhost:8797/api-docs","timestamp":"2025-07-07T16:50:40.537Z"}
 {"level":"info","message":"Test: http://localhost:8797/test-google","timestamp":"2025-07-07T16:50:40.538Z"}
 {"level":"http","message":"GET /api/collections 200 19.204 ms - {} - User: guest","timestamp":"2025-07-07T16:50:43.135Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-07T16:55:01.142Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-07T16:55:01.144Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-07T16:55:01.145Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-07T16:55:01.146Z"}
+{"level":"info","message":"Swagger configured successfully","timestamp":"2025-07-07T16:55:01.299Z"}
+{"level":"info","message":"Server: http://localhost:8797","timestamp":"2025-07-07T16:55:01.407Z"}
+{"level":"info","message":"Docs: http://localhost:8797/api-docs","timestamp":"2025-07-07T16:55:01.408Z"}
+{"level":"info","message":"Test: http://localhost:8797/test-google","timestamp":"2025-07-07T16:55:01.409Z"}
+{"level":"http","message":"POST /api/collections 201 23.058 ms - {\"idColection\":\"Combo\",\"listProduct\":{\"0\":\"NC10VNNA1\",\"1\":\"BT10\",\"2\":\"BT14\"},\"name\":\"Combo Trang Sức\",\"urlImage\":\"https://firebasestorage.googleapis.com/v0/b/duan-4904c.appspot.com/o/flutter_pnj%2FImage%20Home%2FImage%20B%E1%BB%99%20s%C6%B0u%20t%E1%BA%ADp%2FBosuutap_combo.png?alt=media&token=7774b310-ef04-4d8a-bf7f-993dd9bacfaa\"} - User: guest","timestamp":"2025-07-07T16:55:03.360Z"}
+{"level":"http","message":"POST /api/collections 201 33.610 ms - {\"idColection\":\"Normal\",\"listProduct\":{\"0\":\"DC10\",\"1\":\"DC11\",\"2\":\"K18KECZ\"},\"name\":\"Bộ sưu tập thường\",\"urlImage\":\"https://firebasestorage.googleapis.com/v0/b/duan-4904c.appspot.com/o/flutter_pnj%2FImage%20Home%2FImage%20B%E1%BB%99%20s%C6%B0u%20t%E1%BA%ADp%2FBosuutap_Onlyyou.png?alt=media&token=39ff59eb-d3e8-45d3-9d2a-d54cdaaf32fd\"} - User: guest","timestamp":"2025-07-07T16:56:20.329Z"}
+{"level":"http","message":"POST /api/collections 201 4.301 ms - {\"idColection\":\"QuyPhai\",\"listProduct\":{\"0\":\"K24K\",\"1\":\"K18K\",\"2\":\"N10K12\"},\"name\":\"Bộ sưu tập quý phái\",\"urlImage\":\"https://firebasestorage.googleapis.com/v0/b/duan-4904c.appspot.com/o/flutter_pnj%2FImage%20Home%2FImage%20B%E1%BB%99%20s%C6%B0u%20t%E1%BA%ADp%2FBosuutap_quyphai.png?alt=media&token=2ce10389-6483-4861-9d5b-89ca197e6f6b\"} - User: guest","timestamp":"2025-07-07T16:57:24.292Z"}
+{"level":"http","message":"POST /api/collections 201 5.542 ms - {\"idColection\":\"TuyetTacTrangSuc\",\"listProduct\":{\"0\":\"N10K2\",\"1\":\"NB1\",\"2\":\"NC10VNA1\"},\"name\":\"Bộ sưu tập tuyệt tác\",\"urlImage\":\"https://firebasestorage.googleapis.com/v0/b/duan-4904c.appspot.com/o/flutter_pnj%2FImage%20Home%2FImage%20B%E1%BB%99%20s%C6%B0u%20t%E1%BA%ADp%2FBosuutap_tuyettac.png?alt=media&token=d6ad5865-ac5a-4870-8baf-abf8526dc083\"} - User: guest","timestamp":"2025-07-07T16:58:14.009Z"}

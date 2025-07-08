@@ -3,12 +3,14 @@ const authRouter = require('./auth.route');
 const productRouter = require('./product.route');
 const collectionRouter = require('./collection.route');
 const { specs, swaggerUi } = require('../docs/swagger');
+const commentRoute = require('./comment.route');
 
 function route(app) {
     // API routes
     app.use('/api/auth', authRouter);
     app.use('/api/products', productRouter);
     app.use('/api/collections', collectionRouter);
+    app.use('/api/comments', commentRoute);
 
     // Swagger documentation
     app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs, {
