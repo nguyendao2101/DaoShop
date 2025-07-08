@@ -559,6 +559,174 @@ When rate limit is exceeded, the API returns HTTP 429 (Too Many Requests) with r
                     },
                     required: ['productId']
                 },
+                Comment: {
+                    type: 'object',
+                    properties: {
+                        _id: {
+                            type: 'string',
+                            example: '686bfe5b26f7c937487230e3'
+                        },
+                        content: {
+                            type: 'string',
+                            example: 'sản phẩm tốt',
+                            minLength: 1,
+                            maxLength: 1000
+                        },
+                        hasFix: {
+                            type: 'string',
+                            enum: ['true', 'false'],
+                            example: 'false'
+                        },
+                        idProduct: {
+                            type: 'string',
+                            example: 'BT1'
+                        },
+                        idUser: {
+                            type: 'string',
+                            example: 'g5ddiB1d91etU1xWZXwlUQRokcG3'
+                        },
+                        nameUser: {
+                            type: 'string',
+                            example: 'Nguyen Dao'
+                        },
+                        timeComment: {
+                            type: 'string',
+                            example: 'March 14, 2025 at 10:22:36 PM UTC+7'
+                        },
+                        isActive: {
+                            type: 'boolean',
+                            example: true
+                        },
+                        likes: {
+                            type: 'number',
+                            example: 5
+                        },
+                        likedBy: {
+                            type: 'array',
+                            items: {
+                                type: 'string'
+                            },
+                            example: ['userId1', 'userId2']
+                        },
+                        replies: {
+                            type: 'array',
+                            items: {
+                                type: 'object',
+                                properties: {
+                                    content: { type: 'string', example: 'Cảm ơn bạn!' },
+                                    userId: { type: 'string', example: 'adminUserId' },
+                                    userName: { type: 'string', example: 'Admin' },
+                                    timeReply: { type: 'string', example: 'March 15, 2025 at 9:00:00 AM UTC+7' },
+                                    isActive: { type: 'boolean', example: true }
+                                }
+                            }
+                        },
+                        createdAt: {
+                            type: 'string',
+                            format: 'date-time'
+                        },
+                        updatedAt: {
+                            type: 'string',
+                            format: 'date-time'
+                        }
+                    },
+                    required: ['content', 'idProduct', 'idUser', 'nameUser', 'timeComment']
+                },
+
+                CommentsResponse: {
+                    type: 'object',
+                    properties: {
+                        success: {
+                            type: 'boolean',
+                            example: true
+                        },
+                        data: {
+                            type: 'array',
+                            items: {
+                                $ref: '#/components/schemas/Comment'
+                            }
+                        },
+                        pagination: {
+                            $ref: '#/components/schemas/Pagination'
+                        }
+                    }
+                },
+
+                CommentResponse: {
+                    type: 'object',
+                    properties: {
+                        success: {
+                            type: 'boolean',
+                            example: true
+                        },
+                        data: {
+                            $ref: '#/components/schemas/Comment'
+                        }
+                    }
+                },
+
+                CreateCommentRequest: {
+                    type: 'object',
+                    properties: {
+                        content: {
+                            type: 'string',
+                            example: 'Sản phẩm rất đẹp và chất lượng!',
+                            minLength: 1,
+                            maxLength: 1000
+                        },
+                        idProduct: {
+                            type: 'string',
+                            example: 'BT1'
+                        },
+                        idUser: {
+                            type: 'string',
+                            example: 'g5ddiB1d91etU1xWZXwlUQRokcG3'
+                        },
+                        nameUser: {
+                            type: 'string',
+                            example: 'Nguyen Dao'
+                        }
+                    },
+                    required: ['content', 'idProduct', 'idUser', 'nameUser']
+                },
+
+                UpdateCommentRequest: {
+                    type: 'object',
+                    properties: {
+                        content: {
+                            type: 'string',
+                            example: 'Sản phẩm rất đẹp và chất lượng! (đã chỉnh sửa)',
+                            minLength: 1,
+                            maxLength: 1000
+                        },
+                        userId: {
+                            type: 'string',
+                            example: 'g5ddiB1d91etU1xWZXwlUQRokcG3'
+                        }
+                    },
+                    required: ['content', 'userId']
+                },
+
+                CreateReplyRequest: {
+                    type: 'object',
+                    properties: {
+                        content: {
+                            type: 'string',
+                            example: 'Cảm ơn bạn đã chia sẻ!',
+                            minLength: 1,
+                            maxLength: 500
+                        },
+                        userId: {
+                            type: 'string',
+                            example: 'adminUserId'
+                        },
+                        userName: {
+                            type: 'string',
+                            example: 'Admin Shop'
+                        }
+                    },
+                    required: ['content', 'userId', 'userName']
+                },
                 Error: {
                     type: 'object',
                     properties: {
