@@ -1,0 +1,120 @@
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=price-asc 304 5.473 ms - {} - User: guest","timestamp":"2025-07-10T17:00:10.277Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=price-desc 304 5.181 ms - {} - User: guest","timestamp":"2025-07-10T17:00:12.581Z"}
+{"level":"http","message":"GET /api/products?sortBy=lowestPrice&sortOrder=asc&limit=100 200 7.391 ms - {} - User: guest","timestamp":"2025-07-10T17:04:41.778Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 200 8.422 ms - {} - User: guest","timestamp":"2025-07-10T17:15:27.985Z"}
+{"level":"http","message":"GET /api/products?limit=1000 304 9.841 ms - {} - User: guest","timestamp":"2025-07-10T17:15:27.988Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 0.836 ms - {} - User: guest","timestamp":"2025-07-10T17:15:27.991Z"}
+{"level":"http","message":"GET /api/products?limit=1000 304 1.032 ms - {} - User: guest","timestamp":"2025-07-10T17:15:27.993Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 0.919 ms - {} - User: guest","timestamp":"2025-07-10T17:15:31.547Z"}
+{"level":"http","message":"GET /api/products?limit=1000 304 2.199 ms - {} - User: guest","timestamp":"2025-07-10T17:15:31.552Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 0.719 ms - {} - User: guest","timestamp":"2025-07-10T17:15:31.554Z"}
+{"level":"http","message":"GET /api/products?limit=1000 304 0.820 ms - {} - User: guest","timestamp":"2025-07-10T17:15:31.556Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=lowestPrice&sortOrder=asc 200 4.025 ms - {} - User: guest","timestamp":"2025-07-10T17:15:38.822Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=lowestPrice&sortOrder=desc 200 3.622 ms - {} - User: guest","timestamp":"2025-07-10T17:15:42.040Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=totalSold&sortOrder=desc 200 4.107 ms - {} - User: guest","timestamp":"2025-07-10T17:15:43.960Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=nameProduct&sortOrder=asc 200 4.053 ms - {} - User: guest","timestamp":"2025-07-10T17:15:46.191Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=nameProduct&sortOrder=desc 200 3.951 ms - {} - User: guest","timestamp":"2025-07-10T17:15:59.774Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=nameProduct&sortOrder=asc 304 0.653 ms - {} - User: guest","timestamp":"2025-07-10T17:16:05.688Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=lowestPrice&sortOrder=desc 304 0.911 ms - {} - User: guest","timestamp":"2025-07-10T17:16:09.261Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=lowestPrice&sortOrder=asc 304 0.710 ms - {} - User: guest","timestamp":"2025-07-10T17:16:12.601Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&minPrice=5000000&maxPrice=9999999&sortBy=lowestPrice&sortOrder=asc 200 4.288 ms - {} - User: guest","timestamp":"2025-07-10T17:16:46.070Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&minPrice=1000000&maxPrice=4999999&sortBy=lowestPrice&sortOrder=asc 200 3.558 ms - {} - User: guest","timestamp":"2025-07-10T17:16:48.012Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&minPrice=5000000&maxPrice=9999999&sortBy=lowestPrice&sortOrder=asc 304 0.648 ms - {} - User: guest","timestamp":"2025-07-10T17:16:49.218Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&minPrice=10000000&maxPrice=19999999&sortBy=lowestPrice&sortOrder=asc 200 5.353 ms - {} - User: guest","timestamp":"2025-07-10T17:16:56.065Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&minPrice=20000000&sortBy=lowestPrice&sortOrder=asc 200 5.065 ms - {} - User: guest","timestamp":"2025-07-10T17:16:57.312Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=lowestPrice&sortOrder=asc 304 0.618 ms - {} - User: guest","timestamp":"2025-07-10T17:16:59.351Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=lowestPrice&sortOrder=asc 304 0.648 ms - {} - User: guest","timestamp":"2025-07-10T17:17:03.543Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=lowestPrice&sortOrder=desc 304 0.857 ms - {} - User: guest","timestamp":"2025-07-10T17:17:06.864Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=lowestPrice&sortOrder=asc 304 0.634 ms - {} - User: guest","timestamp":"2025-07-10T17:17:08.555Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=lowestPrice&sortOrder=desc 304 0.750 ms - {} - User: guest","timestamp":"2025-07-10T17:17:10.684Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=lowestPrice&sortOrder=asc 304 0.664 ms - {} - User: guest","timestamp":"2025-07-10T17:17:54.602Z"}
+{"level":"http","message":"GET /api/products?sortBy=lowestPrice&sortOrder=desc&limit=100 200 4.831 ms - {} - User: guest","timestamp":"2025-07-10T17:19:16.077Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-10T17:23:16.923Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-10T17:23:16.926Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-10T17:23:16.926Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-10T17:23:16.927Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-10T17:23:17.139Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-10T17:23:17.143Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-10T17:23:17.250Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-10T17:23:17.256Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-10T17:23:17.257Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-10T17:23:17.257Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-10T17:23:17.257Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-10T17:23:17.258Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-10T17:23:17.258Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-10T17:23:17.258Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-10T17:23:17.258Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-10T17:23:48.562Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-10T17:23:48.564Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-10T17:23:48.565Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-10T17:23:48.566Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-10T17:23:48.739Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-10T17:23:48.742Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-10T17:23:48.854Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-10T17:23:48.862Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-10T17:23:48.863Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-10T17:23:48.864Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-10T17:23:48.864Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-10T17:23:48.865Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-10T17:23:48.865Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-10T17:23:48.865Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-10T17:23:48.866Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-10T17:24:49.842Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-10T17:24:49.844Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-10T17:24:49.845Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-10T17:24:49.846Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-10T17:24:50.008Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-10T17:24:50.011Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-10T17:24:50.122Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-10T17:24:50.124Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-10T17:24:50.125Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-10T17:24:50.126Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-10T17:24:50.126Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-10T17:24:50.126Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-10T17:24:50.127Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-10T17:24:50.127Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-10T17:24:50.127Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-10T17:26:00.255Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-10T17:26:00.258Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-10T17:26:00.259Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-10T17:26:00.260Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-10T17:26:00.504Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-10T17:26:00.508Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-10T17:26:00.624Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-10T17:26:00.628Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-10T17:26:00.629Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-10T17:26:00.631Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-10T17:26:00.632Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-10T17:26:00.632Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-10T17:26:00.632Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-10T17:26:00.633Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-10T17:26:00.633Z"}
+{"level":"info","message":"🛑 SIGINT received, shutting down gracefully","timestamp":"2025-07-10T17:26:14.996Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-10T17:26:19.077Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-10T17:26:19.080Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-10T17:26:19.081Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-10T17:26:19.081Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-10T17:26:19.259Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-10T17:26:19.265Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-10T17:26:19.371Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-10T17:26:19.374Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-10T17:26:19.375Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-10T17:26:19.376Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-10T17:26:19.376Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-10T17:26:19.376Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-10T17:26:19.377Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-10T17:26:19.377Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-10T17:26:19.377Z"}
+{"level":"http","message":"GET /api/products?sortBy=lowestPrice&sortOrder=desc&limit=100 200 39.243 ms - {} - User: guest","timestamp":"2025-07-10T17:26:21.667Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 200 26.293 ms - {} - User: guest","timestamp":"2025-07-10T17:27:23.004Z"}
+{"level":"http","message":"GET /api/products?limit=1000 200 26.810 ms - {} - User: guest","timestamp":"2025-07-10T17:27:23.011Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 1.226 ms - {} - User: guest","timestamp":"2025-07-10T17:27:23.016Z"}
+{"level":"http","message":"GET /api/products?limit=1000 304 2.004 ms - {} - User: guest","timestamp":"2025-07-10T17:27:23.021Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&minPrice=5000000&maxPrice=9999999&sortBy=createdAt&sortOrder=desc 200 12.888 ms - {} - User: guest","timestamp":"2025-07-10T17:27:26.121Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 0.787 ms - {} - User: guest","timestamp":"2025-07-10T17:27:28.929Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=lowestPrice&sortOrder=asc 200 12.675 ms - {} - User: guest","timestamp":"2025-07-10T17:27:31.305Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=lowestPrice&sortOrder=desc 200 20.568 ms - {} - User: guest","timestamp":"2025-07-10T17:27:37.351Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&minPrice=20000000&sortBy=lowestPrice&sortOrder=desc 200 14.479 ms - {} - User: guest","timestamp":"2025-07-10T17:27:50.806Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&material=V%C3%A0ng&minPrice=20000000&sortBy=lowestPrice&sortOrder=desc 200 16.445 ms - {} - User: guest","timestamp":"2025-07-10T17:27:56.481Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&material=V%C3%A0ng&karat=24K&minPrice=20000000&sortBy=lowestPrice&sortOrder=desc 200 18.258 ms - {} - User: guest","timestamp":"2025-07-10T17:28:00.377Z"}
+{"level":"info","message":"🛑 SIGINT received, shutting down gracefully","timestamp":"2025-07-10T17:28:19.256Z"}

@@ -5,32 +5,62 @@ class ProductsController {
     // GET /api/products - Lấy danh sách sản phẩm
     static async getAllProducts(req, res) {
         try {
+            console.log('ProductController.getAllProducts query:', req.query);
+
             const filters = {
+                // Basic filters
                 category: req.query.category,
                 type: req.query.type,
                 gender: req.query.gender,
                 material: req.query.material,
                 karat: req.query.karat,
+
+                // ADDED MISSING PRICE FILTERS
                 minPrice: req.query.minPrice,
                 maxPrice: req.query.maxPrice,
+
                 keyword: req.query.keyword,
+
+                // Sort parameters
                 sortBy: req.query.sortBy || 'createdAt',
                 sortOrder: req.query.sortOrder || 'desc',
-                page: req.query.page || 1,
-                limit: req.query.limit || 10,
+
+                // Pagination
+                page: parseInt(req.query.page) || 1,
+                limit: parseInt(req.query.limit) || 10,
+
+                // Visibility
                 onlyVisible: req.query.onlyVisible !== 'false'
             };
 
-            const result = await ProductsService.getAllProducts(filters);
+            // Log filters for debugging
+            console.log('Filters sent to service:', filters);
 
+            // Log specific price filters
+            if (filters.minPrice || filters.maxPrice) {
+                console.log('Price filters:', {
+                    minPrice: filters.minPrice,
+                    maxPrice: filters.maxPrice
+                });
+            }
+
+            // Log sort parameters
+            console.log('Sort parameters:', {
+                sortBy: filters.sortBy,
+                sortOrder: filters.sortOrder
+            });
+
+            const result = await ProductsService.getAllProducts(filters);
             return res.status(200).json(result);
         } catch (error) {
+            console.error('Error in getAllProducts:', error);
             return res.status(500).json({
                 success: false,
                 message: error.message
             });
         }
     }
+
 
     // GET /api/products/:id - Lấy sản phẩm theo ID
     static async getProductById(req, res) {

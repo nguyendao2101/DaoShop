@@ -235,6 +235,8 @@ productsSchema.statics.searchProducts = async function (filters = {}) {
         onlyVisible = true
     } = filters;
 
+    console.log(`🔍 Search filters:`, filters);
+
     // Xây dựng query filter
     const matchConditions = {};
 
@@ -266,16 +268,19 @@ productsSchema.statics.searchProducts = async function (filters = {}) {
         matchConditions.$text = { $search: keyword };
     }
 
+    console.log('Match conditions:', matchConditions);
+
     // Aggregation pipeline
     const pipeline = [
-        { $match: matchConditions }
-    ];
+        { $match: matchConditions },
 
-    // Lọc theo giá nếu có
-    if (minPrice || maxPrice) {
-        pipeline.push({
+        // ADD FIELDS FOR PRICE CALCULATIONS - FIXED
+        {
             $addFields: {
+                // Convert sizePrice Map to array for processing
                 sizePriceArray: { $objectToArray: "$sizePrice" },
+
+                // Calculate lowest price from sizePrice
                 lowestPrice: {
                     $min: {
                         $map: {
@@ -284,10 +289,35 @@ productsSchema.statics.searchProducts = async function (filters = {}) {
                             in: "$$item.v.price"
                         }
                     }
+                },
+
+                // Calculate highest price from sizePrice
+                highestPrice: {
+                    $max: {
+                        $map: {
+                            input: { $objectToArray: "$sizePrice" },
+                            as: "item",
+                            in: "$$item.v.price"
+                        }
+                    }
+                },
+
+                // Calculate total stock
+                totalStock: {
+                    $sum: {
+                        $map: {
+                            input: { $objectToArray: "$sizePrice" },
+                            as: "item",
+                            in: "$$item.v.stock"
+                        }
+                    }
                 }
             }
-        });
+        }
+    ];
 
+    // Lọc theo giá nếu có - UPDATED TO USE lowestPrice
+    if (minPrice || maxPrice) {
         const priceConditions = {};
         if (minPrice) priceConditions.$gte = parseFloat(minPrice);
         if (maxPrice) priceConditions.$lte = parseFloat(maxPrice);
@@ -297,11 +327,38 @@ productsSchema.statics.searchProducts = async function (filters = {}) {
                 lowestPrice: priceConditions
             }
         });
+
+        console.log('Price filter applied:', priceConditions);
     }
 
-    // Sắp xếp
-    const sortCondition = {};
-    sortCondition[sortBy] = sortOrder === 'asc' ? 1 : -1;
+    // Sắp xếp - FIXED SORT CONDITIONS
+    let sortCondition = {};
+
+    // Handle different sort fields
+    if (sortBy === 'lowestPrice' || sortBy === 'price') {
+        sortCondition.lowestPrice = sortOrder === 'asc' ? 1 : -1;
+        console.log('Sorting by lowest price:', sortCondition);
+    } else if (sortBy === 'highestPrice') {
+        sortCondition.highestPrice = sortOrder === 'asc' ? 1 : -1;
+        console.log('Sorting by highest price:', sortCondition);
+    } else if (sortBy === 'totalSold') {
+        sortCondition.totalSold = sortOrder === 'asc' ? 1 : -1;
+        console.log('Sorting by total sold:', sortCondition);
+    } else if (sortBy === 'avgRating') {
+        sortCondition.avgRating = sortOrder === 'asc' ? 1 : -1;
+        console.log('Sorting by rating:', sortCondition);
+    } else if (sortBy === 'nameProduct') {
+        sortCondition.nameProduct = sortOrder === 'asc' ? 1 : -1;
+        console.log('Sorting by name:', sortCondition);
+    } else if (sortBy === 'category') {
+        sortCondition.category = sortOrder === 'asc' ? 1 : -1;
+        console.log('Sorting by category:', sortCondition);
+    } else {
+        // Default sort by createdAt
+        sortCondition.createdAt = sortOrder === 'asc' ? 1 : -1;
+        console.log('Sorting by created date:', sortCondition);
+    }
+
     pipeline.push({ $sort: sortCondition });
 
     // Phân trang
@@ -309,7 +366,21 @@ productsSchema.statics.searchProducts = async function (filters = {}) {
     pipeline.push({ $skip: skip });
     pipeline.push({ $limit: parseInt(limit) });
 
-    return this.aggregate(pipeline);
+    console.log('🔄 Final aggregation pipeline:', JSON.stringify(pipeline, null, 2));
+
+    const results = await this.aggregate(pipeline);
+
+    console.log(`Found ${results.length} products`);
+
+    // Log sample results for debugging
+    if (results.length > 0) {
+        console.log('🎯 Sample results:');
+        results.slice(0, 3).forEach((product, index) => {
+            console.log(`${index + 1}. ${product.nameProduct}: ${product.lowestPrice?.toLocaleString('vi-VN')}đ`);
+        });
+    }
+
+    return results;
 };
 
 const Products = mongoose.model('Products', productsSchema);

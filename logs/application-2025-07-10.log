@@ -1,0 +1,815 @@
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-10T03:07:51.433Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-10T03:07:51.436Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-10T03:07:51.436Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-10T03:07:51.436Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-10T03:07:51.732Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-10T03:07:51.738Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-10T03:07:52.073Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-10T03:07:52.078Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-10T03:07:52.078Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-10T03:07:52.080Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-10T03:07:52.086Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-10T03:07:52.086Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-10T03:07:52.087Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-10T03:07:52.087Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-10T03:07:52.088Z"}
+{"level":"info","message":"🛑 SIGINT received, shutting down gracefully","timestamp":"2025-07-10T03:41:59.312Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-10T03:42:12.130Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-10T03:42:12.133Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-10T03:42:12.134Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-10T03:42:12.135Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-10T03:42:12.303Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-10T03:42:12.306Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-10T03:42:12.417Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-10T03:42:12.420Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-10T03:42:12.420Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-10T03:42:12.421Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-10T03:42:12.421Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-10T03:42:12.422Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-10T03:42:12.422Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-10T03:42:12.422Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-10T03:42:12.422Z"}
+{"level":"http","message":"GET /api/products 304 69.505 ms - {} - User: guest","timestamp":"2025-07-10T03:48:40.486Z"}
+{"level":"http","message":"GET /api/products 304 2.014 ms - {} - User: guest","timestamp":"2025-07-10T03:48:40.494Z"}
+{"level":"http","message":"GET /api/products 304 0.967 ms - {} - User: guest","timestamp":"2025-07-10T03:48:40.496Z"}
+{"level":"http","message":"GET /api/products 304 0.751 ms - {} - User: guest","timestamp":"2025-07-10T03:48:40.499Z"}
+{"level":"http","message":"GET /api/products/686b876e96bdbec8f99e1eb3 404 10.052 ms - {} - User: guest","timestamp":"2025-07-10T03:48:44.903Z"}
+{"level":"http","message":"GET /api/products/686b876e96bdbec8f99e1eb3 404 2.733 ms - {} - User: guest","timestamp":"2025-07-10T03:48:44.907Z"}
+{"level":"http","message":"GET /api/products/BT1 200 6.865 ms - {} - User: guest","timestamp":"2025-07-10T03:50:39.288Z"}
+{"level":"http","message":"GET /api/products 304 8.568 ms - {} - User: guest","timestamp":"2025-07-10T03:54:52.104Z"}
+{"level":"http","message":"GET /api/products 304 2.567 ms - {} - User: guest","timestamp":"2025-07-10T03:54:52.115Z"}
+{"level":"http","message":"GET /api/products 304 1.966 ms - {} - User: guest","timestamp":"2025-07-10T03:54:52.122Z"}
+{"level":"http","message":"GET /api/products 304 1.315 ms - {} - User: guest","timestamp":"2025-07-10T03:54:52.126Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 200 3.764 ms - {} - User: guest","timestamp":"2025-07-10T03:54:55.320Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.736 ms - {} - User: guest","timestamp":"2025-07-10T03:54:55.322Z"}
+{"level":"http","message":"GET /api/products 304 1.541 ms - {} - User: guest","timestamp":"2025-07-10T03:58:02.608Z"}
+{"level":"http","message":"GET /api/products 304 0.794 ms - {} - User: guest","timestamp":"2025-07-10T03:58:02.610Z"}
+{"level":"http","message":"GET /api/products 304 1.004 ms - {} - User: guest","timestamp":"2025-07-10T03:58:02.612Z"}
+{"level":"http","message":"GET /api/products 304 0.971 ms - {} - User: guest","timestamp":"2025-07-10T03:58:02.615Z"}
+{"level":"http","message":"GET /api/products/NB2 200 4.191 ms - {} - User: guest","timestamp":"2025-07-10T03:58:06.022Z"}
+{"level":"http","message":"GET /api/products/NB2 304 0.654 ms - {} - User: guest","timestamp":"2025-07-10T03:58:06.024Z"}
+{"level":"http","message":"GET /api/products/NB2 304 1.367 ms - {} - User: guest","timestamp":"2025-07-10T04:06:45.173Z"}
+{"level":"http","message":"GET /api/products/NB2 304 0.806 ms - {} - User: guest","timestamp":"2025-07-10T04:06:45.175Z"}
+{"level":"http","message":"GET /api/products/NB2 304 1.012 ms - {} - User: guest","timestamp":"2025-07-10T04:07:07.018Z"}
+{"level":"http","message":"GET /api/products/NB2 304 0.480 ms - {} - User: guest","timestamp":"2025-07-10T04:07:07.020Z"}
+{"level":"http","message":"GET /api/products/NB2 304 0.488 ms - {} - User: guest","timestamp":"2025-07-10T04:07:40.090Z"}
+{"level":"http","message":"GET /api/products/NB2 304 0.659 ms - {} - User: guest","timestamp":"2025-07-10T04:07:40.092Z"}
+{"level":"http","message":"GET /api/products/NB2 304 1.006 ms - {} - User: guest","timestamp":"2025-07-10T04:08:04.997Z"}
+{"level":"http","message":"GET /api/products/NB2 304 0.931 ms - {} - User: guest","timestamp":"2025-07-10T04:08:05.000Z"}
+{"level":"http","message":"GET /api/products/NB2 304 4.912 ms - {} - User: guest","timestamp":"2025-07-10T04:08:26.984Z"}
+{"level":"http","message":"GET /api/products/NB2 304 0.536 ms - {} - User: guest","timestamp":"2025-07-10T04:08:26.987Z"}
+{"level":"http","message":"GET /api/products/NB2 304 0.695 ms - {} - User: guest","timestamp":"2025-07-10T04:08:30.997Z"}
+{"level":"http","message":"GET /api/products/NB2 304 0.655 ms - {} - User: guest","timestamp":"2025-07-10T04:08:30.999Z"}
+{"level":"http","message":"GET /api/products/NB2 304 0.987 ms - {} - User: guest","timestamp":"2025-07-10T04:10:02.853Z"}
+{"level":"http","message":"GET /api/products/NB2 304 1.200 ms - {} - User: guest","timestamp":"2025-07-10T04:10:48.842Z"}
+{"level":"http","message":"GET /api/products 304 12.527 ms - {} - User: guest","timestamp":"2025-07-10T04:10:48.857Z"}
+{"level":"http","message":"GET /api/products 304 1.472 ms - {} - User: guest","timestamp":"2025-07-10T04:10:48.877Z"}
+{"level":"http","message":"GET /api/products/NB12 200 3.670 ms - {} - User: guest","timestamp":"2025-07-10T04:12:33.411Z"}
+{"level":"http","message":"GET /api/products 304 0.983 ms - {} - User: guest","timestamp":"2025-07-10T04:12:33.421Z"}
+{"level":"http","message":"GET /api/products/NB2 304 0.488 ms - {} - User: guest","timestamp":"2025-07-10T04:12:34.874Z"}
+{"level":"http","message":"GET /api/products 304 0.634 ms - {} - User: guest","timestamp":"2025-07-10T04:12:34.887Z"}
+{"level":"http","message":"GET /api/products 304 1.073 ms - {} - User: guest","timestamp":"2025-07-10T04:13:00.255Z"}
+{"level":"http","message":"GET /api/products 304 0.590 ms - {} - User: guest","timestamp":"2025-07-10T04:13:00.257Z"}
+{"level":"http","message":"GET /api/products 304 1.671 ms - {} - User: guest","timestamp":"2025-07-10T04:13:00.261Z"}
+{"level":"http","message":"GET /api/products 304 0.860 ms - {} - User: guest","timestamp":"2025-07-10T04:13:00.264Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 4.701 ms - {} - User: guest","timestamp":"2025-07-10T04:14:21.508Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.786 ms - {} - User: guest","timestamp":"2025-07-10T04:14:21.511Z"}
+{"level":"http","message":"GET /api/products 304 1.205 ms - {} - User: guest","timestamp":"2025-07-10T04:14:21.523Z"}
+{"level":"http","message":"GET /api/products 304 0.789 ms - {} - User: guest","timestamp":"2025-07-10T04:14:21.541Z"}
+{"level":"http","message":"GET /api/products 304 0.656 ms - {} - User: guest","timestamp":"2025-07-10T04:14:37.276Z"}
+{"level":"http","message":"GET /api/products 304 1.049 ms - {} - User: guest","timestamp":"2025-07-10T04:14:37.279Z"}
+{"level":"http","message":"GET /api/products 304 0.631 ms - {} - User: guest","timestamp":"2025-07-10T04:14:37.281Z"}
+{"level":"http","message":"GET /api/products 304 0.608 ms - {} - User: guest","timestamp":"2025-07-10T04:14:37.283Z"}
+{"level":"http","message":"GET /api/products/NB2 304 5.453 ms - {} - User: guest","timestamp":"2025-07-10T04:30:44.841Z"}
+{"level":"http","message":"GET /api/products/NB2 304 0.556 ms - {} - User: guest","timestamp":"2025-07-10T04:30:44.843Z"}
+{"level":"http","message":"GET /api/products 304 5.043 ms - {} - User: guest","timestamp":"2025-07-10T04:30:44.855Z"}
+{"level":"http","message":"GET /api/products 304 0.613 ms - {} - User: guest","timestamp":"2025-07-10T04:30:44.864Z"}
+{"level":"http","message":"GET /api/products 304 0.606 ms - {} - User: guest","timestamp":"2025-07-10T04:30:51.644Z"}
+{"level":"http","message":"GET /api/products 304 0.670 ms - {} - User: guest","timestamp":"2025-07-10T04:30:51.646Z"}
+{"level":"http","message":"GET /api/products 304 0.617 ms - {} - User: guest","timestamp":"2025-07-10T04:30:51.648Z"}
+{"level":"http","message":"GET /api/products 304 1.490 ms - {} - User: guest","timestamp":"2025-07-10T04:30:51.651Z"}
+{"level":"http","message":"GET /api/products/NB12 304 3.353 ms - {} - User: guest","timestamp":"2025-07-10T04:30:54.727Z"}
+{"level":"http","message":"GET /api/products/NB12 304 0.733 ms - {} - User: guest","timestamp":"2025-07-10T04:30:54.730Z"}
+{"level":"http","message":"GET /api/products 304 1.062 ms - {} - User: guest","timestamp":"2025-07-10T04:30:54.737Z"}
+{"level":"http","message":"GET /api/products 304 0.597 ms - {} - User: guest","timestamp":"2025-07-10T04:30:54.752Z"}
+{"level":"http","message":"GET /api/products 304 0.758 ms - {} - User: guest","timestamp":"2025-07-10T04:30:59.537Z"}
+{"level":"http","message":"GET /api/products 304 0.606 ms - {} - User: guest","timestamp":"2025-07-10T04:30:59.539Z"}
+{"level":"http","message":"GET /api/products 304 0.821 ms - {} - User: guest","timestamp":"2025-07-10T04:30:59.542Z"}
+{"level":"http","message":"GET /api/products 304 0.545 ms - {} - User: guest","timestamp":"2025-07-10T04:30:59.543Z"}
+{"level":"http","message":"GET /api/products 304 7.396 ms - {} - User: guest","timestamp":"2025-07-10T05:01:15.633Z"}
+{"level":"http","message":"GET /api/products 304 0.957 ms - {} - User: guest","timestamp":"2025-07-10T05:01:15.636Z"}
+{"level":"http","message":"GET /api/products 304 1.049 ms - {} - User: guest","timestamp":"2025-07-10T05:01:15.639Z"}
+{"level":"http","message":"GET /api/products 304 0.726 ms - {} - User: guest","timestamp":"2025-07-10T05:01:15.642Z"}
+{"level":"http","message":"GET /api/products 304 0.814 ms - {} - User: guest","timestamp":"2025-07-10T05:01:17.794Z"}
+{"level":"http","message":"GET /api/products 304 0.546 ms - {} - User: guest","timestamp":"2025-07-10T05:01:17.795Z"}
+{"level":"http","message":"GET /api/products 304 0.547 ms - {} - User: guest","timestamp":"2025-07-10T05:01:17.797Z"}
+{"level":"http","message":"GET /api/products 304 0.865 ms - {} - User: guest","timestamp":"2025-07-10T05:01:17.799Z"}
+{"level":"http","message":"GET /api/products/NB2 304 4.790 ms - {} - User: guest","timestamp":"2025-07-10T05:03:15.308Z"}
+{"level":"http","message":"GET /api/products/NB2 304 1.745 ms - {} - User: guest","timestamp":"2025-07-10T05:03:15.312Z"}
+{"level":"http","message":"GET /api/products 304 0.928 ms - {} - User: guest","timestamp":"2025-07-10T05:03:15.327Z"}
+{"level":"http","message":"GET /api/products 304 1.218 ms - {} - User: guest","timestamp":"2025-07-10T05:03:15.345Z"}
+{"level":"http","message":"GET /api/products 304 0.692 ms - {} - User: guest","timestamp":"2025-07-10T05:03:19.191Z"}
+{"level":"http","message":"GET /api/products 304 0.841 ms - {} - User: guest","timestamp":"2025-07-10T05:03:19.193Z"}
+{"level":"http","message":"GET /api/products 304 0.686 ms - {} - User: guest","timestamp":"2025-07-10T05:03:19.195Z"}
+{"level":"http","message":"GET /api/products 304 1.014 ms - {} - User: guest","timestamp":"2025-07-10T05:03:19.198Z"}
+{"level":"http","message":"GET /api/products 304 7.933 ms - {} - User: guest","timestamp":"2025-07-10T05:07:19.872Z"}
+{"level":"http","message":"GET /api/products 304 0.654 ms - {} - User: guest","timestamp":"2025-07-10T05:07:19.874Z"}
+{"level":"http","message":"GET /api/products 304 0.837 ms - {} - User: guest","timestamp":"2025-07-10T05:07:39.136Z"}
+{"level":"http","message":"GET /api/products 304 0.849 ms - {} - User: guest","timestamp":"2025-07-10T05:07:39.139Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 3.140 ms - {} - User: guest","timestamp":"2025-07-10T05:09:45.181Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.798 ms - {} - User: guest","timestamp":"2025-07-10T05:09:45.184Z"}
+{"level":"http","message":"GET /api/products 304 0.834 ms - {} - User: guest","timestamp":"2025-07-10T05:09:45.194Z"}
+{"level":"http","message":"GET /api/products 304 0.932 ms - {} - User: guest","timestamp":"2025-07-10T05:09:45.208Z"}
+{"level":"http","message":"GET /api/products 304 0.885 ms - {} - User: guest","timestamp":"2025-07-10T05:09:46.638Z"}
+{"level":"http","message":"GET /api/products 304 0.638 ms - {} - User: guest","timestamp":"2025-07-10T05:09:46.640Z"}
+{"level":"http","message":"GET /api/products 304 0.647 ms - {} - User: guest","timestamp":"2025-07-10T05:09:46.642Z"}
+{"level":"http","message":"GET /api/products 304 0.615 ms - {} - User: guest","timestamp":"2025-07-10T05:09:46.644Z"}
+{"level":"info","message":"🛑 SIGINT received, shutting down gracefully","timestamp":"2025-07-10T05:12:38.623Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-10T08:08:38.846Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-10T08:08:38.850Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-10T08:08:38.851Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-10T08:08:38.852Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-10T08:08:39.197Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-10T08:08:39.202Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-10T08:08:39.406Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-10T08:08:39.414Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-10T08:08:39.415Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-10T08:08:39.416Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-10T08:08:39.416Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-10T08:08:39.416Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-10T08:08:39.417Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-10T08:08:39.417Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-10T08:08:39.417Z"}
+{"level":"http","message":"GET /api/collections/OnlyYou 200 24.443 ms - {} - User: guest","timestamp":"2025-07-10T08:08:43.513Z"}
+{"level":"http","message":"GET /api/collections/Ch%C3%B3t%20M%C3%AA/products 200 73.699 ms - {} - User: guest","timestamp":"2025-07-10T08:09:07.710Z"}
+{"level":"http","message":"GET /api/collections/OnlyYou/products 200 2536.417 ms - {} - User: guest","timestamp":"2025-07-10T08:09:34.578Z"}
+{"level":"http","message":"GET /api/products 304 11.588 ms - {} - User: guest","timestamp":"2025-07-10T09:42:23.179Z"}
+{"level":"http","message":"GET /api/products 304 2.233 ms - {} - User: guest","timestamp":"2025-07-10T09:42:23.183Z"}
+{"level":"http","message":"GET /api/products 304 0.779 ms - {} - User: guest","timestamp":"2025-07-10T09:42:23.186Z"}
+{"level":"http","message":"GET /api/products 304 1.398 ms - {} - User: guest","timestamp":"2025-07-10T09:42:23.190Z"}
+{"level":"http","message":"GET /api/products 304 1.056 ms - {} - User: guest","timestamp":"2025-07-10T09:42:32.309Z"}
+{"level":"http","message":"GET /api/products 304 2.051 ms - {} - User: guest","timestamp":"2025-07-10T09:42:32.314Z"}
+{"level":"http","message":"GET /api/products 304 1.600 ms - {} - User: guest","timestamp":"2025-07-10T09:42:32.318Z"}
+{"level":"http","message":"GET /api/products 304 1.203 ms - {} - User: guest","timestamp":"2025-07-10T09:42:32.320Z"}
+{"level":"http","message":"GET /api/products 304 0.742 ms - {} - User: guest","timestamp":"2025-07-10T09:42:34.666Z"}
+{"level":"http","message":"GET /api/products 304 0.997 ms - {} - User: guest","timestamp":"2025-07-10T09:42:34.669Z"}
+{"level":"http","message":"GET /api/products 304 0.910 ms - {} - User: guest","timestamp":"2025-07-10T09:42:34.671Z"}
+{"level":"http","message":"GET /api/products 304 0.868 ms - {} - User: guest","timestamp":"2025-07-10T09:42:34.673Z"}
+{"level":"http","message":"GET /api/products 304 0.600 ms - {} - User: guest","timestamp":"2025-07-10T09:42:38.236Z"}
+{"level":"http","message":"GET /api/products 304 0.825 ms - {} - User: guest","timestamp":"2025-07-10T09:42:38.238Z"}
+{"level":"http","message":"GET /api/products 304 0.777 ms - {} - User: guest","timestamp":"2025-07-10T09:42:38.240Z"}
+{"level":"http","message":"GET /api/products 304 0.961 ms - {} - User: guest","timestamp":"2025-07-10T09:42:38.242Z"}
+{"level":"http","message":"GET /api/products 304 8.714 ms - {} - User: guest","timestamp":"2025-07-10T09:52:58.934Z"}
+{"level":"http","message":"GET /api/products 304 0.798 ms - {} - User: guest","timestamp":"2025-07-10T09:52:58.937Z"}
+{"level":"http","message":"GET /api/products 304 0.904 ms - {} - User: guest","timestamp":"2025-07-10T09:52:58.939Z"}
+{"level":"http","message":"GET /api/products 304 1.177 ms - {} - User: guest","timestamp":"2025-07-10T09:52:58.943Z"}
+{"level":"http","message":"GET /api/products 304 0.888 ms - {} - User: guest","timestamp":"2025-07-10T09:53:59.861Z"}
+{"level":"http","message":"GET /api/products 304 0.957 ms - {} - User: guest","timestamp":"2025-07-10T09:53:59.864Z"}
+{"level":"http","message":"GET /api/products 304 0.685 ms - {} - User: guest","timestamp":"2025-07-10T09:53:59.867Z"}
+{"level":"http","message":"GET /api/products 304 0.857 ms - {} - User: guest","timestamp":"2025-07-10T09:53:59.869Z"}
+{"level":"http","message":"GET /api/products 304 0.687 ms - {} - User: guest","timestamp":"2025-07-10T09:54:22.839Z"}
+{"level":"http","message":"GET /api/products 304 1.179 ms - {} - User: guest","timestamp":"2025-07-10T09:54:22.843Z"}
+{"level":"http","message":"GET /api/products 304 0.762 ms - {} - User: guest","timestamp":"2025-07-10T09:54:22.846Z"}
+{"level":"http","message":"GET /api/products 304 0.660 ms - {} - User: guest","timestamp":"2025-07-10T09:54:22.848Z"}
+{"level":"http","message":"GET /api/products 304 0.885 ms - {} - User: guest","timestamp":"2025-07-10T09:54:31.862Z"}
+{"level":"http","message":"GET /api/products 304 0.621 ms - {} - User: guest","timestamp":"2025-07-10T09:54:31.864Z"}
+{"level":"http","message":"GET /api/products 304 0.660 ms - {} - User: guest","timestamp":"2025-07-10T09:54:31.866Z"}
+{"level":"http","message":"GET /api/products 304 0.833 ms - {} - User: guest","timestamp":"2025-07-10T09:54:31.869Z"}
+{"level":"http","message":"GET /api/products 304 0.853 ms - {} - User: guest","timestamp":"2025-07-10T09:55:22.208Z"}
+{"level":"http","message":"GET /api/products 304 1.339 ms - {} - User: guest","timestamp":"2025-07-10T09:55:22.213Z"}
+{"level":"http","message":"GET /api/products 304 0.828 ms - {} - User: guest","timestamp":"2025-07-10T09:55:22.215Z"}
+{"level":"http","message":"GET /api/products 304 0.849 ms - {} - User: guest","timestamp":"2025-07-10T09:55:22.217Z"}
+{"level":"http","message":"GET /api/products 304 0.602 ms - {} - User: guest","timestamp":"2025-07-10T09:55:30.705Z"}
+{"level":"http","message":"GET /api/products 304 0.573 ms - {} - User: guest","timestamp":"2025-07-10T09:55:30.706Z"}
+{"level":"http","message":"GET /api/products 304 0.914 ms - {} - User: guest","timestamp":"2025-07-10T09:55:30.710Z"}
+{"level":"http","message":"GET /api/products 304 0.923 ms - {} - User: guest","timestamp":"2025-07-10T09:55:30.713Z"}
+{"level":"http","message":"GET /api/products 304 0.563 ms - {} - User: guest","timestamp":"2025-07-10T09:55:38.857Z"}
+{"level":"http","message":"GET /api/products 304 0.761 ms - {} - User: guest","timestamp":"2025-07-10T09:55:38.859Z"}
+{"level":"http","message":"GET /api/products 304 0.594 ms - {} - User: guest","timestamp":"2025-07-10T09:55:38.861Z"}
+{"level":"http","message":"GET /api/products 304 0.572 ms - {} - User: guest","timestamp":"2025-07-10T09:55:38.863Z"}
+{"level":"http","message":"GET /api/products 304 0.842 ms - {} - User: guest","timestamp":"2025-07-10T09:56:11.934Z"}
+{"level":"http","message":"GET /api/products 304 0.930 ms - {} - User: guest","timestamp":"2025-07-10T09:56:11.937Z"}
+{"level":"http","message":"GET /api/products 304 1.980 ms - {} - User: guest","timestamp":"2025-07-10T09:56:11.940Z"}
+{"level":"http","message":"GET /api/products 304 0.628 ms - {} - User: guest","timestamp":"2025-07-10T09:56:11.943Z"}
+{"level":"http","message":"GET /api/products 304 0.593 ms - {} - User: guest","timestamp":"2025-07-10T09:56:15.555Z"}
+{"level":"http","message":"GET /api/products 304 0.663 ms - {} - User: guest","timestamp":"2025-07-10T09:56:15.557Z"}
+{"level":"http","message":"GET /api/products 304 6.308 ms - {} - User: guest","timestamp":"2025-07-10T10:02:33.976Z"}
+{"level":"http","message":"GET /api/products 304 1.195 ms - {} - User: guest","timestamp":"2025-07-10T10:02:33.979Z"}
+{"level":"http","message":"GET /api/products 304 1.024 ms - {} - User: guest","timestamp":"2025-07-10T10:02:33.983Z"}
+{"level":"http","message":"GET /api/products 304 1.348 ms - {} - User: guest","timestamp":"2025-07-10T10:02:33.987Z"}
+{"level":"http","message":"GET /api/products 304 0.918 ms - {} - User: guest","timestamp":"2025-07-10T10:05:27.683Z"}
+{"level":"http","message":"GET /api/products 304 0.680 ms - {} - User: guest","timestamp":"2025-07-10T10:05:27.684Z"}
+{"level":"http","message":"GET /api/products 304 0.689 ms - {} - User: guest","timestamp":"2025-07-10T10:05:27.686Z"}
+{"level":"http","message":"GET /api/products 304 0.503 ms - {} - User: guest","timestamp":"2025-07-10T10:05:27.687Z"}
+{"level":"http","message":"GET /api/products 304 5.259 ms - {} - User: guest","timestamp":"2025-07-10T10:08:55.137Z"}
+{"level":"http","message":"GET /api/products 304 0.865 ms - {} - User: guest","timestamp":"2025-07-10T10:08:55.140Z"}
+{"level":"http","message":"GET /api/products 304 0.970 ms - {} - User: guest","timestamp":"2025-07-10T10:08:55.147Z"}
+{"level":"http","message":"GET /api/products 304 1.206 ms - {} - User: guest","timestamp":"2025-07-10T10:08:55.152Z"}
+{"level":"http","message":"GET /api/products 304 1.146 ms - {} - User: guest","timestamp":"2025-07-10T10:12:14.622Z"}
+{"level":"http","message":"GET /api/products 304 0.975 ms - {} - User: guest","timestamp":"2025-07-10T10:12:14.624Z"}
+{"level":"http","message":"GET /api/products 304 1.020 ms - {} - User: guest","timestamp":"2025-07-10T10:12:14.627Z"}
+{"level":"http","message":"GET /api/products 304 0.691 ms - {} - User: guest","timestamp":"2025-07-10T10:12:14.629Z"}
+{"level":"http","message":"GET /api/products 304 0.784 ms - {} - User: guest","timestamp":"2025-07-10T10:12:52.348Z"}
+{"level":"http","message":"GET /api/products 304 0.543 ms - {} - User: guest","timestamp":"2025-07-10T10:12:52.350Z"}
+{"level":"http","message":"GET /api/products 304 0.549 ms - {} - User: guest","timestamp":"2025-07-10T10:12:52.352Z"}
+{"level":"http","message":"GET /api/products 304 0.506 ms - {} - User: guest","timestamp":"2025-07-10T10:12:52.353Z"}
+{"level":"http","message":"GET /api/products 304 0.832 ms - {} - User: guest","timestamp":"2025-07-10T10:12:53.155Z"}
+{"level":"http","message":"GET /api/products 304 0.502 ms - {} - User: guest","timestamp":"2025-07-10T10:12:53.157Z"}
+{"level":"http","message":"GET /api/products 304 0.544 ms - {} - User: guest","timestamp":"2025-07-10T10:12:53.158Z"}
+{"level":"http","message":"GET /api/products 304 1.158 ms - {} - User: guest","timestamp":"2025-07-10T10:12:53.161Z"}
+{"level":"http","message":"GET /api/products 304 1.024 ms - {} - User: guest","timestamp":"2025-07-10T10:12:59.776Z"}
+{"level":"http","message":"GET /api/products 304 0.515 ms - {} - User: guest","timestamp":"2025-07-10T10:12:59.778Z"}
+{"level":"http","message":"GET /api/products 304 0.538 ms - {} - User: guest","timestamp":"2025-07-10T10:12:59.779Z"}
+{"level":"http","message":"GET /api/products 304 0.845 ms - {} - User: guest","timestamp":"2025-07-10T10:12:59.781Z"}
+{"level":"http","message":"GET /api/products 304 5.577 ms - {} - User: guest","timestamp":"2025-07-10T10:18:18.350Z"}
+{"level":"http","message":"GET /api/products 304 0.945 ms - {} - User: guest","timestamp":"2025-07-10T10:18:18.352Z"}
+{"level":"http","message":"GET /api/products 304 1.418 ms - {} - User: guest","timestamp":"2025-07-10T10:18:18.355Z"}
+{"level":"http","message":"GET /api/products 304 1.152 ms - {} - User: guest","timestamp":"2025-07-10T10:18:18.361Z"}
+{"level":"http","message":"GET /api/products 304 0.558 ms - {} - User: guest","timestamp":"2025-07-10T10:18:20.746Z"}
+{"level":"http","message":"GET /api/products 304 0.626 ms - {} - User: guest","timestamp":"2025-07-10T10:18:20.748Z"}
+{"level":"http","message":"GET /api/products 304 0.823 ms - {} - User: guest","timestamp":"2025-07-10T10:18:20.750Z"}
+{"level":"http","message":"GET /api/products 304 0.823 ms - {} - User: guest","timestamp":"2025-07-10T10:18:20.753Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 3.623 ms - {} - User: guest","timestamp":"2025-07-10T10:18:23.167Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.515 ms - {} - User: guest","timestamp":"2025-07-10T10:18:23.170Z"}
+{"level":"http","message":"GET /api/products 304 0.887 ms - {} - User: guest","timestamp":"2025-07-10T10:18:23.178Z"}
+{"level":"http","message":"GET /api/products 304 0.825 ms - {} - User: guest","timestamp":"2025-07-10T10:18:23.198Z"}
+{"level":"http","message":"GET /api/products 304 0.585 ms - {} - User: guest","timestamp":"2025-07-10T10:18:24.578Z"}
+{"level":"http","message":"GET /api/products 304 0.755 ms - {} - User: guest","timestamp":"2025-07-10T10:18:24.580Z"}
+{"level":"http","message":"GET /api/products 304 0.585 ms - {} - User: guest","timestamp":"2025-07-10T10:18:24.582Z"}
+{"level":"http","message":"GET /api/products 304 0.811 ms - {} - User: guest","timestamp":"2025-07-10T10:18:24.584Z"}
+{"level":"http","message":"GET /api/products 304 0.902 ms - {} - User: guest","timestamp":"2025-07-10T10:18:30.761Z"}
+{"level":"http","message":"GET /api/products 304 1.108 ms - {} - User: guest","timestamp":"2025-07-10T10:18:30.764Z"}
+{"level":"http","message":"GET /api/products 304 0.625 ms - {} - User: guest","timestamp":"2025-07-10T10:18:30.767Z"}
+{"level":"http","message":"GET /api/products 304 0.581 ms - {} - User: guest","timestamp":"2025-07-10T10:18:30.769Z"}
+{"level":"http","message":"GET /api/products 304 0.967 ms - {} - User: guest","timestamp":"2025-07-10T10:23:08.555Z"}
+{"level":"http","message":"GET /api/products 304 1.702 ms - {} - User: guest","timestamp":"2025-07-10T10:23:08.558Z"}
+{"level":"http","message":"GET /api/products 304 0.860 ms - {} - User: guest","timestamp":"2025-07-10T10:23:08.560Z"}
+{"level":"http","message":"GET /api/products 304 0.882 ms - {} - User: guest","timestamp":"2025-07-10T10:23:08.563Z"}
+{"level":"http","message":"GET /api/products 304 0.781 ms - {} - User: guest","timestamp":"2025-07-10T10:23:13.073Z"}
+{"level":"http","message":"GET /api/products 304 1.154 ms - {} - User: guest","timestamp":"2025-07-10T10:23:13.075Z"}
+{"level":"http","message":"GET /api/products 304 0.555 ms - {} - User: guest","timestamp":"2025-07-10T10:23:13.077Z"}
+{"level":"http","message":"GET /api/products 304 0.535 ms - {} - User: guest","timestamp":"2025-07-10T10:23:13.079Z"}
+{"level":"http","message":"GET /api/products 304 0.610 ms - {} - User: guest","timestamp":"2025-07-10T10:23:15.422Z"}
+{"level":"http","message":"GET /api/products 304 0.575 ms - {} - User: guest","timestamp":"2025-07-10T10:23:15.424Z"}
+{"level":"http","message":"GET /api/products 304 0.595 ms - {} - User: guest","timestamp":"2025-07-10T10:23:15.426Z"}
+{"level":"http","message":"GET /api/products 304 0.874 ms - {} - User: guest","timestamp":"2025-07-10T10:23:15.429Z"}
+{"level":"http","message":"GET /api/products 304 0.604 ms - {} - User: guest","timestamp":"2025-07-10T10:23:18.103Z"}
+{"level":"http","message":"GET /api/products 304 0.529 ms - {} - User: guest","timestamp":"2025-07-10T10:23:18.105Z"}
+{"level":"http","message":"GET /api/products 304 0.543 ms - {} - User: guest","timestamp":"2025-07-10T10:23:18.107Z"}
+{"level":"http","message":"GET /api/products 304 1.046 ms - {} - User: guest","timestamp":"2025-07-10T10:23:18.110Z"}
+{"level":"http","message":"GET /api/products 304 5.434 ms - {} - User: guest","timestamp":"2025-07-10T10:23:33.474Z"}
+{"level":"http","message":"GET /api/products 304 1.565 ms - {} - User: guest","timestamp":"2025-07-10T10:23:33.478Z"}
+{"level":"http","message":"GET /api/products 304 1.284 ms - {} - User: guest","timestamp":"2025-07-10T10:23:33.484Z"}
+{"level":"http","message":"GET /api/products 304 1.522 ms - {} - User: guest","timestamp":"2025-07-10T10:23:33.491Z"}
+{"level":"http","message":"GET /api/products 304 0.652 ms - {} - User: guest","timestamp":"2025-07-10T10:25:50.838Z"}
+{"level":"http","message":"GET /api/products 304 0.514 ms - {} - User: guest","timestamp":"2025-07-10T10:25:50.840Z"}
+{"level":"http","message":"GET /api/products 304 1.101 ms - {} - User: guest","timestamp":"2025-07-10T10:25:50.842Z"}
+{"level":"http","message":"GET /api/products 304 0.581 ms - {} - User: guest","timestamp":"2025-07-10T10:25:50.844Z"}
+{"level":"http","message":"GET /api/products 304 4.291 ms - {} - User: guest","timestamp":"2025-07-10T10:30:22.780Z"}
+{"level":"http","message":"GET /api/products 304 0.585 ms - {} - User: guest","timestamp":"2025-07-10T10:30:22.782Z"}
+{"level":"http","message":"GET /api/products 304 0.627 ms - {} - User: guest","timestamp":"2025-07-10T10:30:22.784Z"}
+{"level":"http","message":"GET /api/products 304 0.894 ms - {} - User: guest","timestamp":"2025-07-10T10:30:22.787Z"}
+{"level":"http","message":"GET /api/products 304 0.671 ms - {} - User: guest","timestamp":"2025-07-10T10:31:37.495Z"}
+{"level":"http","message":"GET /api/products 304 0.590 ms - {} - User: guest","timestamp":"2025-07-10T10:31:37.497Z"}
+{"level":"http","message":"GET /api/products 304 0.573 ms - {} - User: guest","timestamp":"2025-07-10T10:31:37.499Z"}
+{"level":"http","message":"GET /api/products 304 0.891 ms - {} - User: guest","timestamp":"2025-07-10T10:31:37.503Z"}
+{"level":"http","message":"GET /api/collections 200 17.068 ms - {} - User: guest","timestamp":"2025-07-10T10:32:15.567Z"}
+{"level":"http","message":"GET /api/products 304 4.211 ms - {} - User: guest","timestamp":"2025-07-10T10:37:04.923Z"}
+{"level":"http","message":"GET /api/products 304 1.167 ms - {} - User: guest","timestamp":"2025-07-10T10:37:04.928Z"}
+{"level":"http","message":"GET /api/products 304 0.648 ms - {} - User: guest","timestamp":"2025-07-10T10:37:04.930Z"}
+{"level":"http","message":"GET /api/products 304 0.672 ms - {} - User: guest","timestamp":"2025-07-10T10:37:04.932Z"}
+{"level":"http","message":"GET /api/products 304 0.633 ms - {} - User: guest","timestamp":"2025-07-10T10:37:46.693Z"}
+{"level":"http","message":"GET /api/products 304 0.510 ms - {} - User: guest","timestamp":"2025-07-10T10:37:46.695Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 4.039 ms - {} - User: guest","timestamp":"2025-07-10T10:39:31.419Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 1.092 ms - {} - User: guest","timestamp":"2025-07-10T10:39:31.422Z"}
+{"level":"http","message":"GET /api/products 304 0.624 ms - {} - User: guest","timestamp":"2025-07-10T10:39:31.431Z"}
+{"level":"http","message":"GET /api/products 304 0.561 ms - {} - User: guest","timestamp":"2025-07-10T10:39:31.461Z"}
+{"level":"http","message":"GET /api/products/K18K 200 3.689 ms - {} - User: guest","timestamp":"2025-07-10T10:39:33.165Z"}
+{"level":"http","message":"GET /api/products 304 1.680 ms - {} - User: guest","timestamp":"2025-07-10T10:39:33.175Z"}
+{"level":"http","message":"GET /api/products 304 0.990 ms - {} - User: guest","timestamp":"2025-07-10T10:39:34.519Z"}
+{"level":"http","message":"GET /api/products 304 0.555 ms - {} - User: guest","timestamp":"2025-07-10T10:39:34.520Z"}
+{"level":"http","message":"GET /api/products 304 0.550 ms - {} - User: guest","timestamp":"2025-07-10T10:39:34.522Z"}
+{"level":"http","message":"GET /api/products 304 0.710 ms - {} - User: guest","timestamp":"2025-07-10T10:39:34.524Z"}
+{"level":"http","message":"GET /api/products 304 1.894 ms - {} - User: guest","timestamp":"2025-07-10T10:41:26.161Z"}
+{"level":"http","message":"GET /api/products 304 1.507 ms - {} - User: guest","timestamp":"2025-07-10T10:41:26.166Z"}
+{"level":"http","message":"GET /api/products 304 0.962 ms - {} - User: guest","timestamp":"2025-07-10T10:41:26.171Z"}
+{"level":"http","message":"GET /api/collections 200 14.044 ms - {} - User: guest","timestamp":"2025-07-10T10:41:26.177Z"}
+{"level":"http","message":"GET /api/products 304 1.060 ms - {} - User: guest","timestamp":"2025-07-10T10:41:26.180Z"}
+{"level":"http","message":"GET /api/collections 304 10.915 ms - {} - User: guest","timestamp":"2025-07-10T10:41:26.193Z"}
+{"level":"http","message":"GET /api/products 304 7.039 ms - {} - User: guest","timestamp":"2025-07-10T10:42:11.411Z"}
+{"level":"http","message":"GET /api/collections 304 8.377 ms - {} - User: guest","timestamp":"2025-07-10T10:42:11.413Z"}
+{"level":"http","message":"GET /api/products 304 1.054 ms - {} - User: guest","timestamp":"2025-07-10T10:42:11.416Z"}
+{"level":"http","message":"GET /api/products 304 1.065 ms - {} - User: guest","timestamp":"2025-07-10T10:42:11.423Z"}
+{"level":"http","message":"GET /api/products 304 1.481 ms - {} - User: guest","timestamp":"2025-07-10T10:42:11.433Z"}
+{"level":"http","message":"GET /api/collections 304 16.624 ms - {} - User: guest","timestamp":"2025-07-10T10:42:11.435Z"}
+{"level":"http","message":"GET /api/collections/ChotMe/products 200 4.904 ms - {} - User: guest","timestamp":"2025-07-10T10:45:53.983Z"}
+{"level":"http","message":"GET /api/products 304 9.947 ms - {} - User: guest","timestamp":"2025-07-10T10:48:27.028Z"}
+{"level":"http","message":"GET /api/collections 304 10.589 ms - {} - User: guest","timestamp":"2025-07-10T10:48:27.030Z"}
+{"level":"http","message":"GET /api/products 304 0.665 ms - {} - User: guest","timestamp":"2025-07-10T10:48:27.032Z"}
+{"level":"http","message":"GET /api/products 304 0.839 ms - {} - User: guest","timestamp":"2025-07-10T10:48:27.036Z"}
+{"level":"http","message":"GET /api/products 304 0.989 ms - {} - User: guest","timestamp":"2025-07-10T10:48:27.041Z"}
+{"level":"http","message":"GET /api/collections 304 10.926 ms - {} - User: guest","timestamp":"2025-07-10T10:48:27.044Z"}
+{"level":"http","message":"GET /api/products 304 0.644 ms - {} - User: guest","timestamp":"2025-07-10T10:52:28.800Z"}
+{"level":"http","message":"GET /api/products 304 0.538 ms - {} - User: guest","timestamp":"2025-07-10T10:52:28.804Z"}
+{"level":"http","message":"GET /api/products 304 0.700 ms - {} - User: guest","timestamp":"2025-07-10T10:52:28.808Z"}
+{"level":"http","message":"GET /api/collections 304 8.982 ms - {} - User: guest","timestamp":"2025-07-10T10:52:28.810Z"}
+{"level":"http","message":"GET /api/products 304 0.845 ms - {} - User: guest","timestamp":"2025-07-10T10:52:28.812Z"}
+{"level":"http","message":"GET /api/collections 304 12.331 ms - {} - User: guest","timestamp":"2025-07-10T10:52:28.826Z"}
+{"level":"http","message":"GET /api/products 304 7.636 ms - {} - User: guest","timestamp":"2025-07-10T10:53:42.007Z"}
+{"level":"http","message":"GET /api/collections 304 8.687 ms - {} - User: guest","timestamp":"2025-07-10T10:53:42.010Z"}
+{"level":"http","message":"GET /api/products 304 0.852 ms - {} - User: guest","timestamp":"2025-07-10T10:53:42.012Z"}
+{"level":"http","message":"GET /api/products 304 0.831 ms - {} - User: guest","timestamp":"2025-07-10T10:53:42.019Z"}
+{"level":"http","message":"GET /api/collections 304 13.687 ms - {} - User: guest","timestamp":"2025-07-10T10:53:42.030Z"}
+{"level":"http","message":"GET /api/products 304 0.932 ms - {} - User: guest","timestamp":"2025-07-10T10:53:42.032Z"}
+{"level":"http","message":"GET /api/products 304 0.980 ms - {} - User: guest","timestamp":"2025-07-10T10:53:45.453Z"}
+{"level":"http","message":"GET /api/products 304 0.663 ms - {} - User: guest","timestamp":"2025-07-10T10:53:45.457Z"}
+{"level":"http","message":"GET /api/products 304 0.560 ms - {} - User: guest","timestamp":"2025-07-10T10:53:45.460Z"}
+{"level":"http","message":"GET /api/collections 304 7.089 ms - {} - User: guest","timestamp":"2025-07-10T10:53:45.461Z"}
+{"level":"http","message":"GET /api/products 304 0.534 ms - {} - User: guest","timestamp":"2025-07-10T10:53:45.463Z"}
+{"level":"http","message":"GET /api/collections 304 7.263 ms - {} - User: guest","timestamp":"2025-07-10T10:53:45.472Z"}
+{"level":"http","message":"GET /api/products 304 0.608 ms - {} - User: guest","timestamp":"2025-07-10T10:53:55.316Z"}
+{"level":"http","message":"GET /api/products 304 0.601 ms - {} - User: guest","timestamp":"2025-07-10T10:53:55.321Z"}
+{"level":"http","message":"GET /api/products 304 0.599 ms - {} - User: guest","timestamp":"2025-07-10T10:53:55.325Z"}
+{"level":"http","message":"GET /api/collections 304 8.420 ms - {} - User: guest","timestamp":"2025-07-10T10:53:55.327Z"}
+{"level":"http","message":"GET /api/products 304 0.622 ms - {} - User: guest","timestamp":"2025-07-10T10:53:55.329Z"}
+{"level":"http","message":"GET /api/collections 304 9.764 ms - {} - User: guest","timestamp":"2025-07-10T10:53:55.340Z"}
+{"level":"http","message":"GET /api/products 304 0.562 ms - {} - User: guest","timestamp":"2025-07-10T10:53:58.842Z"}
+{"level":"http","message":"GET /api/products 304 0.563 ms - {} - User: guest","timestamp":"2025-07-10T10:53:58.845Z"}
+{"level":"http","message":"GET /api/products 304 0.772 ms - {} - User: guest","timestamp":"2025-07-10T10:53:58.850Z"}
+{"level":"http","message":"GET /api/collections 304 8.424 ms - {} - User: guest","timestamp":"2025-07-10T10:53:58.852Z"}
+{"level":"http","message":"GET /api/products 304 0.629 ms - {} - User: guest","timestamp":"2025-07-10T10:53:58.854Z"}
+{"level":"http","message":"GET /api/collections 304 7.578 ms - {} - User: guest","timestamp":"2025-07-10T10:53:58.862Z"}
+{"level":"http","message":"GET /api/products 304 0.670 ms - {} - User: guest","timestamp":"2025-07-10T10:54:24.060Z"}
+{"level":"http","message":"GET /api/products 304 0.716 ms - {} - User: guest","timestamp":"2025-07-10T10:54:24.067Z"}
+{"level":"http","message":"GET /api/products 304 0.923 ms - {} - User: guest","timestamp":"2025-07-10T10:54:24.072Z"}
+{"level":"http","message":"GET /api/collections 304 13.399 ms - {} - User: guest","timestamp":"2025-07-10T10:54:24.075Z"}
+{"level":"http","message":"GET /api/products 304 1.923 ms - {} - User: guest","timestamp":"2025-07-10T10:54:24.079Z"}
+{"level":"http","message":"GET /api/collections 304 5.392 ms - {} - User: guest","timestamp":"2025-07-10T10:54:24.085Z"}
+{"level":"http","message":"GET /api/products 304 0.544 ms - {} - User: guest","timestamp":"2025-07-10T10:54:30.828Z"}
+{"level":"http","message":"GET /api/products 304 0.473 ms - {} - User: guest","timestamp":"2025-07-10T10:54:30.831Z"}
+{"level":"http","message":"GET /api/products 304 0.844 ms - {} - User: guest","timestamp":"2025-07-10T10:54:30.834Z"}
+{"level":"http","message":"GET /api/collections 304 7.412 ms - {} - User: guest","timestamp":"2025-07-10T10:54:30.837Z"}
+{"level":"http","message":"GET /api/products 304 0.635 ms - {} - User: guest","timestamp":"2025-07-10T10:54:30.839Z"}
+{"level":"http","message":"GET /api/collections 304 6.020 ms - {} - User: guest","timestamp":"2025-07-10T10:54:30.847Z"}
+{"level":"http","message":"GET /api/collections/ChotMe/products 200 5.600 ms - {} - User: guest","timestamp":"2025-07-10T10:59:04.735Z"}
+{"level":"http","message":"GET /api/collections/ChotMe/products 304 8.713 ms - {} - User: guest","timestamp":"2025-07-10T10:59:04.748Z"}
+{"level":"http","message":"GET /api/collections/ChotMe/products 304 4.213 ms - {} - User: guest","timestamp":"2025-07-10T10:59:14.932Z"}
+{"level":"http","message":"GET /api/collections/ChotMe/products 304 4.769 ms - {} - User: guest","timestamp":"2025-07-10T10:59:14.940Z"}
+{"level":"http","message":"GET /api/products 304 6.926 ms - {} - User: guest","timestamp":"2025-07-10T10:59:24.552Z"}
+{"level":"http","message":"GET /api/collections 304 8.428 ms - {} - User: guest","timestamp":"2025-07-10T10:59:24.555Z"}
+{"level":"http","message":"GET /api/products 304 0.915 ms - {} - User: guest","timestamp":"2025-07-10T10:59:24.557Z"}
+{"level":"http","message":"GET /api/products 304 1.181 ms - {} - User: guest","timestamp":"2025-07-10T10:59:24.562Z"}
+{"level":"http","message":"GET /api/products 304 1.725 ms - {} - User: guest","timestamp":"2025-07-10T10:59:24.570Z"}
+{"level":"http","message":"GET /api/collections 304 17.700 ms - {} - User: guest","timestamp":"2025-07-10T10:59:24.577Z"}
+{"level":"http","message":"GET /api/collections/OnlyYou/products 200 8.466 ms - {} - User: guest","timestamp":"2025-07-10T10:59:25.558Z"}
+{"level":"http","message":"GET /api/collections/OnlyYou/products 304 6.077 ms - {} - User: guest","timestamp":"2025-07-10T10:59:25.566Z"}
+{"level":"http","message":"GET /api/products 304 0.673 ms - {} - User: guest","timestamp":"2025-07-10T10:59:32.691Z"}
+{"level":"http","message":"GET /api/products 304 0.514 ms - {} - User: guest","timestamp":"2025-07-10T10:59:32.694Z"}
+{"level":"http","message":"GET /api/products 304 0.607 ms - {} - User: guest","timestamp":"2025-07-10T10:59:32.697Z"}
+{"level":"http","message":"GET /api/collections 304 6.214 ms - {} - User: guest","timestamp":"2025-07-10T10:59:32.698Z"}
+{"level":"http","message":"GET /api/products 304 0.684 ms - {} - User: guest","timestamp":"2025-07-10T10:59:32.701Z"}
+{"level":"http","message":"GET /api/collections 304 5.023 ms - {} - User: guest","timestamp":"2025-07-10T10:59:32.706Z"}
+{"level":"http","message":"GET /api/collections/OnlyYou/products 304 5.101 ms - {} - User: guest","timestamp":"2025-07-10T10:59:37.518Z"}
+{"level":"http","message":"GET /api/collections/OnlyYou/products 304 4.183 ms - {} - User: guest","timestamp":"2025-07-10T10:59:37.523Z"}
+{"level":"http","message":"GET /api/products/686b791896bdbec8f99e1e89 404 2.637 ms - {} - User: guest","timestamp":"2025-07-10T11:00:41.409Z"}
+{"level":"http","message":"GET /api/products/686b791896bdbec8f99e1e89 404 2.773 ms - {} - User: guest","timestamp":"2025-07-10T11:00:41.413Z"}
+{"level":"http","message":"GET /api/collections/OnlyYou/products 304 5.819 ms - {} - User: guest","timestamp":"2025-07-10T11:00:43.732Z"}
+{"level":"http","message":"GET /api/collections/OnlyYou/products 304 4.303 ms - {} - User: guest","timestamp":"2025-07-10T11:00:43.738Z"}
+{"level":"http","message":"GET /api/products/6856dd9d591b5fb9368174ff 404 1.663 ms - {} - User: guest","timestamp":"2025-07-10T11:00:44.500Z"}
+{"level":"http","message":"GET /api/products/6856dd9d591b5fb9368174ff 404 2.416 ms - {} - User: guest","timestamp":"2025-07-10T11:00:44.505Z"}
+{"level":"http","message":"GET /api/collections/OnlyYou/products 304 9.846 ms - {} - User: guest","timestamp":"2025-07-10T11:00:45.712Z"}
+{"level":"http","message":"GET /api/collections/OnlyYou/products 304 4.734 ms - {} - User: guest","timestamp":"2025-07-10T11:00:45.719Z"}
+{"level":"http","message":"GET /api/collections/OnlyYou/products 304 5.744 ms - {} - User: guest","timestamp":"2025-07-10T11:02:07.678Z"}
+{"level":"http","message":"GET /api/products 304 0.590 ms - {} - User: guest","timestamp":"2025-07-10T11:02:40.456Z"}
+{"level":"http","message":"GET /api/products 304 1.069 ms - {} - User: guest","timestamp":"2025-07-10T11:02:40.459Z"}
+{"level":"http","message":"GET /api/collections/OnlyYou/products 304 4.217 ms - {} - User: guest","timestamp":"2025-07-10T11:02:46.013Z"}
+{"level":"http","message":"GET /api/collections/OnlyYou/products 304 6.622 ms - {} - User: guest","timestamp":"2025-07-10T11:02:46.021Z"}
+{"level":"http","message":"GET /api/products 304 0.549 ms - {} - User: guest","timestamp":"2025-07-10T11:02:47.046Z"}
+{"level":"http","message":"GET /api/products 304 0.490 ms - {} - User: guest","timestamp":"2025-07-10T11:02:47.048Z"}
+{"level":"http","message":"GET /api/products 304 0.824 ms - {} - User: guest","timestamp":"2025-07-10T11:02:47.052Z"}
+{"level":"http","message":"GET /api/collections 304 8.711 ms - {} - User: guest","timestamp":"2025-07-10T11:02:47.056Z"}
+{"level":"http","message":"GET /api/products 304 0.911 ms - {} - User: guest","timestamp":"2025-07-10T11:02:47.058Z"}
+{"level":"http","message":"GET /api/collections 304 7.231 ms - {} - User: guest","timestamp":"2025-07-10T11:02:47.067Z"}
+{"level":"http","message":"GET /api/collections/ChotMe/products 304 4.290 ms - {} - User: guest","timestamp":"2025-07-10T11:02:50.019Z"}
+{"level":"http","message":"GET /api/collections/ChotMe/products 304 8.069 ms - {} - User: guest","timestamp":"2025-07-10T11:02:50.028Z"}
+{"level":"http","message":"GET /api/products/BT1 200 2.451 ms - {} - User: guest","timestamp":"2025-07-10T11:02:52.591Z"}
+{"level":"http","message":"GET /api/products/BT1 304 1.170 ms - {} - User: guest","timestamp":"2025-07-10T11:02:52.594Z"}
+{"level":"http","message":"GET /api/products 304 0.933 ms - {} - User: guest","timestamp":"2025-07-10T11:02:52.605Z"}
+{"level":"http","message":"GET /api/products 304 0.635 ms - {} - User: guest","timestamp":"2025-07-10T11:02:52.619Z"}
+{"level":"http","message":"GET /api/products 304 0.848 ms - {} - User: guest","timestamp":"2025-07-10T11:03:18.415Z"}
+{"level":"http","message":"GET /api/products 304 0.506 ms - {} - User: guest","timestamp":"2025-07-10T11:03:18.418Z"}
+{"level":"http","message":"GET /api/products 304 0.680 ms - {} - User: guest","timestamp":"2025-07-10T11:03:18.420Z"}
+{"level":"http","message":"GET /api/products 304 0.710 ms - {} - User: guest","timestamp":"2025-07-10T11:03:18.425Z"}
+{"level":"http","message":"GET /api/collections 304 11.163 ms - {} - User: guest","timestamp":"2025-07-10T11:03:18.427Z"}
+{"level":"http","message":"GET /api/collections 304 7.310 ms - {} - User: guest","timestamp":"2025-07-10T11:03:18.437Z"}
+{"level":"info","message":"🛑 SIGINT received, shutting down gracefully","timestamp":"2025-07-10T11:05:36.219Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-10T13:39:07.481Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-10T13:39:07.485Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-10T13:39:07.486Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-10T13:39:07.487Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-10T13:39:07.851Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-10T13:39:07.855Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-10T13:39:08.054Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-10T13:39:08.057Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-10T13:39:08.057Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-10T13:39:08.058Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-10T13:39:08.058Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-10T13:39:08.058Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-10T13:39:08.058Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-10T13:39:08.059Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-10T13:39:08.059Z"}
+{"level":"http","message":"GET /api/products 304 88.186 ms - {} - User: guest","timestamp":"2025-07-10T13:40:01.339Z"}
+{"level":"http","message":"GET /api/collections 304 82.150 ms - {} - User: guest","timestamp":"2025-07-10T13:40:01.348Z"}
+{"level":"http","message":"GET /api/products 304 3.086 ms - {} - User: guest","timestamp":"2025-07-10T13:40:01.354Z"}
+{"level":"http","message":"GET /api/products 304 12.107 ms - {} - User: guest","timestamp":"2025-07-10T13:40:01.373Z"}
+{"level":"http","message":"GET /api/products 304 10.057 ms - {} - User: guest","timestamp":"2025-07-10T13:40:01.391Z"}
+{"level":"http","message":"GET /api/collections 304 34.188 ms - {} - User: guest","timestamp":"2025-07-10T13:40:01.430Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 16.431 ms - {} - User: guest","timestamp":"2025-07-10T13:40:23.095Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 2.485 ms - {} - User: guest","timestamp":"2025-07-10T13:40:23.102Z"}
+{"level":"http","message":"GET /api/products 304 4.938 ms - {} - User: guest","timestamp":"2025-07-10T13:40:23.123Z"}
+{"level":"http","message":"GET /api/products 304 4.035 ms - {} - User: guest","timestamp":"2025-07-10T13:40:23.197Z"}
+{"level":"http","message":"GET /api/products 304 1.502 ms - {} - User: guest","timestamp":"2025-07-10T13:40:30.378Z"}
+{"level":"http","message":"GET /api/products 304 3.738 ms - {} - User: guest","timestamp":"2025-07-10T13:40:30.391Z"}
+{"level":"http","message":"GET /api/products 304 2.920 ms - {} - User: guest","timestamp":"2025-07-10T13:40:30.405Z"}
+{"level":"http","message":"GET /api/products 304 1.822 ms - {} - User: guest","timestamp":"2025-07-10T13:40:30.415Z"}
+{"level":"http","message":"GET /api/collections 304 40.836 ms - {} - User: guest","timestamp":"2025-07-10T13:40:30.421Z"}
+{"level":"http","message":"GET /api/collections 304 18.589 ms - {} - User: guest","timestamp":"2025-07-10T13:40:30.443Z"}
+{"level":"http","message":"GET /api/products 304 1.112 ms - {} - User: guest","timestamp":"2025-07-10T13:40:41.486Z"}
+{"level":"http","message":"GET /api/products 304 1.974 ms - {} - User: guest","timestamp":"2025-07-10T13:40:41.491Z"}
+{"level":"http","message":"GET /api/products 304 2.756 ms - {} - User: guest","timestamp":"2025-07-10T13:41:15.343Z"}
+{"level":"http","message":"GET /api/products 304 2.122 ms - {} - User: guest","timestamp":"2025-07-10T13:41:15.348Z"}
+{"level":"http","message":"GET /api/products 304 1.570 ms - {} - User: guest","timestamp":"2025-07-10T13:41:15.363Z"}
+{"level":"http","message":"GET /api/products 304 20.945 ms - {} - User: guest","timestamp":"2025-07-10T13:41:15.396Z"}
+{"level":"http","message":"GET /api/collections 304 64.138 ms - {} - User: guest","timestamp":"2025-07-10T13:41:15.417Z"}
+{"level":"http","message":"GET /api/collections 304 18.158 ms - {} - User: guest","timestamp":"2025-07-10T13:41:15.443Z"}
+{"level":"http","message":"GET /api/collections/OnlyYou/products 304 17.148 ms - {} - User: guest","timestamp":"2025-07-10T13:41:21.216Z"}
+{"level":"http","message":"GET /api/collections/OnlyYou/products 304 8.554 ms - {} - User: guest","timestamp":"2025-07-10T13:41:21.228Z"}
+{"level":"http","message":"GET /api/products 304 2.074 ms - {} - User: guest","timestamp":"2025-07-10T13:41:25.042Z"}
+{"level":"http","message":"GET /api/products 304 3.198 ms - {} - User: guest","timestamp":"2025-07-10T13:41:25.048Z"}
+{"level":"http","message":"GET /api/products 304 1.953 ms - {} - User: guest","timestamp":"2025-07-10T13:41:25.061Z"}
+{"level":"http","message":"GET /api/products 304 1.976 ms - {} - User: guest","timestamp":"2025-07-10T13:41:25.073Z"}
+{"level":"http","message":"GET /api/collections 304 25.767 ms - {} - User: guest","timestamp":"2025-07-10T13:41:25.079Z"}
+{"level":"http","message":"GET /api/collections 304 15.901 ms - {} - User: guest","timestamp":"2025-07-10T13:41:25.099Z"}
+{"level":"http","message":"GET /api/collections/TuyetTacTrangSuc/products 200 15.190 ms - {} - User: guest","timestamp":"2025-07-10T13:41:26.867Z"}
+{"level":"http","message":"GET /api/collections/TuyetTacTrangSuc/products 304 14.380 ms - {} - User: guest","timestamp":"2025-07-10T13:41:26.884Z"}
+{"level":"http","message":"GET /api/products 304 2.996 ms - {} - User: guest","timestamp":"2025-07-10T13:41:31.858Z"}
+{"level":"http","message":"GET /api/products 304 3.142 ms - {} - User: guest","timestamp":"2025-07-10T13:41:31.864Z"}
+{"level":"http","message":"GET /api/products 304 5.479 ms - {} - User: guest","timestamp":"2025-07-10T13:41:31.872Z"}
+{"level":"http","message":"GET /api/products 304 2.585 ms - {} - User: guest","timestamp":"2025-07-10T13:41:31.879Z"}
+{"level":"http","message":"GET /api/collections 304 13.885 ms - {} - User: guest","timestamp":"2025-07-10T13:41:31.896Z"}
+{"level":"http","message":"GET /api/collections 304 25.797 ms - {} - User: guest","timestamp":"2025-07-10T13:41:31.941Z"}
+{"level":"http","message":"GET /api/auth/google 302 4.115 ms - {} - User: guest","timestamp":"2025-07-10T13:44:52.130Z"}
+{"email":"nguyendao2112kientruc@gmail.com","id":"113466190791653370426","level":"info","message":"oogle Profile received:","name":"Đạo Nguyễn","picture":"https://lh3.googleusercontent.com/a/ACg8ocJ313L5QMX5Yg6rnXtGWEo-KduxwDOEiR8VMr7BUfCsZesHRx4=s96-c","timestamp":"2025-07-10T13:44:52.945Z"}
+{"level":"info","message":"Google OAuth success for user:","timestamp":"2025-07-10T13:44:52.955Z"}
+{"level":"http","message":"GET /api/auth/google/callback?code=4%2F0AVMBsJj9yUbVWnO0-n76OzGvbEJsYJzwkFLPur3gdOZuot3hTXi23uVd5w35Q2QgTdf-UA&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none 302 657.167 ms - {} - User: 686deee8ac71d612916479d3","timestamp":"2025-07-10T13:44:53.064Z"}
+{"level":"http","message":"GET /api/products 304 1.858 ms - {} - User: guest","timestamp":"2025-07-10T13:44:54.757Z"}
+{"level":"http","message":"GET /api/products 304 1.099 ms - {} - User: guest","timestamp":"2025-07-10T13:44:54.760Z"}
+{"level":"http","message":"GET /api/products 304 2.545 ms - {} - User: guest","timestamp":"2025-07-10T13:44:54.771Z"}
+{"level":"http","message":"GET /api/products 304 2.202 ms - {} - User: guest","timestamp":"2025-07-10T13:44:54.785Z"}
+{"level":"http","message":"GET /api/collections 304 27.763 ms - {} - User: guest","timestamp":"2025-07-10T13:44:54.790Z"}
+{"level":"http","message":"GET /api/collections 304 14.891 ms - {} - User: guest","timestamp":"2025-07-10T13:44:54.808Z"}
+{"level":"http","message":"GET /api/auth/google 302 1.883 ms - {} - User: guest","timestamp":"2025-07-10T13:45:01.542Z"}
+{"email":"nguyendao2112kientruc@gmail.com","id":"113466190791653370426","level":"info","message":"oogle Profile received:","name":"Đạo Nguyễn","picture":"https://lh3.googleusercontent.com/a/ACg8ocJ313L5QMX5Yg6rnXtGWEo-KduxwDOEiR8VMr7BUfCsZesHRx4=s96-c","timestamp":"2025-07-10T13:45:02.413Z"}
+{"level":"info","message":"Google OAuth success for user:","timestamp":"2025-07-10T13:45:02.420Z"}
+{"level":"http","message":"GET /api/auth/google/callback?code=4%2F0AVMBsJhIH4-zPxp4MjCOpSwyMljRkGI-1QLDtHtqVy73gsu1k_kvuUOkVcFeJIH7jLbSMA&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none 302 612.909 ms - {} - User: 686deee8ac71d612916479d3","timestamp":"2025-07-10T13:45:02.439Z"}
+{"level":"http","message":"GET /api/products 304 21.005 ms - {} - User: guest","timestamp":"2025-07-10T13:45:04.147Z"}
+{"level":"http","message":"GET /api/collections 304 27.670 ms - {} - User: guest","timestamp":"2025-07-10T13:45:04.157Z"}
+{"level":"http","message":"GET /api/products 304 3.946 ms - {} - User: guest","timestamp":"2025-07-10T13:45:04.163Z"}
+{"level":"http","message":"GET /api/products 304 2.145 ms - {} - User: guest","timestamp":"2025-07-10T13:45:04.179Z"}
+{"level":"http","message":"GET /api/products 304 1.569 ms - {} - User: guest","timestamp":"2025-07-10T13:45:04.185Z"}
+{"level":"http","message":"GET /api/collections 304 30.570 ms - {} - User: guest","timestamp":"2025-07-10T13:45:04.197Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 1.599 ms - {} - User: guest","timestamp":"2025-07-10T13:45:16.008Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 1.759 ms - {} - User: guest","timestamp":"2025-07-10T13:45:16.013Z"}
+{"level":"http","message":"GET /api/products 304 2.277 ms - {} - User: guest","timestamp":"2025-07-10T13:45:16.030Z"}
+{"level":"http","message":"GET /api/products 304 1.932 ms - {} - User: guest","timestamp":"2025-07-10T13:45:16.066Z"}
+{"level":"http","message":"GET /api/products 304 1.850 ms - {} - User: guest","timestamp":"2025-07-10T13:45:28.622Z"}
+{"level":"http","message":"GET /api/products 304 3.250 ms - {} - User: guest","timestamp":"2025-07-10T13:45:28.635Z"}
+{"level":"http","message":"GET /api/collections 304 22.903 ms - {} - User: guest","timestamp":"2025-07-10T13:45:28.639Z"}
+{"level":"http","message":"GET /api/products 304 1.712 ms - {} - User: guest","timestamp":"2025-07-10T13:45:28.648Z"}
+{"level":"http","message":"GET /api/collections 304 17.656 ms - {} - User: guest","timestamp":"2025-07-10T13:45:28.679Z"}
+{"level":"http","message":"GET /api/products 304 1.415 ms - {} - User: guest","timestamp":"2025-07-10T13:45:28.682Z"}
+{"level":"http","message":"GET /api/collections/ChotMe/products 304 12.675 ms - {} - User: guest","timestamp":"2025-07-10T13:45:40.401Z"}
+{"level":"http","message":"GET /api/collections/ChotMe/products 304 11.203 ms - {} - User: guest","timestamp":"2025-07-10T13:45:40.416Z"}
+{"level":"http","message":"GET /api/products 304 1.963 ms - {} - User: guest","timestamp":"2025-07-10T13:46:01.656Z"}
+{"level":"http","message":"GET /api/products 304 1.300 ms - {} - User: guest","timestamp":"2025-07-10T13:46:01.659Z"}
+{"level":"http","message":"GET /api/products 304 2.120 ms - {} - User: guest","timestamp":"2025-07-10T13:46:59.025Z"}
+{"level":"http","message":"GET /api/products 304 1.525 ms - {} - User: guest","timestamp":"2025-07-10T13:46:59.029Z"}
+{"level":"http","message":"GET /api/products 304 1.996 ms - {} - User: guest","timestamp":"2025-07-10T13:46:59.035Z"}
+{"level":"http","message":"GET /api/products 304 2.864 ms - {} - User: guest","timestamp":"2025-07-10T13:46:59.048Z"}
+{"level":"http","message":"GET /api/collections 304 46.103 ms - {} - User: guest","timestamp":"2025-07-10T13:46:59.084Z"}
+{"level":"http","message":"GET /api/collections 304 25.350 ms - {} - User: guest","timestamp":"2025-07-10T13:46:59.115Z"}
+{"level":"http","message":"GET /api/products 304 11.444 ms - {} - User: guest","timestamp":"2025-07-10T13:57:54.572Z"}
+{"level":"http","message":"GET /api/collections 304 12.488 ms - {} - User: guest","timestamp":"2025-07-10T13:57:54.575Z"}
+{"level":"http","message":"GET /api/products 304 1.377 ms - {} - User: guest","timestamp":"2025-07-10T13:57:54.579Z"}
+{"level":"http","message":"GET /api/products 304 1.357 ms - {} - User: guest","timestamp":"2025-07-10T13:57:54.587Z"}
+{"level":"http","message":"GET /api/products 304 1.077 ms - {} - User: guest","timestamp":"2025-07-10T13:57:54.592Z"}
+{"level":"http","message":"GET /api/collections 304 27.576 ms - {} - User: guest","timestamp":"2025-07-10T13:57:54.608Z"}
+{"level":"http","message":"GET /api/products 304 1.707 ms - {} - User: guest","timestamp":"2025-07-10T13:57:55.673Z"}
+{"level":"http","message":"GET /api/products/686b876e96bdbec8f99e1eb3 404 2.217 ms - {} - User: guest","timestamp":"2025-07-10T13:58:01.779Z"}
+{"level":"http","message":"GET /api/products/686b876e96bdbec8f99e1eb3 404 2.241 ms - {} - User: guest","timestamp":"2025-07-10T13:58:01.783Z"}
+{"level":"http","message":"GET /api/products 304 1.760 ms - {} - User: guest","timestamp":"2025-07-10T13:58:05.567Z"}
+{"level":"http","message":"GET /api/products 304 0.735 ms - {} - User: guest","timestamp":"2025-07-10T13:58:05.571Z"}
+{"level":"http","message":"GET /api/products 304 0.745 ms - {} - User: guest","timestamp":"2025-07-10T13:58:05.574Z"}
+{"level":"http","message":"GET /api/products 304 0.615 ms - {} - User: guest","timestamp":"2025-07-10T13:58:05.578Z"}
+{"level":"http","message":"GET /api/collections 304 8.505 ms - {} - User: guest","timestamp":"2025-07-10T13:58:05.580Z"}
+{"level":"http","message":"GET /api/collections 304 11.814 ms - {} - User: guest","timestamp":"2025-07-10T13:58:05.594Z"}
+{"level":"http","message":"GET /api/products 304 0.842 ms - {} - User: guest","timestamp":"2025-07-10T13:58:06.950Z"}
+{"level":"http","message":"GET /api/products 304 0.640 ms - {} - User: guest","timestamp":"2025-07-10T13:58:17.121Z"}
+{"level":"http","message":"GET /api/products 304 1.080 ms - {} - User: guest","timestamp":"2025-07-10T13:58:17.123Z"}
+{"level":"http","message":"GET /api/products 304 0.568 ms - {} - User: guest","timestamp":"2025-07-10T13:58:19.424Z"}
+{"level":"http","message":"GET /api/products 304 0.965 ms - {} - User: guest","timestamp":"2025-07-10T13:58:19.428Z"}
+{"level":"http","message":"GET /api/products 304 0.962 ms - {} - User: guest","timestamp":"2025-07-10T13:58:19.432Z"}
+{"level":"http","message":"GET /api/collections 304 12.019 ms - {} - User: guest","timestamp":"2025-07-10T13:58:19.437Z"}
+{"level":"http","message":"GET /api/products 304 0.951 ms - {} - User: guest","timestamp":"2025-07-10T13:58:19.439Z"}
+{"level":"http","message":"GET /api/collections 304 13.109 ms - {} - User: guest","timestamp":"2025-07-10T13:58:19.455Z"}
+{"level":"http","message":"GET /api/products 304 0.673 ms - {} - User: guest","timestamp":"2025-07-10T13:58:20.686Z"}
+{"level":"http","message":"GET /api/products 304 0.964 ms - {} - User: guest","timestamp":"2025-07-10T13:58:23.798Z"}
+{"level":"http","message":"GET /api/products 304 0.587 ms - {} - User: guest","timestamp":"2025-07-10T13:58:23.800Z"}
+{"level":"http","message":"GET /api/products 304 0.624 ms - {} - User: guest","timestamp":"2025-07-10T13:58:30.108Z"}
+{"level":"http","message":"GET /api/products 304 2.014 ms - {} - User: guest","timestamp":"2025-07-10T13:58:30.113Z"}
+{"level":"http","message":"GET /api/products 304 1.030 ms - {} - User: guest","timestamp":"2025-07-10T13:58:30.119Z"}
+{"level":"http","message":"GET /api/collections 304 12.621 ms - {} - User: guest","timestamp":"2025-07-10T13:58:30.122Z"}
+{"level":"http","message":"GET /api/products 304 1.081 ms - {} - User: guest","timestamp":"2025-07-10T13:58:30.125Z"}
+{"level":"http","message":"GET /api/collections 304 16.469 ms - {} - User: guest","timestamp":"2025-07-10T13:58:30.145Z"}
+{"level":"http","message":"GET /api/products 304 0.756 ms - {} - User: guest","timestamp":"2025-07-10T13:58:31.403Z"}
+{"level":"http","message":"GET /api/products/686b86ae96bdbec8f99e1eb0 404 2.441 ms - {} - User: guest","timestamp":"2025-07-10T13:58:35.841Z"}
+{"level":"http","message":"GET /api/products/686b86ae96bdbec8f99e1eb0 404 2.336 ms - {} - User: guest","timestamp":"2025-07-10T13:58:35.845Z"}
+{"level":"http","message":"GET /api/products 304 0.937 ms - {} - User: guest","timestamp":"2025-07-10T14:00:59.737Z"}
+{"level":"http","message":"GET /api/products 304 0.655 ms - {} - User: guest","timestamp":"2025-07-10T14:00:59.741Z"}
+{"level":"http","message":"GET /api/products 304 0.693 ms - {} - User: guest","timestamp":"2025-07-10T14:00:59.744Z"}
+{"level":"http","message":"GET /api/products 304 0.689 ms - {} - User: guest","timestamp":"2025-07-10T14:00:59.746Z"}
+{"level":"http","message":"GET /api/collections 304 13.753 ms - {} - User: guest","timestamp":"2025-07-10T14:00:59.753Z"}
+{"level":"http","message":"GET /api/collections 304 7.569 ms - {} - User: guest","timestamp":"2025-07-10T14:00:59.763Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 5.211 ms - {} - User: guest","timestamp":"2025-07-10T14:01:03.596Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.917 ms - {} - User: guest","timestamp":"2025-07-10T14:01:03.599Z"}
+{"level":"http","message":"GET /api/products 304 0.595 ms - {} - User: guest","timestamp":"2025-07-10T14:01:03.608Z"}
+{"level":"http","message":"GET /api/products 304 0.709 ms - {} - User: guest","timestamp":"2025-07-10T14:01:03.625Z"}
+{"level":"http","message":"GET /api/products 304 1.044 ms - {} - User: guest","timestamp":"2025-07-10T14:02:26.775Z"}
+{"level":"http","message":"GET /api/products 304 1.393 ms - {} - User: guest","timestamp":"2025-07-10T14:02:26.780Z"}
+{"level":"http","message":"GET /api/products 304 0.863 ms - {} - User: guest","timestamp":"2025-07-10T14:02:26.786Z"}
+{"level":"http","message":"GET /api/collections 304 12.171 ms - {} - User: guest","timestamp":"2025-07-10T14:02:26.789Z"}
+{"level":"http","message":"GET /api/products 304 1.211 ms - {} - User: guest","timestamp":"2025-07-10T14:02:26.791Z"}
+{"level":"http","message":"GET /api/collections 304 8.877 ms - {} - User: guest","timestamp":"2025-07-10T14:02:26.802Z"}
+{"level":"http","message":"GET /api/products 304 0.860 ms - {} - User: guest","timestamp":"2025-07-10T14:02:29.473Z"}
+{"level":"http","message":"GET /api/products 304 0.908 ms - {} - User: guest","timestamp":"2025-07-10T14:02:29.475Z"}
+{"level":"http","message":"GET /api/products/N10K2 200 2.551 ms - {} - User: guest","timestamp":"2025-07-10T14:02:30.361Z"}
+{"level":"http","message":"GET /api/products/N10K2 304 0.415 ms - {} - User: guest","timestamp":"2025-07-10T14:02:30.363Z"}
+{"level":"http","message":"GET /api/products 304 0.575 ms - {} - User: guest","timestamp":"2025-07-10T14:02:30.375Z"}
+{"level":"http","message":"GET /api/products 304 0.653 ms - {} - User: guest","timestamp":"2025-07-10T14:02:30.386Z"}
+{"level":"http","message":"GET /api/products 304 8.418 ms - {} - User: guest","timestamp":"2025-07-10T14:06:13.536Z"}
+{"level":"http","message":"GET /api/collections 304 10.176 ms - {} - User: guest","timestamp":"2025-07-10T14:06:13.539Z"}
+{"level":"http","message":"GET /api/products 304 0.876 ms - {} - User: guest","timestamp":"2025-07-10T14:06:13.541Z"}
+{"level":"http","message":"GET /api/products 304 1.046 ms - {} - User: guest","timestamp":"2025-07-10T14:06:13.547Z"}
+{"level":"http","message":"GET /api/products 304 2.396 ms - {} - User: guest","timestamp":"2025-07-10T14:06:13.556Z"}
+{"level":"http","message":"GET /api/collections 304 15.586 ms - {} - User: guest","timestamp":"2025-07-10T14:06:13.558Z"}
+{"level":"http","message":"GET /api/products 304 0.856 ms - {} - User: guest","timestamp":"2025-07-10T14:06:15.517Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.538 ms - {} - User: guest","timestamp":"2025-07-10T14:06:18.901Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.691 ms - {} - User: guest","timestamp":"2025-07-10T14:06:18.903Z"}
+{"level":"http","message":"GET /api/products 304 0.817 ms - {} - User: guest","timestamp":"2025-07-10T14:06:18.915Z"}
+{"level":"http","message":"GET /api/products 304 0.600 ms - {} - User: guest","timestamp":"2025-07-10T14:06:18.926Z"}
+{"level":"http","message":"GET /api/products 304 1.120 ms - {} - User: guest","timestamp":"2025-07-10T14:07:09.322Z"}
+{"level":"http","message":"GET /api/products 304 1.071 ms - {} - User: guest","timestamp":"2025-07-10T14:08:00.663Z"}
+{"level":"http","message":"GET /api/products 304 1.150 ms - {} - User: guest","timestamp":"2025-07-10T14:08:00.668Z"}
+{"level":"http","message":"GET /api/products 304 0.690 ms - {} - User: guest","timestamp":"2025-07-10T14:08:00.670Z"}
+{"level":"http","message":"GET /api/products 304 1.285 ms - {} - User: guest","timestamp":"2025-07-10T14:08:00.675Z"}
+{"level":"http","message":"GET /api/collections 304 13.855 ms - {} - User: guest","timestamp":"2025-07-10T14:08:00.678Z"}
+{"level":"http","message":"GET /api/collections 304 9.332 ms - {} - User: guest","timestamp":"2025-07-10T14:08:00.690Z"}
+{"level":"http","message":"GET /api/products 304 1.222 ms - {} - User: guest","timestamp":"2025-07-10T14:08:06.041Z"}
+{"level":"http","message":"GET /api/products 304 0.820 ms - {} - User: guest","timestamp":"2025-07-10T14:08:06.044Z"}
+{"level":"http","message":"GET /api/collections 200 4.691 ms - {} - User: guest","timestamp":"2025-07-10T14:09:55.272Z"}
+{"level":"http","message":"GET /api/products 200 0.897 ms - {} - User: guest","timestamp":"2025-07-10T14:10:09.777Z"}
+{"level":"http","message":"GET /api/products?limit=100 200 18.932 ms - {} - User: guest","timestamp":"2025-07-10T15:47:46.029Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 200 19.620 ms - {} - User: guest","timestamp":"2025-07-10T15:47:46.034Z"}
+{"level":"http","message":"GET /api/collections 304 20.775 ms - {} - User: guest","timestamp":"2025-07-10T15:47:46.037Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 1.688 ms - {} - User: guest","timestamp":"2025-07-10T15:47:46.041Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 1.386 ms - {} - User: guest","timestamp":"2025-07-10T15:47:46.044Z"}
+{"level":"http","message":"GET /api/collections 304 7.631 ms - {} - User: guest","timestamp":"2025-07-10T15:47:46.052Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 1.217 ms - {} - User: guest","timestamp":"2025-07-10T15:48:00.030Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 0.690 ms - {} - User: guest","timestamp":"2025-07-10T15:48:00.035Z"}
+{"level":"http","message":"GET /api/products?limit=1000 200 10.731 ms - {} - User: guest","timestamp":"2025-07-10T15:48:00.042Z"}
+{"level":"http","message":"GET /api/products?limit=1000 304 0.993 ms - {} - User: guest","timestamp":"2025-07-10T15:48:00.045Z"}
+{"level":"http","message":"GET /api/products?page=2&limit=10&sortBy=newest 200 5.225 ms - {} - User: guest","timestamp":"2025-07-10T15:48:09.187Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 0.664 ms - {} - User: guest","timestamp":"2025-07-10T15:48:13.134Z"}
+{"level":"http","message":"GET /api/products?page=2&limit=10&sortBy=newest 304 0.683 ms - {} - User: guest","timestamp":"2025-07-10T15:48:24.511Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 0.706 ms - {} - User: guest","timestamp":"2025-07-10T15:48:32.901Z"}
+{"level":"http","message":"GET /api/products?page=2&limit=10&sortBy=newest 304 0.606 ms - {} - User: guest","timestamp":"2025-07-10T15:48:38.474Z"}
+{"level":"http","message":"GET /api/products 304 5.614 ms - {} - User: guest","timestamp":"2025-07-10T15:48:47.487Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 0.647 ms - {} - User: guest","timestamp":"2025-07-10T15:48:55.221Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&search=d%C3%A2y+chuy%E1%BB%81n&sortBy=newest 200 5.606 ms - {} - User: guest","timestamp":"2025-07-10T15:49:03.682Z"}
+{"level":"http","message":"GET /api/products 304 0.655 ms - {} - User: guest","timestamp":"2025-07-10T15:49:11.518Z"}
+{"level":"http","message":"GET /api/products 304 0.625 ms - {} - User: guest","timestamp":"2025-07-10T15:49:28.179Z"}
+{"level":"http","message":"GET /api/products?page=2&limit=10&search=d%C3%A2y+chuy%E1%BB%81n&sortBy=newest 200 5.660 ms - {} - User: guest","timestamp":"2025-07-10T15:52:19.329Z"}
+{"level":"http","message":"GET /api/products?limit=1000 304 1.971 ms - {} - User: guest","timestamp":"2025-07-10T15:52:59.557Z"}
+{"level":"http","message":"GET /api/products?limit=1000 304 0.901 ms - {} - User: guest","timestamp":"2025-07-10T15:52:59.561Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 10.475 ms - {} - User: guest","timestamp":"2025-07-10T15:52:59.563Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 0.801 ms - {} - User: guest","timestamp":"2025-07-10T15:52:59.565Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&search=d%C3%A2y+chuy%E1%BB%81n&sortBy=newest 304 0.905 ms - {} - User: guest","timestamp":"2025-07-10T15:53:09.621Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&search=ki%E1%BB%81ng&sortBy=newest 200 4.164 ms - {} - User: guest","timestamp":"2025-07-10T15:53:14.521Z"}
+{"level":"http","message":"GET /api/products 304 8.579 ms - {} - User: guest","timestamp":"2025-07-10T15:54:34.132Z"}
+{"level":"http","message":"GET /api/products 304 0.771 ms - {} - User: guest","timestamp":"2025-07-10T15:54:45.998Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 3.720 ms - {} - User: guest","timestamp":"2025-07-10T15:54:49.806Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.741 ms - {} - User: guest","timestamp":"2025-07-10T15:54:49.808Z"}
+{"level":"http","message":"GET /api/products?category=TRANG%20S%E1%BB%A8C%20C%C6%AF%E1%BB%9AI&limit=20 200 6.996 ms - {} - User: guest","timestamp":"2025-07-10T15:54:49.827Z"}
+{"level":"http","message":"GET /api/products?category=TRANG%20S%E1%BB%A8C%20C%C6%AF%E1%BB%9AI&limit=20 304 0.723 ms - {} - User: guest","timestamp":"2025-07-10T15:54:49.832Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&search=ki%E1%BB%81ng&sortBy=newest 304 0.799 ms - {} - User: guest","timestamp":"2025-07-10T15:54:51.598Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&search=ki%E1%BB%81ng&sortBy=newest 304 1.500 ms - {} - User: guest","timestamp":"2025-07-10T15:54:51.601Z"}
+{"level":"http","message":"GET /api/products?limit=1000 304 5.503 ms - {} - User: guest","timestamp":"2025-07-10T15:54:51.608Z"}
+{"level":"http","message":"GET /api/products?limit=1000 304 1.609 ms - {} - User: guest","timestamp":"2025-07-10T15:54:51.613Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 1.710 ms - {} - User: guest","timestamp":"2025-07-10T15:55:57.487Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 0.958 ms - {} - User: guest","timestamp":"2025-07-10T15:56:12.010Z"}
+{"level":"http","message":"GET /api/products?limit=1000 304 0.922 ms - {} - User: guest","timestamp":"2025-07-10T15:56:12.012Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 0.748 ms - {} - User: guest","timestamp":"2025-07-10T15:56:12.014Z"}
+{"level":"http","message":"GET /api/products?limit=1000 304 1.645 ms - {} - User: guest","timestamp":"2025-07-10T15:56:12.017Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 0.696 ms - {} - User: guest","timestamp":"2025-07-10T15:56:18.146Z"}
+{"level":"http","message":"GET /api/products?limit=1000 304 1.023 ms - {} - User: guest","timestamp":"2025-07-10T15:56:18.148Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 0.742 ms - {} - User: guest","timestamp":"2025-07-10T15:56:18.150Z"}
+{"level":"http","message":"GET /api/products?limit=1000 304 1.557 ms - {} - User: guest","timestamp":"2025-07-10T15:56:18.152Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&search=ki%E1%BB%81ng&sortBy=newest 304 1.581 ms - {} - User: guest","timestamp":"2025-07-10T15:56:22.285Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&search=d&sortBy=newest 200 6.679 ms - {} - User: guest","timestamp":"2025-07-10T15:56:34.911Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&search=d%C3%A2y&sortBy=newest 200 10.148 ms - {} - User: guest","timestamp":"2025-07-10T15:56:35.819Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&search=d%C3%A2y+&sortBy=newest 200 5.150 ms - {} - User: guest","timestamp":"2025-07-10T15:56:37.436Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&search=d%C3%A2y+chuy%E1%BB%81n&sortBy=newest 304 8.130 ms - {} - User: guest","timestamp":"2025-07-10T15:56:39.386Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&search=d%C3%A2y+chuy&sortBy=newest 200 9.549 ms - {} - User: guest","timestamp":"2025-07-10T15:56:42.573Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 1.373 ms - {} - User: guest","timestamp":"2025-07-10T15:56:43.303Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&search=nh%E1%BA%ABn&sortBy=newest 200 6.441 ms - {} - User: guest","timestamp":"2025-07-10T15:56:48.145Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 0.924 ms - {} - User: guest","timestamp":"2025-07-10T15:57:22.876Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&search=nh%E1%BA%ABn&sortBy=newest 304 1.011 ms - {} - User: guest","timestamp":"2025-07-10T15:57:31.524Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 9.747 ms - {} - User: guest","timestamp":"2025-07-10T15:59:59.930Z"}
+{"level":"http","message":"GET /api/products?limit=1000 304 11.964 ms - {} - User: guest","timestamp":"2025-07-10T15:59:59.934Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 0.889 ms - {} - User: guest","timestamp":"2025-07-10T15:59:59.936Z"}
+{"level":"http","message":"GET /api/products?limit=1000 304 1.489 ms - {} - User: guest","timestamp":"2025-07-10T15:59:59.940Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 1.289 ms - {} - User: guest","timestamp":"2025-07-10T16:02:40.092Z"}
+{"level":"http","message":"GET /api/products?limit=1000 304 1.118 ms - {} - User: guest","timestamp":"2025-07-10T16:02:40.095Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 1.630 ms - {} - User: guest","timestamp":"2025-07-10T16:02:40.102Z"}
+{"level":"http","message":"GET /api/products?limit=1000 304 1.408 ms - {} - User: guest","timestamp":"2025-07-10T16:02:40.105Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 1.009 ms - {} - User: guest","timestamp":"2025-07-10T16:02:49.583Z"}
+{"level":"http","message":"GET /api/products?limit=1000 304 2.041 ms - {} - User: guest","timestamp":"2025-07-10T16:02:49.587Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 1.855 ms - {} - User: guest","timestamp":"2025-07-10T16:02:52.568Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 1.021 ms - {} - User: guest","timestamp":"2025-07-10T16:02:56.099Z"}
+{"level":"http","message":"GET /api/products?limit=1000 304 0.821 ms - {} - User: guest","timestamp":"2025-07-10T16:02:56.102Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 1.620 ms - {} - User: guest","timestamp":"2025-07-10T16:02:56.108Z"}
+{"level":"http","message":"GET /api/products?limit=1000 304 1.272 ms - {} - User: guest","timestamp":"2025-07-10T16:02:56.113Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 2.008 ms - {} - User: guest","timestamp":"2025-07-10T16:02:58.089Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 0.882 ms - {} - User: guest","timestamp":"2025-07-10T16:02:58.091Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 14.885 ms - {} - User: guest","timestamp":"2025-07-10T16:02:58.099Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 1.344 ms - {} - User: guest","timestamp":"2025-07-10T16:02:58.104Z"}
+{"level":"http","message":"GET /api/collections 304 14.887 ms - {} - User: guest","timestamp":"2025-07-10T16:02:58.107Z"}
+{"level":"http","message":"GET /api/collections 304 7.916 ms - {} - User: guest","timestamp":"2025-07-10T16:02:58.118Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 0.779 ms - {} - User: guest","timestamp":"2025-07-10T16:03:01.368Z"}
+{"level":"http","message":"GET /api/products?limit=1000 304 1.469 ms - {} - User: guest","timestamp":"2025-07-10T16:03:01.371Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 0.655 ms - {} - User: guest","timestamp":"2025-07-10T16:03:01.374Z"}
+{"level":"http","message":"GET /api/products?limit=1000 304 1.170 ms - {} - User: guest","timestamp":"2025-07-10T16:03:01.376Z"}
+{"level":"http","message":"GET /api/products?page=2&limit=10&sortBy=newest 304 6.704 ms - {} - User: guest","timestamp":"2025-07-10T16:03:09.602Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 0.657 ms - {} - User: guest","timestamp":"2025-07-10T16:03:13.904Z"}
+{"level":"http","message":"GET /api/products?limit=1000&search=ki%E1%BB%81ng 200 5.832 ms - {} - User: guest","timestamp":"2025-07-10T16:03:18.263Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&search=ki%E1%BB%81ng&sortBy=newest 304 4.636 ms - {} - User: guest","timestamp":"2025-07-10T16:03:18.297Z"}
+{"level":"http","message":"GET /api/products?limit=1000&search=d%C3%A2y%20chuy%E1%BB%81n 200 5.176 ms - {} - User: guest","timestamp":"2025-07-10T16:03:30.542Z"}
+{"level":"http","message":"GET /api/products?limit=1000&search=d%C3%A2y%20chuy%E1%BB%81n%20back 200 4.869 ms - {} - User: guest","timestamp":"2025-07-10T16:03:31.381Z"}
+{"level":"http","message":"GET /api/products?limit=1000&search=d%C3%A2y%20chuy%E1%BB%81n%20b%E1%BA%A1c 200 4.674 ms - {} - User: guest","timestamp":"2025-07-10T16:03:32.682Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 5.451 ms - {} - User: guest","timestamp":"2025-07-10T16:05:46.578Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 1.407 ms - {} - User: guest","timestamp":"2025-07-10T16:06:29.586Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 1.037 ms - {} - User: guest","timestamp":"2025-07-10T16:06:59.035Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=T&sortBy=newest 200 6.658 ms - {} - User: guest","timestamp":"2025-07-10T16:07:09.801Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 0.666 ms - {} - User: guest","timestamp":"2025-07-10T16:07:11.724Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=T&sortBy=newest 304 0.716 ms - {} - User: guest","timestamp":"2025-07-10T16:07:12.366Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 1.060 ms - {} - User: guest","timestamp":"2025-07-10T16:07:13.652Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=T&sortBy=newest 304 0.610 ms - {} - User: guest","timestamp":"2025-07-10T16:07:15.037Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=T&sortBy=newest 304 0.416 ms - {} - User: guest","timestamp":"2025-07-10T16:07:16.180Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=T&sortBy=newest 304 0.666 ms - {} - User: guest","timestamp":"2025-07-10T16:07:16.913Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=T&sortBy=newest&priceMax=1000000 200 5.150 ms - {} - User: guest","timestamp":"2025-07-10T16:07:17.444Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=T&sortBy=newest&priceMin=1000000&priceMax=5000000 200 3.567 ms - {} - User: guest","timestamp":"2025-07-10T16:07:17.868Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=T&sortBy=newest&priceMin=5000000&priceMax=10000000 200 3.150 ms - {} - User: guest","timestamp":"2025-07-10T16:07:18.193Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=T&sortBy=newest&priceMin=10000000&priceMax=20000000 200 3.724 ms - {} - User: guest","timestamp":"2025-07-10T16:07:18.641Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=T&sortBy=newest&priceMin=20000000 200 3.249 ms - {} - User: guest","timestamp":"2025-07-10T16:07:19.233Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=T&material=V&sortBy=newest&priceMin=20000000 200 19.624 ms - {} - User: guest","timestamp":"2025-07-10T16:07:20.878Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=T&material=B&sortBy=newest&priceMin=20000000 200 6.263 ms - {} - User: guest","timestamp":"2025-07-10T16:07:21.381Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=T&material=B&sortBy=newest&priceMin=20000000 304 0.667 ms - {} - User: guest","timestamp":"2025-07-10T16:07:22.112Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=T&material=B&sortBy=newest&priceMin=20000000 304 0.659 ms - {} - User: guest","timestamp":"2025-07-10T16:07:22.471Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=T&material=B&sortBy=newest&priceMin=20000000 304 0.468 ms - {} - User: guest","timestamp":"2025-07-10T16:07:23.045Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=T&material=B&sortBy=newest&priceMin=20000000 304 0.431 ms - {} - User: guest","timestamp":"2025-07-10T16:07:23.412Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=T&material=B&sortBy=newest&priceMin=20000000 304 0.534 ms - {} - User: guest","timestamp":"2025-07-10T16:07:23.732Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&material=B&sortBy=newest&priceMin=20000000 200 6.421 ms - {} - User: guest","timestamp":"2025-07-10T16:07:25.258Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 0.873 ms - {} - User: guest","timestamp":"2025-07-10T16:08:13.450Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=price_asc 200 6.405 ms - {} - User: guest","timestamp":"2025-07-10T16:08:15.246Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=price_desc 200 4.964 ms - {} - User: guest","timestamp":"2025-07-10T16:08:19.604Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=rating 200 6.160 ms - {} - User: guest","timestamp":"2025-07-10T16:08:21.560Z"}
+{"level":"http","message":"GET /api/products 304 7.591 ms - {} - User: guest","timestamp":"2025-07-10T16:13:22.928Z"}
+{"level":"http","message":"GET /api/products 304 0.922 ms - {} - User: guest","timestamp":"2025-07-10T16:13:22.930Z"}
+{"level":"http","message":"GET /api/products 304 0.841 ms - {} - User: guest","timestamp":"2025-07-10T16:13:35.334Z"}
+{"level":"http","message":"GET /api/products 304 0.898 ms - {} - User: guest","timestamp":"2025-07-10T16:13:35.337Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 12.624 ms - {} - User: guest","timestamp":"2025-07-10T16:24:31.972Z"}
+{"level":"http","message":"GET /api/products?limit=1000 304 13.791 ms - {} - User: guest","timestamp":"2025-07-10T16:24:31.977Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 1.142 ms - {} - User: guest","timestamp":"2025-07-10T16:24:31.980Z"}
+{"level":"http","message":"GET /api/products?limit=1000 304 1.457 ms - {} - User: guest","timestamp":"2025-07-10T16:24:31.984Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 1.932 ms - {} - User: guest","timestamp":"2025-07-10T16:24:59.576Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=TRANG+S%E1%BB%A8C&sortBy=newest 200 6.453 ms - {} - User: guest","timestamp":"2025-07-10T16:25:10.747Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=TRANG+S%E1%BB%A8C+C%C6%AF%E1%BB%9AI&sortBy=newest 200 4.375 ms - {} - User: guest","timestamp":"2025-07-10T16:25:14.800Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 1.034 ms - {} - User: guest","timestamp":"2025-07-10T16:25:16.773Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest&priceMin=1000000&priceMax=5000000 200 4.227 ms - {} - User: guest","timestamp":"2025-07-10T16:25:20.731Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest&priceMin=5000000&priceMax=10000000 200 4.490 ms - {} - User: guest","timestamp":"2025-07-10T16:25:23.000Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest&priceMin=10000000&priceMax=20000000 200 4.275 ms - {} - User: guest","timestamp":"2025-07-10T16:25:24.352Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest&priceMax=1000000 200 4.364 ms - {} - User: guest","timestamp":"2025-07-10T16:25:25.722Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 1.066 ms - {} - User: guest","timestamp":"2025-07-10T16:25:27.027Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=TRANG+S%E1%BB%A8C&sortBy=newest 304 1.679 ms - {} - User: guest","timestamp":"2025-07-10T16:25:28.139Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=TRANG+S%E1%BB%A8C+C%C6%AF%E1%BB%9AI&sortBy=newest 304 0.554 ms - {} - User: guest","timestamp":"2025-07-10T16:25:31.073Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 0.692 ms - {} - User: guest","timestamp":"2025-07-10T16:25:35.123Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&karat=24K&sortBy=newest 200 5.492 ms - {} - User: guest","timestamp":"2025-07-10T16:25:43.098Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&karat=18K&sortBy=newest 200 5.878 ms - {} - User: guest","timestamp":"2025-07-10T16:25:46.976Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&karat=18K&sortBy=newest&priceMin=20000000 200 5.621 ms - {} - User: guest","timestamp":"2025-07-10T16:25:51.490Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 0.973 ms - {} - User: guest","timestamp":"2025-07-10T16:25:56.122Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest&priceMin=20000000 200 3.597 ms - {} - User: guest","timestamp":"2025-07-10T16:26:01.378Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 0.856 ms - {} - User: guest","timestamp":"2025-07-10T16:26:08.981Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&material=B%E1%BA%A1c&sortBy=newest 200 4.763 ms - {} - User: guest","timestamp":"2025-07-10T16:26:11.241Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&material=V%C3%A0ng&sortBy=newest 200 6.760 ms - {} - User: guest","timestamp":"2025-07-10T16:26:14.114Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 0.987 ms - {} - User: guest","timestamp":"2025-07-10T16:26:17.899Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=price-asc 200 4.701 ms - {} - User: guest","timestamp":"2025-07-10T16:26:22.407Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=price-desc 200 4.179 ms - {} - User: guest","timestamp":"2025-07-10T16:26:24.434Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=price-asc 304 0.720 ms - {} - User: guest","timestamp":"2025-07-10T16:26:29.753Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=price-desc 304 0.622 ms - {} - User: guest","timestamp":"2025-07-10T16:26:34.695Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=price-desc 304 0.631 ms - {} - User: guest","timestamp":"2025-07-10T16:26:43.675Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&material=B%E1%BA%A1c&sortBy=price-desc 200 4.919 ms - {} - User: guest","timestamp":"2025-07-10T16:27:04.483Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=TRANG+S%E1%BB%A8C&material=B%E1%BA%A1c&sortBy=price-desc 200 6.371 ms - {} - User: guest","timestamp":"2025-07-10T16:30:32.048Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=TRANG+S%E1%BB%A8C+C%C6%AF%E1%BB%9AI&material=B%E1%BA%A1c&sortBy=price-desc 200 4.943 ms - {} - User: guest","timestamp":"2025-07-10T16:30:33.382Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&material=B%E1%BA%A1c&sortBy=price-desc 304 0.513 ms - {} - User: guest","timestamp":"2025-07-10T16:30:39.803Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=TRANG+S%E1%BB%A8C+C%C6%AF%E1%BB%9AI&material=B%E1%BA%A1c&sortBy=price-desc 304 0.524 ms - {} - User: guest","timestamp":"2025-07-10T16:30:40.885Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=TRANG+S%E1%BB%A8C&material=B%E1%BA%A1c&sortBy=price-desc 304 0.654 ms - {} - User: guest","timestamp":"2025-07-10T16:30:42.123Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=TRANG+S%E1%BB%A8C&material=B%E1%BA%A1c&sortBy=price-desc&priceMin=1000000&priceMax=5000000 200 5.316 ms - {} - User: guest","timestamp":"2025-07-10T16:30:44.337Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=TRANG+S%E1%BB%A8C&material=B%E1%BA%A1c&sortBy=price-desc&priceMin=5000000&priceMax=10000000 200 5.060 ms - {} - User: guest","timestamp":"2025-07-10T16:30:47.737Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=TRANG+S%E1%BB%A8C&material=B%E1%BA%A1c&sortBy=price-desc&priceMin=10000000&priceMax=20000000 200 5.205 ms - {} - User: guest","timestamp":"2025-07-10T16:30:49.630Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=TRANG+S%E1%BB%A8C&material=B%E1%BA%A1c&sortBy=price-desc&priceMin=20000000 200 3.508 ms - {} - User: guest","timestamp":"2025-07-10T16:30:50.416Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=TRANG+S%E1%BB%A8C&sortBy=price-desc&priceMin=20000000 200 6.414 ms - {} - User: guest","timestamp":"2025-07-10T16:30:51.808Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=price-desc&priceMin=20000000 200 4.439 ms - {} - User: guest","timestamp":"2025-07-10T16:31:19.730Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=TRANG+S%E1%BB%A8C&sortBy=price-desc&priceMin=20000000 304 0.624 ms - {} - User: guest","timestamp":"2025-07-10T16:31:21.288Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=TRANG+S%E1%BB%A8C+C%C6%AF%E1%BB%9AI&sortBy=price-desc&priceMin=20000000 200 4.946 ms - {} - User: guest","timestamp":"2025-07-10T16:31:22.322Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=price-desc 304 6.440 ms - {} - User: guest","timestamp":"2025-07-10T16:31:30.436Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=TRANG+S%E1%BB%A8C+C%C6%AF%E1%BB%9AI&sortBy=price-desc 200 3.581 ms - {} - User: guest","timestamp":"2025-07-10T16:31:32.640Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=TRANG+S%E1%BB%A8C+C%C6%AF%E1%BB%9AI&material=B%E1%BA%A1c&sortBy=price-desc 304 0.523 ms - {} - User: guest","timestamp":"2025-07-10T16:31:37.271Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=TRANG+S%E1%BB%A8C+C%C6%AF%E1%BB%9AI&material=V%C3%A0ng&sortBy=price-desc 200 3.711 ms - {} - User: guest","timestamp":"2025-07-10T16:31:38.655Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=TRANG+S%E1%BB%A8C+C%C6%AF%E1%BB%9AI&material=V%C3%A0ng&karat=24K&sortBy=price-desc 200 5.830 ms - {} - User: guest","timestamp":"2025-07-10T16:31:55.060Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=TRANG+S%E1%BB%A8C+C%C6%AF%E1%BB%9AI&material=V%C3%A0ng&karat=24K&sortBy=price-desc&priceMax=1000000 200 5.826 ms - {} - User: guest","timestamp":"2025-07-10T16:31:59.666Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=TRANG+S%E1%BB%A8C+C%C6%AF%E1%BB%9AI&material=V%C3%A0ng&karat=24K&sortBy=price-desc&priceMin=1000000&priceMax=5000000 200 3.681 ms - {} - User: guest","timestamp":"2025-07-10T16:32:08.492Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=TRANG+S%E1%BB%A8C+C%C6%AF%E1%BB%9AI&material=V%C3%A0ng&karat=24K&sortBy=price-desc&priceMin=5000000&priceMax=10000000 200 4.411 ms - {} - User: guest","timestamp":"2025-07-10T16:32:10.550Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=price-desc 304 0.754 ms - {} - User: guest","timestamp":"2025-07-10T16:32:21.888Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=price-desc 304 0.623 ms - {} - User: guest","timestamp":"2025-07-10T16:32:38.250Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=price-asc 304 4.588 ms - {} - User: guest","timestamp":"2025-07-10T16:32:44.571Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=price-asc 304 6.788 ms - {} - User: guest","timestamp":"2025-07-10T16:39:04.162Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=price-asc&priceMax=999999 200 4.041 ms - {} - User: guest","timestamp":"2025-07-10T16:39:07.719Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=price-asc&priceMin=1000000&priceMax=4999999 200 4.035 ms - {} - User: guest","timestamp":"2025-07-10T16:39:09.169Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=price-asc&priceMin=5000000&priceMax=9999999 200 3.794 ms - {} - User: guest","timestamp":"2025-07-10T16:39:09.880Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=price-asc&priceMin=10000000&priceMax=19999999 200 3.769 ms - {} - User: guest","timestamp":"2025-07-10T16:39:11.538Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=TRANG+S%E1%BB%A8C&sortBy=price-asc&priceMin=10000000&priceMax=19999999 200 4.609 ms - {} - User: guest","timestamp":"2025-07-10T16:39:24.982Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=TRANG+S%E1%BB%A8C+C%C6%AF%E1%BB%9AI&sortBy=price-asc&priceMin=10000000&priceMax=19999999 200 3.785 ms - {} - User: guest","timestamp":"2025-07-10T16:39:27.212Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=TRANG+S%E1%BB%A8C+C%C6%AF%E1%BB%9AI&karat=18K&sortBy=price-asc&priceMin=10000000&priceMax=19999999 200 8.505 ms - {} - User: guest","timestamp":"2025-07-10T16:39:32.772Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=price-asc 304 1.105 ms - {} - User: guest","timestamp":"2025-07-10T16:40:32.264Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=TRANG+S%E1%BB%A8C+C%C6%AF%E1%BB%9AI&sortBy=price-asc 200 4.526 ms - {} - User: guest","timestamp":"2025-07-10T16:41:01.635Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=TRANG+S%E1%BB%A8C+C%C6%AF%E1%BB%9AI&sortBy=price-asc&priceMin=1000000&priceMax=4999999 200 4.276 ms - {} - User: guest","timestamp":"2025-07-10T16:41:30.285Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=TRANG+S%E1%BB%A8C+C%C6%AF%E1%BB%9AI&sortBy=price-asc&priceMin=5000000&priceMax=9999999 200 5.247 ms - {} - User: guest","timestamp":"2025-07-10T16:41:56.384Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=TRANG+S%E1%BB%A8C+C%C6%AF%E1%BB%9AI&sortBy=price-asc&priceMin=10000000&priceMax=19999999 304 0.532 ms - {} - User: guest","timestamp":"2025-07-10T16:41:59.225Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=price-asc&priceMin=10000000&priceMax=19999999 304 4.439 ms - {} - User: guest","timestamp":"2025-07-10T16:44:11.727Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=price-asc 304 4.412 ms - {} - User: guest","timestamp":"2025-07-10T16:44:14.318Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=price-asc&priceMin=1000000&priceMax=4999999 304 5.033 ms - {} - User: guest","timestamp":"2025-07-10T16:44:21.730Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=price-asc&priceMin=5000000&priceMax=9999999 304 3.575 ms - {} - User: guest","timestamp":"2025-07-10T16:44:24.024Z"}
+{"level":"info","message":"🛑 SIGINT received, shutting down gracefully","timestamp":"2025-07-10T16:48:06.019Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-10T16:54:37.650Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-10T16:54:37.652Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-10T16:54:37.653Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-10T16:54:37.654Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-10T16:54:37.844Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-10T16:54:37.848Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-10T16:54:37.973Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-10T16:54:37.982Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-10T16:54:37.983Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-10T16:54:37.984Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-10T16:54:37.984Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-10T16:54:37.985Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-10T16:54:37.985Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-10T16:54:37.985Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-10T16:54:37.985Z"}
+{"level":"http","message":"GET /api/products?minPrice=1000000&maxPrice=5000000 200 30.635 ms - {} - User: guest","timestamp":"2025-07-10T16:54:40.504Z"}
+{"level":"info","message":"🛑 SIGINT received, shutting down gracefully","timestamp":"2025-07-10T16:58:58.548Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-10T16:59:06.473Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-10T16:59:06.476Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-10T16:59:06.476Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-10T16:59:06.477Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-10T16:59:06.639Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-10T16:59:06.643Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-10T16:59:06.740Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-10T16:59:06.742Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-10T16:59:06.743Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-10T16:59:06.744Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-10T16:59:06.744Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-10T16:59:06.749Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-10T16:59:06.749Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-10T16:59:06.749Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-10T16:59:06.750Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 23.262 ms - {} - User: guest","timestamp":"2025-07-10T16:59:21.304Z"}
+{"level":"http","message":"GET /api/products?limit=1000 304 42.845 ms - {} - User: guest","timestamp":"2025-07-10T16:59:21.330Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 1.406 ms - {} - User: guest","timestamp":"2025-07-10T16:59:21.357Z"}
+{"level":"http","message":"GET /api/products?limit=1000 304 3.215 ms - {} - User: guest","timestamp":"2025-07-10T16:59:21.376Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 0.859 ms - {} - User: guest","timestamp":"2025-07-10T16:59:24.960Z"}
+{"level":"http","message":"GET /api/products?limit=1000 304 1.072 ms - {} - User: guest","timestamp":"2025-07-10T16:59:24.963Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 1.796 ms - {} - User: guest","timestamp":"2025-07-10T16:59:24.966Z"}
+{"level":"http","message":"GET /api/products?limit=1000 304 0.794 ms - {} - User: guest","timestamp":"2025-07-10T16:59:24.969Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest&minPrice=5000000&maxPrice=9999999 200 4.663 ms - {} - User: guest","timestamp":"2025-07-10T16:59:33.408Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&category=TRANG+S%E1%BB%A8C+C%C6%AF%E1%BB%9AI&sortBy=newest&minPrice=5000000&maxPrice=9999999 200 6.055 ms - {} - User: guest","timestamp":"2025-07-10T16:59:41.335Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=newest 304 0.782 ms - {} - User: guest","timestamp":"2025-07-10T16:59:47.210Z"}

@@ -30,7 +30,7 @@ class CommentSocketServer {
                 socket.userId = userId;
                 socket.userName = userName;
 
-                console.log(`👥 User ${userName} (${userId}) joined product room: ${productId}`);
+                console.log(`User ${userName} (${userId}) joined product room: ${productId}`);
 
                 // Thông báo cho các user khác trong room
                 socket.to(`product_${productId}`).emit('user_joined', {
@@ -78,7 +78,7 @@ class CommentSocketServer {
                         isRealtime: true
                     });
 
-                    console.log(`📢 Comment broadcast to product_${commentData.idProduct}`);
+                    console.log(`Comment broadcast to product_${commentData.idProduct}`);
 
                     // Confirm to sender
                     socket.emit('comment_sent', {
@@ -87,7 +87,7 @@ class CommentSocketServer {
                     });
 
                 } catch (error) {
-                    console.error('❌ Error handling send_comment:', error);
+                    console.error('Error handling send_comment:', error);
                     socket.emit('comment_error', {
                         message: 'Lỗi khi gửi comment',
                         error: error.message
@@ -107,7 +107,7 @@ class CommentSocketServer {
                     timestamp: new Date().toISOString()
                 });
 
-                console.log(`👍 Like update broadcast for comment ${commentId}`);
+                console.log(`Like update broadcast for comment ${commentId}`);
             });
 
             // Handle comment reply in realtime
@@ -120,7 +120,7 @@ class CommentSocketServer {
                     timestamp: new Date().toISOString()
                 });
 
-                console.log(`💬 Reply broadcast for comment ${commentId}`);
+                console.log(`Reply broadcast for comment ${commentId}`);
             });
 
             // Handle typing indicator
@@ -169,9 +169,9 @@ class CommentSocketServer {
                 timestamp: new Date().toISOString()
             });
 
-            console.log(`📊 Product ${productId} has ${userCount} users online`);
+            console.log(`Product ${productId} has ${userCount} users online`);
         } catch (error) {
-            console.error('❌ Error updating room user count:', error);
+            console.error('Error updating room user count:', error);
         }
     }
 
@@ -184,9 +184,9 @@ class CommentSocketServer {
                 source: 'api'
             });
 
-            console.log(`📢 API Comment broadcast to product_${productId}`);
+            console.log(`API Comment broadcast to product_${productId}`);
         } catch (error) {
-            console.error('❌ Error broadcasting comment:', error);
+            console.error('Error broadcasting comment:', error);
         }
     }
 
@@ -201,9 +201,9 @@ class CommentSocketServer {
                 source: 'api'
             });
 
-            console.log(`👍 API Like update broadcast for comment ${commentId}`);
+            console.log(`API Like update broadcast for comment ${commentId}`);
         } catch (error) {
-            console.error('❌ Error broadcasting like update:', error);
+            console.error('Error broadcasting like update:', error);
         }
     }
 
@@ -216,9 +216,9 @@ class CommentSocketServer {
                 source: 'api'
             });
 
-            console.log(`💬 API Reply broadcast for comment ${commentId}`);
+            console.log(`API Reply broadcast for comment ${commentId}`);
         } catch (error) {
-            console.error('❌ Error broadcasting reply:', error);
+            console.error('Error broadcasting reply:', error);
         }
     }
 
@@ -232,7 +232,7 @@ class CommentSocketServer {
                 users: room ? Array.from(room) : []
             };
         } catch (error) {
-            console.error('❌ Error getting room stats:', error);
+            console.error('Error getting room stats:', error);
             return { productId, userCount: 0, users: [] };
         }
     }

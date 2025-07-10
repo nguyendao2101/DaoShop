@@ -1,0 +1,123 @@
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-09T02:40:43.554Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-09T02:40:43.557Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-09T02:40:43.557Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-09T02:40:43.558Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-09T02:40:43.896Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-09T02:40:43.899Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-09T02:40:44.059Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-09T02:40:44.063Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-09T02:40:44.063Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-09T02:40:44.064Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-09T02:40:44.065Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-09T02:40:44.065Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-09T02:40:44.065Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-09T02:40:44.065Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-09T02:40:44.066Z"}
+{"level":"http","message":"GET /api/auth/google 302 8.458 ms - {} - User: guest","timestamp":"2025-07-09T04:23:42.973Z"}
+{"email":"nguyendao2112kientruc@gmail.com","id":"113466190791653370426","level":"info","message":"oogle Profile received:","name":"Đạo Nguyễn","picture":"https://lh3.googleusercontent.com/a/ACg8ocJ313L5QMX5Yg6rnXtGWEo-KduxwDOEiR8VMr7BUfCsZesHRx4=s96-c","timestamp":"2025-07-09T04:24:08.758Z"}
+{"level":"info","message":"Google OAuth success for user:","timestamp":"2025-07-09T04:24:08.871Z"}
+{"level":"http","message":"GET /api/auth/google/callback?code=4%2F0AVMBsJiHq0dTsIZXeUG0oJH6qu2U6VPUtXZSRDR0jE-4VJ6Vo3mISXJcvJKrd5ZPR20MCQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent 302 585.639 ms - {} - User: 686deee8ac71d612916479d3","timestamp":"2025-07-09T04:24:08.885Z"}
+{"level":"http","message":"GET /api/auth/google 302 0.792 ms - {} - User: guest","timestamp":"2025-07-09T04:26:08.597Z"}
+{"email":"nguyendao2112kientruc@gmail.com","id":"113466190791653370426","level":"info","message":"oogle Profile received:","name":"Đạo Nguyễn","picture":"https://lh3.googleusercontent.com/a/ACg8ocJ313L5QMX5Yg6rnXtGWEo-KduxwDOEiR8VMr7BUfCsZesHRx4=s96-c","timestamp":"2025-07-09T04:26:09.198Z"}
+{"level":"info","message":"Google OAuth success for user:","timestamp":"2025-07-09T04:26:09.202Z"}
+{"level":"http","message":"GET /api/auth/google/callback?code=4%2F0AVMBsJhRGhazNXRNP6ZWv_TT5JumFWuhJ0bb1ARsB-R2wQOmbd8CcclRXCYBMW3W12OENQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none 302 327.268 ms - {} - User: 686deee8ac71d612916479d3","timestamp":"2025-07-09T04:26:09.207Z"}
+{"level":"http","message":"GET /api/auth/google 302 1.015 ms - {} - User: guest","timestamp":"2025-07-09T04:35:19.463Z"}
+{"email":"nguyendao2112kientruc@gmail.com","id":"113466190791653370426","level":"info","message":"oogle Profile received:","name":"Đạo Nguyễn","picture":"https://lh3.googleusercontent.com/a/ACg8ocJ313L5QMX5Yg6rnXtGWEo-KduxwDOEiR8VMr7BUfCsZesHRx4=s96-c","timestamp":"2025-07-09T04:35:20.082Z"}
+{"level":"info","message":"Google OAuth success for user:","timestamp":"2025-07-09T04:35:20.085Z"}
+{"level":"http","message":"GET /api/auth/google/callback?code=4%2F0AVMBsJgSc3NXz0eIL-Uc1OapJEHYjz83BuLDR9ds5q2_5jcPx1mnevHMjBbyrLNkBb0cog&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none 302 364.117 ms - {} - User: 686deee8ac71d612916479d3","timestamp":"2025-07-09T04:35:20.091Z"}
+{"level":"http","message":"GET /api/auth/google 302 0.746 ms - {} - User: guest","timestamp":"2025-07-09T04:46:45.365Z"}
+{"email":"nguyendao2112kientruc@gmail.com","id":"113466190791653370426","level":"info","message":"oogle Profile received:","name":"Đạo Nguyễn","picture":"https://lh3.googleusercontent.com/a/ACg8ocJ313L5QMX5Yg6rnXtGWEo-KduxwDOEiR8VMr7BUfCsZesHRx4=s96-c","timestamp":"2025-07-09T04:46:45.938Z"}
+{"level":"info","message":"Google OAuth success for user:","timestamp":"2025-07-09T04:46:45.940Z"}
+{"level":"http","message":"GET /api/auth/google/callback?code=4%2F0AVMBsJireyIX6qdjT3wPQjDxnrVKZOkGWVqblLnyIIKio1hBEIK2hKn21I-288LcDClbow&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none 302 324.980 ms - {} - User: 686deee8ac71d612916479d3","timestamp":"2025-07-09T04:46:45.944Z"}
+{"level":"http","message":"GET /api/auth/google 302 1.123 ms - {} - User: guest","timestamp":"2025-07-09T04:55:22.038Z"}
+{"email":"nguyendao2112kientruc@gmail.com","id":"113466190791653370426","level":"info","message":"oogle Profile received:","name":"Đạo Nguyễn","picture":"https://lh3.googleusercontent.com/a/ACg8ocJ313L5QMX5Yg6rnXtGWEo-KduxwDOEiR8VMr7BUfCsZesHRx4=s96-c","timestamp":"2025-07-09T04:55:22.680Z"}
+{"level":"info","message":"Google OAuth success for user:","timestamp":"2025-07-09T04:55:22.682Z"}
+{"level":"http","message":"GET /api/auth/google/callback?code=4%2F0AVMBsJi4hXPTEe1bRrp-Pxw2V8bvKot0LAyCs-xVaF6tZl0T5MZSv1e4Lt90gWTgX8bRUA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none 302 346.076 ms - {} - User: 686deee8ac71d612916479d3","timestamp":"2025-07-09T04:55:22.687Z"}
+{"level":"http","message":"GET /api/auth/google 302 0.796 ms - {} - User: guest","timestamp":"2025-07-09T05:05:37.428Z"}
+{"email":"nguyendao2112kientruc@gmail.com","id":"113466190791653370426","level":"info","message":"oogle Profile received:","name":"Đạo Nguyễn","picture":"https://lh3.googleusercontent.com/a/ACg8ocJ313L5QMX5Yg6rnXtGWEo-KduxwDOEiR8VMr7BUfCsZesHRx4=s96-c","timestamp":"2025-07-09T05:05:37.946Z"}
+{"level":"info","message":"Google OAuth success for user:","timestamp":"2025-07-09T05:05:37.948Z"}
+{"level":"http","message":"GET /api/auth/google/callback?code=4%2F0AVMBsJjj8_Y6gBjSYFJxArleh6RAFSFggXloN9Hx2KS_YpO_0QkfUs1ss6oru33B25kh0Q&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none 302 286.898 ms - {} - User: 686deee8ac71d612916479d3","timestamp":"2025-07-09T05:05:37.953Z"}
+{"level":"http","message":"GET /api/auth/google 302 1.117 ms - {} - User: guest","timestamp":"2025-07-09T05:05:43.859Z"}
+{"email":"nguyendao2112kientruc@gmail.com","id":"113466190791653370426","level":"info","message":"oogle Profile received:","name":"Đạo Nguyễn","picture":"https://lh3.googleusercontent.com/a/ACg8ocJ313L5QMX5Yg6rnXtGWEo-KduxwDOEiR8VMr7BUfCsZesHRx4=s96-c","timestamp":"2025-07-09T05:05:44.418Z"}
+{"level":"info","message":"Google OAuth success for user:","timestamp":"2025-07-09T05:05:44.421Z"}
+{"level":"http","message":"GET /api/auth/google/callback?code=4%2F0AVMBsJgP0CGLh_gGS4H3_h_W_HVHJc1r66GdihOcLa_uVWXKP3YyqIIbTL_iAGo5AtPsdA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none 302 310.577 ms - {} - User: 686deee8ac71d612916479d3","timestamp":"2025-07-09T05:05:44.424Z"}
+{"level":"http","message":"GET /api/auth/google 302 0.559 ms - {} - User: guest","timestamp":"2025-07-09T05:07:31.126Z"}
+{"email":"nguyendao2112kientruc@gmail.com","id":"113466190791653370426","level":"info","message":"oogle Profile received:","name":"Đạo Nguyễn","picture":"https://lh3.googleusercontent.com/a/ACg8ocJ313L5QMX5Yg6rnXtGWEo-KduxwDOEiR8VMr7BUfCsZesHRx4=s96-c","timestamp":"2025-07-09T05:07:31.716Z"}
+{"level":"info","message":"Google OAuth success for user:","timestamp":"2025-07-09T05:07:31.720Z"}
+{"level":"http","message":"GET /api/auth/google/callback?code=4%2F0AVMBsJgF3sjXB2dUBAb03C82aMZKtRxwU6S1MJG1bQqvGJzvPfjGWs-CgoH_Qskztdqrkg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none 302 348.840 ms - {} - User: 686deee8ac71d612916479d3","timestamp":"2025-07-09T05:07:31.725Z"}
+{"level":"http","message":"GET /api/auth/google 302 0.757 ms - {} - User: guest","timestamp":"2025-07-09T05:11:25.442Z"}
+{"email":"nguyendao2112kientruc@gmail.com","id":"113466190791653370426","level":"info","message":"oogle Profile received:","name":"Đạo Nguyễn","picture":"https://lh3.googleusercontent.com/a/ACg8ocJ313L5QMX5Yg6rnXtGWEo-KduxwDOEiR8VMr7BUfCsZesHRx4=s96-c","timestamp":"2025-07-09T05:11:26.139Z"}
+{"level":"info","message":"Google OAuth success for user:","timestamp":"2025-07-09T05:11:26.142Z"}
+{"level":"http","message":"GET /api/auth/google/callback?code=4%2F0AVMBsJgO1TwQp7T30JI9ETYURks42Q1koBBUMayPKXIWzeI8iSje3E3rehqBtxdCNZlMJA&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none 302 359.017 ms - {} - User: 686deee8ac71d612916479d3","timestamp":"2025-07-09T05:11:26.147Z"}
+{"level":"http","message":"GET /api/auth/google 302 0.954 ms - {} - User: guest","timestamp":"2025-07-09T05:11:40.381Z"}
+{"email":"nguyendao2112kientruc@gmail.com","id":"113466190791653370426","level":"info","message":"oogle Profile received:","name":"Đạo Nguyễn","picture":"https://lh3.googleusercontent.com/a/ACg8ocJ313L5QMX5Yg6rnXtGWEo-KduxwDOEiR8VMr7BUfCsZesHRx4=s96-c","timestamp":"2025-07-09T05:11:40.937Z"}
+{"level":"info","message":"Google OAuth success for user:","timestamp":"2025-07-09T05:11:40.940Z"}
+{"level":"http","message":"GET /api/auth/google/callback?code=4%2F0AVMBsJgF0MIIPgHZOn7Fn-GInBpuO2nVh2kXH4-1kvr49lPnLTwU2KpTquyvjIjsHD2gCQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none 302 317.684 ms - {} - User: 686deee8ac71d612916479d3","timestamp":"2025-07-09T05:11:40.945Z"}
+{"level":"http","message":"GET /api/auth/google 302 0.772 ms - {} - User: guest","timestamp":"2025-07-09T05:12:05.016Z"}
+{"email":"nguyendao2112kientruc@gmail.com","id":"113466190791653370426","level":"info","message":"oogle Profile received:","name":"Đạo Nguyễn","picture":"https://lh3.googleusercontent.com/a/ACg8ocJ313L5QMX5Yg6rnXtGWEo-KduxwDOEiR8VMr7BUfCsZesHRx4=s96-c","timestamp":"2025-07-09T05:12:05.536Z"}
+{"level":"info","message":"Google OAuth success for user:","timestamp":"2025-07-09T05:12:05.540Z"}
+{"level":"http","message":"GET /api/auth/google/callback?code=4%2F0AVMBsJh0MWMS_RkZ6-eLI7c_Mqz7QVwo86LdXzCwXh_YoMQFIB5hCAQLOCq66LeQuwaMxw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none 302 283.294 ms - {} - User: 686deee8ac71d612916479d3","timestamp":"2025-07-09T05:12:05.544Z"}
+{"level":"http","message":"GET /api/auth/google 302 0.518 ms - {} - User: guest","timestamp":"2025-07-09T05:12:48.695Z"}
+{"email":"nguyendao2112kientruc@gmail.com","id":"113466190791653370426","level":"info","message":"oogle Profile received:","name":"Đạo Nguyễn","picture":"https://lh3.googleusercontent.com/a/ACg8ocJ313L5QMX5Yg6rnXtGWEo-KduxwDOEiR8VMr7BUfCsZesHRx4=s96-c","timestamp":"2025-07-09T05:12:49.261Z"}
+{"level":"info","message":"Google OAuth success for user:","timestamp":"2025-07-09T05:12:49.264Z"}
+{"level":"http","message":"GET /api/auth/google/callback?code=4%2F0AVMBsJgeM8hUY9eLq9bPDvEH-6ji0edlZvZftJ4Yq_hBvlADTSSPzj03NThkhGy05iK5aw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none 302 355.055 ms - {} - User: 686deee8ac71d612916479d3","timestamp":"2025-07-09T05:12:49.267Z"}
+{"level":"info","message":"🛑 SIGINT received, shutting down gracefully","timestamp":"2025-07-09T05:13:38.504Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-09T09:25:37.853Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-09T09:25:37.856Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-09T09:25:37.856Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-09T09:25:37.856Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-09T09:25:38.144Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-09T09:25:38.148Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-09T09:25:38.308Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-09T09:25:38.310Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-09T09:25:38.310Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-09T09:25:38.311Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-09T09:25:38.311Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-09T09:25:38.311Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-09T09:25:38.311Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-09T09:25:38.312Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-09T09:25:38.312Z"}
+{"level":"http","message":"GET /api/auth/google 302 4.619 ms - {} - User: guest","timestamp":"2025-07-09T09:47:30.263Z"}
+{"email":"nguyendao2112kientruc@gmail.com","id":"113466190791653370426","level":"info","message":"oogle Profile received:","name":"Đạo Nguyễn","picture":"https://lh3.googleusercontent.com/a/ACg8ocJ313L5QMX5Yg6rnXtGWEo-KduxwDOEiR8VMr7BUfCsZesHRx4=s96-c","timestamp":"2025-07-09T09:47:31.061Z"}
+{"level":"info","message":"Google OAuth success for user:","timestamp":"2025-07-09T09:47:31.085Z"}
+{"level":"http","message":"GET /api/auth/google/callback?code=4%2F0AVMBsJgPuT7YX_h1-uivXMPTUlEBTSYv4VWBUjRlsJjfYMbVMhpG8jaT_tQsxIEpqpogrw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none 302 455.669 ms - {} - User: 686deee8ac71d612916479d3","timestamp":"2025-07-09T09:47:31.118Z"}
+{"level":"info","message":"🛑 SIGINT received, shutting down gracefully","timestamp":"2025-07-09T11:40:10.624Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-09T15:15:43.891Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-09T15:15:43.894Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-09T15:15:43.894Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-09T15:15:43.895Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-09T15:15:44.172Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-09T15:15:44.177Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-09T15:15:44.338Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-09T15:15:44.346Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-09T15:15:44.347Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-09T15:15:44.348Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-09T15:15:44.348Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-09T15:15:44.349Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-09T15:15:44.349Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-09T15:15:44.349Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-09T15:15:44.349Z"}
+{"level":"http","message":"GET /api/products 200 30.286 ms - {} - User: guest","timestamp":"2025-07-09T16:20:36.438Z"}
+{"level":"http","message":"GET /api/products/BT1 200 10.887 ms - {} - User: guest","timestamp":"2025-07-09T16:24:12.277Z"}
+{"level":"http","message":"GET /api/products/categories 200 5.193 ms - {} - User: guest","timestamp":"2025-07-09T16:24:34.767Z"}
+{"level":"http","message":"GET /api/products/categories/BT1/types 200 2.324 ms - {} - User: guest","timestamp":"2025-07-09T16:24:51.506Z"}
+{"level":"http","message":"GET /api/products 200 9.679 ms - {} - User: guest","timestamp":"2025-07-09T16:42:18.820Z"}
+{"level":"http","message":"GET /api/products 304 2.302 ms - {} - User: guest","timestamp":"2025-07-09T16:42:18.826Z"}
+{"level":"http","message":"GET /api/products 304 2.054 ms - {} - User: guest","timestamp":"2025-07-09T16:42:18.836Z"}
+{"level":"http","message":"GET /api/products 304 1.127 ms - {} - User: guest","timestamp":"2025-07-09T16:42:18.840Z"}
+{"level":"http","message":"GET /api/products 304 1.529 ms - {} - User: guest","timestamp":"2025-07-09T16:43:45.098Z"}
+{"level":"http","message":"GET /api/products 304 0.789 ms - {} - User: guest","timestamp":"2025-07-09T16:43:45.101Z"}
+{"level":"http","message":"GET /api/products 304 1.073 ms - {} - User: guest","timestamp":"2025-07-09T16:43:45.103Z"}
+{"level":"http","message":"GET /api/products 304 1.522 ms - {} - User: guest","timestamp":"2025-07-09T16:43:45.107Z"}
+{"level":"http","message":"GET /api/products 200 6.021 ms - {} - User: guest","timestamp":"2025-07-09T16:47:45.738Z"}
+{"level":"http","message":"GET /api/products 304 1.091 ms - {} - User: guest","timestamp":"2025-07-09T16:47:45.742Z"}
+{"level":"http","message":"GET /api/products 304 0.971 ms - {} - User: guest","timestamp":"2025-07-09T16:47:45.745Z"}
+{"level":"http","message":"GET /api/products 304 0.926 ms - {} - User: guest","timestamp":"2025-07-09T16:47:45.748Z"}
+{"level":"http","message":"GET /api/products 304 0.764 ms - {} - User: guest","timestamp":"2025-07-09T16:48:08.842Z"}
+{"level":"http","message":"GET /api/products 304 0.856 ms - {} - User: guest","timestamp":"2025-07-09T16:48:08.844Z"}
+{"level":"http","message":"GET /api/products 304 0.840 ms - {} - User: guest","timestamp":"2025-07-09T16:48:08.847Z"}
+{"level":"http","message":"GET /api/products 304 1.573 ms - {} - User: guest","timestamp":"2025-07-09T16:48:08.852Z"}
+{"level":"http","message":"GET /api/products 304 0.583 ms - {} - User: guest","timestamp":"2025-07-09T16:48:15.720Z"}
+{"level":"http","message":"GET /api/products 304 0.698 ms - {} - User: guest","timestamp":"2025-07-09T16:48:15.722Z"}
+{"level":"http","message":"GET /api/products 304 0.813 ms - {} - User: guest","timestamp":"2025-07-09T16:48:15.725Z"}
+{"level":"http","message":"GET /api/products 304 1.194 ms - {} - User: guest","timestamp":"2025-07-09T16:48:15.728Z"}

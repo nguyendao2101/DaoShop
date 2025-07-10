@@ -9,12 +9,12 @@ class CommentService {
     }
     static async getCommentsByProduct(productId, filters = {}) {
         try {
-            console.log('🔍 Getting comments for product:', productId);
-            console.log('📝 Filters:', filters);
+            console.log('Getting comments for product:', productId);
+            console.log('Filters:', filters);
 
             // Kiểm tra sản phẩm có tồn tại không - Sửa từ Products thành Product
             const product = await Product.findOne({ id: productId });
-            console.log('📦 Product found:', product ? 'Yes' : 'No');
+            console.log('Product found:', product ? 'Yes' : 'No');
 
             if (!product) {
                 throw new Error(`Không tìm thấy sản phẩm với ID: ${productId}`);
@@ -23,15 +23,15 @@ class CommentService {
             // Kiểm tra tổng số comments trước
             const totalComments = await Comment.countDocuments({ idProduct: productId });
             const activeComments = await Comment.countDocuments({ idProduct: productId, isActive: true });
-            console.log('📊 Total comments in DB:', totalComments);
-            console.log('📊 Active comments in DB:', activeComments);
+            console.log('Total comments in DB:', totalComments);
+            console.log('Active comments in DB:', activeComments);
 
             // Lấy một vài comments mẫu để debug
             const sampleComments = await Comment.find({ idProduct: productId }).limit(3);
-            console.log('🔍 Sample comments:', sampleComments);
+            console.log('Sample comments:', sampleComments);
 
             const comments = await Comment.getCommentsByProduct(productId, filters);
-            console.log('✅ Comments returned from static method:', comments.length);
+            console.log('Comments returned from static method:', comments.length);
 
             // Đếm tổng số comments cho pagination
             const total = await Comment.countDocuments({
@@ -52,7 +52,7 @@ class CommentService {
                 }
             };
         } catch (error) {
-            console.error('❌ Error in getCommentsByProduct:', error);
+            console.error('Error in getCommentsByProduct:', error);
             throw new Error(`Lỗi khi lấy comments: ${error.message}`);
         }
     }
@@ -60,7 +60,7 @@ class CommentService {
     // Tạo comment mới
     static async createComment(commentData) {
         try {
-            console.log('📝 Creating comment:', commentData);
+            console.log('Creating comment:', commentData);
 
             // Kiểm tra sản phẩm có tồn tại không - Sửa từ Products thành Product
             const product = await Product.findOne({ id: commentData.idProduct });
@@ -164,8 +164,8 @@ class CommentService {
     // Các methods khác giữ nguyên...
     static async getCommentsByUser(userId, filters = {}) {
         try {
-            console.log('🔍 Getting comments for user:', userId);
-            console.log('📝 User filters:', filters);
+            console.log('Getting comments for user:', userId);
+            console.log('User filters:', filters);
 
             const {
                 page = 1,
@@ -175,15 +175,15 @@ class CommentService {
             // Kiểm tra tổng số comments của user trước
             const totalComments = await Comment.countDocuments({ idUser: userId });
             const activeComments = await Comment.countDocuments({ idUser: userId, isActive: true });
-            console.log('📊 Total user comments in DB:', totalComments);
-            console.log('📊 Active user comments in DB:', activeComments);
+            console.log('Total user comments in DB:', totalComments);
+            console.log('Active user comments in DB:', activeComments);
 
             // Lấy một vài comments mẫu để debug
             const sampleComments = await Comment.find({ idUser: userId }).limit(3);
-            console.log('🔍 Sample user comments:', sampleComments);
+            console.log('Sample user comments:', sampleComments);
 
             const comments = await Comment.getCommentsByUser(userId, filters);
-            console.log('✅ User comments returned from static method:', comments.length);
+            console.log('User comments returned from static method:', comments.length);
 
             // Đếm tổng số comments cho pagination
             const total = await Comment.countDocuments({
@@ -191,7 +191,7 @@ class CommentService {
                 isActive: true
             });
 
-            console.log('📈 Final user pagination total:', total);
+            console.log('Final user pagination total:', total);
 
             return {
                 success: true,
@@ -204,14 +204,14 @@ class CommentService {
                 }
             };
         } catch (error) {
-            console.error('❌ Error in getCommentsByUser:', error);
+            console.error('Error in getCommentsByUser:', error);
             throw new Error(`Lỗi khi lấy comments của user: ${error.message}`);
         }
     }
     // Tạo comment mới với WebSocket broadcast
     static async createComment(commentData) {
         try {
-            console.log('📝 Creating comment:', commentData);
+            console.log('Creating comment:', commentData);
 
             // Kiểm tra sản phẩm có tồn tại không
             const product = await Product.findOne({ id: commentData.idProduct });

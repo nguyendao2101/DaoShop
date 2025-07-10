@@ -17,13 +17,13 @@ class CommentController {
                 sortOrder: req.query.sortOrder || 'desc'
             };
 
-            console.log('🎯 Controller - productId:', productId);
-            console.log('🎯 Controller - filters:', filters);
+            console.log('Controller - productId:', productId);
+            console.log('Controller - filters:', filters);
 
             const result = await CommentService.getCommentsByProduct(productId, filters);
             return res.status(200).json(result);
         } catch (error) {
-            console.error('❌ Error in getCommentsByProduct:', error);
+            console.error('Error in getCommentsByProduct:', error);
             return res.status(404).json({
                 success: false,
                 message: error.message
@@ -34,7 +34,7 @@ class CommentController {
     // DEBUG: Kiểm tra comments trong database
     static async debugComments(req, res) {
         try {
-            console.log('🐛 Debug comments called');
+            console.log('Debug comments called');
 
             const debugInfo = await CommentService.getDebugInfo();
 
@@ -43,7 +43,7 @@ class CommentController {
                 debug: debugInfo
             });
         } catch (error) {
-            console.error('❌ Debug error:', error);
+            console.error('Debug error:', error);
             return res.status(500).json({
                 success: false,
                 message: error.message
@@ -55,12 +55,12 @@ class CommentController {
     static async createTestComment(req, res) {
         try {
             const productId = req.query.productId || 'BT1';
-            console.log('🧪 Creating test comment for product:', productId);
+            console.log('Creating test comment for product:', productId);
 
             const result = await CommentService.createTestComment(productId);
             return res.status(201).json(result);
         } catch (error) {
-            console.error('❌ Error creating test comment:', error);
+            console.error('Error creating test comment:', error);
             return res.status(400).json({
                 success: false,
                 message: error.message
@@ -75,7 +75,7 @@ class CommentController {
             const result = await CommentService.getCommentById(id);
             return res.status(200).json(result);
         } catch (error) {
-            console.error('❌ Error in getCommentById:', error);
+            console.error('Error in getCommentById:', error);
             return res.status(404).json({
                 success: false,
                 message: error.message
@@ -99,7 +99,7 @@ class CommentController {
             const result = await CommentService.createComment(commentData);
             return res.status(201).json(result);
         } catch (error) {
-            console.error('❌ Error in createComment:', error);
+            console.error('Error in createComment:', error);
             return res.status(400).json({
                 success: false,
                 message: error.message
@@ -116,13 +116,13 @@ class CommentController {
                 limit: parseInt(req.query.limit) || 10
             };
 
-            console.log('🎯 Controller - userId:', userId);
-            console.log('🎯 Controller - user filters:', filters);
+            console.log('Controller - userId:', userId);
+            console.log('Controller - user filters:', filters);
 
             const result = await CommentService.getCommentsByUser(userId, filters);
             return res.status(200).json(result);
         } catch (error) {
-            console.error('❌ Error in getCommentsByUser:', error);
+            console.error('Error in getCommentsByUser:', error);
             return res.status(500).json({
                 success: false,
                 message: error.message
@@ -131,7 +131,7 @@ class CommentController {
     }
     static async updateComment(req, res) {
         try {
-            console.log('✏️ Update comment called');
+            console.log('Update comment called');
             return res.status(501).json({
                 success: false,
                 message: 'Update comment not implemented yet'
@@ -146,7 +146,7 @@ class CommentController {
 
     static async deleteComment(req, res) {
         try {
-            console.log('🗑️ Delete comment called');
+            console.log('🗑Delete comment called');
             return res.status(501).json({
                 success: false,
                 message: 'Delete comment not implemented yet'
@@ -161,7 +161,7 @@ class CommentController {
 
     static async addReply(req, res) {
         try {
-            console.log('💬 Add reply called');
+            console.log('Add reply called');
             return res.status(501).json({
                 success: false,
                 message: 'Add reply not implemented yet'
@@ -176,7 +176,7 @@ class CommentController {
 
     static async toggleLike(req, res) {
         try {
-            console.log('👍 Toggle like called');
+            console.log('Toggle like called');
             return res.status(501).json({
                 success: false,
                 message: 'Toggle like not implemented yet'
@@ -191,7 +191,7 @@ class CommentController {
 
     static async getCommentStats(req, res) {
         try {
-            console.log('📊 Get comment stats called');
+            console.log('Get comment stats called');
             return res.status(501).json({
                 success: false,
                 message: 'Get comment stats not implemented yet'
@@ -219,7 +219,7 @@ class CommentController {
             const result = await CommentService.createComment(commentData);
             return res.status(201).json(result);
         } catch (error) {
-            console.error('❌ Error in createComment:', error);
+            console.error('Error in createComment:', error);
             return res.status(400).json({
                 success: false,
                 message: error.message
@@ -243,7 +243,7 @@ class CommentController {
             const result = await CommentService.toggleLike(id, userId);
             return res.status(200).json(result);
         } catch (error) {
-            console.error('❌ Error in toggleLike:', error);
+            console.error('Error in toggleLike:', error);
             return res.status(400).json({
                 success: false,
                 message: error.message
@@ -267,7 +267,7 @@ class CommentController {
             const result = await CommentService.addReply(id, replyData);
             return res.status(200).json(result);
         } catch (error) {
-            console.error('❌ Error in addReply:', error);
+            console.error('Error in addReply:', error);
             return res.status(400).json({
                 success: false,
                 message: error.message
@@ -293,7 +293,7 @@ class CommentController {
                 });
             }
         } catch (error) {
-            console.error('❌ Error in getWebSocketStats:', error);
+            console.error('Error in getWebSocketStats:', error);
             return res.status(500).json({
                 success: false,
                 message: error.message
