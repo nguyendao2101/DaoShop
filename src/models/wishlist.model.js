@@ -29,6 +29,7 @@ const wishlistSchema = new mongoose.Schema({
 
 // Indexes
 wishlistSchema.index({ userId: 1 });
+wishlistSchema.index({ userId: 1, 'items.productId': 1 });
 wishlistSchema.index({ 'items.productId': 1 });
 
 // Calculate total items
