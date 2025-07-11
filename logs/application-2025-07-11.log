@@ -646,3 +646,95 @@
 {"level":"http","message":"POST /api/wishlist/add 200 11.646 ms - {\"productId\":\"DC12\"} - User: -","timestamp":"2025-07-11T10:27:40.975Z"}
 {"level":"http","message":"POST /api/wishlist/add 200 8.820 ms - {\"productId\":\"BT1\"} - User: -","timestamp":"2025-07-11T10:27:47.916Z"}
 {"level":"info","message":"🛑 SIGINT received, shutting down gracefully","timestamp":"2025-07-11T10:31:00.206Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-11T14:38:07.429Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-11T14:38:07.432Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-11T14:38:07.433Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-11T14:38:07.433Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-11T14:38:07.646Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-11T14:38:07.649Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-11T14:38:07.772Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-11T14:38:07.778Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-11T14:38:07.779Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-11T14:38:07.780Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-11T14:38:07.780Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-11T14:38:07.780Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-11T14:38:07.781Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-11T14:38:07.781Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-11T14:38:07.781Z"}
+{"level":"info","message":"findByEmailOrUsername called with:","timestamp":"2025-07-11T14:38:11.571Z"}
+{"level":"info","message":"Searching with identifier:","timestamp":"2025-07-11T14:38:11.572Z"}
+{"level":"http","message":"POST /api/auth/login 200 77.567 ms - {\"userName\":\"nguyendao21012002@gmail.com\",\"password\":\"[REDACTED]\"} - User: guest","timestamp":"2025-07-11T14:38:11.647Z"}
+{"level":"http","message":"GET /api/purchase-history 200 16.816 ms - {} - User: -","timestamp":"2025-07-11T14:40:23.149Z"}
+{"level":"http","message":"POST /api/purchase-history/create 400 7.385 ms - {\"userId\":\"6870c70c1ca5164be10bb91d\",\"orderId\":\"ORD-2025-001\",\"items\":[{\"productId\":\"BT1\",\"quantity\":2,\"sizeIndex\":0,\"unitPrice\":150000},{\"productId\":\"DC1\",\"quantity\":1,\"sizeIndex\":1,\"unitPrice\":250000}],\"totalAmount\":550000,\"paymentMethod\":\"cod\",\"deliveryAddress\":{\"fullName\":\"Nguyen Dao\",\"phone\":\"0123456789\",\"street\":\"123 Main St\",\"ward\":\"Ward 1\",\"district\":\"District 1\",\"city\":\"Ho Chi Minh\",\"zipCode\":\"70000\"},\"shippingFee\":30000,\"discount\":0,\"notes\":\"Giao hàng giờ hành chính\"} - User: -","timestamp":"2025-07-11T14:45:26.920Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-11T14:47:31.987Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-11T14:47:31.991Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-11T14:47:31.992Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-11T14:47:31.993Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-11T14:47:32.348Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-11T14:47:32.352Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-11T14:47:32.502Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-11T14:47:32.506Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-11T14:47:32.507Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-11T14:47:32.507Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-11T14:47:32.508Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-11T14:47:32.508Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-11T14:47:32.508Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-11T14:47:32.508Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-11T14:47:32.508Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-11T14:48:09.925Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-11T14:48:09.929Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-11T14:48:09.930Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-11T14:48:09.931Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-11T14:48:10.137Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-11T14:48:10.141Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-11T14:48:10.274Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-11T14:48:10.278Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-11T14:48:10.278Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-11T14:48:10.279Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-11T14:48:10.279Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-11T14:48:10.279Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-11T14:48:10.279Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-11T14:48:10.280Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-11T14:48:10.280Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-11T14:48:24.705Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-11T14:48:24.708Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-11T14:48:24.709Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-11T14:48:24.709Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-11T14:48:24.935Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-11T14:48:24.940Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-11T14:48:25.089Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-11T14:48:25.096Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-11T14:48:25.097Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-11T14:48:25.099Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-11T14:48:25.099Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-11T14:48:25.100Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-11T14:48:25.100Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-11T14:48:25.101Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-11T14:48:25.101Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-11T14:48:37.726Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-11T14:48:37.728Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-11T14:48:37.729Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-11T14:48:37.729Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-11T14:48:37.912Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-11T14:48:37.920Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-11T14:48:38.027Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-11T14:48:38.030Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-11T14:48:38.030Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-11T14:48:38.031Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-11T14:48:38.031Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-11T14:48:38.032Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-11T14:48:38.032Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-11T14:48:38.032Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-11T14:48:38.033Z"}
+{"level":"http","message":"POST /api/purchase-history/create 400 22.767 ms - {\"userId\":\"6870c70c1ca5164be10bb91d\",\"orderId\":\"ORD-2025-001\",\"items\":[{\"productId\":\"BT1\",\"quantity\":2,\"sizeIndex\":0,\"unitPrice\":150000},{\"productId\":\"DC1\",\"quantity\":1,\"sizeIndex\":1,\"unitPrice\":250000}],\"totalAmount\":550000,\"paymentMethod\":\"cod\",\"deliveryAddress\":{\"fullName\":\"Nguyen Dao\",\"phone\":\"0123456789\",\"street\":\"123 Main St\",\"ward\":\"Ward 1\",\"district\":\"District 1\",\"city\":\"Ho Chi Minh\",\"zipCode\":\"70000\"},\"shippingFee\":30000,\"discount\":0,\"notes\":\"Giao hàng giờ hành chính\"} - User: -","timestamp":"2025-07-11T14:48:41.346Z"}
+{"level":"http","message":"POST /api/purchase-history/create 201 36.104 ms - {\"userId\":\"6870c70c1ca5164be10bb91d\",\"orderId\":\"ORD-2025-001\",\"items\":[{\"productId\":\"BT1\",\"quantity\":2,\"sizeIndex\":0,\"unitPrice\":150000},{\"productId\":\"DC10\",\"quantity\":1,\"sizeIndex\":1,\"unitPrice\":250000}],\"totalAmount\":550000,\"paymentMethod\":\"cod\",\"deliveryAddress\":{\"fullName\":\"Nguyen Dao\",\"phone\":\"0123456789\",\"street\":\"123 Main St\",\"ward\":\"Ward 1\",\"district\":\"District 1\",\"city\":\"Ho Chi Minh\",\"zipCode\":\"70000\"},\"shippingFee\":30000,\"discount\":0,\"notes\":\"Giao hàng giờ hành chính\"} - User: -","timestamp":"2025-07-11T14:48:52.998Z"}
+{"level":"http","message":"GET /api/purchase-history 200 19.378 ms - {} - User: -","timestamp":"2025-07-11T14:50:47.460Z"}
+{"level":"http","message":"GET /api/purchase-history/ORD-2025-001 200 9.957 ms - {} - User: -","timestamp":"2025-07-11T14:52:26.369Z"}
+{"level":"http","message":"GET /api/purchase-history 200 9.912 ms - {} - User: -","timestamp":"2025-07-11T14:52:35.283Z"}
+{"level":"http","message":"GET /api/purchase-history/ORD-2025-001 200 11.046 ms - {} - User: -","timestamp":"2025-07-11T14:52:41.504Z"}
+{"level":"http","message":"GET /api/purchase-history/ORD-2025-001/status 404 4.589 ms - {} - User: -","timestamp":"2025-07-11T14:53:56.303Z"}
+{"level":"http","message":"GET /api/purchase-history/ORD-2025-001 200 7.660 ms - {} - User: -","timestamp":"2025-07-11T14:54:15.364Z"}
+{"level":"http","message":"PUT /api/purchase-history/ORD-2025-001/status 200 11.847 ms - {\"status\":\"confirmed\",\"trackingNumber\":\"VN123456789\",\"notes\":\"Đơn hàng đã được xác nhận và chuẩn bị giao\"} - User: -","timestamp":"2025-07-11T14:56:03.807Z"}
+{"level":"http","message":"GET /api/purchase-history/stats 200 9.649 ms - {} - User: -","timestamp":"2025-07-11T14:59:34.650Z"}
+{"level":"http","message":"GET /api/purchase-history?startDate=2025-07-01&endDate=2025-07-31 200 24.930 ms - {} - User: -","timestamp":"2025-07-11T15:00:52.088Z"}
+{"level":"info","message":"🛑 SIGINT received, shutting down gracefully","timestamp":"2025-07-11T15:01:11.347Z"}

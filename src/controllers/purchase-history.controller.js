@@ -5,7 +5,7 @@ class PurchaseHistoryController {
     // GET /api/purchase-history - Lấy lịch sử mua hàng
     static async getPurchaseHistory(req, res) {
         try {
-            const userId = req.user.id;
+            const userId = req.user.userId;
             const filters = {
                 page: req.query.page,
                 limit: req.query.limit,
@@ -30,7 +30,7 @@ class PurchaseHistoryController {
     // GET /api/purchase-history/:orderId - Lấy chi tiết đơn hàng
     static async getOrderDetail(req, res) {
         try {
-            const userId = req.user.id;
+            const userId = req.user.userId;
             const { orderId } = req.params;
 
             const result = await PurchaseHistoryService.getOrderDetail(userId, orderId);
@@ -47,7 +47,7 @@ class PurchaseHistoryController {
     // GET /api/purchase-history/stats - Thống kê mua hàng
     static async getPurchaseStats(req, res) {
         try {
-            const userId = req.user.id;
+            const userId = req.user.userId;
             const result = await PurchaseHistoryService.getPurchaseStats(userId);
             return res.status(200).json(result);
         } catch (error) {
@@ -63,6 +63,15 @@ class PurchaseHistoryController {
     static async createPurchaseRecord(req, res) {
         try {
             const orderData = req.body;
+
+            console.log('🔍 createPurchaseRecord - orderData:', {
+                userId: orderData.userId,
+                orderId: orderData.orderId,
+                itemsCount: orderData.items?.length,
+                totalAmount: orderData.totalAmount
+            });
+
+            //This should work now
             const result = await PurchaseHistoryService.createPurchaseRecord(orderData);
             return res.status(201).json(result);
         } catch (error) {

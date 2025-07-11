@@ -6,7 +6,7 @@ const { authenticateToken } = require('../middlewares/authMiddleware');
 const router = express.Router();
 
 // Authentication middleware cho tất cả purchase history routes
-router.use(authenticateToken); // ✅ Now defined correctly
+router.use(authenticateToken);
 
 // GET /api/purchase-history - Lịch sử mua hàng
 router.get('/', PurchaseHistoryController.getPurchaseHistory);
