@@ -122,7 +122,7 @@ router.post('/resend-otp', otpLimiter, UserController.resendOTP);
  *   post:
  *     summary: Đăng nhập
  *     description: Login with rate limiting (5 login attempts per hour)
- *     tags: [Authentication]
+ *     tags: [Auth]
  *     requestBody:
  *       required: true
  *       content:
@@ -133,14 +133,30 @@ router.post('/resend-otp', otpLimiter, UserController.resendOTP);
  *               email:
  *                 type: string
  *                 format: email
- *                 example: user@example.com
+ *                 example: nguyendao21012002@gmail.com
+ *                 description: Email đăng nhập
  *               password:
  *                 type: string
  *                 format: password
- *                 example: password123
+ *                 example: 123456
+ *                 description: Mật khẩu
+ *               userName:
+ *                 type: string
+ *                 example: nguyendao2101
+ *                 description: Tên đăng nhập (thay thế cho email)
  *             required:
- *               - email
  *               - password
+ *           examples:
+ *             loginWithEmail:
+ *               summary: Đăng nhập bằng email
+ *               value:
+ *                 email: "nguyendao21012002@gmail.com"
+ *                 password: "123456"
+ *             loginWithUserName:
+ *               summary: Đăng nhập bằng username
+ *               value:
+ *                 userName: "nguyendao2101"
+ *                 password: "123456"
  *     responses:
  *       200:
  *         description: Login successful
@@ -154,16 +170,65 @@ router.post('/resend-otp', otpLimiter, UserController.resendOTP);
  *                   example: true
  *                 message:
  *                   type: string
- *                   example: Đăng nhập thành công
- *                 token:
- *                   type: string
- *                   example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
- *                 user:
- *                   $ref: '#/components/schemas/User'
+ *                   example: "Đăng nhập thành công"
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     accessToken:
+ *                       type: string
+ *                       example: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+ *                       description: JWT access token
+ *                     refreshToken:
+ *                       type: string
+ *                       example: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+ *                       description: JWT refresh token
+ *                     user:
+ *                       type: object
+ *                       properties:
+ *                         id:
+ *                           type: string
+ *                           example: "6870c70c1ca5164be10bb91d"
+ *                         userName:
+ *                           type: string
+ *                           example: "nguyendao2101"
+ *                         email:
+ *                           type: string
+ *                           example: "nguyendao21012002@gmail.com"
+ *                         fullName:
+ *                           type: string
+ *                           example: "Nguyen Dao"
+ *                         isEmailVerified:
+ *                           type: boolean
+ *                           example: true
+ *       400:
+ *         description: Invalid credentials or validation error
+ *         content:
+ *           application/json:
+ *             schema:
+ *               oneOf:
+ *                 - type: object
+ *                   properties:
+ *                     success:
+ *                       type: boolean
+ *                       example: false
+ *                     message:
+ *                       type: string
+ *                       example: "Email/tên đăng nhập hoặc mật khẩu không chính xác"
+ *                 - type: object
+ *                   properties:
+ *                     success:
+ *                       type: boolean
+ *                       example: false
+ *                     message:
+ *                       type: string
+ *                       example: "Vui lòng xác minh email trước khi đăng nhập"
+ *                     needVerification:
+ *                       type: boolean
+ *                       example: true
  *       429:
  *         $ref: '#/components/responses/RateLimitExceeded'
- *       400:
- *         description: Invalid credentials
+ *       500:
+ *         description: Server error
  *         content:
  *           application/json:
  *             schema:

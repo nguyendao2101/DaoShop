@@ -31,6 +31,28 @@ When rate limit is exceeded, the API returns HTTP 429 (Too Many Requests) with r
                 description: 'Development server'
             }
         ],
+        tags: [
+            {
+                name: 'Cart',
+                description: 'Quản lý giỏ hàng - Cart management operations'
+            },
+            {
+                name: 'Auth',
+                description: 'Authentication & Authorization'
+            },
+            {
+                name: 'Products',
+                description: 'Product management'
+            },
+            {
+                name: 'Collections',
+                description: 'Collection management'
+            },
+            {
+                name: 'Comments',
+                description: 'Comment management'
+            }
+        ],
         components: {
             securitySchemes: {
                 BearerAuth: {
@@ -751,7 +773,162 @@ When rate limit is exceeded, the API returns HTTP 429 (Too Many Requests) with r
                             example: 900
                         }
                     }
-                }
+                },
+                CartItem: {
+                    type: 'object',
+                    properties: {
+                        _id: {
+                            type: 'string',
+                            example: '64f123abc456def789012345'
+                        },
+                        productId: {
+                            type: 'string',
+                            example: 'BT1',
+                            description: 'ID sản phẩm'
+                        },
+                        sizeIndex: {
+                            type: 'number',
+                            minimum: 0,
+                            example: 0,
+                            description: 'Chỉ số size trong sizePrice array'
+                        },
+                        quantity: {
+                            type: 'number',
+                            minimum: 1,
+                            example: 2,
+                            description: 'Số lượng sản phẩm'
+                        },
+                        price: {
+                            type: 'number',
+                            minimum: 0,
+                            example: 250000,
+                            description: 'Giá sản phẩm tại thời điểm thêm vào cart (VND)'
+                        },
+                        addedAt: {
+                            type: 'string',
+                            format: 'date-time',
+                            example: '2025-07-11T08:30:00.000Z',
+                            description: 'Thời gian thêm vào giỏ hàng'
+                        }
+                    },
+                    required: ['productId', 'sizeIndex', 'quantity', 'price']
+                },
+
+                Cart: {
+                    type: 'object',
+                    properties: {
+                        _id: {
+                            type: 'string',
+                            example: '64f123abc456def789012345'
+                        },
+                        userId: {
+                            type: 'string',
+                            example: '6870c70c1ca5164be10bb91d',
+                            description: 'ID người dùng sở hữu giỏ hàng'
+                        },
+                        items: {
+                            type: 'array',
+                            items: {
+                                $ref: '#/components/schemas/CartItem'
+                            },
+                            description: 'Danh sách sản phẩm trong giỏ hàng'
+                        },
+                        totalAmount: {
+                            type: 'number',
+                            minimum: 0,
+                            example: 500000,
+                            description: 'Tổng tiền giỏ hàng (VND)'
+                        },
+                        totalItems: {
+                            type: 'number',
+                            minimum: 0,
+                            example: 2,
+                            description: 'Tổng số loại sản phẩm trong giỏ hàng'
+                        },
+                        lastUpdated: {
+                            type: 'string',
+                            format: 'date-time',
+                            example: '2025-07-11T08:30:00.000Z',
+                            description: 'Thời gian cập nhật cuối cùng'
+                        },
+                        createdAt: {
+                            type: 'string',
+                            format: 'date-time',
+                            example: '2025-07-11T08:00:00.000Z'
+                        },
+                        updatedAt: {
+                            type: 'string',
+                            format: 'date-time',
+                            example: '2025-07-11T08:30:00.000Z'
+                        }
+                    },
+                    required: ['userId', 'items', 'totalAmount', 'totalItems']
+                },
+
+                CartResponse: {
+                    type: 'object',
+                    properties: {
+                        success: {
+                            type: 'boolean',
+                            example: true
+                        },
+                        data: {
+                            $ref: '#/components/schemas/Cart'
+                        },
+                        message: {
+                            type: 'string',
+                            example: 'Cart retrieved successfully'
+                        }
+                    }
+                },
+
+                AddToCartRequest: {
+                    type: 'object',
+                    properties: {
+                        productId: {
+                            type: 'string',
+                            example: 'BT1',
+                            description: 'ID sản phẩm cần thêm'
+                        },
+                        sizeIndex: {
+                            type: 'number',
+                            minimum: 0,
+                            example: 0,
+                            description: 'Chỉ số size trong sizePrice (0, 1, 2, ...)'
+                        },
+                        quantity: {
+                            type: 'number',
+                            minimum: 1,
+                            example: 1,
+                            description: 'Số lượng cần thêm'
+                        }
+                    },
+                    required: ['productId', 'sizeIndex', 'quantity']
+                },
+
+                UpdateCartRequest: {
+                    type: 'object',
+                    properties: {
+                        productId: {
+                            type: 'string',
+                            example: 'BT1',
+                            description: 'ID sản phẩm cần cập nhật'
+                        },
+                        sizeIndex: {
+                            type: 'number',
+                            minimum: 0,
+                            example: 0,
+                            description: 'Chỉ số size trong sizePrice'
+                        },
+                        quantity: {
+                            type: 'number',
+                            minimum: 1,
+                            example: 3,
+                            description: 'Số lượng mới'
+                        }
+                    },
+                    required: ['productId', 'sizeIndex', 'quantity']
+                },
             },
             responses: {
                 RateLimitExceeded: {
