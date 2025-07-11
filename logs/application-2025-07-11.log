@@ -118,3 +118,322 @@
 {"level":"http","message":"GET /api/products?page=1&limit=10&material=V%C3%A0ng&minPrice=20000000&sortBy=lowestPrice&sortOrder=desc 200 16.445 ms - {} - User: guest","timestamp":"2025-07-10T17:27:56.481Z"}
 {"level":"http","message":"GET /api/products?page=1&limit=10&material=V%C3%A0ng&karat=24K&minPrice=20000000&sortBy=lowestPrice&sortOrder=desc 200 18.258 ms - {} - User: guest","timestamp":"2025-07-10T17:28:00.377Z"}
 {"level":"info","message":"🛑 SIGINT received, shutting down gracefully","timestamp":"2025-07-10T17:28:19.256Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-10T17:33:05.872Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-10T17:33:05.875Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-10T17:33:05.876Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-10T17:33:05.877Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-10T17:33:06.064Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-10T17:33:06.067Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-10T17:33:06.174Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-10T17:33:06.176Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-10T17:33:06.176Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-10T17:33:06.177Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-10T17:33:06.177Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-10T17:33:06.177Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-10T17:33:06.177Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-10T17:33:06.177Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-10T17:33:06.177Z"}
+{"level":"http","message":"GET /api/products?limit=100 200 60.380 ms - {} - User: guest","timestamp":"2025-07-10T17:33:16.935Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 56.388 ms - {} - User: guest","timestamp":"2025-07-10T17:33:16.943Z"}
+{"level":"http","message":"GET /api/collections 304 55.072 ms - {} - User: guest","timestamp":"2025-07-10T17:33:16.947Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 1.123 ms - {} - User: guest","timestamp":"2025-07-10T17:33:16.951Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 2.859 ms - {} - User: guest","timestamp":"2025-07-10T17:33:16.956Z"}
+{"level":"http","message":"GET /api/collections 304 9.236 ms - {} - User: guest","timestamp":"2025-07-10T17:33:16.967Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 0.834 ms - {} - User: guest","timestamp":"2025-07-10T17:33:20.308Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 1.465 ms - {} - User: guest","timestamp":"2025-07-10T17:33:20.316Z"}
+{"level":"http","message":"GET /api/products?limit=1000 304 17.279 ms - {} - User: guest","timestamp":"2025-07-10T17:33:20.326Z"}
+{"level":"http","message":"GET /api/products?limit=1000 304 1.559 ms - {} - User: guest","timestamp":"2025-07-10T17:33:20.330Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 1.475 ms - {} - User: guest","timestamp":"2025-07-10T17:35:05.058Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 1.853 ms - {} - User: guest","timestamp":"2025-07-10T17:35:05.061Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 1.192 ms - {} - User: guest","timestamp":"2025-07-10T17:35:05.068Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 1.225 ms - {} - User: guest","timestamp":"2025-07-10T17:35:05.071Z"}
+{"level":"http","message":"GET /api/collections 304 20.091 ms - {} - User: guest","timestamp":"2025-07-10T17:35:05.084Z"}
+{"level":"http","message":"GET /api/collections 304 14.701 ms - {} - User: guest","timestamp":"2025-07-10T17:35:05.102Z"}
+{"level":"http","message":"GET /api/collections/ChotMe/products 304 10.842 ms - {} - User: guest","timestamp":"2025-07-10T17:35:07.235Z"}
+{"level":"http","message":"GET /api/collections/ChotMe/products 304 4.887 ms - {} - User: guest","timestamp":"2025-07-10T17:35:07.241Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 1.321 ms - {} - User: guest","timestamp":"2025-07-10T17:35:09.204Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 1.851 ms - {} - User: guest","timestamp":"2025-07-10T17:35:09.208Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 1.005 ms - {} - User: guest","timestamp":"2025-07-10T17:35:09.212Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 1.448 ms - {} - User: guest","timestamp":"2025-07-10T17:35:09.217Z"}
+{"level":"http","message":"GET /api/collections 304 13.296 ms - {} - User: guest","timestamp":"2025-07-10T17:35:09.222Z"}
+{"level":"http","message":"GET /api/collections 304 11.883 ms - {} - User: guest","timestamp":"2025-07-10T17:35:09.236Z"}
+{"level":"http","message":"GET /api/collections/OnlyYou/products 304 5.484 ms - {} - User: guest","timestamp":"2025-07-10T17:35:10.003Z"}
+{"level":"http","message":"GET /api/collections/OnlyYou/products 304 5.839 ms - {} - User: guest","timestamp":"2025-07-10T17:35:10.011Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 1.528 ms - {} - User: guest","timestamp":"2025-07-10T17:36:28.919Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 0.880 ms - {} - User: guest","timestamp":"2025-07-10T17:36:28.922Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 1.531 ms - {} - User: guest","timestamp":"2025-07-10T17:36:28.927Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 1.858 ms - {} - User: guest","timestamp":"2025-07-10T17:36:28.932Z"}
+{"level":"http","message":"GET /api/collections 304 14.647 ms - {} - User: guest","timestamp":"2025-07-10T17:36:28.938Z"}
+{"level":"http","message":"GET /api/collections 304 23.775 ms - {} - User: guest","timestamp":"2025-07-10T17:36:28.966Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 4.603 ms - {} - User: guest","timestamp":"2025-07-10T17:37:04.925Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.806 ms - {} - User: guest","timestamp":"2025-07-10T17:37:04.927Z"}
+{"level":"http","message":"GET /api/products?category=TRANG%20S%E1%BB%A8C%20C%C6%AF%E1%BB%9AI&limit=20 200 14.349 ms - {} - User: guest","timestamp":"2025-07-10T17:37:04.953Z"}
+{"level":"http","message":"GET /api/products?category=TRANG%20S%E1%BB%A8C%20C%C6%AF%E1%BB%9AI&limit=20 304 1.708 ms - {} - User: guest","timestamp":"2025-07-10T17:37:05.005Z"}
+{"level":"http","message":"GET /api/products 200 16.183 ms - {} - User: guest","timestamp":"2025-07-10T17:38:42.758Z"}
+{"level":"http","message":"GET /api/products 304 0.690 ms - {} - User: guest","timestamp":"2025-07-10T17:38:46.619Z"}
+{"level":"http","message":"GET /api/products 304 1.041 ms - {} - User: guest","timestamp":"2025-07-10T17:38:49.911Z"}
+{"level":"http","message":"GET /api/products 304 0.819 ms - {} - User: guest","timestamp":"2025-07-10T17:38:53.322Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 37.865 ms - {} - User: guest","timestamp":"2025-07-10T17:39:23.377Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 42.004 ms - {} - User: guest","timestamp":"2025-07-10T17:39:23.385Z"}
+{"level":"http","message":"GET /api/collections 304 43.087 ms - {} - User: guest","timestamp":"2025-07-10T17:39:23.391Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 1.412 ms - {} - User: guest","timestamp":"2025-07-10T17:39:23.396Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 1.636 ms - {} - User: guest","timestamp":"2025-07-10T17:39:23.400Z"}
+{"level":"http","message":"GET /api/collections 304 7.152 ms - {} - User: guest","timestamp":"2025-07-10T17:39:23.409Z"}
+{"level":"info","message":"🛑 SIGINT received, shutting down gracefully","timestamp":"2025-07-10T17:40:37.662Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-11T04:49:46.886Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-11T04:49:46.890Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-11T04:49:46.891Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-11T04:49:46.891Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-11T04:49:47.311Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-11T04:49:47.316Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-11T04:49:47.538Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-11T04:49:47.541Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-11T04:49:47.542Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-11T04:49:47.543Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-11T04:49:47.543Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-11T04:49:47.544Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-11T04:49:47.544Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-11T04:49:47.544Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-11T04:49:47.545Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 95.747 ms - {} - User: guest","timestamp":"2025-07-11T04:49:51.578Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 101.279 ms - {} - User: guest","timestamp":"2025-07-11T04:49:51.599Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 1.399 ms - {} - User: guest","timestamp":"2025-07-11T04:49:51.602Z"}
+{"level":"http","message":"GET /api/collections 304 71.847 ms - {} - User: guest","timestamp":"2025-07-11T04:49:51.606Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 1.967 ms - {} - User: guest","timestamp":"2025-07-11T04:49:51.611Z"}
+{"level":"http","message":"GET /api/collections 304 10.720 ms - {} - User: guest","timestamp":"2025-07-11T04:49:51.624Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 1.295 ms - {} - User: guest","timestamp":"2025-07-11T04:50:01.990Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 0.956 ms - {} - User: guest","timestamp":"2025-07-11T04:50:01.993Z"}
+{"level":"http","message":"GET /api/products?limit=1000 304 24.414 ms - {} - User: guest","timestamp":"2025-07-11T04:50:02.020Z"}
+{"level":"http","message":"GET /api/products?limit=1000 304 2.037 ms - {} - User: guest","timestamp":"2025-07-11T04:50:02.026Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 7.348 ms - {} - User: guest","timestamp":"2025-07-11T04:50:10.431Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 1.571 ms - {} - User: guest","timestamp":"2025-07-11T04:50:10.434Z"}
+{"level":"http","message":"GET /api/products?category=TRANG%20S%E1%BB%A8C%20C%C6%AF%E1%BB%9AI&limit=20 304 19.649 ms - {} - User: guest","timestamp":"2025-07-11T04:50:10.472Z"}
+{"level":"http","message":"GET /api/products?category=TRANG%20S%E1%BB%A8C%20C%C6%AF%E1%BB%9AI&limit=20 304 1.235 ms - {} - User: guest","timestamp":"2025-07-11T04:50:10.491Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 71.190 ms - {} - User: guest","timestamp":"2025-07-11T04:59:53.627Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 74.075 ms - {} - User: guest","timestamp":"2025-07-11T04:59:53.636Z"}
+{"level":"http","message":"GET /api/collections 304 78.514 ms - {} - User: guest","timestamp":"2025-07-11T04:59:53.648Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 1.826 ms - {} - User: guest","timestamp":"2025-07-11T04:59:53.652Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 2.207 ms - {} - User: guest","timestamp":"2025-07-11T04:59:53.656Z"}
+{"level":"http","message":"GET /api/collections 304 18.900 ms - {} - User: guest","timestamp":"2025-07-11T04:59:53.678Z"}
+{"level":"http","message":"GET /api/products 304 19.422 ms - {} - User: guest","timestamp":"2025-07-11T05:01:53.199Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 2.485 ms - {} - User: guest","timestamp":"2025-07-11T05:04:50.047Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 1.159 ms - {} - User: guest","timestamp":"2025-07-11T05:04:50.050Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 1.265 ms - {} - User: guest","timestamp":"2025-07-11T05:04:50.055Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 1.548 ms - {} - User: guest","timestamp":"2025-07-11T05:04:50.059Z"}
+{"level":"http","message":"GET /api/collections 304 17.915 ms - {} - User: guest","timestamp":"2025-07-11T05:04:50.069Z"}
+{"level":"http","message":"GET /api/collections 304 24.972 ms - {} - User: guest","timestamp":"2025-07-11T05:04:50.098Z"}
+{"level":"http","message":"GET /api/products?limit=1000 304 21.149 ms - {} - User: guest","timestamp":"2025-07-11T05:05:21.570Z"}
+{"level":"info","message":"🛑 SIGINT received, shutting down gracefully","timestamp":"2025-07-11T05:12:30.786Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-11T08:09:05.564Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-11T08:09:05.568Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-11T08:09:05.569Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-11T08:09:05.570Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-11T08:09:05.782Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-11T08:09:05.786Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-11T08:09:05.937Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-11T08:09:05.940Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-11T08:09:05.941Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-11T08:09:05.942Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-11T08:09:05.942Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-11T08:09:05.943Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-11T08:09:05.943Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-11T08:09:05.943Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-11T08:09:05.943Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-11T08:09:12.909Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-11T08:09:12.912Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-11T08:09:12.913Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-11T08:09:12.914Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-11T08:09:13.099Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-11T08:09:13.103Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-11T08:09:13.230Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-11T08:09:13.233Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-11T08:09:13.234Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-11T08:09:13.234Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-11T08:09:13.235Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-11T08:09:13.235Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-11T08:09:13.235Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-11T08:09:13.235Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-11T08:09:13.236Z"}
+{"level":"info","message":"Generated OTP:","timestamp":"2025-07-11T08:10:52.247Z"}
+{"level":"info","message":"OTP Email sent successfully:","timestamp":"2025-07-11T08:10:55.920Z"}
+{"level":"http","message":"POST /api/auth/register 201 3691.675 ms - {\"userName\":\"nguyendao2101\",\"password\":\"[REDACTED]\",\"email\":\"nguyendao21012002@gmail.com\"} - User: guest","timestamp":"2025-07-11T08:10:55.923Z"}
+{"level":"info","message":"Debugging OTP verification:","timestamp":"2025-07-11T08:11:36.283Z"}
+{"level":"info","message":"- Input OTP:","timestamp":"2025-07-11T08:11:36.284Z"}
+{"level":"info","message":"- Stored OTP:","timestamp":"2025-07-11T08:11:36.284Z"}
+{"level":"info","message":"- OTP Expires:","timestamp":"2025-07-11T08:11:36.284Z"}
+{"level":"info","message":"- Current Time:","timestamp":"2025-07-11T08:11:36.284Z"}
+{"level":"info","message":"- OTP Match?","timestamp":"2025-07-11T08:11:36.285Z"}
+{"level":"info","message":"Welcome Email sent successfully:","timestamp":"2025-07-11T08:11:39.210Z"}
+{"level":"http","message":"POST /api/auth/verify-otp 200 2939.077 ms - {\"email\":\"nguyendao21012002@gmail.com\",\"otp\":\"906626\"} - User: guest","timestamp":"2025-07-11T08:11:39.218Z"}
+{"level":"info","message":"findByEmailOrUsername called with:","timestamp":"2025-07-11T08:11:49.939Z"}
+{"level":"info","message":"Searching with identifier:","timestamp":"2025-07-11T08:11:49.940Z"}
+{"level":"http","message":"POST /api/auth/login 200 62.354 ms - {\"userName\":\"nguyendao21012002@gmail.com\",\"password\":\"[REDACTED]\"} - User: guest","timestamp":"2025-07-11T08:11:50.001Z"}
+{"level":"http","message":"GET /api/cart 401 0.926 ms - {} - User: guest","timestamp":"2025-07-11T08:13:44.542Z"}
+{"level":"http","message":"GET /api/cart?Authorization=Bearer%20eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODcwYzcwYzFjYTUxNjRiZTEwYmI5MWQiLCJ1c2VyTmFtZSI6Im5ndXllbmRhbzIxMDEiLCJlbWFpbCI6Im5ndXllbmRhbzIxMDEyMDAyQGdtYWlsLmNvbSIsImlhdCI6MTc1MjIyMTUwOSwiZXhwIjoxNzUyMzA3OTA5fQ.vwPaLD7kUhfUnheefTUKMBnxFMWrQ4P9oa_4m9uJBS0 401 0.820 ms - {} - User: guest","timestamp":"2025-07-11T08:15:22.996Z"}
+{"level":"http","message":"GET /api/cart?Authorization=Bearer%20eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODcwYzcwYzFjYTUxNjRiZTEwYmI5MWQiLCJ1c2VyTmFtZSI6Im5ndXllbmRhbzIxMDEiLCJlbWFpbCI6Im5ndXllbmRhbzIxMDEyMDAyQGdtYWlsLmNvbSIsImlhdCI6MTc1MjIyMTUwOSwiZXhwIjoxNzUyMzA3OTA5fQ.vwPaLD7kUhfUnheefTUKMBnxFMWrQ4P9oa_4m9uJBS0 401 0.603 ms - {} - User: guest","timestamp":"2025-07-11T08:16:45.302Z"}
+{"level":"http","message":"GET /api/cart 401 0.588 ms - {} - User: guest","timestamp":"2025-07-11T08:17:45.829Z"}
+{"level":"http","message":"GET /api/cart 403 2.086 ms - {} - User: guest","timestamp":"2025-07-11T08:18:08.255Z"}
+{"level":"http","message":"POST /api/auth/logout 200 8.779 ms - {\"userName\":\"nguyendao21012002@gmail.com\",\"password\":\"[REDACTED]\"} - User: guest","timestamp":"2025-07-11T08:19:04.594Z"}
+{"level":"info","message":"findByEmailOrUsername called with:","timestamp":"2025-07-11T08:19:10.935Z"}
+{"level":"info","message":"Searching with identifier:","timestamp":"2025-07-11T08:19:10.935Z"}
+{"level":"http","message":"POST /api/auth/login 200 70.347 ms - {\"userName\":\"nguyendao21012002@gmail.com\",\"password\":\"[REDACTED]\"} - User: guest","timestamp":"2025-07-11T08:19:11.005Z"}
+{"level":"http","message":"GET /api/cart 403 0.812 ms - {} - User: guest","timestamp":"2025-07-11T08:19:37.012Z"}
+{"level":"http","message":"GET /api/auth/profile 403 0.823 ms - {} - User: guest","timestamp":"2025-07-11T08:20:44.091Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-11T08:21:24.053Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-11T08:21:24.057Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-11T08:21:24.058Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-11T08:21:24.058Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-11T08:21:24.272Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-11T08:21:24.276Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-11T08:21:24.429Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-11T08:21:24.432Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-11T08:21:24.432Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-11T08:21:24.433Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-11T08:21:24.433Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-11T08:21:24.433Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-11T08:21:24.433Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-11T08:21:24.433Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-11T08:21:24.434Z"}
+{"level":"http","message":"GET /api/cart 403 7.283 ms - {} - User: guest","timestamp":"2025-07-11T08:22:52.792Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-11T08:26:17.176Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-11T08:26:17.179Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-11T08:26:17.180Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-11T08:26:17.181Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-11T08:26:17.402Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-11T08:26:17.407Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-11T08:26:17.535Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-11T08:26:17.541Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-11T08:26:17.541Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-11T08:26:17.542Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-11T08:26:17.542Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-11T08:26:17.543Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-11T08:26:17.543Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-11T08:26:17.543Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-11T08:26:17.544Z"}
+{"level":"http","message":"GET /api/cart 200 37.706 ms - {} - User: -","timestamp":"2025-07-11T08:26:23.770Z"}
+{"level":"error","message":"Get profile error: User not found","stack":"Error: User not found\n    at UserService.getUserProfile (C:\\Users\\ADMIN\\Desktop\\nodejs\\DaoShop\\src\\services\\user.service.js:10:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async getProfile (C:\\Users\\ADMIN\\Desktop\\nodejs\\DaoShop\\src\\controllers\\user.controller.js:333:33)","timestamp":"2025-07-11T08:26:35.520Z"}
+{"level":"http","message":"GET /api/auth/profile 500 19.973 ms - {} - User: -","timestamp":"2025-07-11T08:26:35.521Z"}
+{"level":"http","message":"GET /api/cart 400 14.643 ms - {} - User: -","timestamp":"2025-07-11T08:34:38.898Z"}
+{"level":"http","message":"POST /api/cart/add 400 9.360 ms - {\"productId\":\"BT1\",\"sizeIndex\":0,\"quantity\":1} - User: -","timestamp":"2025-07-11T08:41:03.655Z"}
+{"level":"http","message":"POST /api/cart/add 400 8.691 ms - {\"productId\":\"BT1\",\"sizeIndex\":0,\"quantity\":1,\"price\":9690000} - User: -","timestamp":"2025-07-11T08:42:28.615Z"}
+{"level":"http","message":"POST /api/cart/add 400 10.352 ms - {\"productId\":\"BT1\",\"sizeIndex\":0,\"quantity\":1} - User: -","timestamp":"2025-07-11T08:46:10.281Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-11T08:48:21.658Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-11T08:48:21.662Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-11T08:48:21.663Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-11T08:48:21.664Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-11T08:48:21.864Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-11T08:48:21.868Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-11T08:48:22.022Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-11T08:48:22.031Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-11T08:48:22.031Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-11T08:48:22.032Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-11T08:48:22.032Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-11T08:48:22.032Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-11T08:48:22.032Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-11T08:48:22.033Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-11T08:48:22.033Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-11T08:48:50.670Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-11T08:48:50.672Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-11T08:48:50.673Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-11T08:48:50.674Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-11T08:48:50.872Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-11T08:48:50.876Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-11T08:48:51.003Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-11T08:48:51.011Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-11T08:48:51.012Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-11T08:48:51.012Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-11T08:48:51.013Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-11T08:48:51.013Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-11T08:48:51.013Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-11T08:48:51.013Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-11T08:48:51.014Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-11T08:49:03.988Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-11T08:49:03.991Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-11T08:49:03.991Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-11T08:49:03.992Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-11T08:49:04.152Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-11T08:49:04.155Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-11T08:49:04.273Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-11T08:49:04.277Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-11T08:49:04.277Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-11T08:49:04.278Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-11T08:49:04.278Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-11T08:49:04.279Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-11T08:49:04.279Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-11T08:49:04.279Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-11T08:49:04.279Z"}
+{"level":"http","message":"POST /api/cart/add 400 20.236 ms - {\"productId\":\"BT1\",\"sizeIndex\":0,\"quantity\":1} - User: -","timestamp":"2025-07-11T08:49:28.271Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-11T08:51:07.549Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-11T08:51:07.551Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-11T08:51:07.552Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-11T08:51:07.553Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-11T08:51:07.749Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-11T08:51:07.752Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-11T08:51:07.876Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-11T08:51:07.880Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-11T08:51:07.881Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-11T08:51:07.881Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-11T08:51:07.882Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-11T08:51:07.882Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-11T08:51:07.882Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-11T08:51:07.882Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-11T08:51:07.883Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-11T08:51:10.844Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-11T08:51:10.848Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-11T08:51:10.849Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-11T08:51:10.850Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-11T08:51:11.030Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-11T08:51:11.034Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-11T08:51:11.171Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-11T08:51:11.178Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-11T08:51:11.179Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-11T08:51:11.179Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-11T08:51:11.180Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-11T08:51:11.180Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-11T08:51:11.180Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-11T08:51:11.181Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-11T08:51:11.181Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-11T08:51:26.919Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-11T08:51:26.922Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-11T08:51:26.922Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-11T08:51:26.923Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-11T08:51:27.127Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-11T08:51:27.131Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-11T08:51:27.406Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-11T08:51:27.410Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-11T08:51:27.411Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-11T08:51:27.412Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-11T08:51:27.412Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-11T08:51:27.413Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-11T08:51:27.413Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-11T08:51:27.414Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-11T08:51:27.414Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-11T08:51:41.460Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-11T08:51:41.463Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-11T08:51:41.464Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-11T08:51:41.464Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-11T08:51:41.630Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-11T08:51:41.634Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-11T08:51:41.750Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-11T08:51:41.752Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-11T08:51:41.752Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-11T08:51:41.753Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-11T08:51:41.753Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-11T08:51:41.754Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-11T08:51:41.754Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-11T08:51:41.754Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-11T08:51:41.755Z"}
+{"level":"http","message":"POST /api/cart/add 200 48.008 ms - {\"productId\":\"BT1\",\"sizeIndex\":0,\"quantity\":1} - User: -","timestamp":"2025-07-11T08:51:44.889Z"}
+{"level":"http","message":"POST /api/cart/add 400 11.795 ms - {\"productId\":\"NC10VNNA1\",\"sizeIndex\":18,\"quantity\":2} - User: -","timestamp":"2025-07-11T08:53:23.129Z"}
+{"level":"http","message":"POST /api/cart/add 200 41.701 ms - {\"productId\":\"NC10VNNA1\",\"sizeIndex\":0,\"quantity\":2} - User: -","timestamp":"2025-07-11T08:53:57.036Z"}
+{"level":"http","message":"POST /api/cart/add 200 14.694 ms - {\"productId\":\"BT10\",\"sizeIndex\":0,\"quantity\":1} - User: -","timestamp":"2025-07-11T08:54:21.867Z"}
+{"level":"http","message":"GET /api/cart 200 5.957 ms - {} - User: -","timestamp":"2025-07-11T08:54:49.748Z"}
+{"level":"http","message":"POST /api/cart/add 200 12.647 ms - {\"productId\":\"BT1\",\"sizeIndex\":0,\"quantity\":2} - User: -","timestamp":"2025-07-11T08:57:06.603Z"}
+{"level":"http","message":"POST /api/cart/add 400 4.078 ms - {\"productId\":\"BT1\",\"sizeIndex\":0,\"quantity\":0} - User: -","timestamp":"2025-07-11T08:57:45.758Z"}
+{"level":"http","message":"POST /api/cart/add 400 4.926 ms - {\"productId\":\"BT1\",\"sizeIndex\":0,\"quantity\":-1} - User: -","timestamp":"2025-07-11T08:57:50.888Z"}
+{"level":"http","message":"PUT /api/cart/add/update 404 5.606 ms - {\"productId\":\"BT1\",\"sizeIndex\":0,\"quantity\":2} - User: -","timestamp":"2025-07-11T09:00:18.720Z"}
+{"level":"http","message":"PUT /api/cart/update 200 7.360 ms - {\"productId\":\"BT1\",\"sizeIndex\":0,\"quantity\":2} - User: -","timestamp":"2025-07-11T09:00:33.704Z"}
+{"level":"http","message":"POST /api/cart/add 200 12.208 ms - {\"productId\":\"DC10\",\"sizeIndex\":0,\"quantity\":1} - User: -","timestamp":"2025-07-11T09:02:34.127Z"}
+{"level":"http","message":"POST /api/cart/add 200 14.956 ms - {\"productId\":\"DC10\",\"sizeIndex\":1,\"quantity\":1} - User: -","timestamp":"2025-07-11T09:02:39.485Z"}
+{"level":"http","message":"DELETE /api/cart/remove/DC10/1 200 11.176 ms - {} - User: -","timestamp":"2025-07-11T09:04:27.573Z"}
+{"level":"info","message":"🛑 SIGINT received, shutting down gracefully","timestamp":"2025-07-11T09:04:40.615Z"}

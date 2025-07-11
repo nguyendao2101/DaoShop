@@ -33,7 +33,6 @@ const userSchema = new mongoose.Schema({
         type: String,
         default: null
     },
-    // ✅ THÊM FIELD NÀY
     googleId: {
         type: String,
         unique: true,

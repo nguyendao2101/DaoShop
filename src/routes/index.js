@@ -4,6 +4,9 @@ const productRouter = require('./product.route');
 const collectionRouter = require('./collection.route');
 const { specs, swaggerUi } = require('../docs/swagger');
 const commentRoute = require('./comment.route');
+const cartRoutes = require('./cart.route');
+const wishlistRoutes = require('./wishlist.route');
+const purchaseHistoryRoutes = require('./purchase-history.route');
 
 function route(app) {
     // API routes
@@ -11,6 +14,9 @@ function route(app) {
     app.use('/api/products', productRouter);
     app.use('/api/collections', collectionRouter);
     app.use('/api/comments', commentRoute);
+    app.use('/api/cart', cartRoutes);
+    app.use('/api/wishlist', wishlistRoutes);
+    app.use('/api/purchase-history', purchaseHistoryRoutes);
 
     // Swagger documentation
     app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs, {
