@@ -330,23 +330,51 @@ class UserController {
     // Get Profile
     async getProfile(req, res) {
         try {
-            const userProfile = await UserService.getUserProfile(req.user._id);
+            const userId = req.user.userId; // ✅ FIX: Use userId instead of _id
+            console.log('👤 Getting profile for user:', userId);
+
+            const userProfile = await UserService.getUserProfile(userId);
 
             res.json({
                 success: true,
-                data: { user: userProfile }
+                data: { user: userProfile },
+                message: 'Profile retrieved successfully'
             });
 
         } catch (error) {
             logger.error('Get profile error:', error);
             res.status(500).json({
                 success: false,
-                message: 'Internal server error'
+                message: error.message
+            });
+        }
+    }
+    async updateProfile(req, res) {
+        try {
+            const userId = req.user.userId;
+            const updateData = req.body;
+
+            console.log('👤 Updating profile for user:', userId);
+            console.log('📝 Update data:', updateData);
+
+            const updatedProfile = await UserService.updateUserProfile(userId, updateData);
+
+            res.json({
+                success: true,
+                data: { user: updatedProfile },
+                message: 'Profile updated successfully'
+            });
+
+        } catch (error) {
+            logger.error('Update profile error:', error);
+            res.status(400).json({
+                success: false,
+                message: error.message
             });
         }
     }
 
-    // ✅ Utility method (optional - cho clean code)
+    // Utility method (optional - cho clean code)
     setRefreshTokenCookie(res, refreshToken) {
         res.cookie('refreshToken', refreshToken, {
             httpOnly: true,

@@ -29,6 +29,53 @@ const userSchema = new mongoose.Schema({
         type: String,
         trim: true
     },
+    phone: {
+        type: String,
+        trim: true,
+        match: [/^[0-9]{10,11}$|^$/, 'Invalid phone number format'],
+        default: ''
+    },
+    dateOfBirth: {
+        type: Date,
+        default: null
+    },
+    gender: {
+        type: String,
+        enum: ['male', 'female', 'other', ''],
+        default: ''
+    },
+    address: {
+        street: {
+            type: String,
+            trim: true,
+            maxLength: 200,
+            default: ''
+        },
+        ward: {
+            type: String,
+            trim: true,
+            maxLength: 100,
+            default: ''
+        },
+        district: {
+            type: String,
+            trim: true,
+            maxLength: 100,
+            default: ''
+        },
+        city: {
+            type: String,
+            trim: true,
+            maxLength: 100,
+            default: ''
+        },
+        zipCode: {
+            type: String,
+            trim: true,
+            maxLength: 10,
+            default: ''
+        }
+    },
     avatar: {
         type: String,
         default: null

@@ -2,6 +2,7 @@
 const express = require('express');
 const router = express.Router();
 const passport = require('passport');
+const { body } = require('express-validator');
 const UserController = require('../controllers/user.controller');
 const { authenticateToken } = require('../middlewares/authMiddleware');
 const {
@@ -277,5 +278,20 @@ router.post('/logout', UserController.logout);
 // Google OAuth routes (simple)
 router.get('/google', passport.authenticate('google', { scope: ['profile', 'email'] }));
 router.get('/google/callback', passport.authenticate('google', { session: false }), UserController.googleCallback);
+router.put('/profile', authenticateToken, [
+    body('fullName').optional().isLength({ max: 100 }).trim(),
+    body('phone').optional().custom(value => {
+        if (value === '') return true; // Allow empty string
+        return /^[0-9]{10,11}$/.test(value);
+    }).withMessage('Phone must be 10-11 digits or empty'),
+    body('dateOfBirth').optional().isISO8601().withMessage('Invalid date format'),
+    body('gender').optional().isIn(['male', 'female', 'other', '']).withMessage('Invalid gender'),
+    body('address.street').optional().isLength({ max: 200 }).trim(),
+    body('address.ward').optional().isLength({ max: 100 }).trim(),
+    body('address.district').optional().isLength({ max: 100 }).trim(),
+    body('address.city').optional().isLength({ max: 100 }).trim(),
+    body('address.zipCode').optional().isLength({ max: 10 }).trim(),
+    body('avatar').optional().isURL().withMessage('Avatar must be a valid URL')
+], UserController.updateProfile);
 
 module.exports = router;

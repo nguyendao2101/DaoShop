@@ -1419,3 +1419,268 @@
 {"level":"http","message":"GET /api/cart 304 8.384 ms - {} - User: -","timestamp":"2025-07-12T09:23:20.291Z"}
 {"level":"http","message":"GET /api/cart 304 7.060 ms - {} - User: -","timestamp":"2025-07-12T09:23:50.815Z"}
 {"level":"info","message":"🛑 SIGINT received, shutting down gracefully","timestamp":"2025-07-12T09:24:19.385Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-12T10:10:38.049Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-12T10:10:38.052Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-12T10:10:38.053Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-12T10:10:38.053Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-12T10:10:38.301Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-12T10:10:38.305Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-12T10:10:38.460Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-12T10:10:38.464Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-12T10:10:38.465Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-12T10:10:38.466Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-12T10:10:38.467Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-12T10:10:38.467Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-12T10:10:38.467Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-12T10:10:38.467Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-12T10:10:38.468Z"}
+{"level":"info","message":"findByEmailOrUsername called with:","timestamp":"2025-07-12T10:11:10.090Z"}
+{"level":"info","message":"Searching with identifier:","timestamp":"2025-07-12T10:11:10.090Z"}
+{"level":"error","message":"Login error: Invalid credentials","stack":"Error: Invalid credentials\n    at AuthService.loginUser (C:\\Users\\ADMIN\\Desktop\\nodejs\\DaoShop\\src\\services\\auth.service.js:78:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async login (C:\\Users\\ADMIN\\Desktop\\nodejs\\DaoShop\\src\\controllers\\user.controller.js:189:26)","timestamp":"2025-07-12T10:11:10.114Z"}
+{"level":"http","message":"POST /api/auth/login 401 29.997 ms - {\"userName\":\"nguyendao21012002@gmail.com\",\"password\":\"[REDACTED]\"} - User: guest","timestamp":"2025-07-12T10:11:10.118Z"}
+{"level":"info","message":"findByEmailOrUsername called with:","timestamp":"2025-07-12T10:11:14.963Z"}
+{"level":"info","message":"Searching with identifier:","timestamp":"2025-07-12T10:11:14.963Z"}
+{"level":"error","message":"Login error: Invalid credentials","stack":"Error: Invalid credentials\n    at AuthService.loginUser (C:\\Users\\ADMIN\\Desktop\\nodejs\\DaoShop\\src\\services\\auth.service.js:78:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async login (C:\\Users\\ADMIN\\Desktop\\nodejs\\DaoShop\\src\\controllers\\user.controller.js:189:26)","timestamp":"2025-07-12T10:11:14.965Z"}
+{"level":"http","message":"POST /api/auth/login 401 3.708 ms - {\"userName\":\"nguyendao21012002@gmail.com\",\"password\":\"[REDACTED]\"} - User: guest","timestamp":"2025-07-12T10:11:14.966Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-12T10:12:07.526Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-12T10:12:07.532Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-12T10:12:07.533Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-12T10:12:07.534Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-12T10:12:07.733Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-12T10:12:07.736Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-12T10:12:07.882Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-12T10:12:07.885Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-12T10:12:07.886Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-12T10:12:07.886Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-12T10:12:07.886Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-12T10:12:07.887Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-12T10:12:07.887Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-12T10:12:07.887Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-12T10:12:07.887Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-12T10:12:29.581Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-12T10:12:29.584Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-12T10:12:29.584Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-12T10:12:29.585Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-12T10:12:29.780Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-12T10:12:29.783Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-12T10:12:29.902Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-12T10:12:29.904Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-12T10:12:29.905Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-12T10:12:29.905Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-12T10:12:29.905Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-12T10:12:29.905Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-12T10:12:29.905Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-12T10:12:29.906Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-12T10:12:29.906Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-12T10:13:52.687Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-12T10:13:52.690Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-12T10:13:52.691Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-12T10:13:52.691Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-12T10:13:52.905Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-12T10:13:52.915Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-12T10:13:53.048Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-12T10:13:53.051Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-12T10:13:53.051Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-12T10:13:53.052Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-12T10:13:53.053Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-12T10:13:53.053Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-12T10:13:53.053Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-12T10:13:53.054Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-12T10:13:53.054Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-12T10:13:56.300Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-12T10:13:56.304Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-12T10:13:56.305Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-12T10:13:56.306Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-12T10:13:56.568Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-12T10:13:56.574Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-12T10:13:56.763Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-12T10:13:56.767Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-12T10:13:56.767Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-12T10:13:56.768Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-12T10:13:56.769Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-12T10:13:56.769Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-12T10:13:56.769Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-12T10:13:56.769Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-12T10:13:56.770Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-12T10:14:03.340Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-12T10:14:03.342Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-12T10:14:03.343Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-12T10:14:03.343Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-12T10:14:03.529Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-12T10:14:03.535Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-12T10:14:03.664Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-12T10:14:03.667Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-12T10:14:03.667Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-12T10:14:03.668Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-12T10:14:03.668Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-12T10:14:03.669Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-12T10:14:03.669Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-12T10:14:03.669Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-12T10:14:03.670Z"}
+{"level":"info","message":"findByEmailOrUsername called with:","timestamp":"2025-07-12T10:14:07.269Z"}
+{"level":"info","message":"Searching with identifier:","timestamp":"2025-07-12T10:14:07.270Z"}
+{"level":"http","message":"POST /api/auth/login 200 75.860 ms - {\"userName\":\"nguyendao21012002@gmail.com\",\"password\":\"[REDACTED]\"} - User: guest","timestamp":"2025-07-12T10:14:07.344Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-12T10:16:23.434Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-12T10:16:23.437Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-12T10:16:23.438Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-12T10:16:23.438Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-12T10:16:23.684Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-12T10:16:23.689Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-12T10:16:23.825Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-12T10:16:23.829Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-12T10:16:23.832Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-12T10:16:23.833Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-12T10:16:23.833Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-12T10:16:23.833Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-12T10:16:23.834Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-12T10:16:23.834Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-12T10:16:23.834Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-12T10:16:52.472Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-12T10:16:52.475Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-12T10:16:52.475Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-12T10:16:52.476Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-12T10:16:52.665Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-12T10:16:52.668Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-12T10:16:52.803Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-12T10:16:52.809Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-12T10:16:52.810Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-12T10:16:52.811Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-12T10:16:52.812Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-12T10:16:52.812Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-12T10:16:52.812Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-12T10:16:52.812Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-12T10:16:52.813Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-12T10:17:00.750Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-12T10:17:00.753Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-12T10:17:00.753Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-12T10:17:00.754Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-12T10:17:00.933Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-12T10:17:00.940Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-12T10:17:01.061Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-12T10:17:01.064Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-12T10:17:01.065Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-12T10:17:01.066Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-12T10:17:01.067Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-12T10:17:01.067Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-12T10:17:01.067Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-12T10:17:01.067Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-12T10:17:01.067Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-12T10:17:41.655Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-12T10:17:41.658Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-12T10:17:41.659Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-12T10:17:41.659Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-12T10:17:41.865Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-12T10:17:41.870Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-12T10:17:42.009Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-12T10:17:42.013Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-12T10:17:42.013Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-12T10:17:42.014Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-12T10:17:42.018Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-12T10:17:42.018Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-12T10:17:42.019Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-12T10:17:42.019Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-12T10:17:42.019Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-12T10:18:20.025Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-12T10:18:20.028Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-12T10:18:20.029Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-12T10:18:20.030Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-12T10:18:20.256Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-12T10:18:20.260Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-12T10:18:20.400Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-12T10:18:20.404Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-12T10:18:20.405Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-12T10:18:20.406Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-12T10:18:20.406Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-12T10:18:20.407Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-12T10:18:20.407Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-12T10:18:20.407Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-12T10:18:20.408Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-12T10:19:19.893Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-12T10:19:19.896Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-12T10:19:19.897Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-12T10:19:19.897Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-12T10:19:20.088Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-12T10:19:20.092Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-12T10:19:20.220Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-12T10:19:20.223Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-12T10:19:20.223Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-12T10:19:20.224Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-12T10:19:20.224Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-12T10:19:20.224Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-12T10:19:20.224Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-12T10:19:20.224Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-12T10:19:20.224Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-12T10:19:23.348Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-12T10:19:23.351Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-12T10:19:23.351Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-12T10:19:23.352Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-12T10:19:23.552Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-12T10:19:23.555Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-12T10:19:23.682Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-12T10:19:23.684Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-12T10:19:23.685Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-12T10:19:23.685Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-12T10:19:23.686Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-12T10:19:23.686Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-12T10:19:23.686Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-12T10:19:23.686Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-12T10:19:23.687Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-12T10:19:37.754Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-12T10:19:37.757Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-12T10:19:37.758Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-12T10:19:37.758Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-12T10:19:37.952Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-12T10:19:37.956Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-12T10:19:38.075Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-12T10:19:38.082Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-12T10:19:38.082Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-12T10:19:38.083Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-12T10:19:38.083Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-12T10:19:38.084Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-12T10:19:38.084Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-12T10:19:38.084Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-12T10:19:38.084Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-12T10:19:44.689Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-12T10:19:44.692Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-12T10:19:44.692Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-12T10:19:44.693Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-12T10:19:44.882Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-12T10:19:44.886Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-12T10:19:45.016Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-12T10:19:45.019Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-12T10:19:45.020Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-12T10:19:45.020Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-12T10:19:45.020Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-12T10:19:45.021Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-12T10:19:45.021Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-12T10:19:45.021Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-12T10:19:45.021Z"}
+{"level":"http","message":"POST /api/auth/logout 200 21.352 ms - {\"userName\":\"nguyendao21012002@gmail.com\",\"password\":\"[REDACTED]\"} - User: guest","timestamp":"2025-07-12T10:19:50.037Z"}
+{"level":"info","message":"findByEmailOrUsername called with:","timestamp":"2025-07-12T10:19:53.544Z"}
+{"level":"info","message":"Searching with identifier:","timestamp":"2025-07-12T10:19:53.545Z"}
+{"level":"http","message":"POST /api/auth/login 200 104.649 ms - {\"userName\":\"nguyendao21012002@gmail.com\",\"password\":\"[REDACTED]\"} - User: guest","timestamp":"2025-07-12T10:19:53.647Z"}
+{"level":"http","message":"GET /api/auth/profile 200 13.339 ms - {} - User: -","timestamp":"2025-07-12T10:21:28.571Z"}
+{"level":"http","message":"POST /api/auth/profile 404 1.108 ms - {\"fullName\":\"Nguyen Van Dao\",\"phone\":\"0123456789\",\"dateOfBirth\":\"1990-01-01\",\"gender\":\"male\"} - User: guest","timestamp":"2025-07-12T10:24:32.734Z"}
+{"level":"http","message":"PUT /api/auth/profile 200 19.454 ms - {\"fullName\":\"Nguyen Van Dao\",\"phone\":\"0123456789\",\"dateOfBirth\":\"1990-01-01\",\"gender\":\"male\"} - User: -","timestamp":"2025-07-12T10:24:44.709Z"}
+{"level":"http","message":"PUT /api/auth/profile 200 8.973 ms - {\"fullName\":\"Nguyen Van Dao\",\"phone\":\"0123456789\",\"dateOfBirth\":\"1990-01-01\",\"gender\":\"male\"} - User: -","timestamp":"2025-07-12T10:25:27.460Z"}
+{"level":"http","message":"PUT /api/auth/profile 200 7.451 ms - {\"address\":{\"street\":\"123 Main Street\",\"ward\":\"Ward 1\",\"district\":\"District 1\",\"city\":\"Ho Chi Minh City\",\"zipCode\":\"70000\"}} - User: -","timestamp":"2025-07-12T10:26:50.942Z"}
+{"level":"http","message":"PUT /api/auth/profile 200 59.558 ms - {\"avatar\":\"https://example.com/avatar.jpg\"} - User: -","timestamp":"2025-07-12T10:28:44.406Z"}
+{"level":"http","message":"PUT /api/auth/profile 200 10.484 ms - {\"avatar\":\"https://scontent.fhan15-1.fna.fbcdn.net/v/t39.30808-6/500699060_2183992305347482_6901281221750465195_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHMWtrh92Unju5KHRJXLtYHZgpIm5QJe4NmCkiblAl7g8vI3_0VpQnd0i6P6lExkwFGZE-58VC6zJkti9VlXNj6&_nc_ohc=GvQwYwayA2IQ7kNvwEhwsDh&_nc_oc=AdnS-FmQleUyj8ZNwwva7wHiwjBdGCZQpiNqJTTYT48j1bMjeqEDyVEmK1Cvjk4Oj3RsikfU6Bn98PPrjgUrBQtP&_nc_zt=23&_nc_ht=scontent.fhan15-1.fna&_nc_gid=Son3tbie-j3mIW1FuKBAjA&oh=00_AfRCi7LwyoloRfqtXqTmXYt6LzCOeXrMnCBlSL1aBppg_w&oe=68781E90\"} - User: -","timestamp":"2025-07-12T10:29:08.567Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-12T10:32:38.865Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-12T10:32:38.868Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-12T10:32:38.869Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-12T10:32:38.870Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-12T10:32:39.120Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-12T10:32:39.127Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-12T10:32:39.290Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-12T10:32:39.293Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-12T10:32:39.294Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-12T10:32:39.295Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-12T10:32:39.296Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-12T10:32:39.296Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-12T10:32:39.296Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-12T10:32:39.296Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-12T10:32:39.297Z"}
+{"level":"http","message":"PUT /api/auth/profile 200 86.204 ms - {\"fullName\":\"Nguyen Van Dao\",\"phone\":\"0123456789\",\"dateOfBirth\":\"1990-01-01\",\"gender\":\"male\"} - User: -","timestamp":"2025-07-12T10:33:44.875Z"}
+{"level":"http","message":"PUT /api/auth/profile 200 11.951 ms - {\"address\":{\"street\":\"123 Main Street\",\"ward\":\"Ward 1\",\"district\":\"District 1\",\"city\":\"Ho Chi Minh City\",\"zipCode\":\"70000\"}} - User: -","timestamp":"2025-07-12T10:33:51.181Z"}
+{"level":"info","message":"🛑 SIGINT received, shutting down gracefully","timestamp":"2025-07-12T10:35:30.048Z"}
