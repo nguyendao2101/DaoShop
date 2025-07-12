@@ -27,7 +27,7 @@ const createRateLimiter = (windowMs, max, message) => {
 // Global limiter - áp dụng cho toàn bộ API
 const globalLimiter = createRateLimiter(
     15 * 60 * 1000, // 15 minutes
-    100, // 100 requests per 15 minutes
+    1000, // 100 requests per 15 minutes
     'Too many requests from this IP, please try again after 15 minutes'
 );
 
