@@ -294,4 +294,10 @@ router.put('/profile', authenticateToken, [
     body('avatar').optional().isURL().withMessage('Avatar must be a valid URL')
 ], UserController.updateProfile);
 
+router.put('/change-password', authenticateToken, [
+    body('currentPassword').notEmpty().withMessage('Current password is required'),
+    body('newPassword').isLength({ min: 6 }).withMessage('New password must be at least 6 characters'),
+    body('confirmPassword').notEmpty().withMessage('Confirm password is required')
+], UserController.changePassword);
+
 module.exports = router;

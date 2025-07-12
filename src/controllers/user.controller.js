@@ -373,6 +373,45 @@ class UserController {
             });
         }
     }
+    async changePassword(req, res) {
+        try {
+            const errors = validationResult(req);
+            if (!errors.isEmpty()) {
+                return res.status(400).json({
+                    success: false,
+                    message: 'Validation failed',
+                    errors: errors.array()
+                });
+            }
+
+            const userId = req.user.userId;
+            const { currentPassword, newPassword, confirmPassword } = req.body;
+
+            console.log('🔒 Changing password for user:', userId);
+
+            // Validate passwords match
+            if (newPassword !== confirmPassword) {
+                return res.status(400).json({
+                    success: false,
+                    message: 'New password and confirmation password do not match'
+                });
+            }
+
+            await UserService.changeUserPassword(userId, currentPassword, newPassword);
+
+            res.json({
+                success: true,
+                message: 'Password changed successfully'
+            });
+
+        } catch (error) {
+            logger.error('Change password error:', error);
+            res.status(400).json({
+                success: false,
+                message: error.message
+            });
+        }
+    }
 
     // Utility method (optional - cho clean code)
     setRefreshTokenCookie(res, refreshToken) {

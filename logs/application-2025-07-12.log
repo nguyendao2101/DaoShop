@@ -1684,3 +1684,28 @@
 {"level":"http","message":"PUT /api/auth/profile 200 86.204 ms - {\"fullName\":\"Nguyen Van Dao\",\"phone\":\"0123456789\",\"dateOfBirth\":\"1990-01-01\",\"gender\":\"male\"} - User: -","timestamp":"2025-07-12T10:33:44.875Z"}
 {"level":"http","message":"PUT /api/auth/profile 200 11.951 ms - {\"address\":{\"street\":\"123 Main Street\",\"ward\":\"Ward 1\",\"district\":\"District 1\",\"city\":\"Ho Chi Minh City\",\"zipCode\":\"70000\"}} - User: -","timestamp":"2025-07-12T10:33:51.181Z"}
 {"level":"info","message":"🛑 SIGINT received, shutting down gracefully","timestamp":"2025-07-12T10:35:30.048Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-12T10:39:48.523Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-12T10:39:48.526Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-12T10:39:48.527Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-12T10:39:48.528Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-12T10:39:48.719Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-12T10:39:48.723Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-12T10:39:48.838Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-12T10:39:48.845Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-12T10:39:48.846Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-12T10:39:48.847Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-12T10:39:48.847Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-12T10:39:48.847Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-12T10:39:48.848Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-12T10:39:48.848Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-12T10:39:48.848Z"}
+{"level":"http","message":"PUT /api/auth/change-password 200 141.488 ms - {\"currentPassword\":\"Nguyendao21@\",\"newPassword\":\"Nguyendao21@1\",\"confirmPassword\":\"Nguyendao21@1\"} - User: -","timestamp":"2025-07-12T10:39:54.520Z"}
+{"level":"http","message":"POST /api/auth/logout 200 6.541 ms - {\"userName\":\"nguyendao21012002@gmail.com\",\"password\":\"[REDACTED]\"} - User: guest","timestamp":"2025-07-12T10:40:05.929Z"}
+{"level":"info","message":"findByEmailOrUsername called with:","timestamp":"2025-07-12T10:40:11.710Z"}
+{"level":"info","message":"Searching with identifier:","timestamp":"2025-07-12T10:40:11.710Z"}
+{"level":"error","message":"Login error: Invalid credentials","stack":"Error: Invalid credentials\n    at AuthService.loginUser (C:\\Users\\ADMIN\\Desktop\\nodejs\\DaoShop\\src\\services\\auth.service.js:92:19)\n    at async login (C:\\Users\\ADMIN\\Desktop\\nodejs\\DaoShop\\src\\controllers\\user.controller.js:189:26)","timestamp":"2025-07-12T10:40:11.767Z"}
+{"level":"http","message":"POST /api/auth/login 401 60.300 ms - {\"userName\":\"nguyendao21012002@gmail.com\",\"password\":\"[REDACTED]\"} - User: guest","timestamp":"2025-07-12T10:40:11.769Z"}
+{"level":"info","message":"findByEmailOrUsername called with:","timestamp":"2025-07-12T10:40:17.437Z"}
+{"level":"info","message":"Searching with identifier:","timestamp":"2025-07-12T10:40:17.437Z"}
+{"level":"http","message":"POST /api/auth/login 200 63.255 ms - {\"userName\":\"nguyendao21012002@gmail.com\",\"password\":\"[REDACTED]\"} - User: guest","timestamp":"2025-07-12T10:40:17.500Z"}
+{"level":"info","message":"🛑 SIGINT received, shutting down gracefully","timestamp":"2025-07-12T10:40:30.621Z"}
