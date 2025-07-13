@@ -7,7 +7,7 @@ class PurchaseHistoryService {
     // Lấy lịch sử mua hàng
     static async getPurchaseHistory(userId, filters = {}) {
         try {
-            console.log(`📜 Getting purchase history for user: ${userId}`);
+            console.log(`Getting purchase history for user: ${userId}`);
 
             //FIX: Convert string userId to ObjectId
             const userObjectId = new mongoose.Types.ObjectId(userId);
@@ -23,7 +23,7 @@ class PurchaseHistoryService {
             } = filters;
 
             // Build query conditions
-            const matchConditions = { userId: userObjectId }; // ✅ Use ObjectId
+            const matchConditions = { userId: userObjectId };
 
             if (orderStatus) {
                 matchConditions.orderStatus = orderStatus;
@@ -47,7 +47,7 @@ class PurchaseHistoryService {
                 }
             }
 
-            console.log('🔍 Query conditions:', matchConditions);
+            console.log('Query conditions:', matchConditions);
 
             // Execute query with pagination
             const skip = (page - 1) * limit;
@@ -106,7 +106,7 @@ class PurchaseHistoryService {
     // Lấy chi tiết một đơn hàng
     static async getOrderDetail(userId, orderId) {
         try {
-            console.log(`📜 Getting order detail: ${orderId} for user: ${userId}`);
+            console.log(`Getting order detail: ${orderId} for user: ${userId}`);
 
             //FIX: Convert string userId to ObjectId
             const userObjectId = new mongoose.Types.ObjectId(userId);
@@ -150,13 +150,13 @@ class PurchaseHistoryService {
     // Thống kê mua hàng
     static async getPurchaseStats(userId) {
         try {
-            console.log(`📜 Getting purchase stats for user: ${userId}`);
+            console.log(`Getting purchase stats for user: ${userId}`);
 
             //FIX: Convert string userId to ObjectId
             const userObjectId = new mongoose.Types.ObjectId(userId);
 
             const stats = await PurchaseHistory.aggregate([
-                { $match: { userId: userObjectId } }, // ✅ Use ObjectId
+                { $match: { userId: userObjectId } }, // Use ObjectId
                 {
                     $group: {
                         _id: null,
@@ -274,6 +274,9 @@ class PurchaseHistoryService {
                 orderStatus: orderData.orderStatus || 'pending',
                 paymentStatus: orderData.paymentStatus || 'pending',
                 paymentMethod: orderData.paymentMethod || 'cod',
+                stripePaymentIntentId: orderData.stripePaymentIntentId || null,
+                stripeSessionId: orderData.stripeSessionId || null,
+                stripeTax: orderData.stripeTax || 0,
                 deliveryAddress: orderData.deliveryAddress,
                 shippingFee: orderData.shippingFee || 0,
                 discount: orderData.discount || 0,
@@ -298,7 +301,7 @@ class PurchaseHistoryService {
 
     static async updateOrderStatus(orderId, status, updateData = {}) {
         try {
-            console.log(`📝 Updating order status: ${orderId} -> ${status}`);
+            console.log(`Updating order status: ${orderId} -> ${status}`);
 
             // Validate status
             const validStatuses = ['pending', 'confirmed', 'processing', 'shipping', 'delivered', 'cancelled', 'returned'];
@@ -341,7 +344,7 @@ class PurchaseHistoryService {
                 throw new Error('Order not found');
             }
 
-            console.log('✅ Order status updated successfully:', updatedOrder.orderId);
+            console.log('Order status updated successfully:', updatedOrder.orderId);
 
             return {
                 success: true,
@@ -356,7 +359,7 @@ class PurchaseHistoryService {
 
     static async deletePurchaseRecord(orderId) {
         try {
-            console.log(`🗑️ Deleting purchase record: ${orderId}`);
+            console.log(`Deleting purchase record: ${orderId}`);
 
             const deletedRecord = await PurchaseHistory.findOneAndDelete({ orderId });
 
@@ -364,7 +367,7 @@ class PurchaseHistoryService {
                 throw new Error('Purchase record not found');
             }
 
-            console.log('✅ Purchase record deleted successfully:', orderId);
+            console.log('Purchase record deleted successfully:', orderId);
 
             return {
                 success: true,
@@ -378,7 +381,7 @@ class PurchaseHistoryService {
 
     static async getAllOrders(filters = {}) {
         try {
-            console.log('📜 Getting all orders with filters:', filters);
+            console.log('Getting all orders with filters:', filters);
 
             const {
                 page = 1,
@@ -420,7 +423,7 @@ class PurchaseHistoryService {
                 }
             }
 
-            console.log('🔍 Query conditions:', matchConditions);
+            console.log('Query conditions:', matchConditions);
 
             // Execute query with pagination
             const skip = (page - 1) * limit;
@@ -434,7 +437,7 @@ class PurchaseHistoryService {
                 PurchaseHistory.countDocuments(matchConditions)
             ]);
 
-            console.log(`📜 Found ${orders.length} orders out of ${totalCount} total`);
+            console.log(`Found ${orders.length} orders out of ${totalCount} total`);
 
             return {
                 success: true,

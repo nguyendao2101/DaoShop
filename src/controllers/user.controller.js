@@ -32,7 +32,7 @@ class UserController {
             // Generate tokens
             const { accessToken, refreshToken } = await AuthService.generateUserTokens(user);
 
-            // ✅ FIX: Set cookie directly instead of using this.setRefreshTokenCookie
+            // FIX: Set cookie directly instead of using this.setRefreshTokenCookie
             res.cookie('refreshToken', refreshToken, {
                 httpOnly: true,
                 secure: env.env === 'production',
@@ -330,7 +330,7 @@ class UserController {
     // Get Profile
     async getProfile(req, res) {
         try {
-            const userId = req.user.userId; // ✅ FIX: Use userId instead of _id
+            const userId = req.user.userId; // FIX: Use userId instead of _id
             console.log('👤 Getting profile for user:', userId);
 
             const userProfile = await UserService.getUserProfile(userId);
@@ -354,8 +354,8 @@ class UserController {
             const userId = req.user.userId;
             const updateData = req.body;
 
-            console.log('👤 Updating profile for user:', userId);
-            console.log('📝 Update data:', updateData);
+            console.log('Updating profile for user:', userId);
+            console.log('Update data:', updateData);
 
             const updatedProfile = await UserService.updateUserProfile(userId, updateData);
 
@@ -387,7 +387,7 @@ class UserController {
             const userId = req.user.userId;
             const { currentPassword, newPassword, confirmPassword } = req.body;
 
-            console.log('🔒 Changing password for user:', userId);
+            console.log('Changing password for user:', userId);
 
             // Validate passwords match
             if (newPassword !== confirmPassword) {

@@ -45,7 +45,7 @@ class UserService {
         try {
             console.log('👤 Updating user profile for:', userId);
 
-            // ✅ Expanded allowed fields
+            // Expanded allowed fields
             const allowedFields = [
                 'fullName',
                 'phone',
@@ -63,9 +63,9 @@ class UserService {
                 }
             });
 
-            console.log('📝 Filtered updates:', updates);
+            console.log('Filtered updates:', updates);
 
-            // ✅ Basic validation
+            // Basic validation
             if (updates.phone && updates.phone !== '') {
                 const phoneRegex = /^[0-9]{10,11}$/;
                 if (!phoneRegex.test(updates.phone)) {
@@ -97,7 +97,7 @@ class UserService {
                 throw new Error('User not found');
             }
 
-            console.log('✅ Profile updated successfully');
+            console.log('Profile updated successfully');
 
             return {
                 id: user._id,

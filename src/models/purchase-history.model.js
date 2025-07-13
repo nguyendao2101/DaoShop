@@ -60,8 +60,30 @@ const purchaseHistorySchema = new mongoose.Schema({
     },
     paymentMethod: {
         type: String,
-        enum: ['cod', 'bank_transfer', 'credit_card', 'e_wallet'],
+        enum: ['cod', 'bank_transfer', 'credit_card', 'e_wallet', 'stripe'],
         default: 'cod'
+    },
+    stripePaymentIntentId: {
+        type: String,
+        default: null
+    },
+    stripeSessionId: {
+        type: String,
+        default: null
+    },
+    stripeTax: {
+        type: Number,
+        default: 0,
+        min: 0
+    },
+    deliveryAddress: {
+        fullName: String,
+        phone: String,
+        street: String,
+        ward: String,
+        district: String,
+        city: String,
+        zipCode: String
     },
     deliveryAddress: {
         fullName: String,
@@ -99,5 +121,6 @@ purchaseHistorySchema.index({ userId: 1, purchaseDate: -1 });
 purchaseHistorySchema.index({ orderId: 1 });
 purchaseHistorySchema.index({ orderStatus: 1 });
 purchaseHistorySchema.index({ paymentStatus: 1 });
+purchaseHistorySchema.index({ stripePaymentIntentId: 1 });
 
 module.exports = mongoose.model('PurchaseHistory', purchaseHistorySchema);

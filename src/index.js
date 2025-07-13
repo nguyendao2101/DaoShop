@@ -12,6 +12,7 @@ const { errorLogger, errorHandler } = require('./middlewares/errorLogger');
 const { globalLimiter } = require('./config/rateLimiter');
 const CommentSocketServer = require('./websocket/commentSocket');
 const CommentController = require('./controllers/comment.controller');
+const PaymentController = require('./controllers/payment.controller');
 
 const app = express();
 const PORT = env.PORT || 8797;
@@ -26,6 +27,9 @@ app.use(cors({
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization", "X-Requested-With"]
 }));
+
+app.post('/api/payment/webhook', express.raw({ type: 'application/json' }), PaymentController.handleWebhook);
+
 
 // Basic middleware
 app.use(express.json({ limit: '10mb' }));
@@ -50,6 +54,8 @@ app.use(session({
 
 // Passport
 const passport = require('./config/passport');
+const paymentRoutes = require('./routes/payment.route');
+app.use('/api/payment', paymentRoutes);
 app.use(passport.initialize());
 app.use(passport.session());
 

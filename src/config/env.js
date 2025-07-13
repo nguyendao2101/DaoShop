@@ -1,7 +1,6 @@
 // src/config/env.js
 const Joi = require('joi');
 const dotenv = require('dotenv');
-const { logger } = require('./logger');
 
 // Load env vars
 dotenv.config();
@@ -36,7 +35,14 @@ const envSchema = Joi.object()
         GOOGLE_CALLBACK_URL: Joi.string()
             .default('http://localhost:8797/api/auth/google/callback')
             .description('Google OAuth callback URL'),
-
+        //stripe 
+        STRIPE_SECRET_KEY: Joi.string().required(),
+        STRIPE_PUBLISHABLE_KEY: Joi.string().required(),
+        STRIPE_WEBHOOK_SECRET: Joi.string().required(),
+        STRIPE_SUCCESS_URL: Joi.string().required()
+            .description('Stripe success redirect URL (can include template variables)'),
+        STRIPE_CANCEL_URL: Joi.string().required()
+            .description('Stripe cancel redirect URL (can include template variables)'),
         // Frontend
         FRONTEND_URL: Joi.string()
             .default('http://localhost:3000')
@@ -85,19 +91,14 @@ if (error) {
         }
     });
 
-    logger.error('❌ Environment variables validation error:');
-
     if (missingKeys.length > 0) {
-        logger.error('Missing required environment variables:');
-        missingKeys.forEach(key => logger.error(`  - ${key}`));
+        missingKeys.forEach(key => console.error(`  - ${key}`));
     }
 
     if (invalidKeys.length > 0) {
-        logger.error('Invalid environment variables:');
-        invalidKeys.forEach(({ key, message }) => logger.error(`  - ${key}: ${message}`));
+        invalidKeys.forEach(({ key, message }) => console.error(`  - ${key}: ${message}`));
     }
 
-    logger.error('\nPlease check your .env file and restart the server.');
     process.exit(1);
 }
 
@@ -121,6 +122,13 @@ const env = {
         clientId: envVars.GOOGLE_CLIENT_ID,
         clientSecret: envVars.GOOGLE_CLIENT_SECRET,
         callbackUrl: envVars.GOOGLE_CALLBACK_URL,
+    },
+    stripe: {
+        secretKey: envVars.STRIPE_SECRET_KEY,
+        publishableKey: envVars.STRIPE_PUBLISHABLE_KEY,
+        webhookSecret: envVars.STRIPE_WEBHOOK_SECRET,
+        successUrl: envVars.STRIPE_SUCCESS_URL,
+        cancelUrl: envVars.STRIPE_CANCEL_URL
     },
 
     frontend: {
