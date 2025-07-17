@@ -315,3 +315,372 @@
 {"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-13T17:22:22.592Z"}
 {"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-13T17:22:22.592Z"}
 {"level":"info","message":"🛑 SIGINT received, shutting down gracefully","timestamp":"2025-07-13T17:22:24.967Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-14T08:03:10.300Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-14T08:03:10.303Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-14T08:03:10.304Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-14T08:03:10.304Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-14T08:03:10.456Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-14T08:03:10.462Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-14T08:03:10.559Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-14T08:03:10.561Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-14T08:03:10.562Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-14T08:03:10.562Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-14T08:03:10.563Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-14T08:03:10.563Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-14T08:03:10.563Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-14T08:03:10.563Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-14T08:03:10.564Z"}
+{"level":"info","message":"findByEmailOrUsername called with:","timestamp":"2025-07-14T08:03:13.215Z"}
+{"level":"info","message":"Searching with identifier:","timestamp":"2025-07-14T08:03:13.216Z"}
+{"level":"http","message":"POST /api/auth/login 200 118.288 ms - {\"userName\":\"nguyendao21012002@gmail.com\",\"password\":\"[REDACTED]\"} - User: guest","timestamp":"2025-07-14T08:03:13.333Z"}
+{"level":"http","message":"POST /api/comments 400 1.238 ms - {\"idProduct\":\"NC10VNNA1\",\"userId\":\"6870c70c1ca5164be10bb91d\",\"content\":\"Sản phẩm rất đẹp!\"} - User: guest","timestamp":"2025-07-14T08:20:35.360Z"}
+{"level":"http","message":"POST /api/comments 201 37.058 ms - {\"idProduct\":\"NB12\",\"idUser\":\"6870c70c1ca5164be10bb91d\",\"nameUser\":\"Nguyen Dep Zai\",\"content\":\"Sản phẩm rất đẹp!\"} - User: guest","timestamp":"2025-07-14T08:22:15.019Z"}
+{"level":"http","message":"POST /api/comments 201 6.101 ms - {\"idProduct\":\"NC10VNNA1\",\"idUser\":\"6870c70c1ca5164be10bb91d\",\"nameUser\":\"Nguyen Dep Zai\",\"content\":\"Sản phẩm rất đẹp!\"} - User: guest","timestamp":"2025-07-14T08:22:51.588Z"}
+{"level":"http","message":"GET /api/comments/product/NC10VNNA1?page=1&limit=10 200 54.901 ms - {} - User: guest","timestamp":"2025-07-14T08:24:06.249Z"}
+{"level":"http","message":"GET /api/comments/user/6870c70c1ca5164be10bb91d?page=1&limit=10 200 32.190 ms - {} - User: guest","timestamp":"2025-07-14T08:24:29.764Z"}
+{"level":"http","message":"GET /api/websocket/health 200 0.795 ms - {} - User: guest","timestamp":"2025-07-14T08:24:42.682Z"}
+{"level":"http","message":"GET /api/comments/websocket/stats/BT1 500 2.477 ms - {} - User: guest","timestamp":"2025-07-14T08:24:53.103Z"}
+{"level":"http","message":"GET /api/comments/websocket/stats/NC10VNNA1 500 2.141 ms - {} - User: guest","timestamp":"2025-07-14T08:25:03.159Z"}
+{"level":"info","message":"🛑 SIGINT received, shutting down gracefully","timestamp":"2025-07-14T08:26:20.365Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-14T08:28:58.709Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-14T08:28:58.711Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-14T08:28:58.712Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-14T08:28:58.713Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-14T08:28:58.860Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-14T08:28:58.865Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-14T08:28:58.958Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-14T08:28:58.961Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-14T08:28:58.961Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-14T08:28:58.962Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-14T08:28:58.963Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-14T08:28:58.963Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-14T08:28:58.964Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-14T08:28:58.964Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-14T08:28:58.964Z"}
+{"level":"http","message":"GET /api/products?limit=100 200 80.818 ms - {} - User: guest","timestamp":"2025-07-14T08:29:07.546Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 200 77.191 ms - {} - User: guest","timestamp":"2025-07-14T08:29:07.554Z"}
+{"level":"http","message":"GET /api/collections 304 74.760 ms - {} - User: guest","timestamp":"2025-07-14T08:29:07.559Z"}
+{"level":"http","message":"GET /api/cart 304 68.494 ms - {} - User: -","timestamp":"2025-07-14T08:29:07.565Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 1.064 ms - {} - User: guest","timestamp":"2025-07-14T08:29:07.568Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 1.308 ms - {} - User: guest","timestamp":"2025-07-14T08:29:07.572Z"}
+{"level":"http","message":"GET /api/collections 304 13.673 ms - {} - User: guest","timestamp":"2025-07-14T08:29:07.587Z"}
+{"level":"http","message":"GET /api/cart 304 14.505 ms - {} - User: -","timestamp":"2025-07-14T08:29:07.589Z"}
+{"level":"http","message":"GET /api/cart 304 10.462 ms - {} - User: -","timestamp":"2025-07-14T08:29:07.602Z"}
+{"level":"http","message":"GET /api/cart 304 10.579 ms - {} - User: -","timestamp":"2025-07-14T08:29:07.614Z"}
+{"level":"http","message":"GET /api/wishlist 200 15.409 ms - {} - User: -","timestamp":"2025-07-14T08:29:07.630Z"}
+{"level":"http","message":"GET /api/wishlist 304 11.224 ms - {} - User: -","timestamp":"2025-07-14T08:29:07.643Z"}
+{"level":"http","message":"GET /api/wishlist 304 12.776 ms - {} - User: -","timestamp":"2025-07-14T08:29:07.657Z"}
+{"level":"http","message":"GET /api/wishlist 304 11.703 ms - {} - User: -","timestamp":"2025-07-14T08:29:07.671Z"}
+{"level":"http","message":"GET /api/wishlist 304 13.070 ms - {} - User: -","timestamp":"2025-07-14T08:29:07.685Z"}
+{"level":"http","message":"GET /api/wishlist 304 12.050 ms - {} - User: -","timestamp":"2025-07-14T08:29:07.699Z"}
+{"level":"info","message":"findByEmailOrUsername called with:","timestamp":"2025-07-14T08:29:17.075Z"}
+{"level":"info","message":"Searching with identifier:","timestamp":"2025-07-14T08:29:17.076Z"}
+{"level":"http","message":"POST /api/auth/login 200 72.769 ms - {\"userName\":\"nguyendao21012002@gmail.com\",\"password\":\"[REDACTED]\"} - User: guest","timestamp":"2025-07-14T08:29:17.147Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 1.153 ms - {} - User: guest","timestamp":"2025-07-14T08:29:18.685Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 0.756 ms - {} - User: guest","timestamp":"2025-07-14T08:29:18.687Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 1.279 ms - {} - User: guest","timestamp":"2025-07-14T08:29:18.696Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 1.188 ms - {} - User: guest","timestamp":"2025-07-14T08:29:18.698Z"}
+{"level":"http","message":"GET /api/collections 304 17.355 ms - {} - User: guest","timestamp":"2025-07-14T08:29:18.706Z"}
+{"level":"http","message":"GET /api/cart 304 19.830 ms - {} - User: -","timestamp":"2025-07-14T08:29:18.710Z"}
+{"level":"http","message":"GET /api/collections 304 13.689 ms - {} - User: guest","timestamp":"2025-07-14T08:29:18.725Z"}
+{"level":"http","message":"GET /api/cart 304 12.251 ms - {} - User: -","timestamp":"2025-07-14T08:29:18.727Z"}
+{"level":"http","message":"GET /api/cart 304 10.250 ms - {} - User: -","timestamp":"2025-07-14T08:29:18.739Z"}
+{"level":"http","message":"GET /api/cart 304 12.609 ms - {} - User: -","timestamp":"2025-07-14T08:29:18.754Z"}
+{"level":"http","message":"GET /api/wishlist 304 15.510 ms - {} - User: -","timestamp":"2025-07-14T08:29:18.778Z"}
+{"level":"http","message":"GET /api/wishlist 304 12.694 ms - {} - User: -","timestamp":"2025-07-14T08:29:18.793Z"}
+{"level":"http","message":"GET /api/wishlist 304 16.987 ms - {} - User: -","timestamp":"2025-07-14T08:29:18.812Z"}
+{"level":"http","message":"GET /api/wishlist 304 11.737 ms - {} - User: -","timestamp":"2025-07-14T08:29:18.827Z"}
+{"level":"http","message":"GET /api/wishlist 304 14.458 ms - {} - User: -","timestamp":"2025-07-14T08:29:18.843Z"}
+{"level":"http","message":"GET /api/wishlist 304 9.666 ms - {} - User: -","timestamp":"2025-07-14T08:29:18.854Z"}
+{"level":"http","message":"GET /api/cart 304 10.500 ms - {} - User: -","timestamp":"2025-07-14T08:29:48.856Z"}
+{"level":"http","message":"GET /api/cart 304 7.983 ms - {} - User: -","timestamp":"2025-07-14T08:30:18.851Z"}
+{"level":"http","message":"GET /api/cart 304 15.235 ms - {} - User: -","timestamp":"2025-07-14T08:30:48.868Z"}
+{"level":"http","message":"GET /api/cart 304 8.594 ms - {} - User: -","timestamp":"2025-07-14T08:31:18.852Z"}
+{"level":"http","message":"GET /api/cart 304 8.148 ms - {} - User: -","timestamp":"2025-07-14T08:31:48.847Z"}
+{"level":"http","message":"GET /api/cart 304 30.727 ms - {} - User: -","timestamp":"2025-07-14T08:32:45.184Z"}
+{"level":"http","message":"GET /api/cart 304 21.054 ms - {} - User: -","timestamp":"2025-07-14T08:32:45.215Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 1.180 ms - {} - User: guest","timestamp":"2025-07-14T08:32:47.592Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 1.255 ms - {} - User: guest","timestamp":"2025-07-14T08:32:47.595Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 1.310 ms - {} - User: guest","timestamp":"2025-07-14T08:32:47.606Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 1.421 ms - {} - User: guest","timestamp":"2025-07-14T08:32:47.609Z"}
+{"level":"http","message":"GET /api/cart 304 39.355 ms - {} - User: -","timestamp":"2025-07-14T08:32:47.624Z"}
+{"level":"http","message":"GET /api/collections 304 41.736 ms - {} - User: guest","timestamp":"2025-07-14T08:32:47.638Z"}
+{"level":"http","message":"GET /api/cart 304 30.177 ms - {} - User: -","timestamp":"2025-07-14T08:32:47.674Z"}
+{"level":"http","message":"GET /api/collections 304 22.447 ms - {} - User: guest","timestamp":"2025-07-14T08:32:47.678Z"}
+{"level":"http","message":"GET /api/cart 304 24.859 ms - {} - User: -","timestamp":"2025-07-14T08:32:47.734Z"}
+{"level":"http","message":"GET /api/wishlist 304 58.319 ms - {} - User: -","timestamp":"2025-07-14T08:32:47.742Z"}
+{"level":"http","message":"GET /api/cart 304 13.876 ms - {} - User: -","timestamp":"2025-07-14T08:32:47.757Z"}
+{"level":"http","message":"GET /api/wishlist 304 14.951 ms - {} - User: -","timestamp":"2025-07-14T08:32:47.763Z"}
+{"level":"http","message":"GET /api/wishlist 304 11.366 ms - {} - User: -","timestamp":"2025-07-14T08:32:47.776Z"}
+{"level":"http","message":"GET /api/wishlist 304 14.091 ms - {} - User: -","timestamp":"2025-07-14T08:32:47.791Z"}
+{"level":"http","message":"GET /api/wishlist 304 11.040 ms - {} - User: -","timestamp":"2025-07-14T08:32:47.804Z"}
+{"level":"http","message":"GET /api/wishlist 304 11.644 ms - {} - User: -","timestamp":"2025-07-14T08:32:47.817Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 200 5.393 ms - {} - User: guest","timestamp":"2025-07-14T08:32:49.330Z"}
+{"level":"http","message":"GET /api/cart 304 11.103 ms - {} - User: -","timestamp":"2025-07-14T08:32:49.332Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.875 ms - {} - User: guest","timestamp":"2025-07-14T08:32:49.335Z"}
+{"level":"http","message":"GET /api/cart 304 6.578 ms - {} - User: -","timestamp":"2025-07-14T08:32:49.342Z"}
+{"level":"http","message":"GET /api/products/K18K 200 5.044 ms - {} - User: guest","timestamp":"2025-07-14T08:32:49.357Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.852 ms - {} - User: guest","timestamp":"2025-07-14T08:32:49.359Z"}
+{"level":"http","message":"GET /api/cart 304 16.543 ms - {} - User: -","timestamp":"2025-07-14T08:32:49.361Z"}
+{"level":"http","message":"GET /api/products/K18K 304 1.194 ms - {} - User: guest","timestamp":"2025-07-14T08:32:49.364Z"}
+{"level":"http","message":"GET /api/cart 304 9.236 ms - {} - User: -","timestamp":"2025-07-14T08:32:49.374Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.936 ms - {} - User: guest","timestamp":"2025-07-14T08:32:49.382Z"}
+{"level":"http","message":"GET /api/cart 304 9.889 ms - {} - User: -","timestamp":"2025-07-14T08:32:49.386Z"}
+{"level":"http","message":"GET /api/products/K18K 304 0.553 ms - {} - User: guest","timestamp":"2025-07-14T08:32:49.392Z"}
+{"level":"http","message":"GET /api/cart 304 9.425 ms - {} - User: -","timestamp":"2025-07-14T08:32:49.397Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.532 ms - {} - User: guest","timestamp":"2025-07-14T08:32:49.402Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.607 ms - {} - User: guest","timestamp":"2025-07-14T08:32:49.425Z"}
+{"level":"http","message":"GET /api/products/K18K 304 0.790 ms - {} - User: guest","timestamp":"2025-07-14T08:32:49.440Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.489 ms - {} - User: guest","timestamp":"2025-07-14T08:32:49.449Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.749 ms - {} - User: guest","timestamp":"2025-07-14T08:32:49.470Z"}
+{"level":"http","message":"GET /api/products/K18K 304 0.642 ms - {} - User: guest","timestamp":"2025-07-14T08:32:49.472Z"}
+{"level":"http","message":"GET /api/products/K18K 304 0.667 ms - {} - User: guest","timestamp":"2025-07-14T08:32:49.484Z"}
+{"level":"http","message":"GET /api/products/K18K 304 0.500 ms - {} - User: guest","timestamp":"2025-07-14T08:32:49.485Z"}
+{"level":"http","message":"GET /api/products/K18K 304 0.533 ms - {} - User: guest","timestamp":"2025-07-14T08:32:49.494Z"}
+{"level":"http","message":"GET /api/cart 304 14.777 ms - {} - User: -","timestamp":"2025-07-14T08:33:02.986Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 1.131 ms - {} - User: guest","timestamp":"2025-07-14T08:33:03.059Z"}
+{"level":"http","message":"GET /api/products/K18K 304 0.540 ms - {} - User: guest","timestamp":"2025-07-14T08:33:03.122Z"}
+{"level":"http","message":"GET /api/cart 304 8.892 ms - {} - User: -","timestamp":"2025-07-14T08:33:19.859Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 1.278 ms - {} - User: guest","timestamp":"2025-07-14T08:33:20.079Z"}
+{"level":"http","message":"GET /api/products/K18K 304 0.604 ms - {} - User: guest","timestamp":"2025-07-14T08:33:20.160Z"}
+{"level":"http","message":"GET /api/cart 304 10.655 ms - {} - User: -","timestamp":"2025-07-14T08:33:32.932Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.732 ms - {} - User: guest","timestamp":"2025-07-14T08:33:33.059Z"}
+{"level":"http","message":"GET /api/products/K18K 304 1.696 ms - {} - User: guest","timestamp":"2025-07-14T08:33:33.134Z"}
+{"level":"http","message":"GET /api/cart 304 7.025 ms - {} - User: -","timestamp":"2025-07-14T08:33:49.851Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.526 ms - {} - User: guest","timestamp":"2025-07-14T08:33:50.041Z"}
+{"level":"http","message":"GET /api/products/K18K 304 0.468 ms - {} - User: guest","timestamp":"2025-07-14T08:33:50.110Z"}
+{"level":"http","message":"GET /api/cart 304 11.995 ms - {} - User: -","timestamp":"2025-07-14T08:34:18.953Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 1.158 ms - {} - User: guest","timestamp":"2025-07-14T08:34:19.082Z"}
+{"level":"http","message":"GET /api/products/K18K 304 0.886 ms - {} - User: guest","timestamp":"2025-07-14T08:34:19.141Z"}
+{"level":"http","message":"GET /api/cart 304 8.221 ms - {} - User: -","timestamp":"2025-07-14T08:34:19.854Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.920 ms - {} - User: guest","timestamp":"2025-07-14T08:34:20.029Z"}
+{"level":"http","message":"GET /api/products/K18K 304 1.081 ms - {} - User: guest","timestamp":"2025-07-14T08:34:20.119Z"}
+{"level":"http","message":"GET /api/cart 304 8.213 ms - {} - User: -","timestamp":"2025-07-14T08:34:33.542Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.737 ms - {} - User: guest","timestamp":"2025-07-14T08:34:33.611Z"}
+{"level":"http","message":"GET /api/products/K18K 304 0.537 ms - {} - User: guest","timestamp":"2025-07-14T08:34:33.675Z"}
+{"level":"http","message":"DELETE /api/cart/remove/NC10VNA1/0 200 15.544 ms - {} - User: -","timestamp":"2025-07-14T08:34:35.664Z"}
+{"level":"http","message":"GET /api/products/K18K 304 0.770 ms - {} - User: guest","timestamp":"2025-07-14T08:34:35.713Z"}
+{"level":"http","message":"DELETE /api/cart/remove/K18K/0 200 11.327 ms - {} - User: -","timestamp":"2025-07-14T08:34:35.742Z"}
+{"level":"http","message":"GET /api/cart 200 8.206 ms - {} - User: -","timestamp":"2025-07-14T08:34:42.196Z"}
+{"level":"http","message":"GET /api/cart 304 6.922 ms - {} - User: -","timestamp":"2025-07-14T08:34:49.855Z"}
+{"level":"http","message":"GET /api/cart 304 6.375 ms - {} - User: -","timestamp":"2025-07-14T08:35:19.859Z"}
+{"level":"http","message":"GET /api/cart 304 11.189 ms - {} - User: -","timestamp":"2025-07-14T08:35:49.858Z"}
+{"level":"http","message":"GET /api/cart 304 9.311 ms - {} - User: -","timestamp":"2025-07-14T08:37:04.864Z"}
+{"level":"http","message":"GET /api/cart 304 8.842 ms - {} - User: -","timestamp":"2025-07-14T08:37:09.879Z"}
+{"level":"http","message":"GET /api/cart 304 8.442 ms - {} - User: -","timestamp":"2025-07-14T08:37:14.874Z"}
+{"level":"http","message":"GET /api/cart 304 9.144 ms - {} - User: -","timestamp":"2025-07-14T08:37:49.882Z"}
+{"level":"http","message":"GET /api/cart 304 8.012 ms - {} - User: -","timestamp":"2025-07-14T08:37:56.882Z"}
+{"level":"http","message":"GET /api/cart 304 11.768 ms - {} - User: -","timestamp":"2025-07-14T08:37:57.831Z"}
+{"level":"http","message":"GET /api/cart 304 22.118 ms - {} - User: -","timestamp":"2025-07-14T08:37:57.872Z"}
+{"level":"http","message":"GET /api/cart 304 27.585 ms - {} - User: -","timestamp":"2025-07-14T08:37:59.952Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 35.977 ms - {} - User: guest","timestamp":"2025-07-14T08:37:59.966Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 43.239 ms - {} - User: guest","timestamp":"2025-07-14T08:37:59.982Z"}
+{"level":"http","message":"GET /api/collections 304 41.038 ms - {} - User: guest","timestamp":"2025-07-14T08:37:59.985Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 1.499 ms - {} - User: guest","timestamp":"2025-07-14T08:37:59.988Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 2.027 ms - {} - User: guest","timestamp":"2025-07-14T08:37:59.997Z"}
+{"level":"http","message":"GET /api/cart 304 51.379 ms - {} - User: -","timestamp":"2025-07-14T08:38:00.019Z"}
+{"level":"http","message":"GET /api/collections 304 82.997 ms - {} - User: guest","timestamp":"2025-07-14T08:38:00.083Z"}
+{"level":"http","message":"GET /api/cart 304 39.901 ms - {} - User: -","timestamp":"2025-07-14T08:38:00.089Z"}
+{"level":"http","message":"GET /api/cart 304 11.466 ms - {} - User: -","timestamp":"2025-07-14T08:38:00.103Z"}
+{"level":"http","message":"GET /api/wishlist 304 15.831 ms - {} - User: -","timestamp":"2025-07-14T08:38:00.149Z"}
+{"level":"http","message":"GET /api/wishlist 304 20.154 ms - {} - User: -","timestamp":"2025-07-14T08:38:00.171Z"}
+{"level":"http","message":"GET /api/wishlist 304 12.692 ms - {} - User: -","timestamp":"2025-07-14T08:38:00.188Z"}
+{"level":"http","message":"GET /api/wishlist 304 14.648 ms - {} - User: -","timestamp":"2025-07-14T08:38:00.205Z"}
+{"level":"http","message":"GET /api/wishlist 304 12.780 ms - {} - User: -","timestamp":"2025-07-14T08:38:00.220Z"}
+{"level":"http","message":"GET /api/wishlist 304 12.518 ms - {} - User: -","timestamp":"2025-07-14T08:38:00.234Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 1.265 ms - {} - User: guest","timestamp":"2025-07-14T08:38:02.622Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 1.182 ms - {} - User: guest","timestamp":"2025-07-14T08:38:02.627Z"}
+{"level":"http","message":"GET /api/cart 304 13.316 ms - {} - User: -","timestamp":"2025-07-14T08:38:02.631Z"}
+{"level":"http","message":"GET /api/cart 304 10.879 ms - {} - User: -","timestamp":"2025-07-14T08:38:02.644Z"}
+{"level":"http","message":"GET /api/cart 304 9.448 ms - {} - User: -","timestamp":"2025-07-14T08:38:02.657Z"}
+{"level":"http","message":"GET /api/cart 304 21.955 ms - {} - User: -","timestamp":"2025-07-14T08:38:02.698Z"}
+{"level":"http","message":"GET /api/products?category=TRANG%20S%E1%BB%A8C%20C%C6%AF%E1%BB%9AI&limit=20 200 18.379 ms - {} - User: guest","timestamp":"2025-07-14T08:38:02.706Z"}
+{"level":"http","message":"GET /api/products?category=TRANG%20S%E1%BB%A8C%20C%C6%AF%E1%BB%9AI&limit=20 304 0.866 ms - {} - User: guest","timestamp":"2025-07-14T08:38:02.739Z"}
+{"level":"http","message":"POST /api/cart/add 200 19.435 ms - {\"productId\":\"NC10VNA1\",\"sizeIndex\":0,\"quantity\":1} - User: -","timestamp":"2025-07-14T08:38:06.192Z"}
+{"level":"http","message":"GET /api/cart 200 9.905 ms - {} - User: -","timestamp":"2025-07-14T08:38:07.872Z"}
+{"level":"http","message":"GET /api/cart 304 9.399 ms - {} - User: -","timestamp":"2025-07-14T08:39:28.088Z"}
+{"level":"http","message":"GET /api/cart 304 7.552 ms - {} - User: -","timestamp":"2025-07-14T08:39:28.097Z"}
+{"level":"http","message":"GET /api/cart 304 7.245 ms - {} - User: -","timestamp":"2025-07-14T08:39:28.107Z"}
+{"level":"http","message":"GET /api/cart 304 11.434 ms - {} - User: -","timestamp":"2025-07-14T08:39:28.120Z"}
+{"level":"http","message":"GET /api/cart 304 11.254 ms - {} - User: -","timestamp":"2025-07-14T08:39:28.133Z"}
+{"level":"http","message":"GET /api/cart 304 10.347 ms - {} - User: -","timestamp":"2025-07-14T08:39:28.145Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.609 ms - {} - User: guest","timestamp":"2025-07-14T08:39:28.154Z"}
+{"level":"http","message":"GET /api/cart 304 7.628 ms - {} - User: -","timestamp":"2025-07-14T08:39:29.833Z"}
+{"level":"http","message":"GET /api/cart 304 5.933 ms - {} - User: -","timestamp":"2025-07-14T08:39:29.844Z"}
+{"level":"http","message":"GET /api/cart 304 6.513 ms - {} - User: -","timestamp":"2025-07-14T08:39:29.852Z"}
+{"level":"http","message":"GET /api/cart 304 10.396 ms - {} - User: -","timestamp":"2025-07-14T08:39:29.864Z"}
+{"level":"http","message":"GET /api/cart 304 8.882 ms - {} - User: -","timestamp":"2025-07-14T08:39:29.876Z"}
+{"level":"http","message":"GET /api/cart 304 9.177 ms - {} - User: -","timestamp":"2025-07-14T08:39:29.888Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.705 ms - {} - User: guest","timestamp":"2025-07-14T08:39:29.901Z"}
+{"level":"http","message":"GET /api/cart 304 9.578 ms - {} - User: -","timestamp":"2025-07-14T08:39:35.022Z"}
+{"level":"http","message":"GET /api/cart 304 9.552 ms - {} - User: -","timestamp":"2025-07-14T08:39:35.033Z"}
+{"level":"http","message":"GET /api/cart 304 9.483 ms - {} - User: -","timestamp":"2025-07-14T08:39:35.045Z"}
+{"level":"http","message":"GET /api/cart 304 12.992 ms - {} - User: -","timestamp":"2025-07-14T08:39:35.062Z"}
+{"level":"http","message":"GET /api/cart 304 13.563 ms - {} - User: -","timestamp":"2025-07-14T08:39:35.080Z"}
+{"level":"http","message":"GET /api/cart 304 7.916 ms - {} - User: -","timestamp":"2025-07-14T08:39:35.091Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.740 ms - {} - User: guest","timestamp":"2025-07-14T08:39:35.109Z"}
+{"level":"http","message":"GET /api/cart 304 8.631 ms - {} - User: -","timestamp":"2025-07-14T08:42:13.527Z"}
+{"level":"http","message":"GET /api/cart 304 8.434 ms - {} - User: -","timestamp":"2025-07-14T08:42:13.538Z"}
+{"level":"http","message":"GET /api/cart 304 6.055 ms - {} - User: -","timestamp":"2025-07-14T08:42:13.545Z"}
+{"level":"http","message":"GET /api/cart 304 10.022 ms - {} - User: -","timestamp":"2025-07-14T08:42:13.557Z"}
+{"level":"http","message":"GET /api/cart 304 7.643 ms - {} - User: -","timestamp":"2025-07-14T08:42:13.567Z"}
+{"level":"http","message":"GET /api/cart 304 10.313 ms - {} - User: -","timestamp":"2025-07-14T08:42:13.579Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 1.760 ms - {} - User: guest","timestamp":"2025-07-14T08:42:13.592Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.493 ms - {} - User: guest","timestamp":"2025-07-14T08:42:13.619Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.491 ms - {} - User: guest","timestamp":"2025-07-14T08:42:13.640Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.634 ms - {} - User: guest","timestamp":"2025-07-14T08:42:13.690Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.904 ms - {} - User: guest","timestamp":"2025-07-14T08:42:13.725Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.574 ms - {} - User: guest","timestamp":"2025-07-14T08:42:13.752Z"}
+{"level":"http","message":"GET /api/cart 304 6.868 ms - {} - User: -","timestamp":"2025-07-14T08:42:19.870Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.667 ms - {} - User: guest","timestamp":"2025-07-14T08:42:19.915Z"}
+{"level":"http","message":"GET /api/cart 304 7.726 ms - {} - User: -","timestamp":"2025-07-14T08:42:24.332Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.809 ms - {} - User: guest","timestamp":"2025-07-14T08:42:24.391Z"}
+{"level":"http","message":"POST /api/purchase-history/create 400 8.108 ms - {\"userId\":\"6870c70c1ca5164be10bb91d\",\"orderId\":\"ORD-2025-911\",\"items\":[{\"quantity\":1,\"sizeIndex\":0,\"unitPrice\":21576400,\"productImage\":\"https://firebasestorage.googleapis.com/v0/b/duan-4904c.appspot.com/o/flutter_pnj%2FnewImage%2FNC-10VNA1.png?alt=media&token=46037aba-0dbf-4314-85d7-046276eab5f6\"}],\"totalAmount\":21606400,\"paymentMethod\":\"cod\",\"deliveryAddress\":{\"fullName\":\"Nguyen van a\",\"phone\":\"1212212121\",\"street\":\"sdasd\",\"ward\":\"a\",\"district\":\"a\",\"city\":\"áda\",\"zipCode\":\"1121212\"},\"shippingFee\":30000,\"discount\":0,\"notes\":\"a\"} - User: -","timestamp":"2025-07-14T08:42:29.440Z"}
+{"level":"http","message":"GET /api/cart 304 7.922 ms - {} - User: -","timestamp":"2025-07-14T08:42:38.444Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 1.737 ms - {} - User: guest","timestamp":"2025-07-14T08:42:38.506Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 1.769 ms - {} - User: guest","timestamp":"2025-07-14T08:42:41.291Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 1.625 ms - {} - User: guest","timestamp":"2025-07-14T08:42:41.297Z"}
+{"level":"http","message":"GET /api/cart 304 17.302 ms - {} - User: -","timestamp":"2025-07-14T08:42:41.302Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 0.984 ms - {} - User: guest","timestamp":"2025-07-14T08:42:41.321Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 1.098 ms - {} - User: guest","timestamp":"2025-07-14T08:42:41.326Z"}
+{"level":"http","message":"GET /api/collections 304 29.796 ms - {} - User: guest","timestamp":"2025-07-14T08:42:41.328Z"}
+{"level":"http","message":"GET /api/cart 304 10.189 ms - {} - User: -","timestamp":"2025-07-14T08:42:41.340Z"}
+{"level":"http","message":"GET /api/collections 304 14.383 ms - {} - User: guest","timestamp":"2025-07-14T08:42:41.348Z"}
+{"level":"http","message":"GET /api/cart 304 8.631 ms - {} - User: -","timestamp":"2025-07-14T08:42:41.359Z"}
+{"level":"http","message":"GET /api/cart 304 9.515 ms - {} - User: -","timestamp":"2025-07-14T08:42:41.370Z"}
+{"level":"http","message":"GET /api/wishlist 304 11.868 ms - {} - User: -","timestamp":"2025-07-14T08:42:41.442Z"}
+{"level":"http","message":"GET /api/wishlist 304 11.251 ms - {} - User: -","timestamp":"2025-07-14T08:42:41.454Z"}
+{"level":"http","message":"GET /api/wishlist 304 11.098 ms - {} - User: -","timestamp":"2025-07-14T08:42:41.468Z"}
+{"level":"http","message":"GET /api/wishlist 304 11.904 ms - {} - User: -","timestamp":"2025-07-14T08:42:41.481Z"}
+{"level":"http","message":"GET /api/wishlist 304 14.010 ms - {} - User: -","timestamp":"2025-07-14T08:42:41.497Z"}
+{"level":"http","message":"GET /api/wishlist 304 13.529 ms - {} - User: -","timestamp":"2025-07-14T08:42:41.513Z"}
+{"level":"http","message":"GET /api/products/NB2 200 4.249 ms - {} - User: guest","timestamp":"2025-07-14T08:42:43.454Z"}
+{"level":"http","message":"GET /api/cart 304 9.655 ms - {} - User: -","timestamp":"2025-07-14T08:42:43.456Z"}
+{"level":"http","message":"GET /api/products/NB2 304 0.609 ms - {} - User: guest","timestamp":"2025-07-14T08:42:43.458Z"}
+{"level":"http","message":"GET /api/cart 304 8.442 ms - {} - User: -","timestamp":"2025-07-14T08:42:43.467Z"}
+{"level":"http","message":"GET /api/cart 304 8.814 ms - {} - User: -","timestamp":"2025-07-14T08:42:43.478Z"}
+{"level":"http","message":"GET /api/cart 304 9.584 ms - {} - User: -","timestamp":"2025-07-14T08:42:43.490Z"}
+{"level":"http","message":"GET /api/products?category=TRANG%20S%E1%BB%A8C&limit=20 200 14.271 ms - {} - User: guest","timestamp":"2025-07-14T08:42:43.518Z"}
+{"level":"http","message":"GET /api/products?category=TRANG%20S%E1%BB%A8C&limit=20 304 1.242 ms - {} - User: guest","timestamp":"2025-07-14T08:42:43.571Z"}
+{"level":"http","message":"GET /api/cart 304 5.607 ms - {} - User: -","timestamp":"2025-07-14T08:42:55.609Z"}
+{"level":"http","message":"POST /api/purchase-history/create 201 20.622 ms - {\"userId\":\"6870c70c1ca5164be10bb91d\",\"orderId\":\"ORD-2025-076\",\"items\":[{\"productId\":\"NB2\",\"nameProduct\":\"Nhẫn nam Bạc đính đá PNJSilver XMXMW060196\",\"quantity\":1,\"sizeIndex\":2,\"unitPrice\":985500,\"productImage\":\"https://firebasestorage.googleapis.com/v0/b/duan-4904c.appspot.com/o/flutter_pnj%2FTrang%20sức%2FNhẫn%2FN-B2.1.png?alt=media&token=8f99e041-4f97-4ee1-9cc3-bd5f48146e08\"}],\"totalAmount\":1015500,\"paymentMethod\":\"cod\",\"deliveryAddress\":{\"fullName\":\"Nguyen van a\",\"phone\":\"1212212121\",\"street\":\"sdasd\",\"ward\":\"a\",\"district\":\"a\",\"city\":\"áda\",\"zipCode\":\"1121212\"},\"shippingFee\":30000,\"discount\":0,\"notes\":\"a\"} - User: -","timestamp":"2025-07-14T08:42:58.169Z"}
+{"level":"http","message":"GET /api/cart 304 9.451 ms - {} - User: -","timestamp":"2025-07-14T08:42:59.580Z"}
+{"level":"http","message":"GET /api/cart 304 44.167 ms - {} - User: -","timestamp":"2025-07-14T08:42:59.633Z"}
+{"level":"http","message":"GET /api/cart 304 12.220 ms - {} - User: -","timestamp":"2025-07-14T08:42:59.658Z"}
+{"level":"http","message":"GET /api/purchase-history?page=1&limit=10 200 87.533 ms - {} - User: -","timestamp":"2025-07-14T08:42:59.669Z"}
+{"level":"http","message":"GET /api/cart 304 16.262 ms - {} - User: -","timestamp":"2025-07-14T08:42:59.676Z"}
+{"level":"http","message":"GET /api/cart 304 24.394 ms - {} - User: -","timestamp":"2025-07-14T08:42:59.707Z"}
+{"level":"http","message":"GET /api/purchase-history?page=1&limit=10 304 44.235 ms - {} - User: -","timestamp":"2025-07-14T08:42:59.717Z"}
+{"level":"http","message":"GET /api/purchase-history/ORD-2025-491 200 8.180 ms - {} - User: -","timestamp":"2025-07-14T08:42:59.924Z"}
+{"level":"http","message":"GET /api/cart 304 8.351 ms - {} - User: -","timestamp":"2025-07-14T08:43:03.517Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 5.013 ms - {} - User: guest","timestamp":"2025-07-14T08:43:03.520Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.606 ms - {} - User: guest","timestamp":"2025-07-14T08:43:03.526Z"}
+{"level":"http","message":"GET /api/cart 304 10.202 ms - {} - User: -","timestamp":"2025-07-14T08:43:03.531Z"}
+{"level":"http","message":"GET /api/cart 304 6.954 ms - {} - User: -","timestamp":"2025-07-14T08:43:03.541Z"}
+{"level":"http","message":"GET /api/cart 304 6.699 ms - {} - User: -","timestamp":"2025-07-14T08:43:03.549Z"}
+{"level":"http","message":"GET /api/cart 304 9.629 ms - {} - User: -","timestamp":"2025-07-14T08:43:03.561Z"}
+{"level":"http","message":"GET /api/cart 304 9.284 ms - {} - User: -","timestamp":"2025-07-14T08:43:03.572Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.798 ms - {} - User: guest","timestamp":"2025-07-14T08:43:03.585Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.739 ms - {} - User: guest","timestamp":"2025-07-14T08:43:03.608Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.796 ms - {} - User: guest","timestamp":"2025-07-14T08:43:03.629Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.535 ms - {} - User: guest","timestamp":"2025-07-14T08:43:03.652Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.483 ms - {} - User: guest","timestamp":"2025-07-14T08:43:03.703Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.635 ms - {} - User: guest","timestamp":"2025-07-14T08:43:03.726Z"}
+{"level":"http","message":"POST /api/purchase-history/create 400 6.264 ms - {\"userId\":\"6870c70c1ca5164be10bb91d\",\"orderId\":\"ORD-2025-198\",\"items\":[{\"quantity\":1,\"sizeIndex\":0,\"unitPrice\":21576400,\"productImage\":\"https://firebasestorage.googleapis.com/v0/b/duan-4904c.appspot.com/o/flutter_pnj%2FnewImage%2FNC-10VNA1.png?alt=media&token=46037aba-0dbf-4314-85d7-046276eab5f6\"}],\"totalAmount\":21606400,\"paymentMethod\":\"stripe\",\"deliveryAddress\":{\"fullName\":\"Nguyen van a\",\"phone\":\"1212212121\",\"street\":\"sdasd\",\"ward\":\"a\",\"district\":\"a\",\"city\":\"áda\",\"zipCode\":\"1121212\"},\"shippingFee\":30000,\"discount\":0,\"notes\":\"a\"} - User: -","timestamp":"2025-07-14T08:43:15.952Z"}
+{"level":"http","message":"GET /api/cart 304 15.982 ms - {} - User: -","timestamp":"2025-07-14T08:50:46.239Z"}
+{"level":"http","message":"GET /api/cart 304 22.269 ms - {} - User: -","timestamp":"2025-07-14T08:50:46.386Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 1.143 ms - {} - User: guest","timestamp":"2025-07-14T08:50:46.517Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.818 ms - {} - User: guest","timestamp":"2025-07-14T08:50:46.658Z"}
+{"level":"http","message":"GET /api/cart 304 18.879 ms - {} - User: -","timestamp":"2025-07-14T08:50:47.352Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 3.301 ms - {} - User: guest","timestamp":"2025-07-14T08:50:47.877Z"}
+{"level":"http","message":"GET /api/cart 304 14.632 ms - {} - User: -","timestamp":"2025-07-14T08:50:48.982Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 1.612 ms - {} - User: guest","timestamp":"2025-07-14T08:50:49.038Z"}
+{"level":"http","message":"GET /api/cart 304 17.736 ms - {} - User: -","timestamp":"2025-07-14T08:50:50.845Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 1.136 ms - {} - User: guest","timestamp":"2025-07-14T08:50:50.960Z"}
+{"level":"http","message":"GET /api/cart 304 13.879 ms - {} - User: -","timestamp":"2025-07-14T08:50:52.970Z"}
+{"level":"http","message":"GET /api/cart 304 13.622 ms - {} - User: -","timestamp":"2025-07-14T08:50:52.986Z"}
+{"level":"http","message":"GET /api/cart 304 13.272 ms - {} - User: -","timestamp":"2025-07-14T08:50:53.001Z"}
+{"level":"http","message":"GET /api/cart 304 18.406 ms - {} - User: -","timestamp":"2025-07-14T08:50:53.024Z"}
+{"level":"http","message":"GET /api/cart 304 14.485 ms - {} - User: -","timestamp":"2025-07-14T08:50:53.045Z"}
+{"level":"http","message":"GET /api/cart 304 15.665 ms - {} - User: -","timestamp":"2025-07-14T08:50:53.063Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 2.777 ms - {} - User: guest","timestamp":"2025-07-14T08:50:53.078Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 1.207 ms - {} - User: guest","timestamp":"2025-07-14T08:50:53.112Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 1.823 ms - {} - User: guest","timestamp":"2025-07-14T08:50:53.145Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 1.463 ms - {} - User: guest","timestamp":"2025-07-14T08:50:53.219Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 2.840 ms - {} - User: guest","timestamp":"2025-07-14T08:50:53.261Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 1.788 ms - {} - User: guest","timestamp":"2025-07-14T08:50:53.298Z"}
+{"level":"http","message":"GET /api/cart 304 68.296 ms - {} - User: -","timestamp":"2025-07-14T08:50:54.786Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 104.151 ms - {} - User: guest","timestamp":"2025-07-14T08:50:54.833Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 136.206 ms - {} - User: guest","timestamp":"2025-07-14T08:50:54.874Z"}
+{"level":"http","message":"GET /api/collections 304 130.215 ms - {} - User: guest","timestamp":"2025-07-14T08:50:54.900Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 2.623 ms - {} - User: guest","timestamp":"2025-07-14T08:50:54.906Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 6.519 ms - {} - User: guest","timestamp":"2025-07-14T08:50:54.916Z"}
+{"level":"http","message":"GET /api/cart 304 53.883 ms - {} - User: -","timestamp":"2025-07-14T08:50:54.930Z"}
+{"level":"http","message":"GET /api/collections 304 27.938 ms - {} - User: guest","timestamp":"2025-07-14T08:50:54.950Z"}
+{"level":"http","message":"GET /api/cart 304 22.598 ms - {} - User: -","timestamp":"2025-07-14T08:50:54.959Z"}
+{"level":"http","message":"GET /api/cart 304 23.949 ms - {} - User: -","timestamp":"2025-07-14T08:50:54.987Z"}
+{"level":"http","message":"GET /api/wishlist 304 32.346 ms - {} - User: -","timestamp":"2025-07-14T08:50:55.009Z"}
+{"level":"http","message":"GET /api/wishlist 304 23.944 ms - {} - User: -","timestamp":"2025-07-14T08:50:55.036Z"}
+{"level":"http","message":"GET /api/wishlist 304 23.923 ms - {} - User: -","timestamp":"2025-07-14T08:50:55.065Z"}
+{"level":"http","message":"GET /api/wishlist 304 21.208 ms - {} - User: -","timestamp":"2025-07-14T08:50:55.089Z"}
+{"level":"http","message":"GET /api/wishlist 304 26.764 ms - {} - User: -","timestamp":"2025-07-14T08:50:55.119Z"}
+{"level":"http","message":"GET /api/wishlist 304 26.200 ms - {} - User: -","timestamp":"2025-07-14T08:50:55.147Z"}
+{"level":"http","message":"GET /api/cart 304 20.114 ms - {} - User: -","timestamp":"2025-07-14T08:50:56.128Z"}
+{"level":"http","message":"GET /api/collections/Combo/products 200 16.932 ms - {} - User: guest","timestamp":"2025-07-14T08:50:56.132Z"}
+{"level":"http","message":"GET /api/cart 304 18.364 ms - {} - User: -","timestamp":"2025-07-14T08:50:56.152Z"}
+{"level":"http","message":"GET /api/collections/Combo/products 304 15.988 ms - {} - User: guest","timestamp":"2025-07-14T08:50:56.158Z"}
+{"level":"http","message":"GET /api/cart 304 16.715 ms - {} - User: -","timestamp":"2025-07-14T08:50:56.179Z"}
+{"level":"http","message":"GET /api/cart 304 19.320 ms - {} - User: -","timestamp":"2025-07-14T08:50:56.202Z"}
+{"level":"http","message":"GET /api/wishlist 304 23.578 ms - {} - User: -","timestamp":"2025-07-14T08:50:56.291Z"}
+{"level":"http","message":"GET /api/wishlist 304 20.146 ms - {} - User: -","timestamp":"2025-07-14T08:50:56.313Z"}
+{"level":"http","message":"GET /api/wishlist 304 22.479 ms - {} - User: -","timestamp":"2025-07-14T08:50:56.338Z"}
+{"level":"http","message":"GET /api/wishlist 304 24.164 ms - {} - User: -","timestamp":"2025-07-14T08:50:56.366Z"}
+{"level":"http","message":"GET /api/wishlist 304 27.636 ms - {} - User: -","timestamp":"2025-07-14T08:50:56.397Z"}
+{"level":"http","message":"GET /api/wishlist 304 22.084 ms - {} - User: -","timestamp":"2025-07-14T08:50:56.422Z"}
+{"level":"http","message":"GET /api/products/BT10 200 7.571 ms - {} - User: guest","timestamp":"2025-07-14T08:50:56.863Z"}
+{"level":"http","message":"GET /api/cart 304 20.060 ms - {} - User: -","timestamp":"2025-07-14T08:50:56.867Z"}
+{"level":"http","message":"GET /api/products/BT10 304 0.792 ms - {} - User: guest","timestamp":"2025-07-14T08:50:56.869Z"}
+{"level":"http","message":"GET /api/cart 304 12.911 ms - {} - User: -","timestamp":"2025-07-14T08:50:56.883Z"}
+{"level":"http","message":"GET /api/cart 304 17.534 ms - {} - User: -","timestamp":"2025-07-14T08:50:56.903Z"}
+{"level":"http","message":"GET /api/cart 304 14.796 ms - {} - User: -","timestamp":"2025-07-14T08:50:56.921Z"}
+{"level":"http","message":"GET /api/products?category=TRANG%20S%E1%BB%A8C&limit=20 304 25.239 ms - {} - User: guest","timestamp":"2025-07-14T08:50:56.957Z"}
+{"level":"http","message":"GET /api/products?category=TRANG%20S%E1%BB%A8C&limit=20 304 2.606 ms - {} - User: guest","timestamp":"2025-07-14T08:50:57.042Z"}
+{"level":"http","message":"GET /api/cart 304 12.257 ms - {} - User: -","timestamp":"2025-07-14T08:51:07.249Z"}
+{"level":"http","message":"POST /api/purchase-history/create 400 78.330 ms - {\"userId\":\"6870c70c1ca5164be10bb91d\",\"orderId\":\"ORD-2025-960\",\"items\":[{\"productId\":\"BT10\",\"nameProduct\":\"Bông tai Vàng 18K đính Ngọc trai Akoya PNJ PAXMY000084\",\"quantity\":1,\"sizeIndex\":0,\"unitPrice\":10588500,\"productImage\":\"https://storage.googleapis.com/duan-4904c.appspot.com/flutter_pnj/Trang%20s%E1%BB%A9c/B%C3%B4ng%20tai/10/on-gbpaxmy000084-bong-tai-vang-18k-dinh-ngoc-trai-akoya-pnj-1.jpg?GoogleAccessId=firebase-adminsdk-v1s7v%40duan-4904c.iam.gserviceaccount.com&Expires=1893430800&Signature=g%2B%2BUDh81f9GoG6Y4vWS5Fz4%2Bii6p6GCsQW4Uzavc8Cjle7RDFQrlhir6Wvn8YwQWqRIQjU4sC%2FtHKdPrAVPZiN0hTQN0GnZ5kHmzBz9aujV%2F7MNaYmFrpPDONq%2FHq72eTMWK3pdXZ%2Bg8drsyt5E3l5HurCXFywic94apvdSVg1jgeP0KKM7iIiUCEJDxBLsWMHWPmGLzrSI2GCjJQGSW0gdl80Gj%2FAQjSXfNlOADaSIiu0iBKgM%2FH96GD0jQtsiNg92stgpE9z%2F7w9lpR4yc7jZt1iRVGwXS28t8U3iUjjXEo1aGk9h6h7LrSf9Q2IV09MZ8WlCCUiE06uIzKlZ43A%3D%3D\"}],\"totalAmount\":10618500,\"paymentMethod\":\"cod\",\"deliveryAddress\":{\"fullName\":\"Nguyen van a\",\"phone\":\"1212212121\",\"street\":\"sdasd\",\"ward\":\"a\",\"district\":\"a\",\"city\":\"áda\",\"zipCode\":\"1121212\"},\"shippingFee\":30000,\"discount\":0,\"notes\":\"a\"} - User: -","timestamp":"2025-07-14T08:51:07.444Z"}
+{"level":"http","message":"GET /api/cart 304 15.215 ms - {} - User: -","timestamp":"2025-07-14T08:51:27.684Z"}
+{"level":"http","message":"GET /api/cart 304 18.274 ms - {} - User: -","timestamp":"2025-07-14T08:51:27.769Z"}
+{"level":"http","message":"GET /api/cart 304 22.489 ms - {} - User: -","timestamp":"2025-07-14T08:51:30.898Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 1.563 ms - {} - User: guest","timestamp":"2025-07-14T08:51:33.028Z"}
+{"level":"http","message":"GET /api/cart 304 14.998 ms - {} - User: -","timestamp":"2025-07-14T08:51:33.031Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.838 ms - {} - User: guest","timestamp":"2025-07-14T08:51:33.041Z"}
+{"level":"http","message":"GET /api/cart 304 15.352 ms - {} - User: -","timestamp":"2025-07-14T08:51:33.048Z"}
+{"level":"http","message":"GET /api/cart 304 13.792 ms - {} - User: -","timestamp":"2025-07-14T08:51:33.064Z"}
+{"level":"http","message":"GET /api/cart 304 15.853 ms - {} - User: -","timestamp":"2025-07-14T08:51:33.082Z"}
+{"level":"http","message":"GET /api/cart 304 16.152 ms - {} - User: -","timestamp":"2025-07-14T08:51:33.101Z"}
+{"level":"http","message":"GET /api/cart 304 14.426 ms - {} - User: -","timestamp":"2025-07-14T08:51:33.117Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.986 ms - {} - User: guest","timestamp":"2025-07-14T08:51:33.138Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.797 ms - {} - User: guest","timestamp":"2025-07-14T08:51:33.175Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 1.677 ms - {} - User: guest","timestamp":"2025-07-14T08:51:33.211Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.903 ms - {} - User: guest","timestamp":"2025-07-14T08:51:33.258Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 3.135 ms - {} - User: guest","timestamp":"2025-07-14T08:51:33.328Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 1.229 ms - {} - User: guest","timestamp":"2025-07-14T08:51:33.357Z"}
+{"level":"http","message":"POST /api/purchase-history/create 400 12.119 ms - {\"userId\":\"6870c70c1ca5164be10bb91d\",\"orderId\":\"ORD-2025-748\",\"items\":[{\"quantity\":1,\"sizeIndex\":0,\"unitPrice\":21576400,\"productImage\":\"https://firebasestorage.googleapis.com/v0/b/duan-4904c.appspot.com/o/flutter_pnj%2FnewImage%2FNC-10VNA1.png?alt=media&token=46037aba-0dbf-4314-85d7-046276eab5f6\"}],\"totalAmount\":21606400,\"paymentMethod\":\"cod\",\"deliveryAddress\":{\"fullName\":\"Nguyen van a\",\"phone\":\"1212212121\",\"street\":\"sdasd\",\"ward\":\"a\",\"district\":\"a\",\"city\":\"áda\",\"zipCode\":\"1121212\"},\"shippingFee\":30000,\"discount\":0,\"notes\":\"a\"} - User: -","timestamp":"2025-07-14T08:51:43.473Z"}
+{"level":"http","message":"GET /api/cart 304 14.497 ms - {} - User: -","timestamp":"2025-07-14T09:13:22.310Z"}
+{"level":"http","message":"GET /api/cart 304 17.769 ms - {} - User: -","timestamp":"2025-07-14T09:13:22.648Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 7.148 ms - {} - User: guest","timestamp":"2025-07-14T09:13:22.757Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.949 ms - {} - User: guest","timestamp":"2025-07-14T09:13:22.919Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-14T09:13:35.114Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-14T09:13:35.117Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-14T09:13:35.118Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-14T09:13:35.119Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-14T09:13:35.368Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-14T09:13:35.374Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-14T09:13:35.515Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-14T09:13:35.517Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-14T09:13:35.518Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-14T09:13:35.519Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-14T09:13:35.519Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-14T09:13:35.519Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-14T09:13:35.520Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-14T09:13:35.520Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-14T09:13:35.520Z"}

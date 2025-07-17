@@ -72,7 +72,7 @@ class CommentSocketServer {
                     }
 
                     // Broadcast to all users in product room (except sender)
-                    socket.to(`product_${commentData.idProduct}`).emit('new_comment', {
+                    this.io.to(`product_${commentData.idProduct}`).emit('new_comment', {
                         comment: commentData,
                         timestamp: new Date().toISOString(),
                         isRealtime: true
