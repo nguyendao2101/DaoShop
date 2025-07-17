@@ -8,6 +8,7 @@ const cartRoutes = require('./cart.route');
 const wishlistRoutes = require('./wishlist.route');
 const purchaseHistoryRoutes = require('./purchase-history.route');
 const paymentRoutes = require('./payment.route');
+const geminiRoutes = require('./gemini.route');
 
 
 function route(app) {
@@ -20,8 +21,7 @@ function route(app) {
     app.use('/api/wishlist', wishlistRoutes);
     app.use('/api/purchase-history', purchaseHistoryRoutes);
     app.use('/api/payment', paymentRoutes);
-
-
+    app.use('/api/gemini', geminiRoutes);
 
     // Swagger documentation
     app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs, {

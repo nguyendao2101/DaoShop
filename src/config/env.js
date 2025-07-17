@@ -43,6 +43,11 @@ const envSchema = Joi.object()
             .description('Stripe success redirect URL (can include template variables)'),
         STRIPE_CANCEL_URL: Joi.string().required()
             .description('Stripe cancel redirect URL (can include template variables)'),
+
+        // Genmini AI
+        GEMINI_API_KEY: Joi.string().required(),
+        GEMINI_API_URL: Joi.string().default('https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent')
+            .description('Genmini AI API URL for content generation'),
         // Frontend
         FRONTEND_URL: Joi.string()
             .default('http://localhost:3000')
@@ -129,6 +134,11 @@ const env = {
         webhookSecret: envVars.STRIPE_WEBHOOK_SECRET,
         successUrl: envVars.STRIPE_SUCCESS_URL,
         cancelUrl: envVars.STRIPE_CANCEL_URL
+    },
+
+    genmini: {
+        apiKey: envVars.GEMINI_API_KEY,
+        apiUrl: envVars.GEMINI_API_URL,
     },
 
     frontend: {

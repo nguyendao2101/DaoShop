@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/nguyendao2101/DaoShop#readme",
   "dependencies": {
+    "@google/genai": "^1.10.0",
+    "axios": "^1.10.0",
     "bcrypt": "^6.0.0",
     "connect-mongo": "^5.1.0",
     "cookie-parser": "^1.4.7",
