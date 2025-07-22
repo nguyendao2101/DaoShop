@@ -1,0 +1,1 @@
+{"level":"error","message":"Login error: Invalid credentials","stack":"Error: Invalid credentials\n    at AuthService.loginUser (C:\\Users\\ADMIN\\Desktop\\nodejs\\DaoShop\\src\\services\\auth.service.js:92:19)\n    at async login (C:\\Users\\ADMIN\\Desktop\\nodejs\\DaoShop\\src\\controllers\\user.controller.js:189:26)","timestamp":"2025-07-22T12:55:40.546Z"}

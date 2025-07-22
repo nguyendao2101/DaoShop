@@ -14,7 +14,9 @@ const envSchema = Joi.object()
         PORT: Joi.number().default(8797),
 
         // Database
-        DB_URI: Joi.string().required()
+        // DB_URI: Joi.string().required()
+        //     .description('MongoDB connection string'),
+        MONGO_URI: Joi.string().required()
             .description('MongoDB connection string'),
 
         // JWT
@@ -113,7 +115,8 @@ const env = {
     port: envVars.PORT,
 
     db: {
-        uri: envVars.DB_URI,
+        // uri: envVars.DB_URI,
+        uri: envVars.MONGO_URI,
     },
 
     jwt: {
