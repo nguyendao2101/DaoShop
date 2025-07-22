@@ -1,0 +1,384 @@
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-19T07:09:31.997Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-19T07:09:32.001Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-19T07:09:32.002Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-19T07:09:32.002Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-19T07:09:32.299Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-19T07:09:32.306Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-19T07:09:32.563Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-19T07:09:32.567Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-19T07:09:32.567Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-19T07:09:32.568Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-19T07:09:32.568Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-19T07:09:32.569Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-19T07:09:32.569Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-19T07:09:32.569Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-19T07:09:32.569Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 157.192 ms - {} - User: guest","timestamp":"2025-07-19T07:09:42.403Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 154.998 ms - {} - User: guest","timestamp":"2025-07-19T07:09:42.418Z"}
+{"level":"http","message":"GET /api/collections 304 147.226 ms - {} - User: guest","timestamp":"2025-07-19T07:09:42.424Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 2.841 ms - {} - User: guest","timestamp":"2025-07-19T07:09:42.433Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 1.610 ms - {} - User: guest","timestamp":"2025-07-19T07:09:42.438Z"}
+{"level":"http","message":"GET /api/collections 304 13.482 ms - {} - User: guest","timestamp":"2025-07-19T07:09:42.454Z"}
+{"level":"http","message":"GET /api/auth/google 302 4.695 ms - {} - User: guest","timestamp":"2025-07-19T07:09:47.539Z"}
+{"email":"nguyendao2112kientruc@gmail.com","id":"113466190791653370426","level":"info","message":"Google Profile received:","name":"Đạo Nguyễn","picture":"https://lh3.googleusercontent.com/a/ACg8ocJ313L5QMX5Yg6rnXtGWEo-KduxwDOEiR8VMr7BUfCsZesHRx4=s96-c","timestamp":"2025-07-19T07:09:48.548Z"}
+{"level":"info","message":"Google OAuth success for user:","timestamp":"2025-07-19T07:09:48.561Z"}
+{"level":"error","message":"Google callback error: user.generateTokens is not a function","stack":"TypeError: user.generateTokens is not a function\n    at GoogleOAuthService.generateOAuthResponse (C:\\Users\\ADMIN\\Desktop\\nodejs\\DaoShop\\src\\services\\googleOAuth.service.js:101:52)\n    at googleCallback (C:\\Users\\ADMIN\\Desktop\\nodejs\\DaoShop\\src\\controllers\\user.controller.js:252:89)\n    at Layer.handle [as handle_request] (C:\\Users\\ADMIN\\Desktop\\nodejs\\DaoShop\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\ADMIN\\Desktop\\nodejs\\DaoShop\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at complete (C:\\Users\\ADMIN\\Desktop\\nodejs\\DaoShop\\node_modules\\passport\\lib\\middleware\\authenticate.js:280:13)\n    at C:\\Users\\ADMIN\\Desktop\\nodejs\\DaoShop\\node_modules\\passport\\lib\\middleware\\authenticate.js:287:15\n    at pass (C:\\Users\\ADMIN\\Desktop\\nodejs\\DaoShop\\node_modules\\passport\\lib\\authenticator.js:446:14)\n    at Authenticator.transformAuthInfo (C:\\Users\\ADMIN\\Desktop\\nodejs\\DaoShop\\node_modules\\passport\\lib\\authenticator.js:468:5)\n    at C:\\Users\\ADMIN\\Desktop\\nodejs\\DaoShop\\node_modules\\passport\\lib\\middleware\\authenticate.js:284:22\n    at req.login.req.logIn (C:\\Users\\ADMIN\\Desktop\\nodejs\\DaoShop\\node_modules\\passport\\lib\\http\\request.js:44:13)","timestamp":"2025-07-19T07:09:48.566Z"}
+{"level":"http","message":"GET /api/auth/google/callback?code=4%2F0AVMBsJgobSs6WwyRoYWf15ngbVoawK7FJfQhs8CQVC13LmR7JlaWd7RNwtMBzz2yy0E9MQ&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none 302 742.857 ms - {} - User: 686deee8ac71d612916479d3","timestamp":"2025-07-19T07:09:48.574Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-19T07:11:40.856Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-19T07:11:40.859Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-19T07:11:40.860Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-19T07:11:40.861Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-19T07:11:41.152Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-19T07:11:41.163Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-19T07:11:41.329Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-19T07:11:41.333Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-19T07:11:41.334Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-19T07:11:41.335Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-19T07:11:41.336Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-19T07:11:41.336Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-19T07:11:41.337Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-19T07:11:41.337Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-19T07:11:41.337Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-19T07:11:46.578Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-19T07:11:46.582Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-19T07:11:46.583Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-19T07:11:46.584Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-19T07:11:46.975Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-19T07:11:46.985Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-19T07:11:47.149Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-19T07:11:47.152Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-19T07:11:47.185Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-19T07:11:47.189Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-19T07:11:47.210Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-19T07:11:47.211Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-19T07:11:47.211Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-19T07:11:47.212Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-19T07:11:47.212Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-19T07:11:49.296Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-19T07:11:49.299Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-19T07:11:49.300Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-19T07:11:49.301Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-19T07:11:49.533Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-19T07:11:49.538Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-19T07:11:49.707Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-19T07:11:49.711Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-19T07:11:49.712Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-19T07:11:49.712Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-19T07:11:49.713Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-19T07:11:49.713Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-19T07:11:49.713Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-19T07:11:49.714Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-19T07:11:49.714Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-19T07:11:52.482Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-19T07:11:52.485Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-19T07:11:52.486Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-19T07:11:52.487Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-19T07:11:52.702Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-19T07:11:52.709Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-19T07:11:52.881Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-19T07:11:52.883Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-19T07:11:52.884Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-19T07:11:52.885Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-19T07:11:52.885Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-19T07:11:52.885Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-19T07:11:52.885Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-19T07:11:52.886Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-19T07:11:52.886Z"}
+{"level":"info","message":"🛑 SIGINT received, shutting down gracefully","timestamp":"2025-07-19T07:12:08.054Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-19T07:34:36.600Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-19T07:34:36.603Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-19T07:34:36.603Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-19T07:34:36.604Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-19T07:34:36.816Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-19T07:34:36.819Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-19T07:34:36.948Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-19T07:34:36.951Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-19T07:34:36.951Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-19T07:34:36.952Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-19T07:34:36.952Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-19T07:34:36.952Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-19T07:34:36.952Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-19T07:34:36.953Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-19T07:34:36.953Z"}
+{"level":"http","message":"GET /api/auth/google 302 4.617 ms - {} - User: guest","timestamp":"2025-07-19T07:34:41.388Z"}
+{"email":"nguyendao2112kientruc@gmail.com","id":"113466190791653370426","level":"info","message":"oogle Profile received:","name":"Đạo Nguyễn","picture":"https://lh3.googleusercontent.com/a/ACg8ocJ313L5QMX5Yg6rnXtGWEo-KduxwDOEiR8VMr7BUfCsZesHRx4=s96-c","timestamp":"2025-07-19T07:34:42.146Z"}
+{"level":"info","message":"Google OAuth success for user:","timestamp":"2025-07-19T07:34:42.155Z"}
+{"level":"http","message":"GET /api/auth/google/callback?code=4%2F0AVMBsJjU0pj82i1-X0JjlhMz6TQ0o2f7O2PSiBXbvY9f7UQZuhuMDZdL8E-Ro5VgBqwVDg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none 302 527.261 ms - {} - User: 686deee8ac71d612916479d3","timestamp":"2025-07-19T07:34:42.173Z"}
+{"level":"http","message":"GET /api/cart 304 78.945 ms - {} - User: -","timestamp":"2025-07-19T07:34:44.054Z"}
+{"level":"http","message":"GET /api/products?limit=100 200 77.404 ms - {} - User: guest","timestamp":"2025-07-19T07:34:44.065Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 200 73.870 ms - {} - User: guest","timestamp":"2025-07-19T07:34:44.070Z"}
+{"level":"http","message":"GET /api/collections 200 70.884 ms - {} - User: guest","timestamp":"2025-07-19T07:34:44.077Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 1.882 ms - {} - User: guest","timestamp":"2025-07-19T07:34:44.088Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 2.629 ms - {} - User: guest","timestamp":"2025-07-19T07:34:44.094Z"}
+{"level":"http","message":"GET /api/cart 304 24.884 ms - {} - User: -","timestamp":"2025-07-19T07:34:44.105Z"}
+{"level":"http","message":"GET /api/collections 304 22.257 ms - {} - User: guest","timestamp":"2025-07-19T07:34:44.120Z"}
+{"level":"http","message":"GET /api/cart 304 17.392 ms - {} - User: -","timestamp":"2025-07-19T07:34:44.156Z"}
+{"level":"http","message":"GET /api/cart 304 11.226 ms - {} - User: -","timestamp":"2025-07-19T07:34:44.169Z"}
+{"level":"http","message":"GET /api/wishlist 304 17.081 ms - {} - User: -","timestamp":"2025-07-19T07:34:44.220Z"}
+{"level":"http","message":"GET /api/wishlist 304 10.542 ms - {} - User: -","timestamp":"2025-07-19T07:34:44.233Z"}
+{"level":"http","message":"GET /api/wishlist 304 11.750 ms - {} - User: -","timestamp":"2025-07-19T07:34:44.246Z"}
+{"level":"http","message":"GET /api/wishlist 304 7.653 ms - {} - User: -","timestamp":"2025-07-19T07:34:44.256Z"}
+{"level":"http","message":"GET /api/wishlist 304 7.042 ms - {} - User: -","timestamp":"2025-07-19T07:34:44.266Z"}
+{"level":"http","message":"GET /api/wishlist 304 13.702 ms - {} - User: -","timestamp":"2025-07-19T07:34:44.281Z"}
+{"level":"http","message":"GET /api/cart 304 50.307 ms - {} - User: -","timestamp":"2025-07-19T07:47:49.427Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 54.915 ms - {} - User: guest","timestamp":"2025-07-19T07:47:49.438Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 80.484 ms - {} - User: guest","timestamp":"2025-07-19T07:47:49.470Z"}
+{"level":"http","message":"GET /api/collections 304 83.419 ms - {} - User: guest","timestamp":"2025-07-19T07:47:49.480Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 3.352 ms - {} - User: guest","timestamp":"2025-07-19T07:47:49.498Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 1.442 ms - {} - User: guest","timestamp":"2025-07-19T07:47:49.501Z"}
+{"level":"http","message":"GET /api/cart 304 73.252 ms - {} - User: -","timestamp":"2025-07-19T07:47:49.557Z"}
+{"level":"http","message":"GET /api/collections 304 77.292 ms - {} - User: guest","timestamp":"2025-07-19T07:47:49.580Z"}
+{"level":"http","message":"GET /api/cart 304 60.538 ms - {} - User: -","timestamp":"2025-07-19T07:47:49.659Z"}
+{"level":"http","message":"GET /api/wishlist 304 41.248 ms - {} - User: -","timestamp":"2025-07-19T07:47:49.661Z"}
+{"level":"http","message":"GET /api/cart 304 37.266 ms - {} - User: -","timestamp":"2025-07-19T07:47:49.700Z"}
+{"level":"http","message":"GET /api/wishlist 304 12.753 ms - {} - User: -","timestamp":"2025-07-19T07:47:49.702Z"}
+{"level":"http","message":"GET /api/wishlist 304 8.421 ms - {} - User: -","timestamp":"2025-07-19T07:47:49.712Z"}
+{"level":"http","message":"GET /api/wishlist 304 7.156 ms - {} - User: -","timestamp":"2025-07-19T07:47:49.720Z"}
+{"level":"http","message":"GET /api/wishlist 304 8.262 ms - {} - User: -","timestamp":"2025-07-19T07:47:49.730Z"}
+{"level":"http","message":"GET /api/wishlist 304 6.256 ms - {} - User: -","timestamp":"2025-07-19T07:47:49.738Z"}
+{"level":"http","message":"GET /api/cart 304 54.125 ms - {} - User: -","timestamp":"2025-07-19T07:57:16.230Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 51.789 ms - {} - User: guest","timestamp":"2025-07-19T07:57:16.236Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 51.124 ms - {} - User: guest","timestamp":"2025-07-19T07:57:16.254Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 6.329 ms - {} - User: guest","timestamp":"2025-07-19T07:57:16.277Z"}
+{"level":"http","message":"GET /api/collections 304 77.337 ms - {} - User: guest","timestamp":"2025-07-19T07:57:16.297Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 2.539 ms - {} - User: guest","timestamp":"2025-07-19T07:57:16.304Z"}
+{"level":"http","message":"GET /api/cart 304 63.608 ms - {} - User: -","timestamp":"2025-07-19T07:57:16.324Z"}
+{"level":"http","message":"GET /api/collections 304 21.396 ms - {} - User: guest","timestamp":"2025-07-19T07:57:16.339Z"}
+{"level":"http","message":"GET /api/cart 304 13.393 ms - {} - User: -","timestamp":"2025-07-19T07:57:16.345Z"}
+{"level":"http","message":"GET /api/cart 304 8.872 ms - {} - User: -","timestamp":"2025-07-19T07:57:16.357Z"}
+{"level":"http","message":"GET /api/wishlist 304 9.423 ms - {} - User: -","timestamp":"2025-07-19T07:57:16.373Z"}
+{"level":"http","message":"GET /api/wishlist 304 9.835 ms - {} - User: -","timestamp":"2025-07-19T07:57:16.386Z"}
+{"level":"http","message":"GET /api/wishlist 304 11.871 ms - {} - User: -","timestamp":"2025-07-19T07:57:16.399Z"}
+{"level":"http","message":"GET /api/wishlist 304 10.140 ms - {} - User: -","timestamp":"2025-07-19T07:57:16.411Z"}
+{"level":"http","message":"GET /api/wishlist 304 6.545 ms - {} - User: -","timestamp":"2025-07-19T07:57:16.420Z"}
+{"level":"http","message":"GET /api/wishlist 304 8.194 ms - {} - User: -","timestamp":"2025-07-19T07:57:16.430Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 1.047 ms - {} - User: guest","timestamp":"2025-07-19T08:00:53.166Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 1.422 ms - {} - User: guest","timestamp":"2025-07-19T08:00:53.175Z"}
+{"level":"http","message":"GET /api/cart 304 22.066 ms - {} - User: -","timestamp":"2025-07-19T08:00:53.180Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 1.174 ms - {} - User: guest","timestamp":"2025-07-19T08:00:53.182Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 0.637 ms - {} - User: guest","timestamp":"2025-07-19T08:00:53.185Z"}
+{"level":"http","message":"GET /api/collections 304 19.387 ms - {} - User: guest","timestamp":"2025-07-19T08:00:53.196Z"}
+{"level":"http","message":"GET /api/cart 304 15.365 ms - {} - User: -","timestamp":"2025-07-19T08:00:53.203Z"}
+{"level":"http","message":"GET /api/collections 304 23.036 ms - {} - User: guest","timestamp":"2025-07-19T08:00:53.224Z"}
+{"level":"http","message":"GET /api/cart 304 21.465 ms - {} - User: -","timestamp":"2025-07-19T08:00:53.234Z"}
+{"level":"http","message":"GET /api/cart 304 44.850 ms - {} - User: -","timestamp":"2025-07-19T08:00:53.286Z"}
+{"level":"http","message":"GET /api/wishlist 304 13.947 ms - {} - User: -","timestamp":"2025-07-19T08:00:53.331Z"}
+{"level":"http","message":"GET /api/wishlist 304 12.178 ms - {} - User: -","timestamp":"2025-07-19T08:00:53.345Z"}
+{"level":"http","message":"GET /api/wishlist 304 14.032 ms - {} - User: -","timestamp":"2025-07-19T08:00:53.362Z"}
+{"level":"http","message":"GET /api/wishlist 304 9.076 ms - {} - User: -","timestamp":"2025-07-19T08:00:53.373Z"}
+{"level":"http","message":"GET /api/wishlist 304 10.393 ms - {} - User: -","timestamp":"2025-07-19T08:00:53.386Z"}
+{"level":"http","message":"GET /api/wishlist 304 23.575 ms - {} - User: -","timestamp":"2025-07-19T08:00:53.415Z"}
+{"level":"http","message":"GET /api/cart 304 86.635 ms - {} - User: -","timestamp":"2025-07-19T08:02:29.615Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 86.567 ms - {} - User: guest","timestamp":"2025-07-19T08:02:29.628Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 110.403 ms - {} - User: guest","timestamp":"2025-07-19T08:02:29.654Z"}
+{"level":"http","message":"GET /api/collections 304 100.226 ms - {} - User: guest","timestamp":"2025-07-19T08:02:29.661Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 1.955 ms - {} - User: guest","timestamp":"2025-07-19T08:02:29.671Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 1.512 ms - {} - User: guest","timestamp":"2025-07-19T08:02:29.678Z"}
+{"level":"http","message":"GET /api/cart 304 28.903 ms - {} - User: -","timestamp":"2025-07-19T08:02:29.692Z"}
+{"level":"http","message":"GET /api/collections 304 18.116 ms - {} - User: guest","timestamp":"2025-07-19T08:02:29.697Z"}
+{"level":"http","message":"GET /api/cart 304 13.553 ms - {} - User: -","timestamp":"2025-07-19T08:02:29.713Z"}
+{"level":"http","message":"GET /api/cart 304 17.988 ms - {} - User: -","timestamp":"2025-07-19T08:02:29.733Z"}
+{"level":"http","message":"GET /api/wishlist 304 10.451 ms - {} - User: -","timestamp":"2025-07-19T08:02:29.740Z"}
+{"level":"http","message":"GET /api/wishlist 304 6.834 ms - {} - User: -","timestamp":"2025-07-19T08:02:29.749Z"}
+{"level":"http","message":"GET /api/wishlist 304 16.675 ms - {} - User: -","timestamp":"2025-07-19T08:02:29.768Z"}
+{"level":"http","message":"GET /api/wishlist 304 8.622 ms - {} - User: -","timestamp":"2025-07-19T08:02:29.778Z"}
+{"level":"http","message":"GET /api/wishlist 304 7.618 ms - {} - User: -","timestamp":"2025-07-19T08:02:29.788Z"}
+{"level":"http","message":"GET /api/wishlist 304 10.460 ms - {} - User: -","timestamp":"2025-07-19T08:02:29.801Z"}
+{"level":"http","message":"GET /api/cart 304 227.221 ms - {} - User: -","timestamp":"2025-07-19T08:02:45.432Z"}
+{"level":"http","message":"GET /api/cart 304 16.876 ms - {} - User: -","timestamp":"2025-07-19T08:02:46.311Z"}
+{"level":"info","message":"🛑 SIGINT received, shutting down gracefully","timestamp":"2025-07-19T08:05:49.729Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-19T15:24:06.984Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-19T15:24:06.987Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-19T15:24:06.988Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-19T15:24:06.989Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-19T15:24:07.300Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-19T15:24:07.306Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-19T15:24:07.514Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-19T15:24:07.517Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-19T15:24:07.518Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-19T15:24:07.519Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-19T15:24:07.519Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-19T15:24:07.520Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-19T15:24:07.520Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-19T15:24:07.520Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-19T15:24:07.520Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 137.252 ms - {} - User: guest","timestamp":"2025-07-19T15:35:36.561Z"}
+{"level":"http","message":"GET /api/collections 304 137.289 ms - {} - User: guest","timestamp":"2025-07-19T15:35:36.580Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 133.694 ms - {} - User: guest","timestamp":"2025-07-19T15:35:36.601Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 3.672 ms - {} - User: guest","timestamp":"2025-07-19T15:35:36.618Z"}
+{"level":"http","message":"GET /api/cart 304 149.171 ms - {} - User: -","timestamp":"2025-07-19T15:35:36.628Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 2.968 ms - {} - User: guest","timestamp":"2025-07-19T15:35:36.639Z"}
+{"level":"http","message":"GET /api/collections 304 32.196 ms - {} - User: guest","timestamp":"2025-07-19T15:35:36.663Z"}
+{"level":"http","message":"GET /api/cart 304 38.653 ms - {} - User: -","timestamp":"2025-07-19T15:35:36.680Z"}
+{"level":"http","message":"GET /api/wishlist 304 30.366 ms - {} - User: -","timestamp":"2025-07-19T15:35:36.698Z"}
+{"level":"http","message":"GET /api/cart 304 32.942 ms - {} - User: -","timestamp":"2025-07-19T15:35:36.724Z"}
+{"level":"http","message":"GET /api/wishlist 304 32.405 ms - {} - User: -","timestamp":"2025-07-19T15:35:36.741Z"}
+{"level":"http","message":"GET /api/cart 304 19.985 ms - {} - User: -","timestamp":"2025-07-19T15:35:36.751Z"}
+{"level":"http","message":"GET /api/wishlist 304 15.077 ms - {} - User: -","timestamp":"2025-07-19T15:35:36.760Z"}
+{"level":"http","message":"GET /api/wishlist 304 8.653 ms - {} - User: -","timestamp":"2025-07-19T15:35:36.771Z"}
+{"level":"http","message":"GET /api/wishlist 304 9.040 ms - {} - User: -","timestamp":"2025-07-19T15:35:36.783Z"}
+{"level":"http","message":"GET /api/wishlist 304 9.320 ms - {} - User: -","timestamp":"2025-07-19T15:35:36.794Z"}
+{"level":"info","message":"🛑 SIGINT received, shutting down gracefully","timestamp":"2025-07-19T15:43:48.353Z"}
+{"level":"info","message":"Google OAuth Config:","timestamp":"2025-07-19T16:17:34.184Z"}
+{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-19T16:17:34.187Z"}
+{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-19T16:17:34.187Z"}
+{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-19T16:17:34.188Z"}
+{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-19T16:17:34.404Z"}
+{"level":"info","message":"✅ WebSocket server configured successfully","timestamp":"2025-07-19T16:17:34.410Z"}
+{"level":"info","message":"✅ Database connected successfully","timestamp":"2025-07-19T16:17:34.579Z"}
+{"level":"info","message":"🚀 Server running on port 8797","timestamp":"2025-07-19T16:17:34.583Z"}
+{"level":"info","message":"📡 HTTP: http://localhost:8797","timestamp":"2025-07-19T16:17:34.583Z"}
+{"level":"info","message":"📖 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-19T16:17:34.584Z"}
+{"level":"info","message":"🧪 Test: http://localhost:8797/test-google","timestamp":"2025-07-19T16:17:34.584Z"}
+{"level":"info","message":"💓 Health: http://localhost:8797/health","timestamp":"2025-07-19T16:17:34.584Z"}
+{"level":"info","message":"🔌 WebSocket: ws://localhost:8797","timestamp":"2025-07-19T16:17:34.584Z"}
+{"level":"info","message":"💬 WebSocket Health: http://localhost:8797/api/websocket/health","timestamp":"2025-07-19T16:17:34.584Z"}
+{"level":"info","message":"🌍 Environment: undefined","timestamp":"2025-07-19T16:17:34.585Z"}
+{"level":"http","message":"GET /api/collections 304 183.612 ms - {} - User: guest","timestamp":"2025-07-19T16:17:50.998Z"}
+{"level":"http","message":"GET /api/cart 304 175.946 ms - {} - User: -","timestamp":"2025-07-19T16:17:51.002Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 171.875 ms - {} - User: guest","timestamp":"2025-07-19T16:17:51.010Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 170.591 ms - {} - User: guest","timestamp":"2025-07-19T16:17:51.016Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 0.932 ms - {} - User: guest","timestamp":"2025-07-19T16:17:51.027Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 1.683 ms - {} - User: guest","timestamp":"2025-07-19T16:17:51.031Z"}
+{"level":"http","message":"GET /api/collections 304 22.805 ms - {} - User: guest","timestamp":"2025-07-19T16:17:51.041Z"}
+{"level":"http","message":"GET /api/cart 304 20.666 ms - {} - User: -","timestamp":"2025-07-19T16:17:51.043Z"}
+{"level":"http","message":"GET /api/cart 304 17.472 ms - {} - User: -","timestamp":"2025-07-19T16:17:51.062Z"}
+{"level":"http","message":"GET /api/wishlist 304 16.104 ms - {} - User: -","timestamp":"2025-07-19T16:17:51.074Z"}
+{"level":"http","message":"GET /api/cart 304 15.516 ms - {} - User: -","timestamp":"2025-07-19T16:17:51.082Z"}
+{"level":"http","message":"GET /api/wishlist 304 7.763 ms - {} - User: -","timestamp":"2025-07-19T16:17:51.086Z"}
+{"level":"http","message":"GET /api/wishlist 304 6.591 ms - {} - User: -","timestamp":"2025-07-19T16:17:51.095Z"}
+{"level":"http","message":"GET /api/wishlist 304 5.768 ms - {} - User: -","timestamp":"2025-07-19T16:17:51.102Z"}
+{"level":"http","message":"GET /api/wishlist 304 6.583 ms - {} - User: -","timestamp":"2025-07-19T16:17:51.110Z"}
+{"level":"http","message":"GET /api/wishlist 304 6.585 ms - {} - User: -","timestamp":"2025-07-19T16:17:51.118Z"}
+{"level":"http","message":"GET /api/auth/google 302 5.120 ms - {} - User: guest","timestamp":"2025-07-19T16:17:58.333Z"}
+{"email":"nguyendao2112kientruc@gmail.com","id":"113466190791653370426","level":"info","message":"oogle Profile received:","name":"Đạo Nguyễn","picture":"https://lh3.googleusercontent.com/a/ACg8ocJ313L5QMX5Yg6rnXtGWEo-KduxwDOEiR8VMr7BUfCsZesHRx4=s96-c","timestamp":"2025-07-19T16:17:59.759Z"}
+{"level":"info","message":"Google OAuth success for user:","timestamp":"2025-07-19T16:17:59.763Z"}
+{"level":"http","message":"GET /api/auth/google/callback?code=4%2F0AVMBsJjneXFp4iSWbL1hprMiYgUwba3eQHJmWLDYJVHUV2PL2-sCqZL6VliQ4uxmzDBQlA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none 302 1196.962 ms - {} - User: 686deee8ac71d612916479d3","timestamp":"2025-07-19T16:17:59.779Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 0.843 ms - {} - User: guest","timestamp":"2025-07-19T16:18:01.431Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 0.645 ms - {} - User: guest","timestamp":"2025-07-19T16:18:01.434Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 0.997 ms - {} - User: guest","timestamp":"2025-07-19T16:18:01.443Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 1.062 ms - {} - User: guest","timestamp":"2025-07-19T16:18:01.445Z"}
+{"level":"http","message":"GET /api/collections 304 20.677 ms - {} - User: guest","timestamp":"2025-07-19T16:18:01.456Z"}
+{"level":"http","message":"GET /api/cart 304 20.908 ms - {} - User: -","timestamp":"2025-07-19T16:18:01.458Z"}
+{"level":"http","message":"GET /api/collections 304 14.946 ms - {} - User: guest","timestamp":"2025-07-19T16:18:01.475Z"}
+{"level":"http","message":"GET /api/cart 304 15.153 ms - {} - User: -","timestamp":"2025-07-19T16:18:01.477Z"}
+{"level":"http","message":"GET /api/cart 304 7.442 ms - {} - User: -","timestamp":"2025-07-19T16:18:01.486Z"}
+{"level":"http","message":"GET /api/cart 304 15.556 ms - {} - User: -","timestamp":"2025-07-19T16:18:01.505Z"}
+{"level":"http","message":"GET /api/wishlist 304 11.379 ms - {} - User: -","timestamp":"2025-07-19T16:18:01.510Z"}
+{"level":"http","message":"GET /api/wishlist 304 7.256 ms - {} - User: -","timestamp":"2025-07-19T16:18:01.520Z"}
+{"level":"http","message":"GET /api/wishlist 304 7.064 ms - {} - User: -","timestamp":"2025-07-19T16:18:01.529Z"}
+{"level":"http","message":"GET /api/wishlist 304 5.979 ms - {} - User: -","timestamp":"2025-07-19T16:18:01.537Z"}
+{"level":"http","message":"GET /api/wishlist 304 6.165 ms - {} - User: -","timestamp":"2025-07-19T16:18:01.545Z"}
+{"level":"http","message":"GET /api/wishlist 304 4.472 ms - {} - User: -","timestamp":"2025-07-19T16:18:01.551Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 1.766 ms - {} - User: guest","timestamp":"2025-07-19T16:21:35.554Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 0.709 ms - {} - User: guest","timestamp":"2025-07-19T16:21:35.559Z"}
+{"level":"http","message":"GET /api/cart 304 15.567 ms - {} - User: -","timestamp":"2025-07-19T16:21:35.563Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 1.360 ms - {} - User: guest","timestamp":"2025-07-19T16:21:35.566Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 0.692 ms - {} - User: guest","timestamp":"2025-07-19T16:21:35.568Z"}
+{"level":"http","message":"GET /api/collections 304 16.667 ms - {} - User: guest","timestamp":"2025-07-19T16:21:35.577Z"}
+{"level":"http","message":"GET /api/cart 304 12.479 ms - {} - User: -","timestamp":"2025-07-19T16:21:35.584Z"}
+{"level":"http","message":"GET /api/collections 304 12.109 ms - {} - User: guest","timestamp":"2025-07-19T16:21:35.593Z"}
+{"level":"http","message":"GET /api/cart 304 10.036 ms - {} - User: -","timestamp":"2025-07-19T16:21:35.598Z"}
+{"level":"http","message":"GET /api/cart 304 11.344 ms - {} - User: -","timestamp":"2025-07-19T16:21:35.614Z"}
+{"level":"http","message":"GET /api/wishlist 304 8.118 ms - {} - User: -","timestamp":"2025-07-19T16:21:35.684Z"}
+{"level":"http","message":"GET /api/wishlist 304 6.831 ms - {} - User: -","timestamp":"2025-07-19T16:21:35.693Z"}
+{"level":"http","message":"GET /api/wishlist 304 7.225 ms - {} - User: -","timestamp":"2025-07-19T16:21:35.702Z"}
+{"level":"http","message":"GET /api/wishlist 304 8.337 ms - {} - User: -","timestamp":"2025-07-19T16:21:35.713Z"}
+{"level":"http","message":"GET /api/wishlist 304 8.786 ms - {} - User: -","timestamp":"2025-07-19T16:21:35.724Z"}
+{"level":"http","message":"GET /api/wishlist 304 7.054 ms - {} - User: -","timestamp":"2025-07-19T16:21:35.733Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 1.295 ms - {} - User: guest","timestamp":"2025-07-19T16:22:17.508Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 0.921 ms - {} - User: guest","timestamp":"2025-07-19T16:22:17.515Z"}
+{"level":"http","message":"GET /api/cart 304 19.472 ms - {} - User: -","timestamp":"2025-07-19T16:22:17.519Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 1.646 ms - {} - User: guest","timestamp":"2025-07-19T16:22:17.522Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 0.998 ms - {} - User: guest","timestamp":"2025-07-19T16:22:17.527Z"}
+{"level":"http","message":"GET /api/collections 304 16.576 ms - {} - User: guest","timestamp":"2025-07-19T16:22:17.532Z"}
+{"level":"http","message":"GET /api/cart 304 10.611 ms - {} - User: -","timestamp":"2025-07-19T16:22:17.539Z"}
+{"level":"http","message":"GET /api/collections 304 16.588 ms - {} - User: guest","timestamp":"2025-07-19T16:22:17.552Z"}
+{"level":"http","message":"GET /api/cart 304 14.311 ms - {} - User: -","timestamp":"2025-07-19T16:22:17.557Z"}
+{"level":"http","message":"GET /api/cart 304 10.606 ms - {} - User: -","timestamp":"2025-07-19T16:22:17.572Z"}
+{"level":"http","message":"GET /api/wishlist 304 7.929 ms - {} - User: -","timestamp":"2025-07-19T16:22:17.650Z"}
+{"level":"http","message":"GET /api/wishlist 304 9.519 ms - {} - User: -","timestamp":"2025-07-19T16:22:17.662Z"}
+{"level":"http","message":"GET /api/wishlist 304 7.765 ms - {} - User: -","timestamp":"2025-07-19T16:22:17.671Z"}
+{"level":"http","message":"GET /api/wishlist 304 7.282 ms - {} - User: -","timestamp":"2025-07-19T16:22:17.681Z"}
+{"level":"http","message":"GET /api/wishlist 304 6.961 ms - {} - User: -","timestamp":"2025-07-19T16:22:17.689Z"}
+{"level":"http","message":"GET /api/wishlist 304 6.723 ms - {} - User: -","timestamp":"2025-07-19T16:22:17.698Z"}
+{"level":"http","message":"GET /api/cart 304 21.526 ms - {} - User: -","timestamp":"2025-07-19T16:28:19.484Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 29.016 ms - {} - User: guest","timestamp":"2025-07-19T16:28:19.496Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 38.361 ms - {} - User: guest","timestamp":"2025-07-19T16:28:19.512Z"}
+{"level":"http","message":"GET /api/collections 304 38.105 ms - {} - User: guest","timestamp":"2025-07-19T16:28:19.517Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 1.320 ms - {} - User: guest","timestamp":"2025-07-19T16:28:19.525Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 3.762 ms - {} - User: guest","timestamp":"2025-07-19T16:28:19.538Z"}
+{"level":"http","message":"GET /api/cart 304 46.658 ms - {} - User: -","timestamp":"2025-07-19T16:28:19.546Z"}
+{"level":"http","message":"GET /api/collections 304 31.618 ms - {} - User: guest","timestamp":"2025-07-19T16:28:19.574Z"}
+{"level":"http","message":"GET /api/cart 304 15.352 ms - {} - User: -","timestamp":"2025-07-19T16:28:19.579Z"}
+{"level":"http","message":"GET /api/cart 304 7.103 ms - {} - User: -","timestamp":"2025-07-19T16:28:19.587Z"}
+{"level":"http","message":"GET /api/wishlist 304 11.862 ms - {} - User: -","timestamp":"2025-07-19T16:28:19.620Z"}
+{"level":"http","message":"GET /api/wishlist 304 5.854 ms - {} - User: -","timestamp":"2025-07-19T16:28:19.627Z"}
+{"level":"http","message":"GET /api/wishlist 304 11.152 ms - {} - User: -","timestamp":"2025-07-19T16:28:19.640Z"}
+{"level":"http","message":"GET /api/wishlist 304 5.595 ms - {} - User: -","timestamp":"2025-07-19T16:28:19.647Z"}
+{"level":"http","message":"GET /api/wishlist 304 7.963 ms - {} - User: -","timestamp":"2025-07-19T16:28:19.657Z"}
+{"level":"http","message":"GET /api/wishlist 304 6.918 ms - {} - User: -","timestamp":"2025-07-19T16:28:19.665Z"}
+{"level":"http","message":"GET /api/cart 304 8.152 ms - {} - User: -","timestamp":"2025-07-19T16:28:26.182Z"}
+{"level":"http","message":"GET /api/auth/profile 200 15.217 ms - {} - User: -","timestamp":"2025-07-19T16:28:26.199Z"}
+{"level":"http","message":"GET /api/cart 304 11.744 ms - {} - User: -","timestamp":"2025-07-19T16:28:26.201Z"}
+{"level":"http","message":"GET /api/auth/profile 304 18.266 ms - {} - User: -","timestamp":"2025-07-19T16:28:26.220Z"}
+{"level":"http","message":"GET /api/cart 304 13.540 ms - {} - User: -","timestamp":"2025-07-19T16:28:26.222Z"}
+{"level":"http","message":"GET /api/cart 304 7.171 ms - {} - User: -","timestamp":"2025-07-19T16:28:26.231Z"}
+{"level":"http","message":"GET /api/cart 304 11.916 ms - {} - User: -","timestamp":"2025-07-19T16:28:41.415Z"}
+{"level":"http","message":"GET /api/purchase-history?page=1&limit=10 200 15.160 ms - {} - User: -","timestamp":"2025-07-19T16:28:41.425Z"}
+{"level":"http","message":"GET /api/cart 304 32.290 ms - {} - User: -","timestamp":"2025-07-19T16:28:41.452Z"}
+{"level":"http","message":"GET /api/purchase-history?page=1&limit=10 304 13.654 ms - {} - User: -","timestamp":"2025-07-19T16:28:41.461Z"}
+{"level":"http","message":"GET /api/cart 304 9.629 ms - {} - User: -","timestamp":"2025-07-19T16:28:41.466Z"}
+{"level":"http","message":"GET /api/cart 304 7.680 ms - {} - User: -","timestamp":"2025-07-19T16:28:41.475Z"}
+{"level":"http","message":"GET /api/cart 304 11.343 ms - {} - User: -","timestamp":"2025-07-19T16:28:45.617Z"}
+{"level":"http","message":"GET /api/wishlist 304 13.957 ms - {} - User: -","timestamp":"2025-07-19T16:28:45.627Z"}
+{"level":"http","message":"GET /api/cart 304 14.754 ms - {} - User: -","timestamp":"2025-07-19T16:28:45.636Z"}
+{"level":"http","message":"GET /api/wishlist 304 15.376 ms - {} - User: -","timestamp":"2025-07-19T16:28:45.645Z"}
+{"level":"http","message":"GET /api/cart 304 10.221 ms - {} - User: -","timestamp":"2025-07-19T16:28:45.651Z"}
+{"level":"http","message":"GET /api/cart 304 7.292 ms - {} - User: -","timestamp":"2025-07-19T16:28:45.660Z"}
+{"level":"http","message":"GET /api/cart 304 6.674 ms - {} - User: -","timestamp":"2025-07-19T16:28:47.300Z"}
+{"level":"http","message":"GET /api/cart 304 6.624 ms - {} - User: -","timestamp":"2025-07-19T16:28:47.308Z"}
+{"level":"http","message":"GET /api/cart 304 9.057 ms - {} - User: -","timestamp":"2025-07-19T16:28:47.319Z"}
+{"level":"http","message":"GET /api/cart 304 10.170 ms - {} - User: -","timestamp":"2025-07-19T16:28:47.331Z"}
+{"level":"http","message":"GET /api/cart 304 8.055 ms - {} - User: -","timestamp":"2025-07-19T16:28:47.341Z"}
+{"level":"http","message":"GET /api/cart 304 7.662 ms - {} - User: -","timestamp":"2025-07-19T16:28:47.351Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 1.464 ms - {} - User: guest","timestamp":"2025-07-19T16:30:39.940Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 1.067 ms - {} - User: guest","timestamp":"2025-07-19T16:30:39.947Z"}
+{"level":"http","message":"GET /api/cart 304 21.732 ms - {} - User: -","timestamp":"2025-07-19T16:30:39.951Z"}
+{"level":"http","message":"GET /api/products?limit=100 304 1.715 ms - {} - User: guest","timestamp":"2025-07-19T16:30:39.954Z"}
+{"level":"http","message":"GET /api/products?page=1&limit=10&sortBy=createdAt&sortOrder=desc 304 0.772 ms - {} - User: guest","timestamp":"2025-07-19T16:30:39.956Z"}
+{"level":"http","message":"GET /api/collections 304 14.666 ms - {} - User: guest","timestamp":"2025-07-19T16:30:39.963Z"}
+{"level":"http","message":"GET /api/cart 304 12.367 ms - {} - User: -","timestamp":"2025-07-19T16:30:39.972Z"}
+{"level":"http","message":"GET /api/collections 304 15.854 ms - {} - User: guest","timestamp":"2025-07-19T16:30:39.983Z"}
+{"level":"http","message":"GET /api/cart 304 15.174 ms - {} - User: -","timestamp":"2025-07-19T16:30:39.991Z"}
+{"level":"http","message":"GET /api/cart 304 23.755 ms - {} - User: -","timestamp":"2025-07-19T16:30:40.024Z"}
+{"level":"http","message":"GET /api/wishlist 304 10.938 ms - {} - User: -","timestamp":"2025-07-19T16:30:40.106Z"}
+{"level":"http","message":"GET /api/wishlist 304 19.088 ms - {} - User: -","timestamp":"2025-07-19T16:30:40.127Z"}
+{"level":"http","message":"GET /api/wishlist 304 10.520 ms - {} - User: -","timestamp":"2025-07-19T16:30:40.140Z"}
+{"level":"http","message":"GET /api/wishlist 304 22.362 ms - {} - User: -","timestamp":"2025-07-19T16:30:40.165Z"}
+{"level":"http","message":"GET /api/wishlist 304 18.968 ms - {} - User: -","timestamp":"2025-07-19T16:30:40.186Z"}
+{"level":"http","message":"GET /api/wishlist 304 5.701 ms - {} - User: -","timestamp":"2025-07-19T16:30:40.193Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 6.608 ms - {} - User: guest","timestamp":"2025-07-19T16:30:43.298Z"}
+{"level":"http","message":"GET /api/cart 304 24.779 ms - {} - User: -","timestamp":"2025-07-19T16:30:43.302Z"}
+{"level":"http","message":"GET /api/products/NC10VNA1 304 0.645 ms - {} - User: guest","timestamp":"2025-07-19T16:30:43.304Z"}
+{"level":"http","message":"GET /api/cart 304 8.200 ms - {} - User: -","timestamp":"2025-07-19T16:30:43.313Z"}
+{"level":"http","message":"GET /api/cart 304 7.999 ms - {} - User: -","timestamp":"2025-07-19T16:30:43.323Z"}
+{"level":"http","message":"GET /api/cart 304 11.582 ms - {} - User: -","timestamp":"2025-07-19T16:30:43.336Z"}
+{"level":"http","message":"GET /api/products?category=TRANG%20S%E1%BB%A8C%20C%C6%AF%E1%BB%9AI&limit=20 304 17.709 ms - {} - User: guest","timestamp":"2025-07-19T16:30:43.366Z"}
+{"level":"http","message":"GET /api/comments/product/NC10VNA1?page=1&limit=10 304 46.493 ms - {} - User: guest","timestamp":"2025-07-19T16:30:43.378Z"}
+{"level":"http","message":"GET /api/comments/product/NC10VNA1?page=1&limit=10 304 20.474 ms - {} - User: guest","timestamp":"2025-07-19T16:30:43.400Z"}
+{"level":"http","message":"GET /api/products?category=TRANG%20S%E1%BB%A8C%20C%C6%AF%E1%BB%9AI&limit=20 304 1.095 ms - {} - User: guest","timestamp":"2025-07-19T16:30:43.453Z"}
+{"level":"http","message":"GET /api/cart 304 7.987 ms - {} - User: -","timestamp":"2025-07-19T16:31:13.949Z"}
+{"level":"http","message":"GET /api/cart 304 7.132 ms - {} - User: -","timestamp":"2025-07-19T16:31:43.945Z"}
+{"level":"http","message":"GET /api/cart 304 8.446 ms - {} - User: -","timestamp":"2025-07-19T16:32:13.959Z"}
+{"level":"http","message":"GET /api/cart 304 9.710 ms - {} - User: -","timestamp":"2025-07-19T16:32:43.955Z"}
+{"level":"http","message":"GET /api/cart 304 5.887 ms - {} - User: -","timestamp":"2025-07-19T16:33:13.947Z"}
+{"level":"http","message":"GET /api/cart 304 6.488 ms - {} - User: -","timestamp":"2025-07-19T16:33:43.945Z"}
+{"level":"http","message":"GET /api/cart 304 6.234 ms - {} - User: -","timestamp":"2025-07-19T16:35:08.946Z"}
+{"level":"http","message":"GET /api/cart 304 6.621 ms - {} - User: -","timestamp":"2025-07-19T16:36:08.950Z"}
+{"level":"http","message":"GET /api/cart 304 6.437 ms - {} - User: -","timestamp":"2025-07-19T16:37:08.945Z"}
+{"level":"http","message":"GET /api/cart 304 6.540 ms - {} - User: -","timestamp":"2025-07-19T16:38:08.958Z"}
+{"level":"http","message":"GET /api/cart 304 7.044 ms - {} - User: -","timestamp":"2025-07-19T16:39:08.955Z"}
+{"level":"http","message":"GET /api/cart 304 7.286 ms - {} - User: -","timestamp":"2025-07-19T16:40:08.954Z"}
+{"level":"http","message":"GET /api/cart 304 21.888 ms - {} - User: -","timestamp":"2025-07-19T16:41:07.490Z"}
+{"level":"http","message":"GET /api/cart 304 17.575 ms - {} - User: -","timestamp":"2025-07-19T16:41:07.539Z"}

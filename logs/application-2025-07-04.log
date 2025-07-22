@@ -1,8 +1,0 @@
-{"level":"info","message":"🔑 Google OAuth Config:","timestamp":"2025-07-04T08:42:31.491Z"}
-{"level":"info","message":"- CLIENT_ID:","timestamp":"2025-07-04T08:42:31.496Z"}
-{"level":"info","message":"- CLIENT_SECRET:","timestamp":"2025-07-04T08:42:31.497Z"}
-{"level":"info","message":"- CALLBACK_URL:","timestamp":"2025-07-04T08:42:31.498Z"}
-{"level":"info","message":"✅ Swagger configured successfully","timestamp":"2025-07-04T08:42:31.842Z"}
-{"level":"info","message":"🚀 Server: http://localhost:8797","timestamp":"2025-07-04T08:42:32.042Z"}
-{"level":"info","message":"📚 Docs: http://localhost:8797/api-docs","timestamp":"2025-07-04T08:42:32.044Z"}
-{"level":"info","message":"🔍 Test: http://localhost:8797/test-google","timestamp":"2025-07-04T08:42:32.044Z"}
